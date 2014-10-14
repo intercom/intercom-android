@@ -25,16 +25,17 @@ dependencies {
 - Get the Intercom App Id and the SDK API key from `https://app.intercom.io/apps/<your_app_id>/sdk_apps`
 - Initialize Intercom by calling `setApiKey(<your_api_key> ,<your_app_id> , <current_context>);` 
 - Start a session by calling `beginSessionWithEmail(<your_email_here>, <current_context>, null);`, `beginSessionWithUserId(<your_userid_here>, <current_context>, null);` or `beginSessionForAnonymousUser(<current_context>, null);`
-- Optionally you may also begin a session with an eventlister to inform you if and when a session is ready
+- Optionally you may also begin a session with an eventlister to inform you if and when a session is ready. The eventlistener may be used to kick off any user updates or event tracking that you require to do immediately after a session has started.
 ```Java
         intercom.beginSessionWithEmail(<your_email_here>, <current_context>, new Intercom.IntercomEventListener() {
             @Override
             public void onComplete(String error) {
-                //lets check if we get an error string
+                // lets check if we get an error string
                 if(error != null) {
-                    //handle error here
+                    // handle error here
                 } else {
-                    //do success logic here
+                    // do success logic here
+                    // You can also do an user updates / event tracking from here as you are sure that the session has started at this point
                 }
             }
         });
