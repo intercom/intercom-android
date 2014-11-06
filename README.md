@@ -1,4 +1,4 @@
-# Android SDK 0.0.7 BETA
+# Android SDK 0.0.8 BETA
 
 Currently in development. If you would like an invite to the Beta please contact me at gavin@intercom.io.
 
@@ -8,7 +8,7 @@ Supports Android 2.3 (API 9) and above
 
 ## Set up
 ### aar
-- Add the intercomsdk-0.0.7.aar to the libs directory of your project
+- Add the intercomsdk-0.0.8.aar to the libs directory of your project
 - In the apps build.gradle add the following:
 ```Java
 repositories {
@@ -17,7 +17,7 @@ repositories {
     }
 }
 dependencies {
-    compile(name:'intercomsdk-0.0.7', ext:'aar')
+    compile(name:'intercomsdk-0.0.8', ext:'aar')
 }
 ```
 
