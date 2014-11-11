@@ -21,6 +21,22 @@ dependencies {
 }
 ```
 
+### gradle+maven
+
+
+```Java
+repositories {
+   maven {
+       url 'http://dl.bintray.com/intercom/intercom-maven'
+   }
+}
+dependencies {
+   compile('io.intercom:intercom.intercomsdk:0.0.+@aar') {
+       transitive = true;
+   }
+}
+```
+
 ## Getting started
 - Get the Intercom App Id and the SDK API key from `https://app.intercom.io/apps/<your_app_id>/sdk_apps`
 - Initialize Intercom by calling `setApiKey(<your_api_key> ,<your_app_id> , <current_context>);` 
