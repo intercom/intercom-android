@@ -1,4 +1,4 @@
-# Android SDK 0.0.9 BETA
+# Android SDK 0.0.10 BETA
 
 Currently in development. If you would like an invite to the Beta please contact me at gavin@intercom.io.
 
@@ -8,7 +8,7 @@ Supports Android 2.3 (API 9) and above
 
 ## Set up
 ### aar
-- Add the intercomsdk-0.0.9.aar to the libs directory of your project
+- Add the intercomsdk-0.0.10.aar to the libs directory of your project
 - In the apps build.gradle add the following:
 ```Java
 repositories {
@@ -17,7 +17,7 @@ repositories {
     }
 }
 dependencies {
-    compile(name:'intercomsdk-0.0.9', ext:'aar')
+    compile(name:'intercomsdk-0.0.10', ext:'aar')
 }
 ```
 
@@ -56,6 +56,9 @@ dependencies {
             }
         });
 ```
+
+After calling beginSession you will see an initial 401 response as it will not have valid tokens at that point. This is expected behaviour. 
+
 - End a session when your user successfully logs out of your application by adding
     `intercom.endSession()`
 
