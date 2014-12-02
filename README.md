@@ -1,6 +1,6 @@
 # Android SDK 0.0.10 BETA
 
-Currently in development. If you would like an invite to the Beta please contact me at gavin@intercom.io.
+Currently in development. If you would like an invite to the Beta please contact me at android-sdk@intercom.io.
 
 ## Supported versions
 Supports Android 2.3 (API 9) and above
