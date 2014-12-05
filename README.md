@@ -10,7 +10,7 @@ Supports Android 4.0.3 (API 15) and above
 ## Basic set up
 
 ### aar
-- Add the intercomsdk-0.0.11.aar to the libs directory of your project
+- Add the intercomsdk-0.8.0.aar to the libs directory of your project
 - In the apps build.gradle add the following:
 ```Java
 repositories {
