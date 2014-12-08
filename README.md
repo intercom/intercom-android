@@ -70,6 +70,7 @@ http://docs.intercom.io/Install-on-your-mobile-product/installing-the-android-sd
  
  http://docs.intercom.io/Install-on-your-mobile-product/secure-mode-developers-guide-part-3
 
+http://docs.intercom.io/Install-on-your-mobile-product/using-google-cloud-messaging-gcm-developers-guide-part-4
 
 ## License
 Copyright 2014 Intercom, Inc.
