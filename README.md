@@ -1,4 +1,4 @@
-# Android SDK 0.0.11 BETA
+# Android SDK 0.0.12 BETA
 
 Currently in development. If you would like an invite to the Beta please contact me at android-sdk@intercom.io.
 
@@ -8,7 +8,7 @@ Supports Android 2.3 (API 9) and above
 
 ## Set up
 ### aar
-- Add the intercomsdk-0.0.11.aar to the libs directory of your project
+- Add the intercomsdk-0.0.12.aar to the libs directory of your project
 - In the apps build.gradle add the following:
 ```Java
 repositories {
@@ -17,12 +17,12 @@ repositories {
     }
 }
 dependencies {
-    compile(name:'intercomsdk-0.0.11', ext:'aar')
+    compile(name:'intercomsdk-0.0.12', ext:'aar')
 }
 ```
 
 ### jar 
-- Add the intercomsdk-0.0.11.jar to the libs directory of your project
+- Add the intercomsdk-0.0.12.jar to the libs directory of your project
 - Add Volley jar which is used as our networking layer. This can be found here https://android.googlesource.com/platform/frameworks/volley/
 
 ### gradle+maven
