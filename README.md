@@ -1,4 +1,4 @@
-# Android SDK 0.0.12 BETA
+# Android SDK 0.0.13 BETA
 
 Currently in development. If you would like an invite to the Beta please contact me at android-sdk@intercom.io.
 
@@ -8,7 +8,7 @@ Supports Android 2.3 (API 9) and above
 
 ## Set up
 ### aar
-- Add the intercomsdk-0.0.12.aar to the libs directory of your project
+- Add the intercomsdk-0.0.13.aar to the libs directory of your project
 - In the apps build.gradle add the following:
 ```Java
 repositories {
@@ -17,12 +17,12 @@ repositories {
     }
 }
 dependencies {
-    compile(name:'intercomsdk-0.0.12', ext:'aar')
+    compile(name:'intercomsdk-0.0.13', ext:'aar')
 }
 ```
 
 ### jar 
-- Add the intercomsdk-0.0.12.jar to the libs directory of your project
+- Add the intercomsdk-0.0.13.jar to the libs directory of your project
 - Add Volley jar which is used as our networking layer. This can be found here https://android.googlesource.com/platform/frameworks/volley/
 
 ### gradle+maven
@@ -72,7 +72,7 @@ You can send any data you like to Intercom. Typically our customers see a lot of
 
 You can use the following Intercom class method to update fields in the user profile.
 
-`intercom.updateUser (HashMap<String, Object> attributes)` Where attibutes is a HashMap containing a user attributes for example email, companies, custom attributes. Note that multiple attibutes can be updated at once.
+`intercom.updateUser (HashMap<String, Object> attributes, Context context)` Where attibutes is a HashMap containing a user attributes for example email, companies, custom attributes. Note that multiple attibutes can be updated at once.
 
 You do not have to create attributes in Intercom beforehand. If one hasn't been seen before, it will be created for you automatically. A detailed description of the user model is available here http://doc.intercom.io/api/#user-model
 
@@ -85,7 +85,7 @@ You can add and update custom data about your user by adding a Hashmap with the 
     customAttributes.put("monthly_spend",155.5);
     customAttributes.put("team_mates",3);
     attributes.put("custom_attributes", customAttributes);
-    intercom.updateUser(attributes);
+    intercom.updateUser(attributes, context);
 ```
 
 ## Company data
@@ -97,15 +97,15 @@ You can add and update a user’s company data by adding a Hashmap with the key 
     companyData.put("name","Intercom");
     companyData.put("id",1234);
     attributes.put("companies", companyData);
-    intercom.updateUser(attributes);
+    intercom.updateUser(attributes, context);
 ```
 
 ## Events
 You can log events in Intercom based on user actions in your app. Events are different to Custom Attributes in that events are information on what Users did and when they did it, whereas Custom Attributes represent the User’s current state as seen in their profile.
 ```Java  
-    intercom.logEvent(”sent_invitation”);
+    intercom.logEvent(”sent_invitation”, context);
     HashMap<String, Object> eventData = new HashMap<String,Object>();
-    intercom.logEvent(”sent_invitation”, eventData)]; //HashMap of additional data for the event
+    intercom.logEvent(”sent_invitation”, eventData, context)]; //HashMap of additional data for the event
 ```
 
 ## Security
