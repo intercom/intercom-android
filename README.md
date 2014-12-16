@@ -1,16 +1,16 @@
-# Android SDK 0.8.0 BETA
+# Android SDK 0.8.1 BETA
 
 This is an early beta release. If you would like an invite to the private beta please contact us at android-sdk@intercom.io.
 
 ## Supported versions
-Supports Android 4.0.3 (API 15) and above
+Supports Android 2.3 (API 9) for data only calls and 4.0.3 (API 15) and above for the messaging functionality
 
 
 
 ## Basic set up
 
 ### aar
-- Add the intercomsdk-0.8.0.aar to the libs directory of your project
+- Add the intercomsdk-0.8.1.aar to the libs directory of your project
 - In the apps build.gradle add the following:
 ```Java
 repositories {
@@ -19,7 +19,7 @@ repositories {
     }
 }
 dependencies {
-    compile(name:'intercomsdk-0.8.0', ext:'aar')
+    compile(name:'intercomsdk-0.8.1', ext:'aar')
 }
 ```
 
