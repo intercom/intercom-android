@@ -26,10 +26,12 @@ dependencies {
 
 ### remote dependancy
 
-- For 0.8.1 we have a remote dependancy on volley. Please add the following as a dependancy in your build.gradle also.
+- For 0.8.1 we have remote dependancies for this version. Please add the following to your build.gradle also.
 
 ```
 compile 'com.mcxiaoke.volley:library:1.0.+'
+compile 'com.google.code.gson:gson:2.3'
+compile "com.google.android.gms:play-services:6.5.87"
 ```
 
 ## Initialize Intercom and Begin Session
