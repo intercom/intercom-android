@@ -31,7 +31,7 @@ dependencies {
 ```
 compile 'com.mcxiaoke.volley:library:1.0.+'
 compile 'com.google.code.gson:gson:2.3'
-compile "com.google.android.gms:play-services:6.5.87"
+compile 'com.google.android.gms:play-services:6.5.87'
 ```
 
 ## Initialize Intercom and Begin Session
