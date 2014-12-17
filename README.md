@@ -12,6 +12,7 @@ Supports Android 2.3 (API 9) for data only calls and 4.0.3 (API 15) and above fo
 ### aar
 - Add the intercomsdk-0.8.1.aar to the libs directory of your project
 - In the apps build.gradle add the following:
+
 ```Java
 repositories {
     flatDir {
@@ -21,6 +22,14 @@ repositories {
 dependencies {
     compile(name:'intercomsdk-0.8.1', ext:'aar')
 }
+```
+
+### remote dependancy
+
+- For 0.8.1 we have a remote dependancy on volley. Please add the following as a dependancy in your build.gradle also.
+
+```
+compile 'com.mcxiaoke.volley:library:1.0.+'
 ```
 
 ## Initialize Intercom and Begin Session
