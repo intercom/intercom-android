@@ -32,7 +32,10 @@ dependencies {
 compile 'com.mcxiaoke.volley:library:1.0.+'
 compile 'com.google.code.gson:gson:2.3'
 compile 'com.google.android.gms:play-services:6.5.87'
+compile 'com.android.support:appcompat-v7:21.0.3'
 ```
+
+also the compileSdkVersion needs to be 21.
 
 ## Initialize Intercom and Begin Session
 - Get the Intercom App Id and the SDK API key from `https://app.intercom.io/apps/<your_app_id>/sdk_apps`
