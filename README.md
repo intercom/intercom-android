@@ -29,7 +29,7 @@ dependencies {
 - For 0.8.1 we have remote dependancies for this version. Please add the following to your build.gradle also.
 
 ```
-compile 'com.mcxiaoke.volley:library:1.0.+'
+compile 'com.mcxiaoke.volley:library:1.0.9'
 compile 'com.google.code.gson:gson:2.3'
 compile 'com.google.android.gms:play-services:6.5.87'
 compile 'com.android.support:appcompat-v7:21.0.3'
