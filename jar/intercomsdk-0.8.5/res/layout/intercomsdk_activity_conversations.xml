@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/intercomsdk_comversation_background_color"
+        android:orientation="vertical" />
+</LinearLayout>
+<!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_activity_conversations.xml -->

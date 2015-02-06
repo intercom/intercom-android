@@ -1,15 +1,18 @@
-# Android SDK 0.0.13 BETA
+# Android SDK 0.8.5 BETA
 
-Currently in private beta. If you'd like an invite, please email us. brian.donohue@intercom.mail.intercom.io.
+Currently in private beta. If you'd like an invite, please email us at brian.donohue@intercom.mail.intercom.io.
 
 ## Supported versions
-Supports Android 2.3 (API 9) and above
+Supports Android 2.3 (API 9) for data only calls and 4.0.3 (API 15) and above for the messaging functionality
 
 
-## Set up
+
+## Basic set up
+
 ### aar
-- Add the intercomsdk-0.0.13.aar to the libs directory of your project
+- Add the intercomsdk-0.8.5.aar to the libs directory of your project
 - In the apps build.gradle add the following:
+
 ```Java
 repositories {
     flatDir {
@@ -17,37 +20,50 @@ repositories {
     }
 }
 dependencies {
-    compile(name:'intercomsdk-0.0.13', ext:'aar')
+    compile(name:'intercomsdk-0.8.3', ext:'aar')
 }
 ```
 
-### jar 
-- Add the intercomsdk-0.0.13.jar to the libs directory of your project
-- Add Volley jar which is used as our networking layer. This can be found here https://android.googlesource.com/platform/frameworks/volley/
+### remote dependancy
 
-### gradle+maven
+- For 0.8.3 we have remote dependancies for this version. Please add the following to your build.gradle also.
 
+```
+compile 'com.google.code.gson:gson:2.3'
+compile 'com.google.android.gms:play-services:6.5.87'
+compile 'com.android.support:appcompat-v7:21.0.3'
+```
+
+also the compileSdkVersion needs to be 21.
+
+## Initialize Intercom 
+
+In your application class initialise Intercom with the application context
 
 ```Java
-repositories {
-   maven {
-       url 'http://dl.bintray.com/intercom/intercom-maven'
-   }
-}
-dependencies {
-   compile('io.intercom:intercom.intercomsdk:0.0.+@aar') {
-       transitive = true;
-   }
-}
+Intercom.initialize(getApplicationContext());
 ```
 
-## Getting started
+If you do not have an application class in your project here is a basic example
+
+```
+public class HostApplication extends Application {
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        Intercom.initialize(getApplicationContext());
+
+    }
+```
+
+
+## Begin Session
 - Get the Intercom App Id and the SDK API key from `https://app.intercom.io/apps/<your_app_id>/sdk_apps`
-- Initialize Intercom by calling `setApiKey(<your_api_key> ,<your_app_id> , <current_context>);` 
-- Start a session by calling `beginSessionWithEmail(<your_email_here>, <current_context>, null);`, `beginSessionWithUserId(<your_userid_here>, <current_context>, null);` or `beginSessionForAnonymousUser(<current_context>, null);`
+- Initialize Intercom by calling `setApiKey(<your_api_key> ,<your_app_id>);` 
+- Start a session by calling `beginSessionWithEmail(<your_email_here>, null);`, `beginSessionWithUserId(<your_userid_here>, null);` or `beginSessionForAnonymousUser(null);`
 - Optionally you may also begin a session with an eventlister to inform you if and when a session is ready. The eventlistener may be used to kick off any user updates or event tracking that you require to do immediately after a session has started.
 ```Java
-        intercom.beginSessionWithEmail(<your_email_here>, <current_context>, new Intercom.IntercomEventListener() {
+        Intercom.beginSessionWithEmail(<your_email_here>, new Intercom.IntercomEventListener() {
             @Override
             public void onComplete(String error) {
                 // lets check if we get an error string
@@ -64,52 +80,31 @@ dependencies {
 After calling beginSession you will see an initial 401 response as it will not have valid tokens at that point. This is expected behaviour. 
 
 - End a session when your user successfully logs out of your application by adding
-    `intercom.endSession()`
+    `Intercom.endSession()`
 
-## Updating a user
+## Developer's Advanced Guide
 
-You can send any data you like to Intercom. Typically our customers see a lot of value in sending data that relates to customer development, such as price plan, value of purchases, etc. Once these have been sent to Intercom you can then apply filters based on these attributes.
+If you want to learn about the following topics:
 
-You can use the following Intercom class method to update fields in the user profile.
+- Session control
+- Updating a user
+- Working with attributes
+- Company Data
+- Custom Attributes
+- Events
+- Messaging
+- Using Push notifications
+- How to configure Secure Mode in the SDK
 
-`intercom.updateUser (HashMap<String, Object> attributes, Context context)` Where attibutes is a HashMap containing a user attributes for example email, companies, custom attributes. Note that multiple attibutes can be updated at once.
+You may find our guide here
 
-You do not have to create attributes in Intercom beforehand. If one hasn't been seen before, it will be created for you automatically. A detailed description of the user model is available here http://doc.intercom.io/api/#user-model
+http://docs.intercom.io/Install-on-your-mobile-product/installing-the-android-sdk-developers-guide-part-1
+ 
+ http://docs.intercom.io/Install-on-your-mobile-product/configuring-the-android-sdk-developers-guide-part-2
+ 
+ http://docs.intercom.io/Install-on-your-mobile-product/secure-mode-developers-guide-part-3
 
-## Custom attributes
-You can add and update custom data about your user by adding a Hashmap with the key “custom_attributes” to the attribute Hashmap. Examples of custom data below are if the user is a paid subscriber, how much do they spend per month and how many people do they have on their team. Objects and arrays are not allowed in custom data. See the following example:
-```Java   
-    HashMap<String, Object> attributes = new HashMap<String,Object>();
-    HashMap<String, Object> customAttributes = new HashMap<String,Object>();
-    customAttributes.put("paid_subscriber","Yes");
-    customAttributes.put("monthly_spend",155.5);
-    customAttributes.put("team_mates",3);
-    attributes.put("custom_attributes", customAttributes);
-    intercom.updateUser(attributes, context);
-```
-
-## Company data
-You can add and update a user’s company data by adding a Hashmap with the key “companies” to the attribute dictionary. Each company requires an id to be present in the dictionary. See the following example:
-
-```Java   
-    HashMap<String, Object> attributes = new HashMap<String,Object>();
-    HashMap<String, Object> companyData = new HashMap<String,Object>();
-    companyData.put("name","Intercom");
-    companyData.put("id",1234);
-    attributes.put("companies", companyData);
-    intercom.updateUser(attributes, context);
-```
-
-## Events
-You can log events in Intercom based on user actions in your app. Events are different to Custom Attributes in that events are information on what Users did and when they did it, whereas Custom Attributes represent the User’s current state as seen in their profile.
-```Java  
-    intercom.logEvent(”sent_invitation”, context);
-    HashMap<String, Object> eventData = new HashMap<String,Object>();
-    intercom.logEvent(”sent_invitation”, eventData, context)]; //HashMap of additional data for the event
-```
-
-## Security
-- You may also use HMAC for additional security when initializing Intercom by calling `setApiKey(<your_api_key>, <your_app_id>, String data, String hmac, this)` Where data is a string representing the data that was signed by the App Server and hmac is the HMAC digest for the data string
+http://docs.intercom.io/Install-on-your-mobile-product/using-google-cloud-messaging-gcm-developers-guide-part-4
 
 ## License
 Copyright 2014 Intercom, Inc.
