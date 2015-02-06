@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/values-v21/styles.xml -->
+     
     <eat-comment/>
     <style name="IntercomSDK_EditText" parent="@android:style/Widget.EditText">
         <item name="android:background">@drawable/intercomsdk_themed_edit_text</item>

@@ -36,4 +36,4 @@
         android:src="@drawable/intercomsdk_icn_send"
         tools:ignore="ContentDescription" />
 </LinearLayout>
-<!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_composer_input_layout.xml -->
+ 

@@ -20,7 +20,7 @@ repositories {
     }
 }
 dependencies {
-    compile(name:'intercomsdk-0.8.3', ext:'aar')
+    compile(name:'intercomsdk-0.8.5', ext:'aar')
 }
 ```
 

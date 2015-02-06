@@ -37,4 +37,4 @@
         android:layout_height="match_parent"
         android:layout_marginLeft="14dp"
         android:src="@drawable/intercomsdk_poweredby_line" />
-</LinearLayout><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_row_poweredby.xml -->
+</LinearLayout> 

@@ -9,4 +9,4 @@
     android:textSize="15sp"
     android:textColor="@color/intercomsdk_text_light_black"
     android:textColorLink="@color/intercomsdk_text_light_black"
-    android:textStyle="bold" /><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_blocks_admin_subheading.xml -->
+    android:textStyle="bold" /> 

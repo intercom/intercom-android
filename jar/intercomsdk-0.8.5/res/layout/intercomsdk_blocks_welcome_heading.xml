@@ -10,4 +10,4 @@
     android:textStyle="bold"
     android:textColor="@color/intercomsdk_poweredby_color"
     android:textIsSelectable="true"
-    android:textSize="18sp" /><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_blocks_welcome_heading.xml -->
+    android:textSize="18sp" /> 

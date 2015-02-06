@@ -4,4 +4,4 @@
     android:shape="oval">
 
     <solid android:color="@color/intercomsdk_white" />
-</shape><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/drawable/intercomsdk_white_circle.xml -->
+</shape> 

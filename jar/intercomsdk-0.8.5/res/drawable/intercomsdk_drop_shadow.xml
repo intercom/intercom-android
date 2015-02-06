@@ -7,4 +7,4 @@
     android:centerColor="#22b4b4b4"
     android:startColor="#00b4b4b4"
     android:type="linear" />
-</shape><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/drawable/intercomsdk_drop_shadow.xml -->
+</shape> 

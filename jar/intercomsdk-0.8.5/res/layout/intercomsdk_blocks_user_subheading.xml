@@ -6,4 +6,4 @@
     android:lineSpacingExtra="2sp"
     android:textIsSelectable="true"
     android:textSize="15sp"
-    android:textStyle="bold" /><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_blocks_user_subheading.xml -->
+    android:textStyle="bold" /> 

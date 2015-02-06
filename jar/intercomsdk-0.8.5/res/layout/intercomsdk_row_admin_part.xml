@@ -52,4 +52,4 @@
             android:textColor="@color/intercomsdk_light_grey_colour"
             android:textSize="13sp" />
     </LinearLayout>
-</RelativeLayout><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_row_admin_part.xml -->
+</RelativeLayout> 

@@ -11,4 +11,4 @@
         android:background="@color/intercomsdk_comversation_background_color"
         android:orientation="vertical" />
 </LinearLayout>
-<!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_activity_conversations.xml -->
+ 

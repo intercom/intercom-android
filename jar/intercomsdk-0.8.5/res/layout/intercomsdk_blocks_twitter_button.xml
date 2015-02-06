@@ -25,4 +25,4 @@
         android:textColor="@color/intercomsdk_white"
         android:text="@string/intercomsdk_twitter_follow"
         android:textSize="15sp" />
-</RelativeLayout><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_blocks_twitter_button.xml -->
+</RelativeLayout> 

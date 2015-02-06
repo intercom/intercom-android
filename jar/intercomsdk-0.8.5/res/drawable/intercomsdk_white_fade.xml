@@ -11,4 +11,4 @@
             android:startColor="@color/intercomsdk_white"
             android:type="linear" />
     </shape>
-</inset><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/drawable/intercomsdk_white_fade.xml -->
+</inset> 

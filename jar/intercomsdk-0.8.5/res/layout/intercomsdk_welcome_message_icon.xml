@@ -6,4 +6,4 @@
     android:layout_height="40dp"
     android:layout_gravity="center"
     android:layout_marginBottom="10dp"
-    android:src="@drawable/intercomsdk_oval_35b" /><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_welcome_message_icon.xml -->
+    android:src="@drawable/intercomsdk_oval_35b" /> 

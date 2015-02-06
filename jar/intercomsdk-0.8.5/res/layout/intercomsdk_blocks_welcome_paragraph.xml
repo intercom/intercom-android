@@ -9,4 +9,4 @@
     android:paddingRight="5dp"
     android:textColor="@color/intercomsdk_poweredby_color"
     android:textIsSelectable="true"
-    android:textSize="15sp" /><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_blocks_welcome_paragraph.xml -->
+    android:textSize="15sp" /> 

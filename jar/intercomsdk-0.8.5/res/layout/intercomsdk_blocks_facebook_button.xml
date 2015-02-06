@@ -25,4 +25,4 @@
         android:textColor="@color/intercomsdk_white"
         android:text="@string/intercomsdk_facebook_like"
         android:textSize="15sp"/>
-</RelativeLayout><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_blocks_facebook_button.xml -->
+</RelativeLayout> 

@@ -7,4 +7,4 @@
     android:layout_gravity="center"
     android:gravity="center"
     android:textIsSelectable="true"
-    android:textSize="24sp" /><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_blocks_announcement_heading.xml -->
+    android:textSize="24sp" /> 

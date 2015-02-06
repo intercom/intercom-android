@@ -16,4 +16,4 @@
         android:toYScale="1.0"
         android:pivotX="50%"
         android:pivotY="50%"/>
-</set><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/anim/intercomsdk_unread_badge_fade_in_anim.xml -->
+</set> 

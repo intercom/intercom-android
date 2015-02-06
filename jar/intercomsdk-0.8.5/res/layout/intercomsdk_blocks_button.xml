@@ -5,4 +5,4 @@
     android:layout_marginBottom="10dp"
     android:layout_gravity="center"
     android:textColor="@color/intercomsdk_white"
-    android:textSize="15sp" /><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_blocks_button.xml -->
+    android:textSize="15sp" /> 

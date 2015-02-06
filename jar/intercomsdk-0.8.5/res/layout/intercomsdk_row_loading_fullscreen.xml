@@ -11,4 +11,4 @@
         android:indeterminateDrawable="@drawable/intercomsdk_progress_wheel"
         android:layout_gravity="center"
         android:id="@+id/progressBar"/>
-</LinearLayout><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_row_loading_fullscreen.xml -->
+</LinearLayout> 

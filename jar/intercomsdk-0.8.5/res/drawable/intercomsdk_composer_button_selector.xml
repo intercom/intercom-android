@@ -6,4 +6,4 @@
         android:drawable="@drawable/intercomsdk_icn_compose_pressed"/>
     <item
         android:drawable="@drawable/intercomsdk_icn_compose"/>
-</selector><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/drawable/intercomsdk_composer_button_selector.xml -->
+</selector> 

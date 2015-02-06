@@ -9,4 +9,4 @@
     android:paddingBottom="32dp"
     android:paddingLeft="32dp"
     android:paddingRight="32dp"
-    android:paddingTop="38dp" /><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_blocks_announcement_layout.xml -->
+    android:paddingTop="38dp" /> 

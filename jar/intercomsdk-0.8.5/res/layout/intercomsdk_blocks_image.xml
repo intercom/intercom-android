@@ -9,4 +9,4 @@
     android:layout_gravity="center"
     android:adjustViewBounds="true"
     tools:ignore="ContentDescription" />
-<!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_blocks_image.xml -->
+ 

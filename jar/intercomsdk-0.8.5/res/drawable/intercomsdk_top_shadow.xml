@@ -11,4 +11,4 @@
                 android:type="linear" />
         </shape>
     </item>
-</selector><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/drawable/intercomsdk_top_shadow.xml -->
+</selector> 

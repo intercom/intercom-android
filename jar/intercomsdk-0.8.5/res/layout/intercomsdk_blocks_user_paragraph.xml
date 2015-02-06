@@ -7,4 +7,4 @@
     android:textIsSelectable="true"
     android:textColor="@android:color/white"
     android:textColorLink="@android:color/white"
-    android:textSize="15sp" /><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_blocks_user_paragraph.xml -->
+    android:textSize="15sp" /> 

@@ -45,4 +45,4 @@
         tools:ignore="ContentDescription" />
 
 
-</RelativeLayout><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_small_announcement_layout.xml -->
+</RelativeLayout> 

@@ -6,4 +6,4 @@
     <stroke
         android:width="2dp"
         android:color="@color/intercomsdk_white" />
-</shape><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/drawable/intercomsdk_unread_shape.xml -->
+</shape> 

@@ -15,4 +15,4 @@
     android:textAlignment="textStart"
     android:isScrollContainer="false"
     android:ellipsize="end"
-    /><!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_blocks_admin_paragraph.xml -->
+    /> 
