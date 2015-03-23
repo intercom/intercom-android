@@ -1,47 +1,37 @@
-# Android SDK 0.8.5 BETA
+# Android SDK 0.9.0 BETA
 
 The Intercom Android SDK is currently in **private beta** and must be enabled for your Intercom app in order to work (standard API keys don't work with the Android SDK). If you would like to be included in the next round of this beta, please email us at `brian.donohue@intercom.mail.intercom.io`.
 
 ## Supported versions
 Supports Android 2.3 (API 9) for data only calls and 4.0.3 (API 15) and above for the messaging functionality
 
+## Set up
 
-
-## Basic set up
-
-### aar
-- Add the intercomsdk-0.8.5.aar to the libs directory of your project
-- In the apps build.gradle add the following:
-
-```Java
-repositories {
-    flatDir {
-        dirs 'libs'
-    }
-}
-dependencies {
-    compile(name:'intercomsdk-0.8.5', ext:'aar')
-}
-```
+A full guide to integrating the Intercom Android SDK with your app is available here: http://docs.intercom.io/6025-Install-on-your-mobile-product/install-the-intercom-android-sdk
 
 ### remote dependancy
 
-- For 0.8.3 we have remote dependancies for this version. Please add the following to your build.gradle also.
+- Please include the following SDK 0.9.0 dependencies in your build.gradle file: 
 
 ```
+compile 'com.android.support:support-v4:22.0.0'
 compile 'com.google.code.gson:gson:2.3'
-compile 'com.google.android.gms:play-services:6.5.87'
-compile 'com.android.support:appcompat-v7:21.0.3'
+compile 'com.squareup:otto:1.3.6'
+compile 'com.squareup.okhttp:okhttp:2.2.0'
+compile 'com.squareup.okhttp:okhttp-urlconnection:2.2.0'
+compile 'com.squareup.retrofit:retrofit:1.9.0'
+compile 'com.squareup.picasso:picasso:2.4.0'
+compile 'com.google.android.gms:play-services-base:6.5.87'
 ```
 
 also the compileSdkVersion needs to be 21.
 
 ## Initialize Intercom 
 
-In your application class initialise Intercom with the application context
+In the `oncreate()` method of your application class initialise Intercom with the application context, your api key and your app id
 
 ```Java
-Intercom.initialize(getApplicationContext());
+Intercom.initialize(getApplicationContext(), "your api key", "your app id");
 ```
 
 If you do not have an application class in your project here is a basic example
@@ -51,42 +41,15 @@ public class HostApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        Intercom.initialize(getApplicationContext());
+        Intercom.initialize(getApplicationContext(), "your api key", "your app id");
 
     }
 ```
-
-
-## Begin Session
-- Get the Intercom App Id and the SDK API key from `https://app.intercom.io/apps/<your_app_id>/sdk_apps`
-- Initialize Intercom by calling `setApiKey(<your_api_key> ,<your_app_id>);` 
-- Start a session by calling `beginSessionWithEmail(<your_email_here>, null);`, `beginSessionWithUserId(<your_userid_here>, null);` or `beginSessionForAnonymousUser(null);`
-- Optionally you may also begin a session with an eventlister to inform you if and when a session is ready. The eventlistener may be used to kick off any user updates or event tracking that you require to do immediately after a session has started.
-```Java
-        Intercom.beginSessionWithEmail(<your_email_here>, new Intercom.IntercomEventListener() {
-            @Override
-            public void onComplete(String error) {
-                // lets check if we get an error string
-                if(error != null) {
-                    // handle error here
-                } else {
-                    // do success logic here
-                    // You can also do an user updates / event tracking from here as you are sure that the session has started at this point
-                }
-            }
-        });
-```
-
-After calling beginSession you will see an initial 401 response as it will not have valid tokens at that point. This is expected behaviour. 
-
-- End a session when your user successfully logs out of your application by adding
-    `Intercom.endSession()`
 
 ## Developer's Advanced Guide
 
 If you want to learn about the following topics:
 
-- Session control
 - Updating a user
 - Working with attributes
 - Company Data
@@ -98,13 +61,13 @@ If you want to learn about the following topics:
 
 You may find our guide here
 
-http://docs.intercom.io/Install-on-your-mobile-product/installing-the-android-sdk-developers-guide-part-1
- 
- http://docs.intercom.io/Install-on-your-mobile-product/configuring-the-android-sdk-developers-guide-part-2
- 
- http://docs.intercom.io/Install-on-your-mobile-product/secure-mode-developers-guide-part-3
+http://docs.intercom.io/6025-Install-on-your-mobile-product/install-the-intercom-android-sdk
 
-http://docs.intercom.io/Install-on-your-mobile-product/using-google-cloud-messaging-gcm-developers-guide-part-4
+http://docs.intercom.io/6025-Install-on-your-mobile-product/using-the-android-sdk
+
+http://docs.intercom.io/6025-Install-on-your-mobile-product/enabling-secure-mode-on-the-android-sdk
+
+http://docs.intercom.io/6025-Install-on-your-mobile-product/using-google-cloud-messaging-gcm-with-the-android-sdk
 
 ## License
 Copyright 2014 Intercom, Inc.
