@@ -11,6 +11,7 @@
 * Updated to v7.0.0 of the Google Play Services Library
 * Updated to v2.5.2 of Picasso
 
+## Version 0.9.0
 
 02-23-2015
 * adding CHANGELOG
