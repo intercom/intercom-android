@@ -1,6 +1,8 @@
-# Android SDK 0.9.0 BETA
+# Android SDK 0.9.1 BETA
 
-The Intercom Android SDK is currently in **private beta** and must be enabled for your Intercom app in order to work (standard API keys don't work with the Android SDK). If you would like to be included in the next round of this beta, please email us at `brian.donohue@intercom.mail.intercom.io`.
+Our Android SDK is currently in private beta. We are confident of its stability, however please be aware there is still some risk. This also means we may have frequent, small updates. We’ll attempt to keep these updates as easy as possible, though some changes may require you to update the integration in your app.
+
+If you would like to be included in the next round of this beta, please email us at `brian.donohue@intercom.mail.intercom.io`.
 
 ## Supported versions
 Supports Android 2.3 (API 9) for data only calls and 4.0.3 (API 15) and above for the messaging functionality
@@ -11,7 +13,7 @@ A full guide to integrating the Intercom Android SDK with your app is available 
 
 ### remote dependancy
 
-- Please include the following SDK 0.9.0 dependencies in your build.gradle file: 
+- Please include the following SDK 0.9.1 dependencies in your build.gradle file: 
 
 ```
 compile 'com.android.support:support-v4:22.0.0'

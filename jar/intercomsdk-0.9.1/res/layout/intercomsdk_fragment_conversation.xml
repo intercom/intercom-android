@@ -127,7 +127,7 @@
         android:background="@drawable/intercomsdk_bottom_shadow"
         tools:ignore="ContentDescription"/>
 
-    <intercom.intercomsdk.views.ComposerInput
+    <io.intercom.android.sdk.views.ComposerInput
         android:id="@+id/composer_input_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

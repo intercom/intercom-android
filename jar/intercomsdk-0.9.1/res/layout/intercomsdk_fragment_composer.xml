@@ -7,7 +7,7 @@
     android:windowSoftInputMode="adjustResize"
     tools:context=".Fragments.ComposerFragment">
 
-    <intercom.intercomsdk.views.SmallAnnouncement
+    <io.intercom.android.sdk.views.SmallAnnouncement
         android:id="@+id/small_announcement"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -134,7 +134,7 @@
             android:background="@drawable/intercomsdk_bottom_shadow"
             tools:ignore="ContentDescription" />
 
-        <intercom.intercomsdk.views.ComposerInput
+        <io.intercom.android.sdk.views.ComposerInput
             android:id="@+id/composer_input_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

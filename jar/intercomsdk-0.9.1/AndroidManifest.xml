@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="intercom.intercomsdk"
+    package="io.intercom.android.sdk"
     android:versionCode="1"
-    android:versionName="production" >
+    android:versionName="0.9.1" >
 
     <uses-sdk
         android:minSdkVersion="9"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <!-- GCM REQUIRED PERMISSIONS -->
@@ -17,32 +17,32 @@
 
     <application>
         <service
-            android:name="intercom.intercomsdk.chathead.NotificationsService"
+            android:name="io.intercom.android.sdk.chathead.NotificationsService"
             android:enabled="true" />
 
         <activity
-            android:name="intercom.intercomsdk.activities.MainActivity"
+            android:name="io.intercom.android.sdk.activities.MainActivity"
             android:configChanges="screenSize|orientation"
             android:launchMode="singleTop"
             android:theme="@style/IntercomSDK_PanelTheme"
             android:windowSoftInputMode="stateUnchanged|adjustResize" />
         <activity
-            android:name="intercom.intercomsdk.activities.TestActivity"
+            android:name="io.intercom.android.sdk.activities.TestActivity"
             android:exported="false" />
 
         <!-- GCM setup -->
         <receiver
-            android:name="intercom.intercomsdk.gcm.GcmBroadcastReceiver"
+            android:name="io.intercom.android.sdk.gcm.GcmBroadcastReceiver"
             android:permission="com.google.android.c2dm.permission.SEND" >
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
-                <category android:name="intercom.intercomsdk.gcm" />
+                <category android:name="io.intercom.intercomsdk.gcm" />
             </intent-filter>
         </receiver>
 
-        <service android:name="intercom.intercomsdk.gcm.GcmIntentService" />
+        <service android:name="io.intercom.android.sdk.gcm.GcmIntentService" />
 
         <meta-data
             android:name="com.google.android.gms.version"
