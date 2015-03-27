@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:background="@drawable/intercomsdk_chat_bubble_left_aligned"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:paddingBottom="11dp"
+    android:paddingLeft="18dp"
+    android:paddingRight="12dp"
+    android:paddingTop="8dp" /><!-- From: file:/Users/henry/Android/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_blocks_admin_layout.xml -->

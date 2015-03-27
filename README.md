@@ -1,4 +1,4 @@
-# Android SDK 0.9.1 BETA
+# Android SDK 0.9.2 BETA
 
 Our Android SDK is currently in private beta. We are confident of its stability, however please be aware there is still some risk. This also means we may have frequent, small updates. We’ll attempt to keep these updates as easy as possible, though some changes may require you to update the integration in your app.
 
@@ -13,7 +13,7 @@ A full guide to integrating the Intercom Android SDK with your app is available 
 
 ### remote dependancy
 
-- Please include the following SDK 0.9.1 dependencies in your build.gradle file: 
+- These are the dependencies we use in the SDK
 
 ```
 compile 'com.android.support:support-v4:22.0.0'

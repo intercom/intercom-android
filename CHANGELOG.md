@@ -1,5 +1,10 @@
 # Change Log
 
+## Version 0.9.2
+
+03-27-2015
+* Updated the sdk proguard rules to reflect the new package
+
 ## Version 0.9.1
 
 03-26-2015

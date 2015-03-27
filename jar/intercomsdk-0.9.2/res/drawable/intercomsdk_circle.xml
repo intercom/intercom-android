@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid android:color="@color/intercomsdk_app_name_colour" />
+    <size
+        android:width="8dp"
+        android:height="8dp" />
+</shape><!-- From: file:/Users/henry/Android/android-sdk/intercomsdk/src/main/res/drawable/intercomsdk_circle.xml -->

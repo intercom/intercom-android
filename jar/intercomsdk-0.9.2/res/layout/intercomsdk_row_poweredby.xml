@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:layout_marginLeft="46dp"
+    android:layout_marginRight="46dp"
+    android:paddingBottom="10dp"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="14dp"
+        android:src="@drawable/intercomsdk_poweredby_line" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/intercomsdk_poweredby_icon"
+        android:id="@+id/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:text= "@string/powered_by"
+        android:textColor="@color/intercomsdk_poweredby_color"
+        android:gravity="center"
+        android:id="@+id/textView" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="14dp"
+        android:src="@drawable/intercomsdk_poweredby_line" />
+</LinearLayout><!-- From: file:/Users/henry/Android/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_row_poweredby.xml -->
