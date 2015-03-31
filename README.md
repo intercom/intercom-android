@@ -1,4 +1,4 @@
-# Android SDK 0.9.2 BETA
+# Android SDK 0.9.3 BETA
 
 Our Android SDK is currently in private beta. We are confident of its stability, however please be aware there is still some risk. This also means we may have frequent, small updates. We’ll attempt to keep these updates as easy as possible, though some changes may require you to update the integration in your app.
 
@@ -19,7 +19,7 @@ A full guide to integrating the Intercom Android SDK with your app is available 
 compile 'com.android.support:support-v4:22.0.0'
 compile 'com.google.code.gson:gson:2.3'
 compile 'com.squareup:otto:1.3.6'
-compile 'com.squareup.okhttp:okhttp:2.2.0'
+compile 'com.squareup.okhttp:okhttp:2.3.0'
 compile 'com.squareup.retrofit:retrofit:1.9.0'
 compile 'com.squareup.picasso:picasso:2.5.2'
 compile 'com.google.android.gms:play-services-gcm:7.0.0’

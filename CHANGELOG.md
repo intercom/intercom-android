@@ -1,5 +1,11 @@
 # Change Log
 
+## Version 0.9.3
+03-31-2015
+* Added the internet and access wifi state permissions to our Manifest 
+* Validating the attributes map passed into the `updateUser` method and giving better error messages
+* Updated to v2.3.0 of Okhttp
+
 ## Version 0.9.2
 
 03-27-2015
