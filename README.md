@@ -1,8 +1,6 @@
 # Android SDK 0.9.3 BETA
 
-Our Android SDK is currently in private beta. We are confident of its stability, however please be aware there is still some risk. This also means we may have frequent, small updates. We’ll attempt to keep these updates as easy as possible, though some changes may require you to update the integration in your app.
-
-If you would like to be included in the next round of this beta, please email us at `brian.donohue@intercom.mail.intercom.io`.
+Our Android SDK is now in public beta. We are confident of its stability, however please be aware there is still some risk. As it's in beta, we may release frequent, small updates. We’ll attempt to keep these updates as easy as possible, though some changes may require you to update the integration in your app.
 
 ## Supported versions
 Supports Android 2.3 (API 9) for data only calls and 4.0.3 (API 15) and above for the messaging functionality
