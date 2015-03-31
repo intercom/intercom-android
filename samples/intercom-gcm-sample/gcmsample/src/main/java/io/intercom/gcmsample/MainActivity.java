@@ -23,7 +23,8 @@ import com.google.android.gms.gcm.GoogleCloudMessaging;
 
 import java.io.IOException;
 
-import intercom.intercomsdk.Intercom;
+import io.intercom.android.sdk.Intercom;
+import io.intercom.android.sdk.identity.Registration;
 
 /**
  * ------------------------------------------------------------------------------------------------
@@ -33,8 +34,8 @@ import intercom.intercomsdk.Intercom;
  * Setting Up
  * ------------------------------------------------------------------------------------------------
  * This is a sample application to help with Intercom Android GCM setup
- * You will need to add your Api Key, App Id, and GCM sender Id
- * You will also need to add either an email or user id (THIS USER WILL BE REGISTERED IN YOUR APP)
+ * You will need to add your Api Key, App Id i nthe SampleApplication file
+ * You will also need to change the GCM sender Id and add either an email or user id (THIS USER WILL BE REGISTERED IN YOUR APP)
  * If you have enabled secure mode you will need to provide hmac and data
  * ------------------------------------------------------------------------------------------------
  * Usage
@@ -53,30 +54,32 @@ import intercom.intercomsdk.Intercom;
  * ------------------------------------------------------------------------------------------------
  */
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
-    //CHANGE THESE VALUES
-    private final String YOUR_API_KEY = "<INSERT_YOUR_APIKEY>";
-    private final String YOUR_APP_ID = "<INSERT_YOUR_APPID>";
-    private final String YOUR_SENDER_ID = "<INSERT YOUR GCM SENDER ID>";
+    //----------------------------------------------------------------------------------------------
+    //MAKE SURE YOU GO TO THE SampleApplication TO CHANGE APIKEY AND APPID
+    //----------------------------------------------------------------------------------------------
+    //CHANGE THIS VALUE
+    private static final String YOUR_SENDER_ID = "<YOUR_SENDER_ID>";
 
     //YOU MUST USE ONE OF THESE TO CREATE A SESSION
-    private final String YOUR_EMAIL = "";
-    private final String YOUR_USER_ID = "";
+    private static final String YOUR_EMAIL = "";
+    private static final String YOUR_USER_ID = "";
 
     //IF YOU USE SECURE MODE YOU WILL NEED TO INCLUDE H_MAC AND DATA
     //I WOULD TAKE THE VALUES FROM YOUR ACTUAL APP
-    private final String YOUR_HMAC = "";
-    private final String YOUR_DATA = "";
+    private static final String YOUR_HMAC = "";
+    private static final String YOUR_DATA = "";
+
+    private static final String GCM_DETAILS = "gcmDetails";
+
+    private static final String PROPERTY_REG_ID = "registration_id";
+    private static final String PROPERTY_APP_VERSION = "app_version";
+
+    //used for retrying a failed gcm registration
+    private static final long MAX_RETRY = 80000;
+    private static long retryTime = 10000;
 
     private GoogleCloudMessaging gcm;
     private String regId;
-
-    private final String GCM_DETAILS = "gcmDetails";
-    private final String PROPERTY_REG_ID = "registration_id";
-    private final String PROPERTY_APP_VERSION = "app_version";
-
-    //used for retrying a failed gcm registration
-    private final long MAX_RETRY = 80000;
-    private long retryTime = 10000;
 
     private Button registerButton;
     private TextView registrationStatus;
@@ -95,13 +98,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
         registrationStatus = (TextView) findViewById(R.id.status);
 
-        Intercom.initialize(this);
-
         //if you have provided a hmac and data try begin secure session
         if (!TextUtils.isEmpty(YOUR_HMAC) && !TextUtils.isEmpty(YOUR_DATA)) {
-            Intercom.setApiKey(YOUR_API_KEY, YOUR_APP_ID, YOUR_DATA, YOUR_HMAC);
-        } else {
-            Intercom.setApiKey(YOUR_API_KEY, YOUR_APP_ID);
+            Intercom.client().setSecureMode(YOUR_HMAC, YOUR_DATA);
         }
 
         //if we have stored regId we can try to handle the intent data
@@ -111,31 +110,24 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             //pass us the data of the intent and if it is an intercom gcm intent
             //we will store the conversation id and open the sdk when it is prepared
             //there may be a short wait in the current version, this will not exist in v1.0
-            Intercom.handleIntercomPush(getIntent().getData());
+            Intercom.client().openGCMMessage(getIntent().getData());
             //disable the register button
             registerButton.setEnabled(false);
         }
     }
 
     @Override public void onClick(View v) {
-        //if you have provided a user id begin session with it, otherwise we will use email
+        //if you have provided a user id register user with it, otherwise we will use email
         if (!TextUtils.isEmpty(YOUR_USER_ID)) {
-            Intercom.beginSessionWithUserId(YOUR_USER_ID, this, new Intercom.IntercomEventListener() {
-                @Override public void onComplete(String s) {
-                    registerButton.setEnabled(false);
-                    setUpPush();
-                }
-            });
+            Intercom.client().registerIdentifiedUser(new Registration().withUserId(YOUR_USER_ID));
         } else if (!TextUtils.isEmpty(YOUR_EMAIL)) {
-            Intercom.beginSessionWithEmail(YOUR_EMAIL, new Intercom.IntercomEventListener() {
-                @Override public void onComplete(String s) {
-                    registerButton.setEnabled(false);
-                    setUpPush();
-                }
-            });
+            Intercom.client().registerIdentifiedUser(new Registration().withEmail(YOUR_EMAIL));
         } else {
             Log.d("REGISTRATION_ERROR", "No email or user id");
         }
+
+        registerButton.setEnabled(false);
+        setUpPush();
     }
 
     @Override
@@ -148,7 +140,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_intercom) {
-            Intercom.presentMessageViewAsConversationsList(true);
+            Intercom.client().displayConversationsList();
         }
         return super.onOptionsItemSelected(item);
     }
@@ -272,7 +264,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     private void sendRegistrationIdToBackend(String regId) {
         //enable push with your registration id, the package name and an app icon
-        Intercom.enablePush(regId, "io.intercom.push-sample", R.mipmap.ic_launcher);
+        Intercom.client().setupGCM(regId, R.mipmap.ic_launcher);
     }
     //==========================
     // endregion

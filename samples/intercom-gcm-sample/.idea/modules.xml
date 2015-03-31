@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gcmsample/gcmsample.iml" filepath="$PROJECT_DIR$/gcmsample/gcmsample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/intercom-gcm-sample.iml" filepath="$PROJECT_DIR$/intercom-gcm-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/intercom-sdk-0.9.3/intercom-sdk-0.9.3.iml" filepath="$PROJECT_DIR$/intercom-sdk-0.9.3/intercom-sdk-0.9.3.iml" />
+    </modules>
+  </component>
+</project>
+

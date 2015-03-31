@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="intercom_color">#0288d1</color>
+    <color name="intercom_color_pressed">#0066c0</color>
+    <color name="intercom_color_disabled">#aaaaaa</color>
+</resources>

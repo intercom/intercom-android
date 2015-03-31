@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Intercom Sample</string>
+    <string name="title_activity_main">Intercom Android Studio Sample</string>
+
+    <string name="register_button">Register</string>
+    <string name="intercom">Intercom Messenger</string>
+</resources>
