@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/welcome_icon"
-    android:layout_width="40dp"
-    android:layout_height="40dp"
-    android:layout_gravity="center"
-    android:layout_marginBottom="10dp"
-    android:src="@drawable/intercomsdk_oval_35b" /><!-- From: file:/Users/henry/Android/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_welcome_message_icon.xml -->

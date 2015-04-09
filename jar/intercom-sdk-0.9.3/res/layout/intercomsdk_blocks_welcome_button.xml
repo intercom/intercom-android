@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center"
-    android:layout_marginBottom="10dp"
-    android:textSize="15sp" /><!-- From: file:/Users/henry/Android/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_blocks_welcome_button.xml -->

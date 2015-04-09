@@ -1,6 +1,6 @@
 package io.intercom.eclipsesample;
 
-import intercom.intercomsdk.Intercom;
+import io.intercom.android.sdk.Intercom;
 import android.app.Application;
 
 public class SampleApplication extends Application {

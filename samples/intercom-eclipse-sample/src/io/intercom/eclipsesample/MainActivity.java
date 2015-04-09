@@ -1,9 +1,11 @@
 package io.intercom.eclipsesample;
 
-import intercom.intercomsdk.Intercom;
-import intercom.intercomsdk.identity.Registration;
-import android.support.v7.app.ActionBarActivity;
+import io.intercom.android.sdk.Intercom;
+import io.intercom.android.sdk.identity.Registration;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
