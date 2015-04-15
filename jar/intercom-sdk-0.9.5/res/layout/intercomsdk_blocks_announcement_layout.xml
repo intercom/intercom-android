@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:background="@drawable/intercomsdk_admin_cell_bg"
+    android:orientation="vertical"
+    android:paddingBottom="32dp"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:paddingTop="38dp" /><!-- From: file:/Users/henry/Android/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_blocks_announcement_layout.xml -->
