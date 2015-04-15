@@ -1,5 +1,13 @@
 # Change Log
 
+## Version 0.9.5
+
+04-15-2015
+* The SDK now logs any API errors as well as the HTTP response status code received for errors
+* Scrolling inside a conversation was a little janky, we've improved it. Specifically scrolling to the end of new replies and some general improvements
+* Fixed a crash when our service was restarted unexpectedly
+* Fixed an issue that could cause session counts to be incremented by one incorrectly in some cases
+
 ## Version 0.9.4
 
 04-08-2015

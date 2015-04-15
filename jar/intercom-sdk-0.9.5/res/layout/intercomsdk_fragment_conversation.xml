@@ -1,0 +1,160 @@
+<RelativeLayout
+    android:id="@+id/composer_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/intercomsdk_background_grey"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustResize"
+    tools:context=".Fragments.ComposerFragment">
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/intercomsdk_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@color/intercomsdk_white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/inbox_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:background="@android:color/transparent"
+                    android:padding="10dp"
+                    android:src="@drawable/intercomsdk_inbox_button_selector"
+                    tools:ignore="ContentDescription"/>
+
+                <Button
+                    android:id="@+id/unread_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:layout_alignTop="@+id/inbox_button"
+                    android:layout_marginLeft="-16dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@+id/inbox_button"
+                    android:background="@drawable/intercomsdk_unread_shape"
+                    android:ellipsize="end"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:minWidth="16dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:textColor="@color/intercomsdk_white"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/conversation_title_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="10"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/intercomsdk_conversation_title_colour"
+                android:textSize="18sp"
+                android:textStyle="normal"/>
+
+            <ImageButton
+                android:id="@+id/close_composer_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="6dp"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:src="@drawable/intercomsdk_close_button_selector"
+                tools:ignore="ContentDescription"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/intercomsdk_progress_wheel"/>
+    </LinearLayout>
+
+    <io.intercom.android.sdk.views.ConversationListView
+        android:id="@+id/conversation_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/composer_input_view"
+        android:layout_below="@+id/title_layout"
+        android:background="@android:color/transparent"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:dividerHeight="4dp"
+        android:listSelector="@android:color/transparent"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"/>
+
+    <TextView
+        android:id="@+id/pill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/intercomsdk_rounded_toast"
+        android:textColor="@android:color/white"
+        android:text="@string/intercomsdk_pill_text"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_above="@+id/composer_input_view"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/bottom_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_above="@+id/composer_input_view"
+        android:background="@drawable/intercomsdk_bottom_shadow"
+        tools:ignore="ContentDescription"/>
+
+    <include
+        android:id="@+id/composer_input_view"
+        layout="@layout/intercomsdk_composer_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/title_layout"
+        android:background="@drawable/intercomsdk_top_shadow"/>
+</RelativeLayout><!-- From: file:/Users/henry/Android/android-sdk/intercomsdk/src/main/res/layout/intercomsdk_fragment_conversation.xml -->

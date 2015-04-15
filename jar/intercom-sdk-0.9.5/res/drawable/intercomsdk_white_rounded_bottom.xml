@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="16dp"
+    android:insetRight="16dp">
+    <shape>
+        <solid android:color="@color/intercomsdk_white" />
+        <corners
+            android:bottomLeftRadius="2dp"
+            android:bottomRightRadius="2dp"
+            android:radius="1dp"
+            android:topLeftRadius="0dp"
+            android:topRightRadius="0dp" />
+    </shape>
+</inset><!-- From: file:/Users/henry/Android/android-sdk/intercomsdk/src/main/res/drawable/intercomsdk_white_rounded_bottom.xml -->
