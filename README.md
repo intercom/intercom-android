@@ -7,7 +7,7 @@ Supports Android 2.3 (API 9) for data only calls and 4.0.3 (API 15) and above fo
 
 ## Set up
 
-A full guide to integrating the Intercom Android SDK with your app is available (here)[http://docs.intercom.io/6025-Install-on-your-mobile-product/install-the-intercom-android-sdk]
+A full guide to integrating the Intercom Android SDK with your app is available [here](http://docs.intercom.io/6025-Install-on-your-mobile-product/install-the-intercom-android-sdk)
 
 ### remote dependency
 
