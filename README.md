@@ -18,6 +18,7 @@ compile 'com.android.support:support-v4:22.0.0'
 compile 'com.google.code.gson:gson:2.3'
 compile 'com.squareup:otto:1.3.6'
 compile 'com.squareup.okhttp:okhttp:2.3.0'
+compile 'com.squareup.okhttp:okhttp-ws:2.3.0'
 compile 'com.squareup.retrofit:retrofit:1.9.0'
 compile 'com.squareup.picasso:picasso:2.5.2'
 compile 'com.google.android.gms:play-services-gcm:7.0.0’
