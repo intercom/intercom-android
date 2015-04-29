@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_interpolator"
+    android:shareInterpolator="false"
+    android:fillAfter="true" >
+    <alpha
+        android:duration="@dimen/intercomsdk_preview_duration"
+        android:startOffset="@dimen/intercomsdk_preview_offset"
+        android:fromAlpha="0"
+        android:toAlpha="1"/>
+    <scale
+        android:duration="@dimen/intercomsdk_preview_duration"
+        android:startOffset="@dimen/intercomsdk_preview_offset"
+        android:fillAfter="true"
+        android:fromXScale="@dimen/intercomsdk_preview_start_scale"
+        android:fromYScale="@dimen/intercomsdk_preview_start_scale"
+        android:toXScale="1.0"
+        android:toYScale="1.0"
+        android:pivotX="50%"
+        android:pivotY="50%"/>
+    <translate
+        android:duration="@dimen/intercomsdk_preview_duration"
+        android:startOffset="@dimen/intercomsdk_preview_offset"
+        android:fromXDelta="@dimen/intercomsdk_preview_start_position"
+        android:fromYDelta="0"
+        android:toXDelta="0"
+        android:toYDelta="0"/>
+
+    <alpha
+        android:duration="@dimen/intercomsdk_preview_hide_duration"
+        android:startOffset="@dimen/intercomsdk_preview_hide_offset"
+        android:fromAlpha="1"
+        android:toAlpha="0"/>
+    <scale
+        android:duration="@dimen/intercomsdk_preview_hide_duration"
+        android:startOffset="@dimen/intercomsdk_preview_hide_offset"
+        android:fillAfter="true"
+        android:fromXScale="1"
+        android:fromYScale="1"
+        android:toXScale="@dimen/intercomsdk_preview_start_scale"
+        android:toYScale="@dimen/intercomsdk_preview_start_scale"
+        android:pivotX="50%"
+        android:pivotY="50%"/>
+    <translate
+        android:duration="@dimen/intercomsdk_preview_hide_duration"
+        android:startOffset="@dimen/intercomsdk_preview_hide_offset"
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:toXDelta="@dimen/intercomsdk_preview_start_position"
+        android:toYDelta="0"/>
+</set>
+<!-- From: file:/Users/dalecantwell/AndroidStudioProjects/android-sdk/intercomsdk/src/main/res/anim/intercomsdk_chathead_text_notification_left_aligned_anim.xml -->

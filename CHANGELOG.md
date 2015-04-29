@@ -1,5 +1,25 @@
 # Change Log
 
+## Version 0.9.6
+
+04-29-2015
+* Added soundeffects
+* Removed GCM permissions so that now developers have the option of adding them only if the want * to register for push notifications
+*    <!-- GCM REQUIRED PERMISSIONS -->
+*    <uses-permission android:name="android.permission.WAKE_LOCK" />
+*    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+*    <uses-permission android:name="android.permission.VIBRATE"/>
+*
+*    <!-- GCM Optional PERMISSIONS -->
+*    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+*    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+* Fixed [issue#54](https://github.com/intercom/intercom-android/issues/54) Updated action bar visuals
+* Fixed a bug where a conversation replied to by a user would update it's summary in the inbox but not it's position, related to [issue#58](https://github.com/intercom/intercom-android/issues/58)
+* Fixed [issue#59](https://github.com/intercom/intercom-android/issues/59)
+* Fixed [issue#60](https://github.com/intercom/intercom-android/issues/60)
+* Fixed [issue#65](https://github.com/intercom/intercom-android/issues/65) which was causing a crash
+* Fixed [issue#67](https://github.com/intercom/intercom-android/issues/67) by removing metadata from the offending PNGs
+
 ## Version 0.9.5
 
 04-15-2015
