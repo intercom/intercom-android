@@ -9,6 +9,36 @@ Supports Android 2.3 (API 9) for data only calls and 4.0.3 (API 15) and above fo
 
 A full guide to integrating the Intercom Android SDK with your app is available [here](http://docs.intercom.io/6025-Install-on-your-mobile-product/install-the-intercom-android-sdk)
 
+### permissions
+
+We include two permissions by default:
+```
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+```
+[INTERNET](http://developer.android.com/reference/android/Manifest.permission.html#INTERNET) Allows us to make network requests.  
+[SYSTEM_ALERT_WINDOW](http://developer.android.com/reference/android/Manifest.permission.html#SYSTEM_ALERT_WINDOW) Used to draw the Android SDK ontop of the host application
+
+As of 0.9.6 GCM permissions are now the responsibility of the host application.
+
+```
+    <!-- GCM REQUIRED PERMISSIONS -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- GCM Optional PERMISSIONS -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+```
+The required permissions are:  
+[WAKE_LOCK](http://developer.android.com/reference/android/Manifest.permission.html#WAKE_LOCK)  
+[RECEIVE](https://developer.android.com/google/gcm/client.html#manifest)  
+[VIBRATE](http://developer.android.com/reference/android/Manifest.permission.html#VIBRATE)  
+
+Optional permissions are used to generate a more reliable device id. They are:  
+[READ_PHONE_STATE](http://developer.android.com/reference/android/Manifest.permission.html#READ_PHONE_STATE) Allows us to generate a device id using TelephonyManager.getDeviceId();  
+[ACCESS_WIFI_STATE](http://developer.android.com/reference/android/Manifest.permission.html#ACCESS_WIFI_STATE) Allows us to generate a mac id using WifiInfo.getMacAddress()  
+
 ### remote dependency
 
 - These are the dependencies we use in the SDK
