@@ -1,5 +1,15 @@
 # Change Log
 
+## Version 0.9.7
+
+05-01-2015
+* The Intercom SDK no longer has any functionality on devices below API level 15 
+* The Intercom SDK now supports real-time messaging
+* Many visual tweaks and improvements
+* Push notifications are now high priority on devices that support notification priority
+* Fixed some issues where push notifications would be rendered when the app was open
+* Resolved [issue#69](https://github.com/intercom/intercom-android/issues/69), a crash on Gingerbread devices
+
 ## Version 0.9.6
 
 04-29-2015
