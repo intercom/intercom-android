@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+          android:exitFadeDuration="@android:integer/config_mediumAnimTime">
+    <item android:drawable="@color/intercomsdk_background_grey"
+          android:state_focused="true"/>
+    <item android:drawable="@color/intercomsdk_background_grey"
+          android:state_pressed="true"/>
+    <item android:drawable="@android:color/transparent"
+          android:state_focused="false"
+          android:state_pressed="false"/>
+</selector>
+<!-- From: file:/Users/henry/Intercom/android/android-sdk/intercomsdk/src/main/res/drawable/intercomsdk_action_item_selector.xml -->

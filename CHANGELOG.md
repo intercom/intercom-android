@@ -1,5 +1,12 @@
 # Change Log
 
+## Version 0.9.8
+
+05-11-2015
+* Many small UI and visual tweaks
+* Fixed a bug that caused a converation loaded from a push notification to not display the unread conversations counter in the top left
+* Fixed a bug that could cause the loading progress dialog in the conversations list to not be correctly dismissed
+
 ## Version 0.9.7
 
 05-01-2015

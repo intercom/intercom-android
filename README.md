@@ -1,4 +1,4 @@
-# Android SDK 0.9.7 BETA
+# Android SDK 0.9.8 BETA
 
 Our Android SDK is now in public beta. We are confident of its stability, however please be aware there is still some risk. As it's in beta, we may release frequent, small updates. We'll attempt to keep these updates as easy as possible, though they may require you to update the integration in your app.
 
