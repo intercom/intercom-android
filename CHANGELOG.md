@@ -1,5 +1,10 @@
 # Change Log
 
+## Version 1.0.0
+
+05-12-2015
+* Small UI and visual tweaks
+
 ## Version 0.9.8
 
 05-11-2015
