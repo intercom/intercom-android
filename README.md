@@ -1,7 +1,7 @@
 # Intercom for Android 1.0.0
 
 ## Supported versions
-Targets Android 2.3 (API 9) but *only* 4.0.3 (API 15) and above have functionality.
+Targets Android 2.3 (API 9) but *only* 4.0.3 (API 15) and above have tracking and messaging functionality.
 
 ## Set up
 
