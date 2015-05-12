@@ -1,23 +1,23 @@
-# Android SDK 0.9.8 BETA
+# Intercom for Android 0.9.8 BETA
 
-Our Android SDK is now in public beta. We are confident of its stability, however please be aware there is still some risk. As it's in beta, we may release frequent, small updates. We'll attempt to keep these updates as easy as possible, though they may require you to update the integration in your app.
+Intercom for Android is now in public beta. We are confident of its stability, however please be aware there is still some risk. As it's in beta, we may release frequent, small updates. We'll attempt to keep these updates as easy as possible, though they may require you to update the integration in your app.
 
 ## Supported versions
 Targets Android 2.3 (API 9) but *only* 4.0.3 (API 15) and above have functionality.
 
 ## Set up
 
-A full guide to integrating the Intercom Android SDK with your app is available [here](http://docs.intercom.io/6025-Install-on-your-mobile-product/install-the-intercom-android-sdk)
+A full guide to integrating Intercom for Android with your app is available [here](http://docs.intercom.io/Install-on-your-mobile-product/installing-intercom-for-android)
 
-### permissions
+### Permissions
 
 We include two permissions by default:
 ```
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 ```
-[INTERNET](http://developer.android.com/reference/android/Manifest.permission.html#INTERNET) Allows us to make network requests.  
-[SYSTEM_ALERT_WINDOW](http://developer.android.com/reference/android/Manifest.permission.html#SYSTEM_ALERT_WINDOW) Used to draw the Android SDK ontop of the host application
+[INTERNET](http://developer.android.com/reference/android/Manifest.permission.html#INTERNET) allows us to make network requests.  
+[SYSTEM_ALERT_WINDOW](http://developer.android.com/reference/android/Manifest.permission.html#SYSTEM_ALERT_WINDOW) is used to draw the Intercom for Android on top of the host application
 
 As of 0.9.6 GCM permissions are now the responsibility of the host application.
 
@@ -39,9 +39,9 @@ Optional permissions are used to generate a more reliable device id. They are:
 [READ_PHONE_STATE](http://developer.android.com/reference/android/Manifest.permission.html#READ_PHONE_STATE) Allows us to generate a device id using TelephonyManager.getDeviceId();  
 [ACCESS_WIFI_STATE](http://developer.android.com/reference/android/Manifest.permission.html#ACCESS_WIFI_STATE) Allows us to generate a mac id using WifiInfo.getMacAddress()  
 
-### remote dependency
+### Remote dependencies
 
-- These are the dependencies we use in the SDK
+- These are the dependencies used in Intercom for Android
 
 ```
 compile 'com.android.support:support-v4:22.0.0'
@@ -56,15 +56,15 @@ compile 'com.google.android.gms:play-services-gcm:7.0.0’
 
 also the compileSdkVersion needs to be 22.
 
-##How should I use the Intercom SDK in my app?
-Broadly speaking, there are three types of apps that the Intercom SDK will work in.
+##How should I use Intercom for Android in my app?
+Broadly speaking, there are three types of apps that Intercom for Android will work in.
 
 1. Apps that only have registered users, like Facebook, Instagram or Slack. Your users have to log in straight away in order to use your app. [Show me how.](https://github.com/intercom/intercom-android#my-app-only-has-logged-in-users)
 2. Apps that never log users in, like Angry Birds or a flashlight app. Your users never have to log in to use your app. [Show me how.](https://github.com/intercom/intercom-android#my-apps-users-never-log-in)
 3. Apps that support both logged in and logged out users, like Google Maps or Youtube. [Show me how.](https://github.com/intercom/intercom-android#my-app-has-logged-in-and-logged-out-users)
 
 ### Initialize Intercom
-No matter what category of app you have, you'll need your Intercom app id and the Android SDK API key that can be found on the [Intercom App Settings](https://app.intercom.io/) page in the API keys section. Once you've found those keys, initialize Intercom by calling the following in the `oncreate()` method of your application class:
+No matter what category of app you have, you'll need your Intercom app id and the Android API key that can be found on the [Intercom App Settings](https://app.intercom.io/) page in the API keys section. Once you've found those keys, initialize Intercom by calling the following in the `oncreate()` method of your application class:
 
 ```Java
 Intercom.initialize(getApplicationContext(), "your api key", "your app id");
@@ -97,12 +97,12 @@ if(loggedIn){
 }
 ```
 		
-3. Finally, when users eventually want to log out of your app, we should clear the Intercom SDK's caches so that when they log back in again, everything works perfectly. In your logout code, simply call `Intercom.client().reset();` like so:
+3. Finally, when users eventually want to log out of your app, we should clear the Intercom library's caches so that when they log back in again, everything works perfectly. In your logout code, simply call `Intercom.client().reset();` like so:
 
 ```
 private void logout(){
 	...
-	// This resets the Intercom SDK's cache of your user's identity and wipes the slate clean.
+	// This resets the Intercom library's cache of your user's identity and wipes the slate clean.
 	Intercom.client().reset();
 }
 ```		
@@ -147,11 +147,11 @@ if(loggedIn){
 }
 ```
 		
-3. Finally, when users eventually want to log out of your app, we should clear the Intercom SDK's caches so that when they log back in again, everything works perfectly. In your logout code, simply call `Intercom.client().reset();` like so:
+3. Finally, when users eventually want to log out of your app, we should clear the Intercom library's caches so that when they log back in again, everything works perfectly. In your logout code, simply call `Intercom.client().reset();` like so:
 ```
 private void logout(){
 	...
-	// This resets the Intercom SDK's cache of your user's identity and wipes the slate clean.
+	// This resets the Intercom library's cache of your user's identity and wipes the slate clean.
 	Intercom.client().reset();
 
 	// Now that you have logged your user out and reset, you can register a new
@@ -160,18 +160,18 @@ private void logout(){
 }
 ```	
 
-###Tips on getting the best out of the SDK
+###Tips on getting the best out of Intercom for Android
 
 1.  **Do not use an email address as a `userId` as this field is unique and cannot be changed or updated later.** If you only have an `email` address, you can just register a user with that. 
-2. The Intercom SDK knows when your app is backgrounded and comes alive again, so all you need to do is register a type of user like the examples above and we'll do the rest.
+2. Intercom for Android knows when your app is backgrounded and comes alive again, so all you need to do is register a type of user like the examples above and we'll do the rest.
  
 ## How does the in-app messenger work?
 
-Intercom allows you to send messages to your users while also enabling your users send messages to you. If you have a dedicated button in your app that you wish to hook the new message composer up to, you can control Intercom's messaging UI via the `Intercom.client().dislplayMessageComposer();` and `Intercom.client().displayConversationList();` methods. More information on messaging with the Android SDK can be found [here](http://docs.intercom.io/using-the-android-sdk#messaging).
+Intercom allows you to send messages to your users while also enabling your users send messages to you. If you have a dedicated button in your app that you wish to hook the new message composer up to, you can control Intercom's messaging UI via the `Intercom.client().dislplayMessageComposer();` and `Intercom.client().displayConversationList();` methods. More information on messaging with Intercom for Android can be found [here](http://docs.intercom.io/Install-on-your-mobile-product/configuring-intercom-for-android#messaging).
 
 ## What about events, push notifications, company and user data?
 
-The Android SDK has support for all these things. For full details please read our [documentation](http://docs.intercom.io/using-the-android-sdk).
+Intercom for Android has support for all these things. For full details please read our [documentation](http://docs.intercom.io/Install-on-your-mobile-product/configuring-intercom-for-android).
  
 ## Documentation and getting started guides
  
