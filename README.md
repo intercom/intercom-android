@@ -1,6 +1,4 @@
-# Intercom for Android 0.9.8 BETA
-
-Intercom for Android is now in public beta. We are confident of its stability, however please be aware there is still some risk. As it's in beta, we may release frequent, small updates. We'll attempt to keep these updates as easy as possible, though they may require you to update the integration in your app.
+# Intercom for Android 1.0.0
 
 ## Supported versions
 Targets Android 2.3 (API 9) but *only* 4.0.3 (API 15) and above have functionality.
@@ -44,14 +42,14 @@ Optional permissions are used to generate a more reliable device id. They are:
 - These are the dependencies used in Intercom for Android
 
 ```
-compile 'com.android.support:support-v4:22.0.0'
-compile 'com.google.code.gson:gson:2.3'
-compile 'com.squareup:otto:1.3.6'
+compile 'com.android.support:support-v4:22.1.1'
+compile 'com.google.code.gson:gson:2.3.1'
+compile 'com.squareup:otto:1.3.7'
 compile 'com.squareup.okhttp:okhttp:2.3.0'
 compile 'com.squareup.okhttp:okhttp-ws:2.3.0'
 compile 'com.squareup.retrofit:retrofit:1.9.0'
 compile 'com.squareup.picasso:picasso:2.5.2'
-compile 'com.google.android.gms:play-services-gcm:7.0.0’
+compile 'com.google.android.gms:play-services-gcm:7.3.0’
 ```
 
 also the compileSdkVersion needs to be 22.

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="IntercomSDK_LightTheme" parent="android:Theme.Light">
+        <item name="android:editTextStyle">@style/IntercomSDK_EditText</item>
+    </style>
+
+    <style name="IntercomSDK_LightTheme.Dialog" parent="android:Theme.Dialog">
+        <item name="android:editTextStyle">@style/IntercomSDK_EditText</item>
+    </style>
+
+    <style name="IntercomSDK_EditText" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/intercomsdk_themed_edit_text</item>
+    </style>
+
+    <style name="IntercomSDK_PanelTheme">
+        <!-- other option-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+</resources>
