@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 22
-    buildToolsVersion "22.0.0"
+    buildToolsVersion "22.0.1"
 
     defaultConfig {
         applicationId "io.intercom.androidstudiosample"
@@ -27,9 +27,9 @@ repositories {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.android.support:appcompat-v7:22.1.1'
 
-    compile ('io.intercom.android:intercom-sdk:0.9.3@aar') {
+    compile('io.intercom.android:intercom-sdk:1.0.0@aar') {
         transitive = true
     }
 }

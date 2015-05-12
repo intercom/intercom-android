@@ -4,8 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/androidstudiosample/androidstudiosample.iml" filepath="$PROJECT_DIR$/androidstudiosample/androidstudiosample.iml" />
       <module fileurl="file://$PROJECT_DIR$/intercom-androidstudio-sample.iml" filepath="$PROJECT_DIR$/intercom-androidstudio-sample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/intercom-sdk-0.9.3/intercom-sdk-0.9.3.iml" filepath="$PROJECT_DIR$/intercom-sdk-0.9.3/intercom-sdk-0.9.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/intercom-sdk/intercom-sdk.iml" filepath="$PROJECT_DIR$/intercom-sdk/intercom-sdk.iml" />
     </modules>
   </component>
 </project>
-

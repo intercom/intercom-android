@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="intercom-sdk-unspecified">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/gcmsample/build/intermediates/exploded-aar/intercom-gcm-sample/intercom-sdk/unspecified/res" />
+      <root url="jar://$PROJECT_DIR$/gcmsample/build/intermediates/exploded-aar/intercom-gcm-sample/intercom-sdk/unspecified/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/gcmsample/build/intermediates/exploded-aar/intercom-gcm-sample/intercom-sdk/unspecified/jars/libs/nexus-client-android-1.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/gcmsample/build/intermediates/exploded-aar/intercom-gcm-sample/intercom-sdk/unspecified/jars/libs/intercom-blocks-1.0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

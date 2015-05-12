@@ -1,1 +1,1 @@
-include ':androidstudiosample', ':intercom-sdk-0.9.3'
+include ':androidstudiosample'
