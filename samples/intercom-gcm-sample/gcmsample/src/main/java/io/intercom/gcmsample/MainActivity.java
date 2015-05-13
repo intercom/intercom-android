@@ -86,8 +86,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     private SharedPreferences prefs;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -130,15 +129,13 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         setUpPush();
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    @Override public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_main, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    @Override public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_intercom) {
             Intercom.client().displayConversationsList();
         }
@@ -213,8 +210,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
     private void registerInBackground() {
         new AsyncTask<Void, Void, Boolean>() {
-            @Override
-            protected Boolean doInBackground(Void... params) {
+            @Override protected Boolean doInBackground(Void... params) {
                 String msg = "";
                 Boolean result = false;
 
@@ -252,8 +248,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 return result;
             }
 
-            @Override
-            protected void onPostExecute(Boolean success) {
+            @Override protected void onPostExecute(Boolean success) {
                 if (success) {
                     registrationStatus.setTextColor(getResources().getColor(android.R.color.holo_green_dark));
                     registrationStatus.setText(getResources().getString(R.string.gcm_status_enabled));
