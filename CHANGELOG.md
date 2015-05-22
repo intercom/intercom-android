@@ -1,5 +1,14 @@
 # Change Log
 
+## Version 1.0.1
+
+22-05-2015
+* You can now change the Android API key used in an app without having to clear the local cache of your app, eg switching between a test app and your real app. This doesn't allow changing of the API key dynamically as an app is running.
+* Fixed a bug where an avatar that was a gif would crash
+* Fixed a bug where we were being too agrgressive with user attribute validation and stopping some correct attributes from being sent to Intercom
+* Remade our assets for lower dpi phones, they look better now
+* Small UI improvements
+
 ## Version 1.0.0
 
 05-12-2015
