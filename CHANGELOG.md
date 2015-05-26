@@ -1,5 +1,10 @@
 # Change Log
 
+## Version 1.0.2
+
+26-05-2015
+* Fixed a crash caused by messages containing a list with some HTML content in the list items
+
 ## Version 1.0.1
 
 22-05-2015
