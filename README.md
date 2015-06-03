@@ -1,4 +1,4 @@
-# Intercom for Android 1.0.2
+# Intercom for Android 1.0.3
 
 ## Supported versions
 Targets Android 2.3 (API 9) but *only* 4.0.3 (API 15) and above have tracking and messaging functionality.
@@ -42,14 +42,14 @@ Optional permissions are used to generate a more reliable device id. They are:
 - These are the dependencies used in Intercom for Android
 
 ```
-compile 'com.android.support:support-v4:22.1.1'
+compile 'com.android.support:support-v4:22.2.0'
 compile 'com.google.code.gson:gson:2.3.1'
 compile 'com.squareup:otto:1.3.7'
-compile 'com.squareup.okhttp:okhttp:2.3.0'
-compile 'com.squareup.okhttp:okhttp-ws:2.3.0'
+compile 'com.squareup.okhttp:okhttp:2.4.0'
+compile 'com.squareup.okhttp:okhttp-ws:2.4.0'
 compile 'com.squareup.retrofit:retrofit:1.9.0'
 compile 'com.squareup.picasso:picasso:2.5.2'
-compile 'com.google.android.gms:play-services-gcm:7.3.0’
+compile 'com.google.android.gms:play-services-gcm:7.5.0’
 ```
 
 also the compileSdkVersion needs to be 22.

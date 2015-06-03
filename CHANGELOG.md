@@ -1,5 +1,11 @@
 # Change Log
 
+## Version 1.0.3
+
+03-06-2015
+* Updated dependencies in the library: okhttp, okhttp-ws, support and play services libraries
+* Namedspaced custom XML attributes
+
 ## Version 1.0.2
 
 26-05-2015

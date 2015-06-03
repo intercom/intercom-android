@@ -21,7 +21,7 @@
     <color name="intercomsdk_semi_transparent">#55000000</color>
     <color name="intercomsdk_text_light_black">#455A64</color>
     <color name="intercomsdk_white">#FFFFFF</color>
-    <declare-styleable name="MaxSizeLinearLayout"><attr format="dimension" name="maxWidth"/><attr format="dimension" name="maxHeight"/></declare-styleable>
+    <declare-styleable name="MaxSizeLinearLayout"><attr format="dimension" name="intercomsdk_maxWidth"/><attr format="dimension" name="intercomsdk_maxHeight"/></declare-styleable>
     <!-- From: file:/Users/intercom/Agents/Android/Andy/work/13eea58ef8e9b2b2/intercomsdk/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="intercomsdk_action_item_width">50dp</dimen>
