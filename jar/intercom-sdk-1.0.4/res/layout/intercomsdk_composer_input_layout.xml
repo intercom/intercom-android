@@ -33,8 +33,9 @@
         android:layout_gravity="bottom"
         android:layout_marginBottom="12dp"
         android:layout_marginRight="16dp"
+        android:alpha="@dimen/intercomsdk_low_alpha"
         android:background="@android:color/transparent"
         android:src="@drawable/intercomsdk_icn_send"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,UnusedAttribute" />
 </LinearLayout>
 <!-- From: file:/Users/intercom/Agents/Android/Andy/work/13eea58ef8e9b2b2/intercomsdk/src/main/res/layout/intercomsdk_composer_input_layout.xml -->

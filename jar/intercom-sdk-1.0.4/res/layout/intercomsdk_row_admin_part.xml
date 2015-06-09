@@ -18,6 +18,7 @@
             android:layout_height="40dp"
             android:layout_gravity="bottom"
             android:contentDescription="@string/intercomsdk_accessibility_avatar"
+            android:layout_marginBottom="3dp"
             android:layout_marginRight="12dp"/>
 
         <LinearLayout

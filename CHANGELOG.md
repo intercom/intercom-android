@@ -1,5 +1,14 @@
 # Change Log
 
+## Version 1.0.4
+
+09-06-2015
+* Visual improvements for conversations that involve more than two people
+* Fixed a crash caused by the system passing null into our GcmIntentService
+* Fixed [issue#83](https://github.com/intercom/intercom-android/issues/83)
+* Fixed [issue#88](https://github.com/intercom/intercom-android/issues/88)
+
+
 ## Version 1.0.3
 
 03-06-2015

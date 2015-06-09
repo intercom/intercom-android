@@ -35,8 +35,10 @@
     <item format="float" name="intercomsdk_chathead_start_scale" type="dimen">0.6</item>
     <item format="float" name="intercomsdk_faded_alpha_is_typing" type="dimen">0.4</item>
     <item format="integer" name="intercomsdk_faded_is_typing_duration" type="dimen">200</item>
+    <item format="float" name="intercomsdk_full_alpha" type="dimen">1.0</item>
     <item format="float" name="intercomsdk_full_alpha_is_typing" type="dimen">1.0</item>
     <dimen name="intercomsdk_list_indentation">19dp</dimen>
+    <item format="float" name="intercomsdk_low_alpha" type="dimen">0.6</item>
     <item format="integer" name="intercomsdk_preview_duration" type="dimen">200</item>
     <item format="integer" name="intercomsdk_preview_hide_duration" type="dimen">50</item>
     <item format="integer" name="intercomsdk_preview_hide_offset" type="dimen">7000</item>
