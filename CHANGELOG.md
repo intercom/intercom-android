@@ -4,7 +4,7 @@
 
 01-07-2015
 * Users can now send attachments
-* Added new permissions for attahcments: EAD_EXTERNAL_STORAGE and MANAGE_DOCUMENTS
+* Added new permissions for attachments: EAD_EXTERNAL_STORAGE and MANAGE_DOCUMENTS
 * Users can expand and zoom images without leaving your app
 * Improved performance in conversations with many images
 * Split GCM related code into a separate module that is included by default but can be excluded if you don't require GCM
