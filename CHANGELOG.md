@@ -3,6 +3,11 @@
 ## Version 1.1.0
 
 01-07-2015
+* Catching exeption that sometimes gets thrown when app is backgrounded
+
+## Version 1.1.0
+
+01-07-2015
 * Users can now send attachments
 * Added new permissions for attachments: EAD_EXTERNAL_STORAGE and MANAGE_DOCUMENTS
 * Users can expand and zoom images without leaving your app
