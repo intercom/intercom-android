@@ -1,2 +1,0 @@
-configurations.create("default")
-artifacts.add("default", file('intercom-sdk-1.0.0.aar'))

@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/intercomsdk_row_selector">
+
+
+    <ImageView
+        android:id="@+id/avatarView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/intercomsdk_accessibility_avatar"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/avatarView"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toLeftOf="@+id/timeLabel"
+        android:layout_toRightOf="@+id/avatarView"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/intercomsdk_name"
+        android:textColor="@color/intercomsdk_text_light_black"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/timeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:singleLine="true"
+        android:textColor="@color/intercomsdk_light_grey_colour"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/timeLabel"
+        android:layout_toRightOf="@id/avatarView"
+        android:ellipsize="end"
+        android:lineSpacingExtra="2sp"
+        android:lines="2"
+        android:maxLines="2"
+        android:singleLine="false"
+        android:textColor="@color/intercomsdk_inbox_row_body_color"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:id="@+id/unreadImageView"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_alignBottom="@+id/description"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="16dp"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/cell_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignLeft="@id/name"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/intercomsdk_divider_grey"
+        tools:ignore="ContentDescription"/>
+
+</RelativeLayout><!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/layout/intercomsdk_inbox_row.xml -->

@@ -1,1 +1,1 @@
-include ':gcmsample', ':intercom-sdk'
+include ':gcmsample', ':intercom-sdk-gcm', ':intercom-sdk-base'

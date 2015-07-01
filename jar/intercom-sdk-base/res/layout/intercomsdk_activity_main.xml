@@ -1,0 +1,14 @@
+<LinearLayout
+    android:id="@+id/container_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/content_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+<!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/layout/intercomsdk_activity_main.xml -->

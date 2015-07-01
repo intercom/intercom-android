@@ -1,4 +1,4 @@
-# Intercom for Android 1.0.4
+# Intercom for Android 1.1.0
 
 ## Supported versions
 Targets Android 2.3 (API 9) but *only* 4.0.3 (API 15) and above have tracking and messaging functionality.
@@ -9,16 +9,19 @@ A full guide to integrating Intercom for Android with your app is available [her
 
 ### Permissions
 
-We include two permissions by default:
+We include these permissions by default:
 ```
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
 ```
 [INTERNET](http://developer.android.com/reference/android/Manifest.permission.html#INTERNET) allows us to make network requests.  
 [SYSTEM_ALERT_WINDOW](http://developer.android.com/reference/android/Manifest.permission.html#SYSTEM_ALERT_WINDOW) is used to draw the Intercom for Android on top of the host application
+[READ_EXTERNAL_STORAGE](http://developer.android.com/reference/android/Manifest.permission.html#READ_EXTERNAL_STORAGE) is used for attachments.
+[MANAGE_DOCUMENTS](http://developer.android.com/reference/android/Manifest.permission.html#MANAGE_DOCUMENTS) is used for attachments.
 
-As of 0.9.6 GCM permissions are now the responsibility of the host application.
-
+As of 1.1.0 GCM permissions are now included by default in the main package. If you do not wish to use GCM you can use the intercom-sdk-base package, for more details visit http://docs.intercom.io/Install-on-your-mobile-product/installing-intercom-for-android
 ```
     <!-- GCM REQUIRED PERMISSIONS -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -28,31 +31,34 @@ As of 0.9.6 GCM permissions are now the responsibility of the host application.
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 ```
-The required permissions are:  
+The GCM permissions are:  
 [WAKE_LOCK](http://developer.android.com/reference/android/Manifest.permission.html#WAKE_LOCK)  
 [RECEIVE](https://developer.android.com/google/gcm/client.html#manifest)  
-[VIBRATE](http://developer.android.com/reference/android/Manifest.permission.html#VIBRATE)  
-
-Optional permissions are used to generate a more reliable device id. They are:  
+[VIBRATE](http://developer.android.com/reference/android/Manifest.permission.html#VIBRATE)   
 [READ_PHONE_STATE](http://developer.android.com/reference/android/Manifest.permission.html#READ_PHONE_STATE) Allows us to generate a device id using TelephonyManager.getDeviceId();  
 [ACCESS_WIFI_STATE](http://developer.android.com/reference/android/Manifest.permission.html#ACCESS_WIFI_STATE) Allows us to generate a mac id using WifiInfo.getMacAddress()  
 
 ### Remote dependencies
 
-- These are the dependencies used in Intercom for Android
+- These are the dependencies used in Intercom for Android main module
 
 ```
-compile 'com.android.support:support-v4:22.2.0'
+compile 'com.android.support:support-v4:22.1.1'
 compile 'com.google.code.gson:gson:2.3.1'
 compile 'com.squareup:otto:1.3.7'
 compile 'com.squareup.okhttp:okhttp:2.4.0'
 compile 'com.squareup.okhttp:okhttp-ws:2.4.0'
 compile 'com.squareup.retrofit:retrofit:1.9.0'
 compile 'com.squareup.picasso:picasso:2.5.2'
-compile 'com.google.android.gms:play-services-gcm:7.5.0’
+compile 'com.google.android.gms:play-services-gcm:7.3.0’
 ```
-
 also the compileSdkVersion needs to be 22.
+
+- The base module does not require 
+```
+compile 'com.android.support:support-v4:22.1.1'
+compile 'com.google.android.gms:play-services-gcm:7.3.0’
+```
 
 ##How should I use Intercom for Android in my app?
 Broadly speaking, there are three types of apps that Intercom for Android will work in.

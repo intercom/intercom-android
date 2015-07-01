@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+     tools:targetApi="11"
+     android:ordering="sequentially">
+    <set>
+        <objectAnimator
+            android:duration="@dimen/intercomsdk_faded_is_typing_duration"
+            android:propertyName="alpha"
+            android:valueFrom="@dimen/intercomsdk_faded_alpha_is_typing"
+            android:valueTo="@dimen/intercomsdk_full_alpha_is_typing"
+            android:valueType="floatType"/>
+
+        <objectAnimator
+            android:duration="@dimen/intercomsdk_faded_is_typing_duration"
+            android:propertyName="scaleX"
+            android:valueFrom="@dimen/intercomsdk_scaled_down_is_typing"
+            android:valueTo="@dimen/intercomsdk_scaled_up_is_typing"
+            android:valueType="floatType"/>
+
+        <objectAnimator
+            android:duration="@dimen/intercomsdk_faded_is_typing_duration"
+            android:propertyName="scaleY"
+            android:valueFrom="@dimen/intercomsdk_scaled_down_is_typing"
+            android:valueTo="@dimen/intercomsdk_scaled_up_is_typing"
+            android:valueType="floatType"/>
+    </set>
+
+    <set>
+        <objectAnimator
+            android:duration="@dimen/intercomsdk_faded_is_typing_duration"
+            android:startOffset="1"
+            android:propertyName="alpha"
+            android:valueFrom="@dimen/intercomsdk_full_alpha_is_typing"
+            android:valueTo="@dimen/intercomsdk_faded_alpha_is_typing"
+            android:valueType="floatType"/>
+
+        <objectAnimator
+            android:duration="@dimen/intercomsdk_faded_is_typing_duration"
+            android:propertyName="scaleX"
+            android:valueFrom="@dimen/intercomsdk_scaled_up_is_typing"
+            android:valueTo="@dimen/intercomsdk_scaled_down_is_typing"
+            android:valueType="floatType"/>
+
+        <objectAnimator
+            android:duration="@dimen/intercomsdk_faded_is_typing_duration"
+            android:propertyName="scaleY"
+            android:valueFrom="@dimen/intercomsdk_scaled_up_is_typing"
+            android:valueTo="@dimen/intercomsdk_scaled_down_is_typing"
+            android:valueType="floatType"/>
+    </set>
+</set><!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/animator/intercomsdk_admin_is_typing.xml -->

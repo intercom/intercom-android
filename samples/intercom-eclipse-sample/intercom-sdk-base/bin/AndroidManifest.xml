@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.intercom.android.sdk"
+    android:versionCode="15"
+    android:versionName="1.1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Attachment Permission -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+
+    <application>
+        <activity
+            android:name="io.intercom.android.sdk.activities.MainActivity"
+            android:configChanges="screenSize|orientation"
+            android:launchMode="singleTop"
+            android:theme="@style/IntercomSDK_PanelTheme"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" />
+        <activity
+            android:name="io.intercom.android.sdk.attachments.AttachmentActivity"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/IntercomSDK_AttachmentTheme"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" />
+        <activity
+            android:name="io.intercom.android.sdk.conversation.lightbox.LightboxActivity"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/IntercomSDK_AttachmentTheme"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" />
+        <activity
+            android:name="io.intercom.android.sdk.activities.TestActivity"
+            android:exported="false" />
+
+        <service
+            android:name="io.intercom.android.sdk.preview.PreviewService"
+            android:enabled="false" />
+    </application>
+
+</manifest>

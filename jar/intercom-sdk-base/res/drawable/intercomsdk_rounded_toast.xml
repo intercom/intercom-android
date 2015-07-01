@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid
+        android:color="#cc000000">
+    </solid>
+    <padding
+        android:left="6dp"
+        android:top="6dp"
+        android:right="6dp"
+        android:bottom="6dp">
+    </padding>
+    <corners
+        android:radius="6dp">
+    </corners>
+</shape><!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/drawable/intercomsdk_rounded_toast.xml -->

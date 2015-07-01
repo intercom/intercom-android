@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/toast_layout_root"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="16dp"
+              android:background="@drawable/intercomsdk_rounded_toast" >
+
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:text="@string/intercomsdk_congratulations"
+              android:textStyle="bold"
+              android:textSize="16sp"
+              android:textColor="#FFF" />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingTop="6dp"
+              android:text="@string/intercomsdk_activated_key_message"
+              android:textColor="#FFF" />
+</LinearLayout><!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/layout/intercomsdk_onboarding_layout.xml -->

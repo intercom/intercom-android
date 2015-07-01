@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/input_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:cursorVisible="true"
+        android:hint="@string/intercomsdk_reply_to_conversation"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLines="8"
+        android:minHeight="56dp"
+        android:textColor="@color/intercomsdk_text_light_black"
+        android:textColorHint="@color/intercomsdk_light_grey_colour"
+        android:textCursorDrawable="@null"
+        android:textSize="15sp"
+        tools:ignore="UnusedAttribute"/>
+
+    <FrameLayout
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="16dp">
+
+        <ImageButton
+            android:id="@+id/attachment_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
+            android:src="@drawable/intercomsdk_attachment"
+            tools:ignore="ContentDescription"/>
+
+        <ImageButton
+            android:id="@+id/send_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
+            android:src="@drawable/intercomsdk_icn_send"
+            android:visibility="gone"
+            tools:ignore="ContentDescription"/>
+
+    </FrameLayout>
+</LinearLayout>
+<!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/layout/intercomsdk_composer_input_layout.xml -->

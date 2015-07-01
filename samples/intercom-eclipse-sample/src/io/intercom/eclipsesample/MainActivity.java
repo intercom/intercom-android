@@ -2,8 +2,8 @@ package io.intercom.eclipsesample;
 
 import io.intercom.android.sdk.Intercom;
 import io.intercom.android.sdk.identity.Registration;
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Menu;
@@ -30,7 +30,7 @@ import android.widget.Button;
  * ------------------------------------------------------------------------------------------------
  * ------------------------------------------------------------------------------------------------
  */
-public class MainActivity extends ActionBarActivity implements OnClickListener {
+public class MainActivity extends Activity implements OnClickListener {
     //----------------------------------------------------------------------------------------------
     //MAKE SURE YOU GO TO THE SampleApplication TO CHANGE APIKEY AND APPID
     //----------------------------------------------------------------------------------------------

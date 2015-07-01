@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="wrap_content"
+              android:layout_height="20dp"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/dot1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.4"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:contentDescription="@string/intercomsdk_accessibility_is_typing"
+        android:src="@drawable/intercomsdk_is_typing_grey_dot"
+        tools:ignore="UnusedAttribute"/>
+
+    <ImageView
+        android:id="@+id/dot2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:alpha="0.4"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:contentDescription="@string/intercomsdk_accessibility_is_typing"
+        android:src="@drawable/intercomsdk_is_typing_grey_dot"
+        tools:ignore="UnusedAttribute"/>
+
+    <ImageView
+        android:id="@+id/dot3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4dp"
+        android:alpha="0.4"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:contentDescription="@string/intercomsdk_accessibility_is_typing"
+        android:src="@drawable/intercomsdk_is_typing_grey_dot"
+        tools:ignore="UnusedAttribute"/>
+
+</LinearLayout>
+<!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/layout/intercomsdk_admin_is_typing.xml -->

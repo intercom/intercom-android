@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/announcementRootView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <View
+        android:id="@+id/tinted_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/intercomsdk_semi_transparent"/>
+
+    <LinearLayout
+        android:id="@+id/announcement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <View
+        android:id="@+id/white_fade"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/round_bottom"
+        android:layout_alignLeft="@id/announcement"
+        android:layout_alignRight="@id/announcement"
+        android:background="@drawable/intercomsdk_white_fade"
+        android:visibility="invisible"/>
+
+    <View
+        android:id="@+id/round_bottom"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_alignBottom="@id/announcement"
+        android:layout_alignLeft="@id/announcement"
+        android:layout_alignRight="@id/announcement"
+        android:background="@drawable/intercomsdk_white_rounded_bottom"
+        android:visibility="invisible"/>
+
+
+    <View
+        android:id="@+id/touchInterceptor"
+        android:layout_width="312dp"
+        android:layout_height="0dp"
+        android:layout_alignTop="@id/announcement"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:id="@+id/close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/announcement"
+        android:layout_marginLeft="-32dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/announcement"
+        android:background="@android:color/transparent"
+        android:src="@drawable/intercomsdk_small_announcement_close_button_selector"
+        tools:ignore="ContentDescription"/>
+
+</RelativeLayout>
+<!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/layout/intercomsdk_fragment_small_announcement.xml -->

@@ -1,5 +1,16 @@
 # Change Log
 
+## Version 1.1.0
+
+01-07-2015
+* Users can now send attachments
+* Added new permissions for attahcments: EAD_EXTERNAL_STORAGE and MANAGE_DOCUMENTS
+* Users can expand and zoom images without leaving your app
+* Improved performance in conversations with many images
+* Split GCM related code into a separate module that is included by default but can be excluded if you don't require GCM
+* Fixed [issue#95](https://github.com/intercom/intercom-android/issues/95)
+* Fixed [issue#98](https://github.com/intercom/intercom-android/issues/98)
+
 ## Version 1.0.4
 
 09-06-2015

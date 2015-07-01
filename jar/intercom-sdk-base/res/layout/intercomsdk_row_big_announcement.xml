@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/intercomsdk_progress_wheel"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/cell_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/cellLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="vertical"/>
+
+        <TextView
+            android:id="@+id/rowTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="@dimen/intercomsdk_rowtime_padding_top"
+            android:ellipsize="end"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:textColor="@color/intercomsdk_light_grey_colour"
+            android:textSize="13sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/intercomsdk_avatar_border"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/avatarView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/intercomsdk_accessibility_avatar"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</RelativeLayout>
+<!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/layout/intercomsdk_row_big_announcement.xml -->

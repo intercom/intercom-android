@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/local_attachment"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/attachment_icon"
+        android:layout_width="@dimen/intercomsdk_local_attachment_upload_size"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:src="@drawable/intercomsdk_attachment"/>
+
+    <View
+        android:id="@+id/attachment_divider"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:visibility="gone"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/attachment_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:background="@android:color/transparent"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:lineSpacingExtra="2sp"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"/>
+</LinearLayout>
+<!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/layout/intercomsdk_blocks_attachment.xml -->

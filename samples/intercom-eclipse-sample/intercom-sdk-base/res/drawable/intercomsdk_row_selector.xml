@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:exitFadeDuration="@android:integer/config_mediumAnimTime"
+          tools:ignore="UnusedAttribute">
+    <item android:drawable="@android:color/white" android:state_checked="true"/>
+    <item android:drawable="@color/intercomsdk_background_grey" android:state_pressed="true"/>
+</selector>
+<!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/drawable/intercomsdk_row_selector.xml -->

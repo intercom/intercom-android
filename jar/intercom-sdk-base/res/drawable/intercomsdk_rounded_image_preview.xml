@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/intercomsdk_image_preview_grey"/>
+    <corners android:radius="@dimen/intercomsdk_image_rounded_corners"/>
+</shape><!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/drawable/intercomsdk_rounded_image_preview.xml -->
