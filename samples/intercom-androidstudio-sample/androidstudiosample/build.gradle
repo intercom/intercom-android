@@ -29,7 +29,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.2.0'
 
-    compile('io.intercom.android:intercom-sdk:1.1.0@aar') {
+    compile('io.intercom.android:intercom-sdk:1.1.1@aar') {
         transitive = true
     }
 }

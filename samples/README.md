@@ -23,10 +23,6 @@ You will also need to add either an email or user id (THIS USER WILL BE REGISTER
 ### Usage
  1. Open the app
  2. Tap the Open Intercom button to open up the SDK
-### Notes
-There are now two projects for the Intercom SDK, intercom-sdk-base and intercom-sdk-gcm.
-In this setup intercom-sdk-gcm depends on base and the eclipse-sample depends on gcm. If 
-you want to integrate without gcm you can remove the gcm module and make eclipse-sample depend directly on intercom-sdk-base.
 
 ## GCM sample app
 ### Setting Up
