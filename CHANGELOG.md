@@ -1,6 +1,6 @@
 # Change Log
 
-## Version 1.1.0
+## Version 1.1.1
 
 01-07-2015
 * Catching exeption that sometimes gets thrown when app is backgrounded
