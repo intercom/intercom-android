@@ -23,11 +23,10 @@ We include these permissions by default:
 
 As of 1.1.0 GCM permissions are now included by default in the main package. If you do not wish to use GCM you can use the intercom-sdk-base package, for more details visit http://docs.intercom.io/Install-on-your-mobile-product/installing-intercom-for-android
 ```
-    <!-- GCM REQUIRED PERMISSIONS -->
+    <!-- GCM PERMISSIONS -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
     <uses-permission android:name="android.permission.VIBRATE"/>
-    <!-- GCM Optional PERMISSIONS -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 ```
