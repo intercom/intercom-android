@@ -1,5 +1,13 @@
 # Change Log
 
+## Version 1.1.2
+
+06-07-2105
+* Namespaced fonts and raw assets. Every asset should be prefixed with 'intercomsdk' to avoid conflicts, let us know if you see one that isn't
+* Fixed a crash when loading a conversation if a participant had a leading space in their name
+* Fixed [issue#104](https://github.com/intercom/intercom-android/issues/104), a memory leak 
+* Fixed a GCM related issue. Some saw an error stacktrace caused by our broadcast receiver for gcm setting a result on on unordered broadcast. That broadcast was the OS pinging the broadcast receiver (typically on first install). This is a benign 'error' that doesn't cause any issues, but we're going to try to ignore it anyway. You shouldn't see that error in your logs any more. 
+
 ## Version 1.1.1
 
 01-07-2015

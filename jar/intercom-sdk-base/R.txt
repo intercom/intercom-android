@@ -260,10 +260,10 @@ int layout intercomsdk_rowdivider 0x7f030039
 int layout intercomsdk_small_announcement_layout 0x7f03003a
 int layout intercomsdk_welcome_message_icon 0x7f03003b
 int plurals intercomsdk_others 0x7f090000
-int raw birdy_done_1 0x7f060000
-int raw wood_done_1 0x7f060001
-int raw wood_done_2 0x7f060002
-int raw wood_done_3 0x7f060003
+int raw intercomsdk_birdy_done_1 0x7f060000
+int raw intercomsdk_wood_done_1 0x7f060001
+int raw intercomsdk_wood_done_2 0x7f060002
+int raw intercomsdk_wood_done_3 0x7f060003
 int string intercomsdk_accessibility_avatar 0x7f0a0000
 int string intercomsdk_accessibility_is_typing 0x7f0a0001
 int string intercomsdk_accessibility_powered_by 0x7f0a0002
