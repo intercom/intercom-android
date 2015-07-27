@@ -9,7 +9,7 @@
 * Fixed crash in preview service where the rootview was sometimes not inflating [issue#108](https://github.com/intercom/intercom-android/issues/108)
 
 Notes:
-When updating to this version from a previous version we recommend cleaning the project as you include the v1.1.3. If you're using eclipse *made sure to include the new fonts and repackaged dependencies jar*
+When updating to this version from a previous version we recommend cleaning the project as you include the v1.1.3. If you're using eclipse *make sure to include the new fonts and repackaged dependencies jar*
 
 ## Version 1.1.2
 
