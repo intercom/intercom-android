@@ -1,8 +1,19 @@
 # Change Log
 
+## Version 1.1.3
+
+27-07-2015
+* Integrated a smarter system for retrieving and displaying new messages sent while an app is open, fixes [issue#109](https://github.com/intercom/intercom-android/issues/109)
+* Lowercased font assets names and added some better error handling for when fonts can't be made, fixes [issue#107](https://github.com/intercom/intercom-android/issues/107) 
+* Repackaged all of our dependencies _except_ the play services library, resolves [issue#50](https://github.com/intercom/intercom-android/issues/50)
+* Fixed crash in preview service where the rootview was sometimes not inflating [issue#108](https://github.com/intercom/intercom-android/issues/108)
+
+Notes:
+When updating to this version from a previous version we recommend cleaning the project as you include the v1.1.3. If you're using eclipse *made sure to include the new fonts and repackaged dependencies jar*
+
 ## Version 1.1.2
 
-06-07-2105
+06-07-2015
 * Namespaced fonts and raw assets. Every asset should be prefixed with 'intercomsdk' to avoid conflicts, let us know if you see one that isn't
 * Fixed a crash when loading a conversation if a participant had a leading space in their name
 * Fixed [issue#104](https://github.com/intercom/intercom-android/issues/104), a memory leak 

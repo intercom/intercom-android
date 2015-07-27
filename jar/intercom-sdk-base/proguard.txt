@@ -15,30 +15,30 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 # start Intercom SDK Proguard rules
--keep class io.intercom.** { *; }
--keep class io.intercom.blocks.** { *; }
--keep class retrofit.** { *; }
+-keep class io.intercom.android.** { *; }
 
 -dontwarn rx.**
--dontwarn okio.**
--dontwarn com.squareup.okhttp.**
+-dontwarn io.intercom.okio.**
+-dontwarn io.intercom.com.squareup.okhttp.**
 
--keep class com.squareup.okhttp.** { *; }
--keep interface com.squareup.okhttp.** { *; }
+-keep class io.intercom.uk.co.senab.photoview.** { *; }
 
--dontwarn retrofit.**
--dontwarn retrofit.appengine.UrlFetchClient
+-keep class io.intercom.com.squareup.okhttp.** { *; }
+-keep interface io.intercom.com.squareup.okhttp.** { *; }
 
--keep class retrofit.** { *; }
+-dontwarn io.intercom.retrofit.**
+-dontwarn io.intercom.retrofit.appengine.UrlFetchClient
+
+-keep class io.intercom.retrofit.** { *; }
 -keepclasseswithmembers class * {
-    @retrofit.http.* <methods>;
+    @io.intercom.retrofit.http.* <methods>;
 }
 
 -keepattributes Signature
 -keepattributes *Annotation*
 -keepclassmembers class ** {
-    @com.squareup.otto.Subscribe public *;
-    @com.squareup.otto.Produce public *;
+    @io.intercom.com.squareup.otto.Subscribe public *;
+    @io.intercom.com.squareup.otto.Produce public *;
 }
 # end Intercom SDK Proguard rules
 #}
