@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.intercom.android.sdk.gcm"
-    android:versionCode="18"
-    android:versionName="1.1.3" >
+    android:versionCode="20"
+    android:versionName="1.1.4" >
 
     <uses-sdk
         android:minSdkVersion="9"
-        android:targetSdkVersion="22" />
+        android:targetSdkVersion="23" />
 
     <!-- GCM REQUIRED PERMISSIONS -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />

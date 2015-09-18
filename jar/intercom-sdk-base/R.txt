@@ -257,8 +257,7 @@ int layout intercomsdk_row_user_part 0x7f030036
 int layout intercomsdk_row_user_part_concat 0x7f030037
 int layout intercomsdk_row_welcome 0x7f030038
 int layout intercomsdk_rowdivider 0x7f030039
-int layout intercomsdk_small_announcement_layout 0x7f03003a
-int layout intercomsdk_welcome_message_icon 0x7f03003b
+int layout intercomsdk_welcome_message_icon 0x7f03003a
 int plurals intercomsdk_others 0x7f090000
 int raw intercomsdk_birdy_done_1 0x7f060000
 int raw intercomsdk_wood_done_1 0x7f060001

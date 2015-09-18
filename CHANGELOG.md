@@ -1,5 +1,12 @@
 # Change Log
 
+## Version 1.1.4
+
+18-09-2015
+* Updated to support Android M preview [issue#116](https://github.com/intercom/intercom-android/issues/116)
+* Swallow AssertionError in AppConfig caused by GSON [issue#120](https://github.com/intercom/intercom-android/issues/120)
+* Protect against NPE in CallbackHolder [issue#122](https://github.com/intercom/intercom-android/issues/122)
+
 ## Version 1.1.3
 
 27-07-2015
