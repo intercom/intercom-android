@@ -6,12 +6,14 @@
 * Updated to support Android M preview [issue#116](https://github.com/intercom/intercom-android/issues/116)
 * Swallow AssertionError in AppConfig caused by GSON [issue#120](https://github.com/intercom/intercom-android/issues/120)
 * Protect against NPE in CallbackHolder [issue#122](https://github.com/intercom/intercom-android/issues/122)
+* Fixed an index out of bound exception [issue#113](https://github.com/intercom/intercom-android/issues/113)
+* Updated the signature for logEvent and updateUser to take maps of <String, ?>. Now you can pass in a Map<String, String> if that's what you happen to have instead of changing it to a Map<String, Object>. No changes are necessary to existing code. [issue#121](https://github.com/intercom/intercom-android/issues/121)
 
 ## Version 1.1.3
 
 27-07-2015
 * Integrated a smarter system for retrieving and displaying new messages sent while an app is open, fixes [issue#109](https://github.com/intercom/intercom-android/issues/109)
-* Lowercased font assets names and added some better error handling for when fonts can't be made, fixes [issue#107](https://github.com/intercom/intercom-android/issues/107) 
+* Lowercased font assets names and added some better error handling for when fonts can't be made, fixes [issue#107](https://github.com/intercom/intercom-android/issues/107)
 * Repackaged all of our dependencies _except_ the play services library, resolves [issue#50](https://github.com/intercom/intercom-android/issues/50)
 * Fixed crash in preview service where the rootview was sometimes not inflating [issue#108](https://github.com/intercom/intercom-android/issues/108)
 
@@ -23,8 +25,8 @@ When updating to this version from a previous version we recommend cleaning the 
 06-07-2015
 * Namespaced fonts and raw assets. Every asset should be prefixed with 'intercomsdk' to avoid conflicts, let us know if you see one that isn't
 * Fixed a crash when loading a conversation if a participant had a leading space in their name
-* Fixed [issue#104](https://github.com/intercom/intercom-android/issues/104), a memory leak 
-* Fixed a GCM related issue. Some saw an error stacktrace caused by our broadcast receiver for gcm setting a result on on unordered broadcast. That broadcast was the OS pinging the broadcast receiver (typically on first install). This is a benign 'error' that doesn't cause any issues, but we're going to try to ignore it anyway. You shouldn't see that error in your logs any more. 
+* Fixed [issue#104](https://github.com/intercom/intercom-android/issues/104), a memory leak
+* Fixed a GCM related issue. Some saw an error stacktrace caused by our broadcast receiver for gcm setting a result on on unordered broadcast. That broadcast was the OS pinging the broadcast receiver (typically on first install). This is a benign 'error' that doesn't cause any issues, but we're going to try to ignore it anyway. You shouldn't see that error in your logs any more.
 
 ## Version 1.1.1
 
@@ -86,7 +88,7 @@ When updating to this version from a previous version we recommend cleaning the 
 ## Version 0.9.7
 
 05-01-2015
-* The Intercom SDK no longer has any functionality on devices below API level 15 
+* The Intercom SDK no longer has any functionality on devices below API level 15
 * The Intercom SDK now supports real-time messaging
 * Many visual tweaks and improvements
 * Push notifications are now high priority on devices that support notification priority
@@ -109,7 +111,7 @@ When updating to this version from a previous version we recommend cleaning the 
 * Fixed [issue#54](https://github.com/intercom/intercom-android/issues/54) Updated action bar visuals
 * Fixed a bug where a conversation replied to by a user would update it's summary in the inbox but not it's position, related to [issue#58](https://github.com/intercom/intercom-android/issues/58)
 * Fixed [issue#59](https://github.com/intercom/intercom-android/issues/59)
-* Fixed [issue#60](https://github.com/intercom/intercom-android/issues/60) 
+* Fixed [issue#60](https://github.com/intercom/intercom-android/issues/60)
 * Fixed [issue#65](https://github.com/intercom/intercom-android/issues/65) which was causing a crash
 * Fixed [issue#67](https://github.com/intercom/intercom-android/issues/67) by removing metadata from the offending PNGs
 
@@ -124,20 +126,20 @@ When updating to this version from a previous version we recommend cleaning the 
 ## Version 0.9.4
 
 04-08-2015
-* Deprecated 'setMessagedHidden' in the Intercom class in favour of 'setVisibility'. The 'setVisibility' method takes either Intercom.VISIBLE' or 'Intercom.GONE' as a parameter. 
-* Timestamps periodically update within a conversation 
+* Deprecated 'setMessagedHidden' in the Intercom class in favour of 'setVisibility'. The 'setVisibility' method takes either Intercom.VISIBLE' or 'Intercom.GONE' as a parameter.
+* Timestamps periodically update within a conversation
 * Removed the 'GET_ACCOUNTS' permission [issue#46](https://github.com/intercom/intercom-android/issues/46). It's not necessary for GCM.
 * Fixed a gingerbread compatibility issue that was incorrectly letting it try to access anything visual in the SDK and subsequently crashing.
 * Fixed a bug with 'setMessagedHidden' where calling it with 'true.GONE' wouldn't dismiss the IAM if it was open.
 * Fixed [issue#55](https://github.com/intercom/intercom-android/issues/55), deep links work now.
 * Fixed [issue#57](https://github.com/intercom/intercom-android/issues/57) which caused a new message to never be correctly updated from the sending state to sent state.
-* Fixed [issue#60](https://github.com/intercom/intercom-android/issues/60) that let users send a message many times if it got stuck in a 'sending failed' state 
+* Fixed [issue#60](https://github.com/intercom/intercom-android/issues/60) that let users send a message many times if it got stuck in a 'sending failed' state
 *
 
 ## Version 0.9.3
 
 03-31-2015
-* Added the internet and access wifi state permissions to our Manifest 
+* Added the internet and access wifi state permissions to our Manifest
 * Validating the attributes map passed into the `updateUser` method and giving better error messages
 * Updated to v2.3.0 of Okhttp
 
@@ -150,10 +152,10 @@ When updating to this version from a previous version we recommend cleaning the 
 
 03-26-2015
 * Repackaged the SDK from 'intercom.intercomsdk' -> 'io.intercom.android.sdk'. This will cause all your imports to break
-* All network requests from the SDK are now SSL pinned 
+* All network requests from the SDK are now SSL pinned
 * Fixed a bug where switching between conversations and new messages very quickly could cause a crash
-* Fixed a bug where a new messages created from the SDK wasn't displaying in the inbox 
-* Fixed a bug where the SDK could crash if it was resumed after a long backgrounding 
+* Fixed a bug where a new messages created from the SDK wasn't displaying in the inbox
+* Fixed a bug where the SDK could crash if it was resumed after a long backgrounding
 * Updated to v7.0.0 of the Google Play Services Library
 * Updated to v2.5.2 of Picasso
 
