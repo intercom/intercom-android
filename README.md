@@ -1,4 +1,4 @@
-# Intercom for Android 1.1.4
+# Intercom for Android 1.1.5
 
 ## Supported versions
 Targets Android 2.3 (API 9) but *only* 4.0.3 (API 15) and above have tracking and messaging functionality.
@@ -11,13 +11,11 @@ A full guide to integrating Intercom for Android with your app is available [her
 
 We include these permissions by default:
 ```
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET"/>>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
 ```
 [INTERNET](http://developer.android.com/reference/android/Manifest.permission.html#INTERNET) allows us to make network requests.  
-[SYSTEM_ALERT_WINDOW](http://developer.android.com/reference/android/Manifest.permission.html#SYSTEM_ALERT_WINDOW) is used to draw the Intercom for Android on top of the host application
 [READ_EXTERNAL_STORAGE](http://developer.android.com/reference/android/Manifest.permission.html#READ_EXTERNAL_STORAGE) is used for attachments.
 [MANAGE_DOCUMENTS](http://developer.android.com/reference/android/Manifest.permission.html#MANAGE_DOCUMENTS) is used for attachments.
 
@@ -41,10 +39,10 @@ The GCM permissions are:
 
 The gcm module does requires google play services if you're including it manually:
 ```
-compile 'com.google.android.gms:play-services-gcm:7.5.0’
+compile 'com.google.android.gms:play-services-gcm:7.8.0’
 ```
 
-The compileSdkVersion needs to be 22.
+The compileSdkVersion needs to be 23.
 
 ##How should I use Intercom for Android in my app?
 Broadly speaking, there are three types of apps that Intercom for Android will work in.

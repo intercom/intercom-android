@@ -1,5 +1,15 @@
 # Change Log
 
+## Version 1.1.5
+
+23-09-2015
+* Deprecated openGCMMessage(Uri) in favour of openGCMMessage(Intent) and openGCMMessage(Intent, TaskStackBuilder)
+* Fixed a crash for requesting permissions on pre Lolipop devices
+* Fixed ConcurrentModificationException [issue#119](https://github.com/intercom/intercom-android/issues/119)
+* New public method setLogLevel that allows developers to control the level of logging they want and to fully disable logging [issue#112](https://github.com/intercom/intercom-android/issues/112)
+* New implementation for openGCMMessage that takes the a TaskStackBuilder allowign developers to provide a backstack before we open the in-app messenger[issue#110](https://github.com/intercom/intercom-android/issues/110)
+* New implementation for openGCMMessage that takes the intent and only open the in-app messenger once per push [issue#105](https://github.com/intercom/intercom-android/issues/105)
+
 ## Version 1.1.4
 
 18-09-2015
