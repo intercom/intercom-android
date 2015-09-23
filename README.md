@@ -1,4 +1,4 @@
-# Intercom for Android 1.1.5
+# Intercom for Android 1.1.6
 
 ## Supported versions
 Targets Android 2.3 (API 9) but *only* 4.0.3 (API 15) and above have tracking and messaging functionality.
@@ -72,7 +72,7 @@ private void successfulLogin(){
 
 **Note:** _If you don't have a unique `userId` to use here, or if you have a `userId` and an `email` you can use `withEmail(String email)` on the Registration object._
 
-2. Also, in your launch activity (or wherever you _check_ your user's authenticated state when your app starts up) 
+2. Also, in your launch activity (or wherever you _check_ your user's authenticated state when your app starts up)
 
 ```
 // Override point for customization after application launch.
@@ -84,7 +84,7 @@ if(loggedIn){
 	...
 }
 ```
-		
+
 3. Finally, when users eventually want to log out of your app, we should clear the Intercom library's caches so that when they log back in again, everything works perfectly. In your logout code, simply call `Intercom.client().reset();` like so:
 
 ```
@@ -121,7 +121,7 @@ private void successfulLogin(){
 ```
 **Note:** _If you don't have a unique `userId` to use here, or if you have a `userId` and an `email` you can use `withEmail(String email)` on the Registration object._
 
-2. Also, in your launch activity (or wherever you _check_ your user's authenticated state when your app starts up) 
+2. Also, in your launch activity (or wherever you _check_ your user's authenticated state when your app starts up)
 
 ```
 // Override point for customization after application launch.
@@ -134,7 +134,7 @@ if(loggedIn){
 	Intercom.client().registerUnidentifiedUser();		
 }
 ```
-		
+
 3. Finally, when users eventually want to log out of your app, we should clear the Intercom library's caches so that when they log back in again, everything works perfectly. In your logout code, simply call `Intercom.client().reset();` like so:
 ```
 private void logout(){
@@ -146,14 +146,14 @@ private void logout(){
 	// unidentified user in their place.
 	Intercom.client().registerUnidentifiedUser();
 }
-```	
+```
 
 ###Tips on getting the best out of Intercom for Android
 
-1. **Do not use an email address as a `userId` as this field is unique and cannot be changed or updated later.** If you only have an email address, you can just register a user with that. 
+1. **Do not use an email address as a `userId` as this field is unique and cannot be changed or updated later.** If you only have an email address, you can just register a user with that.
 2. **If you register users with an email address, email must be a unique field in your app.** Otherwise we won't know which user to update and the mobile integration won't work.
 3. Intercom for Android knows when your app is backgrounded and comes alive again, so all you need to do is register a type of user like the examples above and we'll do the rest.
- 
+
 ## How does the in-app messenger work?
 
 Intercom allows you to send messages to your users while also enabling your users send messages to you. If you have a dedicated button in your app that you wish to hook the new message composer up to, you can control Intercom's messaging UI via the `Intercom.client().dislplayMessageComposer();` and `Intercom.client().displayConversationList();` methods. More information on messaging with Intercom for Android can be found [here](http://docs.intercom.io/Install-on-your-mobile-product/configuring-intercom-for-android#messaging).
@@ -161,9 +161,9 @@ Intercom allows you to send messages to your users while also enabling your user
 ## What about events, push notifications, company and user data?
 
 Intercom for Android has support for all these things. For full details please read our [documentation](http://docs.intercom.io/Install-on-your-mobile-product/configuring-intercom-for-android).
- 
+
 ## Documentation and getting started guides
- 
+
 Detailed documentation and getting started guides for:
 
 - Updating a user

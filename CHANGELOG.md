@@ -1,5 +1,11 @@
 # Change Log
 
+## Version 1.1.6
+
+23-09-2015
+
+* Hot fix for a NoClassDefFound exception in the intercom-sdk-gcm, [issue#134](https://github.com/intercom/intercom-android/issues/134)
+
 ## Version 1.1.5
 
 23-09-2015
