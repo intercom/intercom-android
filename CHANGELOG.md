@@ -1,5 +1,15 @@
 # Change Log
 
+## Version 1.1.7
+
+01-10-2015
+
+* Updated play services to 8.1 ('com.google.android.gms:play-services-gcm:8.1.0'). 8.1 introduces some breaking changes, see here for change details (https://developers.google.com/android/guides/releases#september_2015) 
+* Removed duplicate realtime requests
+* Calling logEvent(String, Map) with a null or empty Map no longer fails but instead calls logEvent(String)
+* Fixed an issue with HTC devices not being able to interact with the chathead from IceCreamSandwich to Jellybean.
+
+
 ## Version 1.1.6
 
 23-09-2015
