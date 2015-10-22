@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/previewRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp">
+
+    <FrameLayout
+        android:id="@+id/avatar_container"
+        android:layout_width="62dp"
+        android:layout_height="62dp">
+
+        <View
+            android:id="@+id/avatar_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|center_horizontal"
+            android:background="@drawable/intercomsdk_avatar_shadow"/>
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="top|center_horizontal"
+            android:contentDescription="@string/intercomsdk_accessibility_avatar"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/indicator_text"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="top|right"
+            android:alpha="0"
+            android:background="@drawable/intercomsdk_circle"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"/>
+    </FrameLayout>
+
+    <!-- right/left margin, alignment and correct drawable are added programmatically
+         in io.intercom.android.sdk.preview.PreviewDisplayManager -->
+    <TextView
+        android:id="@+id/notification_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/avatar_container"
+        android:layout_alignTop="@id/avatar_container"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:maxWidth="200dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+</RelativeLayout>
+<!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/layout/intercomsdk_preview.xml -->

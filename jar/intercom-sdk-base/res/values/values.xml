@@ -34,8 +34,6 @@
     <dimen name="intercomsdk_cell_padding_left">12dp</dimen>
     <dimen name="intercomsdk_cell_padding_right">18dp</dimen>
     <dimen name="intercomsdk_cell_padding_top">11dp</dimen>
-    <item format="integer" name="intercomsdk_chathead_duration" type="dimen">200</item>
-    <item format="float" name="intercomsdk_chathead_start_scale" type="dimen">0.6</item>
     <item format="float" name="intercomsdk_faded_alpha_is_typing" type="dimen">0.4</item>
     <item format="integer" name="intercomsdk_faded_is_typing_duration" type="dimen">200</item>
     <item format="float" name="intercomsdk_full_alpha" type="dimen">1.0</item>
@@ -46,18 +44,9 @@
     <dimen name="intercomsdk_local_image_upload_size">40dp</dimen>
     <item format="float" name="intercomsdk_low_alpha" type="dimen">0.6</item>
     <dimen name="intercomsdk_max_image_width">153dp</dimen>
-    <item format="integer" name="intercomsdk_preview_duration" type="dimen">200</item>
-    <item format="integer" name="intercomsdk_preview_hide_duration" type="dimen">50</item>
-    <item format="integer" name="intercomsdk_preview_hide_offset" type="dimen">7000</item>
-    <item format="integer" name="intercomsdk_preview_offset" type="dimen">220</item>
-    <item format="integer" name="intercomsdk_preview_start_position" type="dimen">-120</item>
-    <item format="float" name="intercomsdk_preview_start_scale" type="dimen">0.6</item>
     <dimen name="intercomsdk_rowtime_padding_top">2dp</dimen>
     <item format="float" name="intercomsdk_scaled_down_is_typing" type="dimen">0.7</item>
     <item format="float" name="intercomsdk_scaled_up_is_typing" type="dimen">1.0</item>
-    <item format="integer" name="intercomsdk_unread_duration" type="dimen">200</item>
-    <item format="integer" name="intercomsdk_unread_offset" type="dimen">180</item>
-    <item format="float" name="intercomsdk_unread_start_scale" type="dimen">0.6</item>
     <!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/values/plurals.xml -->
     <eat-comment/>
     <plurals name="intercomsdk_others">

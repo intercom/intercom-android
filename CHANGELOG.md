@@ -1,10 +1,21 @@
 # Change Log
 
+## Version 1.1.8
+
+22-10-2015
+
+* We've made some significant changes to the notification preview and how it works.
+  * It's no longer draggable, instead it will now reposition when the screen changes, eg. when the keyboard appears.
+  * It's a lot more memory efficient.
+  * Fixed some longstanding UI issues when the notification was right aligned, it now reliably shows the text preview.
+* Added better permission checking around attachments to handle cases where rooted phone are denying access, fixes [issue#137](https://github.com/intercom/intercom-android/issues/137)
+
+
 ## Version 1.1.7
 
 01-10-2015
 
-* Updated play services to 8.1 ('com.google.android.gms:play-services-gcm:8.1.0'). 8.1 introduces some breaking changes, see here for change details (https://developers.google.com/android/guides/releases#september_2015) 
+* Updated play services to 8.1 ('com.google.android.gms:play-services-gcm:8.1.0'). 8.1 introduces some breaking changes, see here for change details (https://developers.google.com/android/guides/releases#september_2015)
 * Removed duplicate realtime requests
 * Calling logEvent(String, Map) with a null or empty Map no longer fails but instead calls logEvent(String)
 * Fixed an issue with HTC devices not being able to interact with the chathead from IceCreamSandwich to Jellybean.
