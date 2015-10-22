@@ -8,6 +8,7 @@
   * It's no longer draggable, instead it will now reposition when the screen changes, eg. when the keyboard appears.
   * It's a lot more memory efficient.
   * Fixed some longstanding UI issues when the notification was right aligned, it now reliably shows the text preview.
+  * We no longer use the `SYSTEM_ALERT_WINDOW` permission
 * Added better permission checking around attachments to handle cases where rooted phone are denying access, fixes [issue#137](https://github.com/intercom/intercom-android/issues/137)
 
 
