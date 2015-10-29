@@ -156,7 +156,7 @@ private void logout(){
 
 ## How does the in-app messenger work?
 
-Intercom allows you to send messages to your users while also enabling your users send messages to you. If you have a dedicated button in your app that you wish to hook the new message composer up to, you can control Intercom's messaging UI via the `Intercom.client().dislplayMessageComposer();` and `Intercom.client().displayConversationList();` methods. More information on messaging with Intercom for Android can be found [here](http://docs.intercom.io/Install-on-your-mobile-product/configuring-intercom-for-android#messaging).
+Intercom allows you to send messages to your users while also enabling your users send messages to you. If you have a dedicated button in your app that you wish to hook the new message composer up to, you can control Intercom's messaging UI via the `Intercom.client().displayMessageComposer();` and `Intercom.client().displayConversationList();` methods. More information on messaging with Intercom for Android can be found [here](http://docs.intercom.io/Install-on-your-mobile-product/configuring-intercom-for-android#messaging).
 
 ## What about events, push notifications, company and user data?
 
