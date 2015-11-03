@@ -1,5 +1,11 @@
 # Change Log
 
+## Version 1.1.9
+
+03-11-2015
+
+* Fixed a bug that could cause the notification preview to display over the message composer or conversations list
+
 ## Version 1.1.8
 
 22-10-2015
@@ -11,7 +17,6 @@
   * We no longer use the `SYSTEM_ALERT_WINDOW` permission
 * Added better permission checking around attachments to handle cases where rooted phone are denying access, fixes [issue#137](https://github.com/intercom/intercom-android/issues/137)
 
-
 ## Version 1.1.7
 
 01-10-2015
@@ -20,7 +25,6 @@
 * Removed duplicate realtime requests
 * Calling logEvent(String, Map) with a null or empty Map no longer fails but instead calls logEvent(String)
 * Fixed an issue with HTC devices not being able to interact with the chathead from IceCreamSandwich to Jellybean.
-
 
 ## Version 1.1.6
 
