@@ -60,7 +60,7 @@
     <string name="intercomsdk_accessibility_powered_by">Powered by Intercom</string>
     <string name="intercomsdk_accessibility_shadow">Shadow</string>
     <string name="intercomsdk_accessibility_welcome">Welcome message</string>
-    <string name="intercomsdk_activated_key_message">You’ve successfully installed Intercom in your Android app. Check your email for instructions on how to create your account and finish setting up intercom.</string>
+    <string name="intercomsdk_activated_key_message">You\'ve successfully integrated your Android app with the Intercom platform.</string>
     <string name="intercomsdk_close">Close</string>
     <string name="intercomsdk_congratulations">Congratulations</string>
     <string name="intercomsdk_delivered">Delivered</string>

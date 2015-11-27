@@ -1,5 +1,17 @@
 # Change Log
 
+## Version 1.1.10
+
+27-11-2015
+
+* Tweaked some network settings for improved reliability
+* Improved logging messages for network request failures, in particular a 'canceled' request should give the reason why it was cancelled now and if you provide invalid credentials (app-id or api key) the library will fail faster with a better log message.
+* Fixed a bug that was causing the library to do work it didn't need to if an app became active in the background.
+* Fixed a bug where calling `reset()` wasn't removing on screen notifications.
+* Fixed a bug where push messages were still being sent after `reset()` was called.
+* Fixed a bug that caused a new message to duplicate the first part if it was replied to immediately
+
+
 ## Version 1.1.9
 
 03-11-2015
