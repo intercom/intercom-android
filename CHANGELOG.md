@@ -4,8 +4,10 @@
 
 04-12-2015
 
-* Fixed a crashing issue when you try to attach a contact from an Android device. We now also protect against other unexpected failed attachment types.
+* Fixed a crashing issue when you add an attachment to a conversation that is a contact from an Android device. We now also protect against other unexpected failed attachment types.
 * Fixed a bug with the unread count not being correctly maintained if you come and go from the Inbox and composer/conversation screen.
+
+## Version 1.1.10
 
 27-11-2015
 
