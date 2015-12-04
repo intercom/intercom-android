@@ -1,6 +1,11 @@
 # Change Log
 
-## Version 1.1.10
+## Version 1.1.11
+
+04-12-2015
+
+* Fixed a crashing issue when you try to attach a contact from an Android device. We now also protect against other unexpected failed attachment types.
+* Fixed a bug with the unread count not being correctly maintained if you come and go from the Inbox and composer/conversation screen.
 
 27-11-2015
 
