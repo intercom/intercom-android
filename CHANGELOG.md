@@ -1,5 +1,13 @@
 # Change Log
 
+## Version 1.1.12
+
+22-12-2015
+
+* Protected against a potential NPE in the networking layer.
+* Fixed an issue with the public reset call that resulted in the GCM device token not being removed from the server.
+* Small improvements to GCM notifications, including enabling notification lighting to use the host apps base color.
+
 ## Version 1.1.11
 
 04-12-2015

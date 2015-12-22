@@ -10,4 +10,5 @@
     <eat-comment/>
     <string name="intercomsdk_groupExpandedTitle">New notifications</string>
     <string name="intercomsdk_groupTitle">New notifications</string>
+    <string name="intercomsdk_push_title_format">%1$s from %2$s</string>
 </resources>
