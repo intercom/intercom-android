@@ -39,7 +39,7 @@ The GCM permissions are:
 
 The gcm module does requires google play services if you're including it manually:
 ```
-compile 'com.google.android.gms:play-services-gcm:8.1.0’
+compile 'com.google.android.gms:play-services-gcm:8.1.0'
 ```
 
 The compileSdkVersion needs to be 23.
