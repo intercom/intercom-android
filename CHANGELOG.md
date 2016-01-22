@@ -1,5 +1,12 @@
 # Change Log
 
+## Version 1.1.13
+
+22-01-2016
+
+* Fixed a crash with drawing the avatar in push notifcations, [issue#163](https://github.com/intercom/intercom-android/issues/163)
+* Fixed a crash with websockets cleanup
+
 ## Version 1.1.12
 
 22-12-2015
