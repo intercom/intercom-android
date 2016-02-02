@@ -61,6 +61,8 @@
     <string name="intercomsdk_accessibility_shadow">Shadow</string>
     <string name="intercomsdk_accessibility_welcome">Welcome message</string>
     <string name="intercomsdk_activated_key_message">You\'ve successfully integrated your Android app with the Intercom platform.</string>
+    <string name="intercomsdk_attachment_cancel">CANCEL</string>
+    <string name="intercomsdk_attachment_send">SEND</string>
     <string name="intercomsdk_close">Close</string>
     <string name="intercomsdk_congratulations">Congratulations</string>
     <string name="intercomsdk_delivered">Delivered</string>
@@ -78,6 +80,13 @@
     <string name="intercomsdk_sending">Sending…</string>
     <string name="intercomsdk_sending_failure">Not delivered. Tap to try again.</string>
     <string name="intercomsdk_start_new_conversation">Start a conversation…</string>
+    <string name="intercomsdk_time_day_ago">%dd ago</string>
+    <string name="intercomsdk_time_hour_ago">%dh ago</string>
+    <string name="intercomsdk_time_just_now">Just now</string>
+    <string name="intercomsdk_time_minute_ago">%dm ago</string>
+    <string name="intercomsdk_time_never">Never</string>
+    <string name="intercomsdk_time_week_ago">%dw ago</string>
+    <string name="intercomsdk_time_year_ago">%dy ago</string>
     <string name="intercomsdk_title_activity_conversations">Conversations</string>
     <string name="intercomsdk_try_again">Tap to try again.</string>
     <string name="intercomsdk_twitter_follow">Follow us on Twitter</string>

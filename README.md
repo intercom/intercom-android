@@ -1,4 +1,4 @@
-# Intercom for Android 1.1.13
+# Intercom for Android 1.1.14
 
 ## Supported versions
 Targets Android 2.3 (API 9) but *only* 4.0.3 (API 15) and above have tracking and messaging functionality.

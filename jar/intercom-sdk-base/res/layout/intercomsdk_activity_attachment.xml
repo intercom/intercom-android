@@ -64,7 +64,7 @@
         android:layout_marginBottom="6dp"
         android:layout_marginLeft="12dp"
         android:background="@android:color/transparent"
-        android:text="CANCEL"
+        android:text="@string/intercomsdk_attachment_cancel"
         android:textColor="@android:color/white"
         android:textSize="20sp"/>
 
@@ -78,7 +78,7 @@
         android:layout_marginRight="12dp"
         android:background="@android:color/transparent"
         android:enabled="false"
-        android:text="SEND"
+        android:text="@string/intercomsdk_attachment_send"
         android:textColor="@color/intercomsdk_diabled_button_color"
         android:textSize="20sp"/>
 </RelativeLayout>

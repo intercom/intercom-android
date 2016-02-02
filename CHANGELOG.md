@@ -1,5 +1,14 @@
 # Change Log
 
+## Version 1.1.14
+
+22-01-2016
+
+* Reduced the initialization time by 50%
+* Fixed an NPE in our ConversationAdapter, [issue#164](https://github.com/intercom/intercom-android/issues/164)
+* Removed the remaining hard coded strings in the client, [issue#156](https://github.com/intercom/intercom-android/issues/156)
+* Fixed a crash caused when a video failed to load. We now always show an error image for failed videos.
+
 ## Version 1.1.13
 
 22-01-2016
