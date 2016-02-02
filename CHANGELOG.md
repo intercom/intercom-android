@@ -2,7 +2,7 @@
 
 ## Version 1.1.14
 
-22-01-2016
+02-02-2016
 
 * Reduced the initialization time by 50%
 * Fixed an NPE in our ConversationAdapter, [issue#164](https://github.com/intercom/intercom-android/issues/164)
