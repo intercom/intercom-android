@@ -1,5 +1,12 @@
 # Change Log
 
+## Version 1.1.15
+
+12-02-2016
+
+* Fixed IndexOutOfBounds exception, [issue#176](https://github.com/intercom/intercom-android/issues/176)
+* Fixed a crash caused by BitmapFactory.decodeResource returning null.
+
 ## Version 1.1.14
 
 02-02-2016
