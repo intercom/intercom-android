@@ -1,5 +1,13 @@
 # Change Log
 
+## Version 1.1.16
+
+04-03-2016
+
+* Updated to Okhttp 2.7.5 for improved reliability and bug fixes, fixes [issue#181](https://github.com/intercom/intercom-android/issues/181)
+* Fixed an issue where a loading dialog could get into a state where it stayed on screen incorrectly, [issue#183](https://github.com/intercom/intercom-android/issues/183)
+* Fixed an issue with the keyboard not dismissing while viewing an image, [issue#184](https://github.com/intercom/intercom-android/issues/184)
+
 ## Version 1.1.15
 
 12-02-2016

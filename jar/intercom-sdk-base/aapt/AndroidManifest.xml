@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.intercom.android.sdk"
-    android:versionCode="32"
-    android:versionName="1.1.15" >
+    android:versionCode="33"
+    android:versionName="1.1.16" >
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -33,7 +33,7 @@
             android:configChanges="screenSize|orientation"
             android:exported="false"
             android:theme="@style/IntercomSDK_AttachmentTheme"
-            android:windowSoftInputMode="stateUnchanged|adjustResize" />
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name="io.intercom.android.sdk.activities.TestActivity"
             android:exported="false" />
