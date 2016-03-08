@@ -10,8 +10,8 @@ import io.intercom.android.sdk.Intercom;
  */
 public class SampleApplication extends Application {
     //CHANGE THESE VALUES
-    private final String YOUR_API_KEY = "<YOUR_API_KEY>";
-    private final String YOUR_APP_ID = "<YOUR_APP_ID>";
+    private static final String YOUR_API_KEY = "<INTERCOM_API_KEY>";
+    private static final String YOUR_APP_ID = "<INTERCOM_APP_ID>";
 
     @Override public void onCreate() {
         super.onCreate();

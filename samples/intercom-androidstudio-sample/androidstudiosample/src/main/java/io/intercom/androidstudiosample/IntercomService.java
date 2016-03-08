@@ -21,7 +21,6 @@ public class IntercomService extends Service {
 
     @Override public void onCreate() {
         super.onCreate();
-        Intercom.client().registerIdentifiedUser(new Registration().withEmail("dale@intercom.io"));
         Log.d("SERVICE", "onCreate called");
     }
 

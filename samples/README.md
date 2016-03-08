@@ -5,8 +5,7 @@ This contains sample apps of ways to integrate and test the integration of the A
 ## Android Studio sample app
 ### Setting Up
 This is a sample application to help with Intercom integration in Android Studio apps
-You will need to visit https://developers.google.com/cloud-messaging/android/client to download your configuration file. Use the following 'io.intercom.gcmsample' as the package name and then copy the file into gcmsample directory.
-You will need to add your Api Key, App Id in the SampleApplication file
+You will need to add your Api Key and App Id to the SampleApplication
 You will also need to add either an email or user id (THIS USER WILL BE REGISTERED IN YOUR APP)
 If you have enabled secure mode you will need to provide hmac and data
 ### Usage

@@ -1,6 +1,7 @@
 package io.intercom.gcmsample;
 
 import android.app.Application;
+
 import io.intercom.android.sdk.Intercom;
 
 public class SampleApplication extends Application {

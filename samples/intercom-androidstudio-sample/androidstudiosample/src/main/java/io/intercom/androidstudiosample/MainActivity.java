@@ -69,14 +69,14 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
 
     @Override public void onClick(View v) {
-        //if you have provided a user id register user with it, otherwise we will use email
+        Registration registration = Registration.create();
         if (!TextUtils.isEmpty(YOUR_USER_ID)) {
-            Intercom.client().registerIdentifiedUser(new Registration().withUserId(YOUR_USER_ID));
-        } else if (!TextUtils.isEmpty(YOUR_EMAIL)) {
-            Intercom.client().registerIdentifiedUser(new Registration().withEmail(YOUR_EMAIL));
-        } else {
-            Log.d("REGISTRATION_ERROR", "No email or user id");
+            registration.withUserId(YOUR_USER_ID);
         }
+        if (!TextUtils.isEmpty(YOUR_EMAIL)) {
+            registration.withEmail(YOUR_EMAIL);
+        }
+        Intercom.client().registerIdentifiedUser(registration);
 
         registerButton.setEnabled(false);
     }
