@@ -1,5 +1,14 @@
 # Change Log
 
+## Version 1.1.17
+
+01-04-2016
+
+* Update to fix remaining issues with registration [issue#181](https://github.com/intercom/intercom-android/issues/181)
+* Made some permissions we use in the GCM module optional ("android.permission.READ_PHONE_STATE" and "android.permission.ACCESS_WIFI_STATE")
+* Removed some unessesary noisy logging when calling reset.
+* Fixed a bug where the empty inbox list does not update when the user starts a new conversation for the first time.
+
 ## Version 1.1.16
 
 04-03-2016
