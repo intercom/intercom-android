@@ -1,12 +1,20 @@
 # Change Log
 
+## Version 1.1.18
+
+18-04-2016
+
+* Checks that there are intents capable of opening links etc before opening them, fixes [issue#190](https://github.com/intercom/intercom-android/issues/190)
+* Fixed an bug where apps running on Ice Cream Sandwich were unable to send attachments
+* Fixed a bug that was causing us to generate a URL to communicate with the Intercom servers that doesn't conform with [rfc1123](https://www.ietf.org/rfc/rfc1123.txt) for a small number of people, more context in [issue#186](https://github.com/intercom/intercom-android/issues/186)
+
 ## Version 1.1.17
 
 01-04-2016
 
 * Update to fix remaining issues with registration [issue#181](https://github.com/intercom/intercom-android/issues/181)
 * Made some permissions we use in the GCM module optional ("android.permission.READ_PHONE_STATE" and "android.permission.ACCESS_WIFI_STATE")
-* Removed some unessesary noisy logging when calling reset.
+* Removed some unnecessary noisy logging when calling reset, fixes [issue#188](https://github.com/intercom/intercom-android/issues/188)
 * Fixed a bug where the empty inbox list does not update when the user starts a new conversation for the first time.
 
 ## Version 1.1.16
