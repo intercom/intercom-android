@@ -174,4 +174,4 @@ Detailed documentation and getting started guides for:
 - Messaging
 - Deep Linking in messages
 
-are available in [our documentation](http://docs.intercom.io/Install-on-your-mobile-product). Please contact us in Intercom with any questions you may have, we're only a message away!
+are available in [our documentation](https://docs.intercom.io/install-on-your-product-or-site/install-intercom-on-your-android-app). Please contact us in Intercom with any questions you may have, we're only a message away!
