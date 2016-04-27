@@ -202,7 +202,7 @@ Our Android SDK versions come bundled with some 3rd party dependencies. To ensur
   <tr><th colspan="2" style="text-align: center;">Android</th></tr>
   <tr><td style="text-align: center; font-weight: bold; width: 50%;">Library</td><td style="text-align: center; font-weight: bold; width: 50%;">Version</td></tr>
   <tr><td style="width: 50%;">com.google.code.gson</td><td style="width: 50%;">2.5</td></tr>
-  <tr><td style="width: 50%;">com.squareup</td><td style="width: 50%;">1.3.7</td></tr>
+  <tr><td style="width: 50%;">com.squareup.otto</td><td style="width: 50%;">1.3.7</td></tr>
   <tr><td style="width: 50%;">com.squareup.retrofit</td><td style="width: 50%;">1.9.0</td></tr>
   <tr><td style="width: 50%;">com.squareup.picasso</td><td style="width: 50%;">2.5.2</td></tr>
 </table>
