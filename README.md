@@ -175,3 +175,38 @@ Detailed documentation and getting started guides for:
 - Deep Linking in messages
 
 are available in [our documentation](https://docs.intercom.io/install-on-your-product-or-site/install-intercom-on-your-android-app). Please contact us in Intercom with any questions you may have, we're only a message away!
+
+## Migrating to the latest version of the SDK
+
+Migrating to the latest and greatest versions of the Android SDK shouldn't need to be a daunting prospect. In fact there is only one place that you should need to make changes in order to get the newest SDK versions.
+
+In your app's build.gradle file you can add the following:
+
+    dependencies {
+        compile project(':intercom-sdk-base') // Intercom base library
+        compile project(':intercom-sdk-gcm') // Intercom messaging services that uses Google cloud messaging
+        compile 'com.google.android.gms:play-services-gcm:7.5.0' // Only required if you use GCM
+    }
+
+or if you use our bundled dependency updating it to:
+
+    compile ('io.intercom.android:intercom-sdk:1.+@aar') { // Bundled package containing Intercom both base and GCM
+        transitive = true
+    }
+
+This will ensure you will get the most current version of the SDK when as it is released.
+
+Our Android SDK versions come bundled with some 3rd party dependencies. To ensure you don't run into any version conflicts here is a list of the dependency versions we ship with our latest SDK version:
+
+<table>
+  <tr><th colspan="2" style="text-align: center;">Android</th></tr>
+  <tr><td style="text-align: center; font-weight: bold; width: 50%;">Library</td><td style="text-align: center; font-weight: bold; width: 50%;">Version</td></tr>
+  <tr><td style="width: 50%;">com.google.code.gson</td><td style="width: 50%;">2.5</td></tr>
+  <tr><td style="width: 50%;">com.squareup</td><td style="width: 50%;">1.3.7</td></tr>
+  <tr><td style="width: 50%;">com.squareup.retrofit</td><td style="width: 50%;">1.9.0</td></tr>
+  <tr><td style="width: 50%;">com.squareup.picasso</td><td style="width: 50%;">2.5.2</td></tr>
+</table>
+
+### Changing from versions older than Android SDK v1.1.0
+
+Before version 1.1.0 of our Android SDK was released we included Google’s GCM library with our base library in a single bundle called *intercom-sdk*. From version 1.1.0 onward we separated the GCM (*intercom-sdk-gcm*) and base (*intercom-sdk-base*) libraries so that anyone who didn’t need GCM wasn't forced to include it as a dependency. The *intercom-sdk* package reference is still valid for anyone who would like to continue using it.
