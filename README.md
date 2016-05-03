@@ -185,7 +185,7 @@ In your app's build.gradle file you can add the following:
     dependencies {
         compile project(':intercom-sdk-base') // Intercom base library
         compile project(':intercom-sdk-gcm') // Intercom messaging services that uses Google cloud messaging
-        compile 'com.google.android.gms:play-services-gcm:7.5.0' // Only required if you use GCM
+        compile 'com.google.android.gms:play-services-gcm:8.4.0' // Only required if you use GCM
     }
 
 or if you use our bundled dependency updating it to:
