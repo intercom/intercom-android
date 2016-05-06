@@ -1,7 +1,7 @@
-# Intercom for Android 1.1.18
+# Intercom for Android 3.0.0-beta1
 
 ## Supported versions
-Targets Android 2.3 (API 9) but *only* 4.0.3 (API 15) and above have tracking and messaging functionality.
+4.0.3 (API 15) and up.
 
 ## Set up
 
@@ -25,21 +25,17 @@ As of 1.1.0 GCM permissions are now included by default in the main package. If 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
     <uses-permission android:name="android.permission.VIBRATE"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 ```
 The GCM permissions are:  
 [WAKE_LOCK](http://developer.android.com/reference/android/Manifest.permission.html#WAKE_LOCK)  
 [RECEIVE](https://developer.android.com/google/gcm/client.html#manifest)  
-[VIBRATE](http://developer.android.com/reference/android/Manifest.permission.html#VIBRATE)   
-[READ_PHONE_STATE](http://developer.android.com/reference/android/Manifest.permission.html#READ_PHONE_STATE) Allows us to generate a device id using TelephonyManager.getDeviceId();  
-[ACCESS_WIFI_STATE](http://developer.android.com/reference/android/Manifest.permission.html#ACCESS_WIFI_STATE) Allows us to generate a mac id using WifiInfo.getMacAddress()  
+[VIBRATE](http://developer.android.com/reference/android/Manifest.permission.html#VIBRATE)
 
 ### Dependencies
 
 The gcm module does requires google play services if you're including it manually:
 ```
-compile 'com.google.android.gms:play-services-gcm:8.1.0'
+compile 'com.google.android.gms:play-services-gcm:8.4.0'
 ```
 
 The compileSdkVersion needs to be 23.
@@ -79,7 +75,7 @@ private void successfulLogin(){
 if(loggedIn){
 	...
 	// We're logged in, we can register the user with Intercom
-	Intercom.client().registerIdentifiedUser(new Registration().withUserId("123456"));
+	Intercom.client().registerIdentifiedUser(Registration.create().withUserId("123456"));
 	// Carry on as normal
 	...
 }

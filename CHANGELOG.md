@@ -1,5 +1,54 @@
 # Change Log
 
+## Version 3.0.0-beta1
+
+06-05-2016
+
+We're skipping 2.x entirely. This is being done to align the iOS and Android versions of Intercom such that going forward we'll have similar major.minor patches for features. It's easier for all of us internally too if we can refer to something in a platform agnostic way (Messenger V3!) :)
+
+### What's new
+
+We’ve updated every pixel of our Messenger. The UI feels a lot more native, fluid and is more visually appealing while fitting into the visual aesthetic of your app better too.
+
+Part of this involves a new Intercom Launcher that you can show in your app to let your users instantly access the Messenger.
+
+### Dependencies
+
+As part of the work to bring a better visual aesthetic to the Messenger we started using some new dependencies. Chief amongst these are the support libraries Google provides. This library now relies on:
+ * `com.android.support:appcompat-v7:23.3.0`
+ * `com.android.support:recyclerview-v7:23.3.0`
+ * `com.android.support:design:23.3.0`
+
+If you use these libraries in your project be aware that we plan to stay up to date with releases and this will, by default, transitively force your app to use these versions too.
+
+We also added some dependencies that we're namespacing to avoid version conflicts and other conflicts:
+ * `com.facebook.rebound:rebound:0.3.8` for nice spring animations
+ * `com.github.bumptech.glide:glide:3.7.0` for gif support
+
+And on top of that we've updated OkHttp and Retrofit to the 3.x and 2.x versions. These are also namespaced so that won't confict with anything in your code.
+
+### New methods on the public interface
+
+ * `void setLauncherVisibility(Visibility visibility)` will toggle whether the new Intercom launcher appears in your app. Valid parameters are `Intercom.Visibility.VISIBLE` and `Intercom.Visibility.GONE`. The default is `GONE`.
+ * `void setInAppMessageVisibility(Visibility visibility)` will toggle whether in-app messages appear in your app when sent to a user. Valid parameters are `Intercom.VISIBLE` and `Intercom.GONE`. The default is `VISIBLE`.
+ * `void hideMessenger()` will close the Intercom Messenger if it's onscreen. The typical use case we've seen for something like this is that an important event has happened in the background of your app (eg a user has taken 10,000 steps) and you need to display something immediately. We'd advise normally using an `Intent` to start your activity if that's possible within your app's architecture; we're accounting for the possibility that it isn't always possible with this method.
+ * `int getUnreadConversationCount` will return the last known number of unread conversations that a user has.
+ * `void addUnreadConversationCountListener(UnreadConversationCountListener listener)` lets you set a listener that will be notified every time the known conversation count for this user changes. For example, you may want to display a badge somewhere in your app that exposes to a user the number of unread conversations they have. Multiple listeners can be registered at a time. A **strong** reference is kept to each listener.
+ * `void removeUnreadConversationCountListener(UnreadConversationCountListener listener)` removes this listener from the list that will be notified of unread conversation count updates.
+
+### Removed methods from public interface
+
+All deprecated methods have been dropped from Intercom, these include
+  * `setMessagesHidden(boolean visibility)` in favour of two new visibility methods explained below
+  * `openGCMMessage(Uri data)` in favour of `openGCMMessage(Intent intent)`
+
+In addition some other methods have been dropped:
+  * `setPreviewPosition` has been removed with no replacement
+  * `setVisibility` has been removed in favour of `setLauncherVisibility` and `setInAppMessageVisibility`
+
+### Miscellaneous
+  * We've hidden our resources so you won't see all our layouts, colours etc when you're trying to reference your own resources
+
 ## Version 1.1.18
 
 18-04-2016
