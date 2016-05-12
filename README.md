@@ -1,4 +1,4 @@
-# Intercom for Android 3.0.0-beta1
+# Intercom for Android 3.0.0-beta2
 
 ## Supported versions
 4.0.3 (API 15) and up.

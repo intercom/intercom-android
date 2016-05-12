@@ -4,13 +4,13 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.intercom.android</groupId>
   <artifactId>intercom-sdk-gcm</artifactId>
-  <version>3.0.0-beta1</version>
+  <version>3.0.0-beta2</version>
   <packaging>aar</packaging>
   <dependencies>
     <dependency>
       <groupId>io.intercom.android</groupId>
       <artifactId>intercom-sdk-base</artifactId>
-      <version>3.0.0-beta1</version>
+      <version>3.0.0-beta2</version>
       <scope>compile</scope>
     </dependency>
     <dependency>

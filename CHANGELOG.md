@@ -1,5 +1,15 @@
 # Change Log
 
+## Version 3.0.0-beta2
+
+12-05-2016
+
+* Fixed a crash that would occur if you sent 3+ manual messages to a user, opened your app, then sent another
+* Hide the back arrow when coming from the conversation screen back to the conversations list
+* Fixed the sizing for our FAB asset on the conversations list screen. It's more crisp now
+* Removed a lot of overdraw from inside the conversations list
+* Made some performance improvements to how we're rending messages
+
 ## Version 3.0.0-beta1
 
 06-05-2016
