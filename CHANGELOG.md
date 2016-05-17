@@ -1,5 +1,13 @@
 # Change Log
 
+## Version 1.1.19
+
+17-05-2016
+
+* Removed permission VIBRATE. VIBRATE was used for push notifications. If it is included in the host app the push will still cause the default device vibration.
+* Removed permissions READ_EXTERNAL_STORAGE and MANAGE_DOCUMENTS. These permissions are optional for attachments. In most cases they are not required but certain OS and file provider combinations may fail to send the attachment without.
+* Fixed an issue with push only messages not following the URI correctly.
+
 ## Version 1.1.18
 
 18-04-2016

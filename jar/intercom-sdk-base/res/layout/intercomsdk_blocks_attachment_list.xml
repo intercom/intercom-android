@@ -6,4 +6,3 @@
               android:layout_marginBottom="10dp"
               android:background="@android:color/transparent"
               android:orientation="vertical" />
-<!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/layout/intercomsdk_blocks_attachment_list.xml -->

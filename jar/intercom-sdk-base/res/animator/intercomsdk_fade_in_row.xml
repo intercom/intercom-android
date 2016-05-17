@@ -6,4 +6,4 @@
                 android:valueFrom="0"
                 android:valueTo="1"
                 android:propertyName="alpha"
-                android:duration="@android:integer/config_shortAnimTime" /><!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/animator/intercomsdk_fade_in_row.xml -->
+                android:duration="@android:integer/config_shortAnimTime" />

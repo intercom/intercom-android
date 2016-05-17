@@ -8,4 +8,4 @@
     android:layout_gravity="center"
     android:layout_marginBottom="10dp"
     android:contentDescription="@string/intercomsdk_accessibility_welcome"
-    android:src="@drawable/intercomsdk_welcome_information_icon"/><!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/layout/intercomsdk_welcome_message_icon.xml -->
+    android:src="@drawable/intercomsdk_welcome_information_icon"/>

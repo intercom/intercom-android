@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
-    <!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/values/colours.xml -->
-    <eat-comment/>
     <color name="intercomsdk_app_name_colour">#009CDE</color>
     <color name="intercomsdk_attachment_color">#B0BEC5</color>
     <color name="intercomsdk_background_grey">#eceff1</color>
@@ -25,8 +23,6 @@
     <color name="intercomsdk_text_light_black">#455A64</color>
     <color name="intercomsdk_white">#FFFFFF</color>
     <declare-styleable name="MaxSizeLinearLayout"><attr format="dimension" name="intercomsdk_maxWidth"/><attr format="dimension" name="intercomsdk_maxHeight"/></declare-styleable>
-    <!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/values/dimens.xml -->
-    <eat-comment/>
     <dimen name="intercomsdk_action_item_width">50dp</dimen>
     <dimen name="intercomsdk_cell_padding_admin_left">18dp</dimen>
     <dimen name="intercomsdk_cell_padding_admin_right">12dp</dimen>
@@ -47,14 +43,10 @@
     <dimen name="intercomsdk_rowtime_padding_top">2dp</dimen>
     <item format="float" name="intercomsdk_scaled_down_is_typing" type="dimen">0.7</item>
     <item format="float" name="intercomsdk_scaled_up_is_typing" type="dimen">1.0</item>
-    <!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/values/plurals.xml -->
-    <eat-comment/>
     <plurals name="intercomsdk_others">
         <item quantity="one">" &amp; 1 other"</item>
         <item quantity="other">" &amp; %d others"</item>
     </plurals>
-    <!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/values/strings.xml -->
-    <eat-comment/>
     <string name="intercomsdk_accessibility_avatar">Avatar</string>
     <string name="intercomsdk_accessibility_is_typing">Someone is typing</string>
     <string name="intercomsdk_accessibility_powered_by">Powered by Intercom</string>
@@ -93,8 +85,6 @@
     <string name="intercomsdk_unable_to_load">Unable to load conversations</string>
     <string name="intercomsdk_write_a_reply">Write a reply</string>
     <string name="intercomsdk_you">You</string>
-    <!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/values/styles.xml -->
-    <eat-comment/>
     <style name="IntercomSDK_AttachmentTheme">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowNoTitle">true</item>

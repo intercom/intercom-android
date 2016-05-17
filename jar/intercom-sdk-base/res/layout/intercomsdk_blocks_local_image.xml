@@ -12,4 +12,3 @@
         android:adjustViewBounds="true"
         android:scaleType="fitStart"/>
 </io.intercom.android.sdk.views.ProgressFrameLayout>
-<!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/layout/intercomsdk_blocks_local_image.xml -->

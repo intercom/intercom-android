@@ -7,4 +7,3 @@
            android:scaleType="fitStart"
            android:adjustViewBounds="true"
            tools:ignore="ContentDescription"/>
-<!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/layout/intercomsdk_blocks_video.xml -->

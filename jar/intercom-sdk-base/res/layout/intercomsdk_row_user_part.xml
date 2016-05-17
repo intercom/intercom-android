@@ -28,4 +28,4 @@
         android:maxLines="1"
         android:textColor="@color/intercomsdk_light_grey_colour"
         android:textSize="13sp"/>
-</LinearLayout><!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/layout/intercomsdk_row_user_part.xml -->
+</LinearLayout>

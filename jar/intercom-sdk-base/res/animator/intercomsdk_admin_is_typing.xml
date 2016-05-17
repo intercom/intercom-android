@@ -49,4 +49,4 @@
             android:valueTo="@dimen/intercomsdk_scaled_down_is_typing"
             android:valueType="floatType"/>
     </set>
-</set><!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/animator/intercomsdk_admin_is_typing.xml -->
+</set>

@@ -12,4 +12,4 @@
             android:topLeftRadius="0dp"
             android:topRightRadius="0dp" />
     </shape>
-</inset><!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/drawable/intercomsdk_white_rounded_bottom.xml -->
+</inset>

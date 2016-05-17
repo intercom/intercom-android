@@ -18,4 +18,4 @@
               android:paddingTop="6dp"
               android:text="@string/intercomsdk_activated_key_message"
               android:textColor="#FFF" />
-</LinearLayout><!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/layout/intercomsdk_onboarding_layout.xml -->
+</LinearLayout>

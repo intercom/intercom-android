@@ -154,4 +154,3 @@
         android:background="@drawable/intercomsdk_top_shadow"
         android:contentDescription="@string/intercomsdk_accessibility_shadow"/>
 </RelativeLayout>
-<!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/layout/intercomsdk_fragment_conversation.xml -->

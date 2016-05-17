@@ -1,4 +1,4 @@
-# Intercom for Android 1.1.18
+# Intercom for Android 1.1.19
 
 ## Supported versions
 Targets Android 2.3 (API 9) but *only* 4.0.3 (API 15) and above have tracking and messaging functionality.
@@ -12,26 +12,35 @@ A full guide to integrating Intercom for Android with your app is available [her
 We include these permissions by default:
 ```
     <uses-permission android:name="android.permission.INTERNET"/>>
+```
+[INTERNET](http://developer.android.com/reference/android/Manifest.permission.html#INTERNET) allows us to make network requests.  
+
+You can optionally include these permissions:
+```
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
 ```
-[INTERNET](http://developer.android.com/reference/android/Manifest.permission.html#INTERNET) allows us to make network requests.  
 [READ_EXTERNAL_STORAGE](http://developer.android.com/reference/android/Manifest.permission.html#READ_EXTERNAL_STORAGE) is used for attachments.
 [MANAGE_DOCUMENTS](http://developer.android.com/reference/android/Manifest.permission.html#MANAGE_DOCUMENTS) is used for attachments.
 
 As of 1.1.0 GCM permissions are now included by default in the main package. If you do not wish to use GCM you can use the intercom-sdk-base package, for more details visit http://docs.intercom.io/Install-on-your-mobile-product/installing-intercom-for-android
+
+The GCM permissions are:  
 ```
-    <!-- GCM PERMISSIONS -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+```
+
+[WAKE_LOCK](http://developer.android.com/reference/android/Manifest.permission.html#WAKE_LOCK)  
+[RECEIVE](https://developer.android.com/google/gcm/client.html#manifest)  
+
+You can optionally include these permissions for GCM:
+```
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 ```
-The GCM permissions are:  
-[WAKE_LOCK](http://developer.android.com/reference/android/Manifest.permission.html#WAKE_LOCK)  
-[RECEIVE](https://developer.android.com/google/gcm/client.html#manifest)  
-[VIBRATE](http://developer.android.com/reference/android/Manifest.permission.html#VIBRATE)   
+[VIBRATE](http://developer.android.com/reference/android/Manifest.permission.html#VIBRATE) Allows the device to vibrate when a push message is received
 [READ_PHONE_STATE](http://developer.android.com/reference/android/Manifest.permission.html#READ_PHONE_STATE) Allows us to generate a device id using TelephonyManager.getDeviceId();  
 [ACCESS_WIFI_STATE](http://developer.android.com/reference/android/Manifest.permission.html#ACCESS_WIFI_STATE) Allows us to generate a mac id using WifiInfo.getMacAddress()  
 

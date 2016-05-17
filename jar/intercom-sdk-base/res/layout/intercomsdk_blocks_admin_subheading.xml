@@ -9,4 +9,3 @@
           android:textColor="@color/intercomsdk_text_light_black"
           android:textColorLink="@color/intercomsdk_text_light_black"
           android:textStyle="bold"/>
-<!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/layout/intercomsdk_blocks_admin_subheading.xml -->

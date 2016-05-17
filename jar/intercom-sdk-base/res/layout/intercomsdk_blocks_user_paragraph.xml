@@ -8,4 +8,3 @@
           android:textColorLink="@android:color/white"
           android:textIsSelectable="true"
           android:textSize="15sp"/>
-<!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/layout/intercomsdk_blocks_user_paragraph.xml -->

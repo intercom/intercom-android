@@ -20,4 +20,3 @@
         android:indeterminate="true"
         android:indeterminateDrawable="@drawable/intercomsdk_progress_wheel"/>
 </FrameLayout>
-<!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/layout/intercomsdk_blocks_image.xml -->

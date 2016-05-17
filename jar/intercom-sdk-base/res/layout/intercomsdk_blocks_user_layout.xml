@@ -9,4 +9,3 @@
               android:paddingLeft="@dimen/intercomsdk_cell_padding_left"
               android:paddingRight="@dimen/intercomsdk_cell_padding_right"
               android:paddingTop="@dimen/intercomsdk_cell_padding_top"/>
-<!-- From: file:/Users/intercom/Agents/Android/Andy/work/5095e7c558cfdc56/intercom-sdk-base/src/main/res/layout/intercomsdk_blocks_user_layout.xml -->
