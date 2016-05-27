@@ -12,9 +12,12 @@ In the `Intercom` class we've introduced a new API method that intelligently ope
 
 We've also corrected all methods that used `GCM` to be `Gcm`. This is a **breaking change**.
 
+
+
 * Lazily instantiate much of the object graph the messenger needs to work. This will speed up your app startup time!
 * More improvements to reduce overdraw in the messenger
 * Performance improvements to how we were rendering messages. They render roughly 30-50% faster now.
+* Removed permissions READ_EXTERNAL_STORAGE and MANAGE_DOCUMENTS. These permissions are optional for attachments. In most cases they are not required but certain OS and file provider combinations may fail to send the attachment without.
 * Fixed a bug with push only messages not following an included URI correctly.
 * Fixed a bug that was causing images to be cropped slightly in a chat style messages
 * Fixed a memory leak that sometimes lead to threads not being garbage collected [issue#197](https://github.com/intercom/intercom-android/issues/197) and [issue#136](https://github.com/intercom/intercom-android/issues/136)
