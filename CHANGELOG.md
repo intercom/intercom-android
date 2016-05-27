@@ -1,5 +1,24 @@
 # Change Log
 
+## Version 3.0.0-beta3
+
+27-05-2016
+
+### New methods in the API
+
+The `Registration` object now has a `withGcmCredentials(String token, int logo)` that you can use to set a GCM token and push logo. `withGCMRegistrationId(String token)` has been removed in favour of this method. Setting a token without a logo is a poorer user experience as we'll have to use a generic default.
+
+In the `Intercom` class we've introduced a new API method that intelligently opens the messenger to the correct location based on context the messenger is aware of and a users actions in your app. It can open to the conversations list, to an existing conversation, or to compose a new conversation, `void displayMessenger()`.
+
+We've also corrected all methods that used `GCM` to be `Gcm`. This is a **breaking change**.
+
+* Lazily instantiate much of the object graph the messenger needs to work. This will speed up your app startup time!
+* More improvements to reduce overdraw in the messenger
+* Performance improvements to how we were rendering messages. They render roughly 30-50% faster now.
+* Fixed a bug with push only messages not following an included URI correctly.
+* Fixed a bug that was causing images to be cropped slightly in a chat style messages
+* Fixed a memory leak that sometimes lead to threads not being garbage collected [issue#197](https://github.com/intercom/intercom-android/issues/197) and [issue#136](https://github.com/intercom/intercom-android/issues/136)
+
 ## Version 3.0.0-beta2
 
 12-05-2016
