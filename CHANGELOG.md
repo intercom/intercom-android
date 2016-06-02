@@ -1,5 +1,11 @@
 # Change Log
 
+## Version 1.1.20
+
+02-06-2016
+
+* Fixed an issue which can result in inflated session counts for both identified and unidentified users.
+
 ## Version 1.1.19
 
 17-05-2016
