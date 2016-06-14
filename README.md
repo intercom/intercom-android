@@ -1,4 +1,4 @@
-# Intercom for Android 1.1.19
+# Intercom for Android 1.1.21
 
 ## Supported versions
 Targets Android 2.3 (API 9) but *only* 4.0.3 (API 15) and above have tracking and messaging functionality.
@@ -48,7 +48,7 @@ You can optionally include these permissions for GCM:
 
 The gcm module does requires google play services if you're including it manually:
 ```
-compile 'com.google.android.gms:play-services-gcm:8.1.0'
+compile 'com.google.android.gms:play-services-gcm:8.4.0'
 ```
 
 The compileSdkVersion needs to be 23.

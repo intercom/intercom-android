@@ -1,5 +1,11 @@
 # Change Log
 
+## Version 1.1.21
+
+14-06-2016
+
+* Protect against crash if the image resource is not found [issue#198](https://github.com/intercom/intercom-android/issues/198)
+
 ## Version 1.1.20
 
 02-06-2016
