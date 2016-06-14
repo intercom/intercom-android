@@ -1,5 +1,36 @@
 # Change Log
 
+## Version 3.0.0-beta4
+
+14-06-2016
+
+### Changes in the API
+
+We no longer take a resource ID for the push notification icon. To set a push notification icon simply add an image named intercom_push_icon.png to your apps resource drawable directory. Its important to add this for all of the densities you support for example:
+/res/drawable-xxhdpi/intercom_push_icon.png
+/res/drawable-xhdpi/intercom_push_icon.png
+/res/drawable-hdpi/intercom_push_icon.png
+/res/drawable-mdpi/intercom_push_icon.png
+
+This changes a couple of the public APIs in Intercom:
+
+`Intercom.client().setupGcm(token, R.drawable.intercom_push_icon);`
+becomes
+`Intercom.client().setupGcm(token);`
+
+`Intercom.client().registerIdentifiedUser(Registration.create().withGcmCredentials(token, R.drawable.intercom_push_icon));`
+becomes
+`Intercom.client().registerIdentifiedUser(Registration.create().withGcmRegistrationId(token));`
+
+### What's new
+
+* We added in a new message pill to let users know when they have recieved replies offscreen in the conversation thread they are viewing
+
+### Issues and bug fixes
+
+* We fixed an issue that could result in inflated session counts.
+
+
 ## Version 3.0.0-beta3
 
 27-05-2016
