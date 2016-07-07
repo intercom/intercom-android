@@ -61,10 +61,10 @@ Broadly speaking, there are three types of apps that Intercom for Android will w
 3. Apps that support both logged in and logged out users, like Google Maps or Youtube. [Show me how.](https://github.com/intercom/intercom-android#my-app-has-logged-in-and-logged-out-users)
 
 ### Initialize Intercom
-No matter what category of app you have, you'll need your Intercom app id and the Android API key that can be found on the [Intercom App Settings](https://app.intercom.io/) page in the API keys section. Once you've found those keys, initialize Intercom by calling the following in the `oncreate()` method of your application class:
+No matter what category of app you have, you'll need your Intercom app id and the Android API key that can be found on the [Intercom App Settings](https://app.intercom.io/) page in the API keys section. Once you've found those keys, initialize Intercom by calling the following in the `onCreate()` method of your application class:
 
 ```Java
-Intercom.initialize(getApplicationContext(), "your api key", "your app id");
+Intercom.initialize(this, "your api key", "your app id");
 ```
 
 ###My app only has logged in users
