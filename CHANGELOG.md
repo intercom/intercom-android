@@ -1,5 +1,27 @@
 # Change Log
 
+## Version 3.0.0-beta5
+
+08-07-2016
+
+### Changes in the API
+
+How GCM is set up has been simplified. There is not longer a method `Intercom.client().setupGcm(token)` and  `Intercom.client().registerIdentifiedUser(Registration.create().withGcmRegistrationId(token));`
+
+Instead of the mehtods above, in your res/values/strings.xml add the following line replacing YOUR_SENDER_ID. The sender is is in your google-services.json file as "project_number": "YOUR_SENDER_ID"
+
+`<string name="intercom_gcm_sender_id">YOUR_SENDER_ID</string>`
+
+### What's new
+
+* We have added localization to the SDK. This can be set in your app settings https://app.intercom.io/a/apps/<YOUR_APP_ID>/settings/messenger
+* We have updated our default launcher icon.
+
+### Issues and bug fixes
+
+* Fixed crashes in the photoviewer
+* UI bugs and tweaks
+
 ## Version 3.0.0-beta4
 
 14-06-2016

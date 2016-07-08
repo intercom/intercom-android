@@ -6,7 +6,7 @@ Add the following dependency to your `build.gradle` file:
 
 ```gradle
 dependencies {
-    compile ('io.intercom.android:intercom-sdk:3.0.0-beta4') {
+    compile ('io.intercom.android:intercom-sdk:3.0.0-beta5') {
         transitive = true
     }
 }
@@ -16,7 +16,7 @@ or if you are not using GCM:
 
 ```gradle
 dependencies {
-	compile ('io.intercom.android:intercom-sdk-base:3.0.0-beta4') {
+	compile ('io.intercom.android:intercom-sdk-base:3.0.0-beta5') {
         transitive = true
    }
 }
@@ -25,7 +25,7 @@ dependencies {
 `.aar` files are also included in this repo if you want to use them instead. If so then you will need to include GCM in your `build.gradle` file.
 
 ```gradle
-compile 'com.google.android.gms:play-services-gcm:8.4.0'
+compile 'com.google.android.gms:play-services-gcm:9.2.0'
 ```
 
 ## Set up
