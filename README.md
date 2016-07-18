@@ -75,7 +75,7 @@ Intercom.initialize(this, "your api key", "your app id");
 private void successfulLogin(){
 	...
 	// Registering with Intercom is easy. For best results, use a unique user_id if you have one.
-	Intercom.client().registerIdentifiedUser(new Registration().withUserId("123456"));
+	Intercom.client().registerIdentifiedUser(Registration.create().withUserId("123456"));
 }
 ```
 
@@ -88,7 +88,7 @@ private void successfulLogin(){
 if(loggedIn){
 	...
 	// We're logged in, we can register the user with Intercom
-	Intercom.client().registerIdentifiedUser(new Registration().withUserId("123456"));
+	Intercom.client().registerIdentifiedUser(Registration.create().withUserId("123456"));
 	// Carry on as normal
 	...
 }
