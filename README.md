@@ -199,3 +199,46 @@ are available in [our documentation](https://docs.intercom.io/install-on-your-pr
 ## Changing from versions older than Android SDK v1.1.0
 
 Before version 1.1.0 of our Android SDK was released we included Google’s GCM library with our base library in a single bundle called *intercom-sdk*. From version 1.1.0 onward we separated the GCM (*intercom-sdk-gcm*) and base (*intercom-sdk-base*) libraries so that anyone who didn’t need GCM wasn't forced to include it as a dependency. The *intercom-sdk* package reference is still valid for anyone who would like to continue using it.
+
+## Dependency tree
+
+Here is our complete dependency tree:
+```
++--- project :intercom-sdk-base
+|    +--- com.android.support:design:24.1.0
+|    |    +--- com.android.support:appcompat-v7:24.1.0
+|    |    |    +--- com.android.support:animated-vector-drawable:24.1.0
+|    |    |    |    \--- com.android.support:support-vector-drawable:24.1.0
+|    |    |    |         \--- com.android.support:support-v4:24.1.0
+|    |    |    |              \--- com.android.support:support-annotations:24.1.0
+|    |    |    +--- com.android.support:support-v4:24.1.0 (*)
+|    |    |    \--- com.android.support:support-vector-drawable:24.1.0 (*)
+|    |    +--- com.android.support:support-v4:24.1.0 (*)
+|    |    \--- com.android.support:recyclerview-v7:24.1.0
+|    |         +--- com.android.support:support-v4:24.1.0 (*)
+|    |         \--- com.android.support:support-annotations:24.1.0
+|    +--- com.facebook.rebound:rebound:0.3.8
+|    +--- com.squareup:otto:1.3.8
+|    +--- com.github.bumptech.glide:glide-intercom:3.7.0
+|    +--- com.squareup.retrofit2:retrofit:2.1.0
+|    |    \--- com.squareup.okhttp3:okhttp:3.3.0 -> 3.4.1
+|    |         \--- com.squareup.okio:okio:1.9.0
+|    +--- com.squareup.retrofit2:converter-gson:2.1.0
+|    |    +--- com.squareup.retrofit2:retrofit:2.1.0 (*)
+|    |    \--- com.google.code.gson:gson:2.7
+|    +--- com.google.code.gson:gson:2.7
+|    +--- com.squareup.okhttp3:okhttp:3.4.1 (*)
+|    \--- com.squareup.okhttp3:okhttp-ws:3.4.1
+|         \--- com.squareup.okhttp3:okhttp:3.4.1 (*)
+\--- project :intercom-sdk-gcm
+     \--- com.google.android.gms:play-services-gcm:9.2.1
+          +--- com.google.android.gms:play-services-base:9.2.1
+          |    +--- com.google.android.gms:play-services-basement:9.2.1
+          |    |    \--- com.android.support:support-v4:23.0.0 -> 24.1.0 (*)
+          |    \--- com.google.android.gms:play-services-tasks:9.2.1
+          |         \--- com.google.android.gms:play-services-basement:9.2.1 (*)
+          +--- com.google.android.gms:play-services-basement:9.2.1 (*)
+          \--- com.google.android.gms:play-services-iid:9.2.1
+               +--- com.google.android.gms:play-services-base:9.2.1 (*)
+               \--- com.google.android.gms:play-services-basement:9.2.1 (*)
+```
