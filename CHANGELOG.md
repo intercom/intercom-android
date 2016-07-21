@@ -1,24 +1,146 @@
 # Change Log
 
-## Version 1.1.21
+## Version 3.0.0
+
+21-07-2016
+
+Our new Messenger is out of beta! You can read all about the updated design and new functionality [here](https://www.intercom.io/in-app-messaging).
+If you are upgrading from an older version of our Messenger you may need to change some of the methods you used to call. You can see any changes you may need to make [here](https://docs.intercom.io/messenger-v3/upgrade-to-the-new-messenger-android).
+Where is 2.x? We're skipping it. We did this to align the Android SDK with our iOS and web counter parts.
+
+## Version 3.0.0-beta5
+
+08-07-2016
+
+### Changes in the API
+
+How GCM is set up has been simplified. There is not longer a method `Intercom.client().setupGcm(token)` and  `Intercom.client().registerIdentifiedUser(Registration.create().withGcmRegistrationId(token));`
+
+Instead of the mehtods above, in your res/values/strings.xml add the following line replacing YOUR_SENDER_ID. The sender is is in your google-services.json file as "project_number": "YOUR_SENDER_ID"
+
+`<string name="intercom_gcm_sender_id">YOUR_SENDER_ID</string>`
+
+### What's new
+
+* We have added localization to the SDK. This can be set in your app settings https://app.intercom.io/a/apps/<YOUR_APP_ID>/settings/messenger
+* We have updated our default launcher icon.
+
+### Issues and bug fixes
+
+* Fixed crashes in the photoviewer
+* UI bugs and tweaks
+
+## Version 3.0.0-beta4
 
 14-06-2016
 
-* Protect against crash if the image resource is not found [issue#198](https://github.com/intercom/intercom-android/issues/198)
+### Changes in the API
 
-## Version 1.1.20
+We no longer take a resource ID for the push notification icon. To set a push notification icon simply add an image named intercom_push_icon.png to your apps resource drawable directory. Its important to add this for all of the densities you support for example:
+/res/drawable-xxhdpi/intercom_push_icon.png
+/res/drawable-xhdpi/intercom_push_icon.png
+/res/drawable-hdpi/intercom_push_icon.png
+/res/drawable-mdpi/intercom_push_icon.png
 
-02-06-2016
+This changes a couple of the public APIs in Intercom:
 
-* Fixed an issue which can result in inflated session counts for both identified and unidentified users.
+`Intercom.client().setupGcm(token, R.drawable.intercom_push_icon);`
+becomes
+`Intercom.client().setupGcm(token);`
 
-## Version 1.1.19
+`Intercom.client().registerIdentifiedUser(Registration.create().withGcmCredentials(token, R.drawable.intercom_push_icon));`
+becomes
+`Intercom.client().registerIdentifiedUser(Registration.create().withGcmRegistrationId(token));`
 
-17-05-2016
+### What's new
 
-* Removed permission VIBRATE. VIBRATE was used for push notifications. If it is included in the host app the push will still cause the default device vibration.
+* We added in a new message pill to let users know when they have recieved replies offscreen in the conversation thread they are viewing
+
+### Issues and bug fixes
+
+* We fixed an issue that could result in inflated session counts.
+
+
+## Version 3.0.0-beta3
+
+27-05-2016
+
+### New methods in the API
+
+The `Registration` object now has a `withGcmCredentials(String token, int logo)` that you can use to set a GCM token and push logo. `withGCMRegistrationId(String token)` has been removed in favour of this method. Setting a token without a logo is a poorer user experience as we'll have to use a generic default.
+
+In the `Intercom` class we've introduced a new API method that intelligently opens the messenger to the correct location based on context the messenger is aware of and a users actions in your app. It can open to the conversations list, to an existing conversation, or to compose a new conversation, `void displayMessenger()`.
+
+We've also corrected all methods that used `GCM` to be `Gcm`. This is a **breaking change**.
+
+
+
+* Lazily instantiate much of the object graph the messenger needs to work. This will speed up your app startup time!
+* More improvements to reduce overdraw in the messenger
+* Performance improvements to how we were rendering messages. They render roughly 30-50% faster now.
 * Removed permissions READ_EXTERNAL_STORAGE and MANAGE_DOCUMENTS. These permissions are optional for attachments. In most cases they are not required but certain OS and file provider combinations may fail to send the attachment without.
-* Fixed an issue with push only messages not following the URI correctly.
+* Fixed a bug with push only messages not following an included URI correctly.
+* Fixed a bug that was causing images to be cropped slightly in a chat style messages
+* Fixed a memory leak that sometimes lead to threads not being garbage collected [issue#197](https://github.com/intercom/intercom-android/issues/197) and [issue#136](https://github.com/intercom/intercom-android/issues/136)
+
+## Version 3.0.0-beta2
+
+12-05-2016
+
+* Fixed a crash that would occur if you sent 3+ manual messages to a user, opened your app, then sent another
+* Hide the back arrow when coming from the conversation screen back to the conversations list
+* Fixed the sizing for our FAB asset on the conversations list screen. It's more crisp now
+* Removed a lot of overdraw from inside the conversations list
+* Made some performance improvements to how we're rending messages
+
+## Version 3.0.0-beta1
+
+06-05-2016
+
+We're skipping 2.x entirely. This is being done to align the iOS and Android versions of Intercom such that going forward we'll have similar major.minor patches for features. It's easier for all of us internally too if we can refer to something in a platform agnostic way (Messenger V3!) :)
+
+### What's new
+
+We’ve updated every pixel of our Messenger. The UI feels a lot more native, fluid and is more visually appealing while fitting into the visual aesthetic of your app better too.
+
+Part of this involves a new Intercom Launcher that you can show in your app to let your users instantly access the Messenger.
+
+### Dependencies
+
+As part of the work to bring a better visual aesthetic to the Messenger we started using some new dependencies. Chief amongst these are the support libraries Google provides. This library now relies on:
+ * `com.android.support:appcompat-v7:23.3.0`
+ * `com.android.support:recyclerview-v7:23.3.0`
+ * `com.android.support:design:23.3.0`
+
+If you use these libraries in your project be aware that we plan to stay up to date with releases and this will, by default, transitively force your app to use these versions too.
+
+We also added some dependencies that we're namespacing to avoid version conflicts and other conflicts:
+ * `com.facebook.rebound:rebound:0.3.8` for nice spring animations
+ * `com.github.bumptech.glide:glide:3.7.0` for gif support
+
+And on top of that we've updated OkHttp and Retrofit to the 3.x and 2.x versions. These are also namespaced so that won't confict with anything in your code.
+
+### New methods on the public interface
+
+ * `void setLauncherVisibility(Visibility visibility)` will toggle whether the new Intercom launcher appears in your app. Valid parameters are `Intercom.Visibility.VISIBLE` and `Intercom.Visibility.GONE`. The default is `GONE`.
+ * `void setInAppMessageVisibility(Visibility visibility)` will toggle whether in-app messages appear in your app when sent to a user. Valid parameters are `Intercom.VISIBLE` and `Intercom.GONE`. The default is `VISIBLE`.
+ * `void hideMessenger()` will close the Intercom Messenger if it's onscreen. The typical use case we've seen for something like this is that an important event has happened in the background of your app (eg a user has taken 10,000 steps) and you need to display something immediately. We'd advise normally using an `Intent` to start your activity if that's possible within your app's architecture; we're accounting for the possibility that it isn't always possible with this method.
+ * `int getUnreadConversationCount` will return the last known number of unread conversations that a user has.
+ * `void addUnreadConversationCountListener(UnreadConversationCountListener listener)` lets you set a listener that will be notified every time the known conversation count for this user changes. For example, you may want to display a badge somewhere in your app that exposes to a user the number of unread conversations they have. Multiple listeners can be registered at a time. A **strong** reference is kept to each listener.
+ * `void removeUnreadConversationCountListener(UnreadConversationCountListener listener)` removes this listener from the list that will be notified of unread conversation count updates.
+
+### Removed methods from public interface
+
+All deprecated methods have been dropped from Intercom, these include
+  * `setMessagesHidden(boolean visibility)` in favour of two new visibility methods explained below
+  * `openGCMMessage(Uri data)` in favour of `openGCMMessage(Intent intent)`
+
+In addition some other methods have been dropped:
+  * `setPreviewPosition` has been removed with no replacement
+  * `setVisibility` has been removed in favour of `setLauncherVisibility` and `setInAppMessageVisibility`
+
+### Miscellaneous
+  * We've hidden our resources so you won't see all our layouts, colours etc when you're trying to reference your own resources
 
 ## Version 1.1.18
 

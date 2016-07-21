@@ -1,42 +1,22 @@
-# android-sdk-samples
-Sample integrations of the Android SDK  
-This contains sample apps of ways to integrate and test the integration of the Android SDK
+# Android SDK Samples
 
-## Android Studio sample app
+## Intercom Sample
+
 ### Setting Up
-This is a sample application to help with Intercom integration in Android Studio apps
+This is a sample application to demonstrate how to integrate Intercom in a simple app.
 You will need to add your Api Key and App Id to the SampleApplication
 You will also need to add either an email or user id (THIS USER WILL BE REGISTERED IN YOUR APP)
 If you have enabled secure mode you will need to provide hmac and data
-### Usage
- 1. Open the app
- 2. Tap the register button
- 3. Tap the intercom button on the top right to see the inbox or be brought to compose a new message
-### Error checking
-Make sure you have no filters on and search using Intercom-Android
+If you want to enable GCM in the test app simply provide your sender_id (project number in google-services.json)
+in the strings.xml file inside the tag intercom_gcm_sender_id
 
-## Eclipse sample app
-### Setting Up
-This is a sample application to help with Intercom Android Eclispe setup
-You will need to add your Api Key to the SampleApplication
-You will also need to add either an email or user id (THIS USER WILL BE REGISTERED IN YOUR APP)
 ### Usage
- 1. Open the app
- 2. Tap the Open Intercom button to open up the SDK
-
-## GCM sample app
-### Setting Up
-This is a sample application to help with Intercom Android GCM setup  
-You will need to add your Api Key, App Id, and GCM sender Id  
-You will also need to add either an email or user id (THIS USER WILL BE REGISTERED IN YOUR APP)  
-If you have enabled secure mode you will need to provide hmac and data  
-### Usage
- 1. Open the app on a gcm enabled device (no simulators/emulators without google play services)  
- 2. Tap the register button  
- 3. Wait for register button to turn grey and GCM Status should say Registered  
- 4. Tap the Intercom logo on the top right to open the In App Messenger  
- 5. If the session is working you should see your inbox  
+1. Open the app
+2. Tap the register button
+3. Tap the chat with us button to open the messenger
+4. Send a new message to that user to see the unread badge update on the custom launcher and the in app arrive
 
 ### Error checking
-Make sure you have no filters on and search using GCM_ISSUE  
-Report any issue on Intercom or on our Github repo  
+- Check logcat for any errors, make sure you have no filters turned on. It can help to switch 
+  logcat to Verbose.
+- Report any issue on Intercom or on our Github repo

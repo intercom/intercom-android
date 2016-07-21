@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Intercom Custom Launcher Sample</string>
+    <string name="title_activity_main">Intercom Custom Launcher  Sample</string>
+    <string name="chat_with_us">Chat with us!</string>
+    <string name="initialize_error">Error\nYou need to add your
+        API key and App ID in SampleApplication.java
+    </string>
+
+    <!-- Add your sender id here. This is required for GCM set up-->
+    <string name="intercom_gcm_sender_id"></string>
+</resources>

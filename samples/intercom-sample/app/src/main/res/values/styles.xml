@@ -1,0 +1,22 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/IntercomActionBar</item>
+        <item name="actionBarStyle">@style/IntercomActionBar</item>
+        <item name="android:buttonStyle">@style/IntercomButton</item>
+    </style>
+
+    <style name="IntercomActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@color/intercom_color</item>
+        <item name="background">@color/intercom_color</item>
+        <item name="colorPrimary">@color/intercom_color</item>
+        <item name="colorPrimaryDark">@color/intercom_color</item>
+    </style>
+
+    <style name="IntercomButton" parent="android:Widget">
+        <item name="android:background">@drawable/rounded_button</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:padding">@dimen/button_padding</item>
+    </style>
+</resources>

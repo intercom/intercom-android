@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                tools:context="io.intercom.sample.MainActivity">
+    <Button
+        android:id="@+id/messenger_button"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
+        android:drawableLeft="@drawable/ic_chat"
+        android:drawablePadding="8dp"
+        android:padding="8dp"
+        android:text="@string/chat_with_us"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/unread_counter"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignRight="@+id/messenger_button"
+        android:layout_alignTop="@+id/messenger_button"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/rounded_badge"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/not_initialized"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A000"
+        android:gravity="center"
+        android:text="@string/initialize_error"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+</RelativeLayout>
