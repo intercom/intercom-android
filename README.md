@@ -5,13 +5,13 @@
 Add the following dependency to your `build.gradle` file:
 
 ```gradle
-compile 'io.intercom.android:intercom-sdk:3.0.0'
+compile 'io.intercom.android:intercom-sdk:3.0.1'
 ```
 
 or if you are not using GCM:
 
 ```gradle
-compile 'io.intercom.android:intercom-sdk-base:3.0.0'
+compile 'io.intercom.android:intercom-sdk-base:3.0.1'
 ```
 
 `.aar` files are also included in this repo if you want to use them instead. If so then you will need to include GCM in your `build.gradle` file.
@@ -200,9 +200,9 @@ are available in [our documentation](https://docs.intercom.io/install-on-your-pr
 
 Before version 1.1.0 of our Android SDK was released we included Google’s GCM library with our base library in a single bundle called *intercom-sdk*. From version 1.1.0 onward we separated the GCM (*intercom-sdk-gcm*) and base (*intercom-sdk-base*) libraries so that anyone who didn’t need GCM wasn't forced to include it as a dependency. The *intercom-sdk* package reference is still valid for anyone who would like to continue using it.
 
-## Dependency tree
+## Dependency graph
 
-Here is our complete dependency tree:
+Here is our complete dependency graph:
 ```
 +--- project :intercom-sdk-base
 |    +--- com.android.support:design:24.1.0

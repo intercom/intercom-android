@@ -1,5 +1,14 @@
 # Change Log
 
+## Version 3.0.1
+
+22-07-2016
+
+Fixed an issue with real time messeging.
+Fixed an issue with launcher color being default color on first registration of a user on launch.
+Fixed an issue with passing attributes to a user registration which resulted in not updating the user after the very first registration.
+Fixed an issue with failed text parts being treated like uploaded attachments.
+
 ## Version 3.0.0
 
 21-07-2016
