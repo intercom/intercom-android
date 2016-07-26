@@ -6,8 +6,8 @@ import io.intercom.android.sdk.Intercom;
 
 public class SampleApplication extends Application {
     //----------------------------------------------------------------------------------------------
-    //You need to enter your api key and app id here to use Intercom for Android
-    //To get these keys go to https://app.intercom.io/a/apps/_/settings/android and follow the step-up guide
+    // You need to enter your api key and app id here to use Intercom for Android
+    // To get these keys go to https://app.intercom.io/a/apps/_/settings/android and follow the step-up guide
     //----------------------------------------------------------------------------------------------
     static final String YOUR_API_KEY = "";
     static final String YOUR_APP_ID = "";

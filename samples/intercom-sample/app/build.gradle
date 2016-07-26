@@ -2,10 +2,10 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "23.0.3"
+    buildToolsVersion "24.0.1"
 
     defaultConfig {
-        applicationId "io.intercom.androidstudiosample"
+        applicationId "io.intercom.sample"
         minSdkVersion 15
         targetSdkVersion 24
         versionCode 1
@@ -26,7 +26,5 @@ repositories {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-
-    compile 'io.intercom.android:intercom-sdk:3.0.0'
+    compile 'io.intercom.android:intercom-sdk:3.0.2'
 }
