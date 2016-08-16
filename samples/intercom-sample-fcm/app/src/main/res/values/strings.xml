@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">IntercomFCM</string>
+    <string name="title_activity_main">Intercom FCM Sample</string>
+    <string name="chat_with_us">Chat with us!</string>
+    <string name="initialize_error">Error\nYou need to add your
+        API key and App ID in SampleApplication.java
+    </string>
+</resources>

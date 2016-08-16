@@ -7,17 +7,29 @@ Add the following dependency to your `build.gradle` file:
 ```gradle
 compile 'io.intercom.android:intercom-sdk:3.+'
 ```
+That includes the base Intercom module including GCM. 
+If you want to use Intercom FCM replace the line above with the following:
 
-or if you are not using GCM:
+```gradle
+compile 'io.intercom.android:intercom-sdk-base:3.+'
+compile 'io.intercom.android:intercom-sdk-fcm:3.+'
+```
+
+If you are not using Intercom push notifications you can just use:
 
 ```gradle
 compile 'io.intercom.android:intercom-sdk-base:3.+'
 ```
 
-`.aar` files are also included in this repo if you want to use them instead. If so then you will need to include GCM in your `build.gradle` file.
+`.aar` files are also included in this repo if you want to use them instead. If so then you will need to include GCM or FCM dependancies in your `build.gradle` file.
 
+GCM:
 ```gradle
-compile 'com.google.android.gms:play-services-gcm:9.2.1'
+compile 'com.google.android.gms:play-services-gcm:9.4.0'
+```
+FCM:
+```gradle
+compile 'com.google.firebase:firebase-messaging:9.4.0'
 ```
 
 ## Upgrading from 1.x.x
@@ -203,33 +215,70 @@ Before version 1.1.0 of our Android SDK was released we included Google’s GCM 
 ## Dependency graph
 
 Here is our complete dependency graph:
+
+intercom-sdk-base
 ```
-+--- project :intercom-sdk-base
-|    +--- com.android.support:design:24.1.1
-|    +--- com.android.support:appcompat-v7:24.1.1
-|    +--- com.android.support:animated-vector-drawable:24.1.1
-|    +--- com.android.support:support-vector-drawable:24.1.1
++--- com.android.support:design:24.1.1
 |    +--- com.android.support:support-v4:24.1.1
-|    +--- com.android.support:support-annotations:24.1.1
+|    |    \--- com.android.support:support-annotations:24.1.1
 |    +--- com.android.support:recyclerview-v7:24.1.1
-|    +--- com.facebook.rebound:rebound:0.3.8
-|    +--- com.squareup:otto:1.3.8
-|    +--- com.github.bumptech.glide:glide-intercom:3.7.0
-|    +--- com.squareup.okio:okio:1.9.0
-|    +--- com.squareup.okhttp3:okhttp:3.4.1
-|    +--- com.squareup.okhttp3:okhttp-ws:3.4.1
-|    +--- com.squareup.retrofit2:retrofit:2.1.0
-|    +--- com.squareup.retrofit2:converter-gson:2.1.0
-|    +--- com.google.code.gson:gson:2.7
-\--- project :intercom-sdk-gcm
-     \--- com.google.android.gms:play-services-gcm:9.2.1
-          +--- com.google.android.gms:play-services-base:9.2.1
-          |    +--- com.google.android.gms:play-services-basement:9.2.1
-          |    |    \--- com.android.support:support-v4:23.0.0 -> 24.1.1 (*)
-          |    \--- com.google.android.gms:play-services-tasks:9.2.1
-          |         \--- com.google.android.gms:play-services-basement:9.2.1 (*)
-          +--- com.google.android.gms:play-services-basement:9.2.1 (*)
-          \--- com.google.android.gms:play-services-iid:9.2.1
-               +--- com.google.android.gms:play-services-base:9.2.1 (*)
-               \--- com.google.android.gms:play-services-basement:9.2.1 (*)
+|    |    +--- com.android.support:support-v4:24.1.1 (*)
+|    |    \--- com.android.support:support-annotations:24.1.1
+|    \--- com.android.support:appcompat-v7:24.1.1
+|         +--- com.android.support:animated-vector-drawable:24.1.1
+|         |    \--- com.android.support:support-vector-drawable:24.1.1
+|         |         \--- com.android.support:support-v4:24.1.1 (*)
+|         +--- com.android.support:support-v4:24.1.1 (*)
+|         \--- com.android.support:support-vector-drawable:24.1.1 (*)
++--- com.android.support:appcompat-v7:24.1.1 (*)
++--- com.android.support:animated-vector-drawable:24.1.1 (*)
++--- com.android.support:support-vector-drawable:24.1.1 (*)
++--- com.android.support:support-v4:24.1.1 (*)
++--- com.android.support:support-annotations:24.1.1
++--- com.android.support:recyclerview-v7:24.1.1 (*)
++--- com.facebook.rebound:rebound:0.3.8
++--- com.squareup:otto:1.3.8
++--- com.github.bumptech.glide:glide-intercom:3.7.0
++--- com.squareup.okio:okio:1.9.0
++--- com.squareup.okhttp3:okhttp:3.4.1
+|    \--- com.squareup.okio:okio:1.9.0
++--- com.squareup.okhttp3:okhttp-ws:3.4.1
+|    \--- com.squareup.okhttp3:okhttp:3.4.1 (*)
++--- com.squareup.retrofit2:retrofit:2.1.0
+|    \--- com.squareup.okhttp3:okhttp:3.3.0 -> 3.4.1 (*)
++--- com.squareup.retrofit2:converter-gson:2.1.0
+|    +--- com.squareup.retrofit2:retrofit:2.1.0 (*)
+|    \--- com.google.code.gson:gson:2.7
++--- com.google.code.gson:gson:2.7
++--- io.intercom.android:nexus-client-android:2.0.3
+|    +--- com.squareup.okhttp3:okhttp:3.4.1 (*)
+|    \--- com.squareup.okhttp3:okhttp-ws:3.4.1 (*)
++--- io.intercom.android:android-commons:0.0.11
+\--- io.intercom.android:intercom-blocks:1.1.2
+```
+
+intercom-sdk-gcm
+```
++--- com.google.android.gms:play-services-base:9.4.0
+|    +--- com.google.android.gms:play-services-basement:9.4.0
+|    |    \--- com.android.support:support-v4:23.0.0 -> 24.1.1 (*)
+|    \--- com.google.android.gms:play-services-tasks:9.4.0
+|         \--- com.google.android.gms:play-services-basement:9.4.0 (*)
++--- com.google.android.gms:play-services-basement:9.4.0 (*)
+\--- com.google.android.gms:play-services-iid:9.4.0
+     +--- com.google.android.gms:play-services-base:9.4.0 (*)
+     \--- com.google.android.gms:play-services-basement:9.4.0 (*)
+```
+
+intercom-sdk-fcm
+```
++--- com.google.android.gms:play-services-basement:9.4.0
+|    \--- com.android.support:support-v4:23.0.0 -> 24.1.1 (*)
++--- com.google.firebase:firebase-iid:9.4.0
+|    +--- com.google.android.gms:play-services-basement:9.4.0 (*)
+|    \--- com.google.firebase:firebase-common:9.4.0
+|         +--- com.google.android.gms:play-services-basement:9.4.0 (*)
+|         \--- com.google.android.gms:play-services-tasks:9.4.0
+|              \--- com.google.android.gms:play-services-basement:9.4.0 (*)
+\--- com.google.firebase:firebase-common:9.4.0 (*)
 ```

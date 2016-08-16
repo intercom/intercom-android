@@ -11,37 +11,9 @@ import io.intercom.android.sdk.Intercom;
 import io.intercom.android.sdk.UnreadConversationCountListener;
 import io.intercom.android.sdk.identity.Registration;
 
-/**
- * ------------------------------------------------------------------------------------------------
- * ------------------------------------------------------------------------------------------------
- * Setting Up
- * ------------------------------------------------------------------------------------------------
- * This is a sample application to demonstrate how to integrate Intercom in a simple app.
- * You will need to add your Api Key and App Id to the SampleApplication
- * You will also need to add either an email or user id (THIS USER WILL BE REGISTERED IN YOUR APP)
- * If you have enabled secure mode you will need to provide hmac and data
- *
- * If you want to enable GCM in the test app simply provide your sender_id (project number in google-services.json)
- * in the strings.xml file inside the tag intercom_gcm_sender_id
- * ------------------------------------------------------------------------------------------------
- * Usage
- * ------------------------------------------------------------------------------------------------
- * 1. Open the app
- * 2. Tap the register button
- * 3. Tap the chat with us button to open the messenger
- * 4. Send a new message to that user to see the unread badge update on the custom launcher and the in app arrive
- * ------------------------------------------------------------------------------------------------
- * Error checking
- * ------------------------------------------------------------------------------------------------
- * Check logcat for any errors, make sure you have no filters turned on. It can help to switch
- * logcat to Verbose.
- * Report any issue on Intercom or on our Github repo
- * ------------------------------------------------------------------------------------------------
- * ------------------------------------------------------------------------------------------------
- */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     //----------------------------------------------------------------------------------------------
-    //Make sure you go to SampleApplication.java to set your App Id and API Key
+    //Make sure you go to SampleApplication.java to set your app ID and API key
     //----------------------------------------------------------------------------------------------
     private static final String USER_ID = "123456";
 
@@ -64,20 +36,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 || TextUtils.isEmpty(SampleApplication.YOUR_API_KEY)) {
             findViewById(R.id.not_initialized).setVisibility(View.VISIBLE);
         } else {
-            //if you have provided a hmac and data try begin secure session
+            //If you have provided a HMAC and data try begin secure session
             if (!TextUtils.isEmpty(YOUR_HMAC) && !TextUtils.isEmpty(YOUR_DATA)) {
                 Intercom.client().setSecureMode(YOUR_HMAC, YOUR_DATA);
             }
 
-            //enable default launcher
+            //Enable default launcher
             Intercom.client().setLauncherVisibility(Intercom.Visibility.VISIBLE);
-            //register a user with intercom
+            //Register a user with Intercom
             Intercom.client().registerIdentifiedUser(Registration.create().withUserId(USER_ID));
             //Custom launcher
             Button messengerButton = (Button) findViewById(R.id.messenger_button);
             messengerButton.setOnClickListener(this);
 
-            //set the unread count
+            //Set the unread count
             unreadCountView = (TextView) findViewById(R.id.unread_counter);
             int unreadCount = Intercom.client().getUnreadConversationCount();
             unreadCountView.setText(String.valueOf(unreadCount));
@@ -118,6 +90,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onResume();
 
         Intercom.client().addUnreadConversationCountListener(unreadConversationCountListener);
-        Intercom.client().openGcmMessage();
+        Intercom.client().handlePushMessage();
     }
 }

@@ -1,5 +1,15 @@
 # Changelog
 
+## Version 3.0.3
+
+16-08-2016
+
+* Added FCM support
+* Deprecated openGcmMessage() and openGcmMessage(TaskStackBuilder customStack) with handlePushMessage() and handlePushMessage(TaskStackBuilder customStack)
+* Fixed TCP connections not being fully killed when the application moves into the background
+* Unread count listeners will now receive the latest unread count when they are attached
+* Fixed an issue where the team profile could have an incorrect height after unlocking your device
+
 ## Version 3.0.2
 
 26-07-2016
