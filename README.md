@@ -37,7 +37,7 @@ If you are upgrading from an older version of our Messenger you may need to chan
 
 ## Set up
 
-A full guide to integrating Intercom for Android with your app is available [here](http://docs.intercom.io/Install-on-your-mobile-product/installing-intercom-for-android). 
+A full guide to integrating Intercom for Android with your app is available [here](http://docs.intercom.io/Install-on-your-mobile-product/installing-intercom-for-android).
 We support API 15 (4.0.3) and above, and we recommend you use a `compileSdkVersion` of 24.
 
 
@@ -134,7 +134,7 @@ if(loggedIn){
 ```
 
 3. Finally, when users eventually want to log out of your app, we should clear the Intercom library's caches so that when they log back in again, everything works perfectly. In your logout code, simply call `Intercom.client().reset();` like so:
-4. 
+4.
 ```java
 private void logout(){
 	...
@@ -155,7 +155,7 @@ private void logout(){
 
 ## How does the in-app messenger work?
 
-Intercom allows you to send messages to your users while also enabling your users send messages to you. If you want to have a dedicated UI element in your app which opens the messenger, you can display it by calling `Intercom.client().displayMessenger()`. 
+Intercom allows you to send messages to your users while also enabling your users send messages to you. If you want to have a dedicated UI element in your app which opens the messenger, you can display it by calling `Intercom.client().displayMessenger()`.
 
 More information on messaging with Intercom for Android can be found [here](http://docs.intercom.io/Install-on-your-mobile-product/configuring-intercom-for-android#messaging).
 
@@ -208,7 +208,38 @@ Detailed guides for:
 
 are available in [our documentation](https://docs.intercom.io/install-on-your-product-or-site/quick-install/install-intercom-on-your-android-app). Please contact us through Intercom with any questions you may have, we're only a message away!
 
-## Changing from versions older than Android SDK v1.1.0
+## Migrating to the latest version of the SDK
+
+Migrating to the latest and greatest versions of the Android SDK shouldn't need to be a daunting prospect. In fact there is only one place that you should need to make changes in order to get the newest SDK versions.
+
+In your app's build.gradle file you can add the following:
+
+    dependencies {
+        compile project(':intercom-sdk-base') // Intercom base library
+        compile project(':intercom-sdk-gcm') // Intercom messaging services that uses Google cloud messaging
+        compile 'com.google.android.gms:play-services-gcm:8.4.0' // Only required if you use GCM
+    }
+
+or if you use our bundled dependency updating it to:
+
+    compile ('io.intercom.android:intercom-sdk:1.+@aar') { // Bundled package containing Intercom both base and GCM
+        transitive = true
+    }
+
+This will ensure you will get the most current version of the SDK when as it is released.
+
+Our Android SDK versions come bundled with some 3rd party dependencies. To ensure you don't run into any version conflicts here is a list of the dependency versions we ship with our latest SDK version:
+
+<table>
+  <tr><th colspan="2" style="text-align: center;">Android</th></tr>
+  <tr><td style="text-align: center; font-weight: bold; width: 50%;">Library</td><td style="text-align: center; font-weight: bold; width: 50%;">Version</td></tr>
+  <tr><td style="width: 50%;">com.google.code.gson</td><td style="width: 50%;">2.5</td></tr>
+  <tr><td style="width: 50%;">com.squareup.otto</td><td style="width: 50%;">1.3.7</td></tr>
+  <tr><td style="width: 50%;">com.squareup.retrofit</td><td style="width: 50%;">1.9.0</td></tr>
+  <tr><td style="width: 50%;">com.squareup.picasso</td><td style="width: 50%;">2.5.2</td></tr>
+</table>
+
+#### Changing from versions older than Android SDK v1.1.0
 
 Before version 1.1.0 of our Android SDK was released we included Google’s GCM library with our base library in a single bundle called *intercom-sdk*. From version 1.1.0 onward we separated the GCM (*intercom-sdk-gcm*) and base (*intercom-sdk-base*) libraries so that anyone who didn’t need GCM wasn't forced to include it as a dependency. The *intercom-sdk* package reference is still valid for anyone who would like to continue using it.
 
