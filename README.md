@@ -21,7 +21,7 @@ If you are not using Intercom push notifications you can just use:
 compile 'io.intercom.android:intercom-sdk-base:3.+'
 ```
 
-`.aar` files are also included in this repo if you want to use them instead. If so then you will need to include GCM or FCM dependancies in your `build.gradle` file.
+`.aar` files are also included in this repo if you want to use them instead. If so then you will need to include GCM or FCM dependencies in your `build.gradle` file.
 
 GCM:
 ```gradle
@@ -33,7 +33,7 @@ compile 'com.google.firebase:firebase-messaging:9.4.0'
 ```
 
 ## Upgrading from 1.x.x
-If you are upgrading from an older version of our Messenger you may need to change some of the methods you sued to call. You can see any changes you may need to make [here](https://docs.intercom.io/messenger-v3/upgrade-to-the-new-messenger-android).
+If you are upgrading from an older version of our Messenger you may need to change some of the methods you used to call. You can see any changes you may need to make [here](https://docs.intercom.io/messenger-v3/upgrade-to-the-new-messenger-android).
 
 ## Set up
 
@@ -58,94 +58,93 @@ Intercom.initialize(this, "your api key", "your app id");
 ###My app only has logged in users
 1. Firstly, on successful completion of your authentication method in your login activity you will need to register your user.
 
+	```java
+	private void successfulLogin() {
+		...
+		// Registering with Intercom is easy. For best results, use a unique user_id if you have one.
+		Intercom.client().registerIdentifiedUser(Registration.create().withUserId("123456"));
+	}
+	```
 
-```java
-private void successfulLogin(){
-	...
-	// Registering with Intercom is easy. For best results, use a unique user_id if you have one.
-	Intercom.client().registerIdentifiedUser(Registration.create().withUserId("123456"));
-}
-```
-
-**Note:** _If you don't have a unique `userId` to use here, or if you have a `userId` and an `email` you can use `withEmail(String email)` on the Registration object._
+	**Note:** _If you don't have a unique `userId` to use here, or if you have a `userId` and an `email` you can use `withEmail(String email)` on the Registration object._
 
 2. Also, in your launch activity (or wherever you _check_ your user's authenticated state when your app starts up)
 
-```java
-// Override point for customization after application launch.
-if (loggedIn){
-	...
-	// We're logged in, we can register the user with Intercom
-	Intercom.client().registerIdentifiedUser(Registration.create().withUserId("123456"));
-	// Carry on as normal
-	...
-}
-```
+	```java
+	// Override point for customization after application launch.
+	if (loggedIn) {
+		...
+		// We're logged in, we can register the user with Intercom.
+		Intercom.client().registerIdentifiedUser(Registration.create().withUserId("123456"));
+		// Carry on as normal.
+		...
+	}
+	```
 
 3. Finally, when users eventually want to log out of your app, we should clear the Intercom library's caches so that when they log back in again, everything works perfectly. In your logout code, simply call `Intercom.client().reset();` like so:
 
-```java
-private void logout(){
-	...
-	// This resets the Intercom library's cache of your user's identity and wipes the slate clean.
-	Intercom.client().reset();
-}
-```		
+	```java
+	private void logout() {
+		...
+		// This resets the Intercom library's cache of your user's identity and wipes the slate clean.
+		Intercom.client().reset();
+	}
+	```		
 
 
 ###My apps users never log in
 
 1. If you only have unidentified users in your app then your integration is only one line. Just register an unidentified user in the `onCreate()` method of your application class like so:
 
-```java
-@Override public void onCreate(){
-	super.onCreate();
-   Intercom.initialize(this, APP.getApiKey(), APP.getAppId());
-   Intercom.client().registerUnidentifiedUser();
-}
-```
+	```java
+	@Override public void onCreate() {
+		super.onCreate();
+		Intercom.initialize(this, APP.getApiKey(), APP.getAppId());
+		Intercom.client().registerUnidentifiedUser();
+	}
+	```
 
 
 ###My app has logged in and logged out users
 
 1. Firstly, on successful completion of your authentication method in your login activity you will need to register your user.
 
-```java
-private void successfulLogin(){
-	...
-	// Registering with Intercom is easy. For best results, use a unique user_id if you have one.
-	Intercom.client().registerIdentifiedUser(Registration.create().withUserId("123456"));
-}
-```
-**Note:** _If you don't have a unique `userId` to use here, or if you have a `userId` and an `email` you can use `withEmail(String email)` on the Registration object._
+	```java
+	private void successfulLogin() {
+		...
+		// Registering with Intercom is easy. For best results, use a unique user_id if you have one.
+		Intercom.client().registerIdentifiedUser(Registration.create().withUserId("123456"));
+	}
+	```
+	**Note:** _If you don't have a unique `userId` to use here, or if you have a `userId` and an `email` you can use `withEmail(String email)` on the Registration object._
 
 2. Also, in your launch activity (or wherever you _check_ your user's authenticated state when your app starts up)
 
-```java
-// Override point for customization after application launch.
-if(loggedIn){
-	...
-	// We're logged in, we can register the user with Intercom
-	Intercom.client().registerIdentifiedUser(Registration.create().withUserId("123456"));
-} else {
-	// Since we aren't logged in, we are an unidentified user. Lets register.
-	Intercom.client().registerUnidentifiedUser();		
-}
-```
+	```java
+	// Override point for customization after application launch.
+	if (loggedIn) {
+		...
+		// We're logged in, we can register the user with Intercom.
+		Intercom.client().registerIdentifiedUser(Registration.create().withUserId("123456"));
+	} else {
+		// Since we aren't logged in, we are an unidentified user. Lets register.
+		Intercom.client().registerUnidentifiedUser();		
+	}
+	```
 
 3. Finally, when users eventually want to log out of your app, we should clear the Intercom library's caches so that when they log back in again, everything works perfectly. In your logout code, simply call `Intercom.client().reset();` like so:
-4. 
-```java
-private void logout(){
-	...
-	// This resets the Intercom library's cache of your user's identity and wipes the slate clean.
-	Intercom.client().reset();
 
-	// Now that you have logged your user out and reset, you can register a new
-	// unidentified user in their place.
-	Intercom.client().registerUnidentifiedUser();
-}
-```
+	```java
+	private void logout() {
+		...
+		// This resets the Intercom library's cache of your user's identity and wipes the slate clean.
+		Intercom.client().reset();
+	
+		// Now that you have logged your user out and reset, you can register a new
+		// unidentified user in their place.
+		Intercom.client().registerUnidentifiedUser();
+	}
+	```
 
 ### Tips on getting the best out of Intercom for Android
 
