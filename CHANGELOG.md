@@ -1,5 +1,15 @@
 # Changelog
 
+## Version 3.0.4
+
+22-08-2016
+
+* Added two pane tablet support.
+* Fixed a bug with Android click tracking.
+* Fixed crash when loading a small subset of resources on older Android versions.
+* Fix app name overlapping with close button in toolbar.
+* Stopped sending a request to remove device token on reset if the user has no device token.
+
 ## Version 3.0.3
 
 16-08-2016
