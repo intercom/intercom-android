@@ -218,42 +218,21 @@ Here is our complete dependency graph:
 intercom-sdk-base
 ```
 +--- com.android.support:design:24.1.1
-|    +--- com.android.support:support-v4:24.1.1
-|    |    \--- com.android.support:support-annotations:24.1.1
-|    +--- com.android.support:recyclerview-v7:24.1.1
-|    |    +--- com.android.support:support-v4:24.1.1 (*)
-|    |    \--- com.android.support:support-annotations:24.1.1
-|    \--- com.android.support:appcompat-v7:24.1.1
-|         +--- com.android.support:animated-vector-drawable:24.1.1
-|         |    \--- com.android.support:support-vector-drawable:24.1.1
-|         |         \--- com.android.support:support-v4:24.1.1 (*)
-|         +--- com.android.support:support-v4:24.1.1 (*)
-|         \--- com.android.support:support-vector-drawable:24.1.1 (*)
-+--- com.android.support:appcompat-v7:24.1.1 (*)
-+--- com.android.support:animated-vector-drawable:24.1.1 (*)
-+--- com.android.support:support-vector-drawable:24.1.1 (*)
-+--- com.android.support:support-v4:24.1.1 (*)
++--- com.android.support:appcompat-v7:24.1.1
++--- com.android.support:animated-vector-drawable:24.1.1
++--- com.android.support:support-vector-drawable:24.1.1
++--- com.android.support:support-v4:24.1.1
 +--- com.android.support:support-annotations:24.1.1
-+--- com.android.support:recyclerview-v7:24.1.1 (*)
++--- com.android.support:recyclerview-v7:24.1.1
 +--- com.facebook.rebound:rebound:0.3.8
 +--- com.squareup:otto:1.3.8
-+--- com.github.bumptech.glide:glide-intercom:3.7.0
++--- com.github.bumptech.glide:glide-intercom:3.7.0 # Modified version of Glide
 +--- com.squareup.okio:okio:1.9.0
 +--- com.squareup.okhttp3:okhttp:3.4.1
-|    \--- com.squareup.okio:okio:1.9.0
 +--- com.squareup.okhttp3:okhttp-ws:3.4.1
-|    \--- com.squareup.okhttp3:okhttp:3.4.1 (*)
 +--- com.squareup.retrofit2:retrofit:2.1.0
-|    \--- com.squareup.okhttp3:okhttp:3.3.0 -> 3.4.1 (*)
 +--- com.squareup.retrofit2:converter-gson:2.1.0
-|    +--- com.squareup.retrofit2:retrofit:2.1.0 (*)
-|    \--- com.google.code.gson:gson:2.7
 +--- com.google.code.gson:gson:2.7
-+--- io.intercom.android:nexus-client-android:2.0.3
-|    +--- com.squareup.okhttp3:okhttp:3.4.1 (*)
-|    \--- com.squareup.okhttp3:okhttp-ws:3.4.1 (*)
-+--- io.intercom.android:android-commons:0.0.11
-\--- io.intercom.android:intercom-blocks:1.1.2
 ```
 
 intercom-sdk-gcm
