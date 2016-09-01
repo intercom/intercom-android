@@ -26,5 +26,5 @@ repositories {
 }
 
 dependencies {
-    compile 'io.intercom.android:intercom-sdk:3.0.4'
+    compile 'io.intercom.android:intercom-sdk:3.+'
 }

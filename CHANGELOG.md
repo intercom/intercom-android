@@ -1,5 +1,13 @@
 # Changelog
 
+## Version 3.0.5
+
+01-09-2016
+
+* Fixed an issue with GCM and FCM conflicting with other receivers [issue#246](https://github.com/intercom/intercom-android/issues/246)
+* Update Support Library to 24.2.0
+* Fix crash when tapping a message after it gets detached from the RecyclerView
+
 ## Version 3.0.4
 
 22-08-2016
