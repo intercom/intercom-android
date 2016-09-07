@@ -218,13 +218,14 @@ Here is our complete dependency graph:
 intercom-sdk-base
 ```
 # Transitive (shared with your app)
-+--- com.android.support:design:24.1.1
-+--- com.android.support:appcompat-v7:24.1.1
-+--- com.android.support:animated-vector-drawable:24.1.1
-+--- com.android.support:support-vector-drawable:24.1.1
-+--- com.android.support:support-v4:24.1.1
-+--- com.android.support:support-annotations:24.1.1
-+--- com.android.support:recyclerview-v7:24.1.1
++--- com.android.support:design:24.2.0
++--- com.android.support:appcompat-v7:24.2.0
++--- com.android.support:animated-vector-drawable:24.2.0
++--- com.android.support:support-vector-drawable:24.2.0
++--- com.android.support:support-v4:24.2.0
++--- com.android.support:support-annotations:24.2.0
++--- com.android.support:recyclerview-v7:24.2.0
+
 # Repackaged (not shared with your app)
 +--- com.facebook.rebound:rebound:0.3.8
 +--- com.squareup:otto:1.3.8
@@ -241,7 +242,7 @@ intercom-sdk-gcm
 ```
 +--- com.google.android.gms:play-services-base:9.4.0
 |    +--- com.google.android.gms:play-services-basement:9.4.0
-|    |    \--- com.android.support:support-v4:23.0.0 -> 24.1.1 (*)
+|    |    \--- com.android.support:support-v4:23.0.0 -> 24.2.0 (*)
 |    \--- com.google.android.gms:play-services-tasks:9.4.0
 |         \--- com.google.android.gms:play-services-basement:9.4.0 (*)
 +--- com.google.android.gms:play-services-basement:9.4.0 (*)
@@ -253,7 +254,7 @@ intercom-sdk-gcm
 intercom-sdk-fcm
 ```
 +--- com.google.android.gms:play-services-basement:9.4.0
-|    \--- com.android.support:support-v4:23.0.0 -> 24.1.1 (*)
+|    \--- com.android.support:support-v4:23.0.0 -> 24.2.0 (*)
 +--- com.google.firebase:firebase-iid:9.4.0
 |    +--- com.google.android.gms:play-services-basement:9.4.0 (*)
 |    \--- com.google.firebase:firebase-common:9.4.0

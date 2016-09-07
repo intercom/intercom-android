@@ -1,5 +1,16 @@
 # Changelog
 
+## Version 3.0.6
+
+06-09-2016
+
+* Hide the soft keyboard when we open a Post message.
+* Default to the host app launch activity if no URI is set in a push message.
+* Fix newer API method being called on all OS versions - https://github.com/intercom/intercom-android/issues/252
+* Ensure that view operations in `Intercom.client().reset()` are called on the main thread - https://github.com/intercom/intercom-android/issues/251
+* Improved performance when the Messenger opens for the first time
+* Fix images with links not following their link when tapped
+
 ## Version 3.0.5
 
 01-09-2016
