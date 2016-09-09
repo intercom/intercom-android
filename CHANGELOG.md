@@ -1,6 +1,11 @@
 # Changelog
 
-## Version 3.0.6
+## Version 3.0.7
+
+09-09-2016
+
+* Fixed an issue with GCM and FCM conflicting with other registration services.
+* Prevent real-time connections in background processes.
 
 06-09-2016
 
