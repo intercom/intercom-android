@@ -1,11 +1,20 @@
 # Changelog
 
+## Version 3.0.8
+
+14-09-2016
+
+* Fixed issue where a long team intro couldn't be fully displayed on smaller devices.
+* Update appearance of code in messages.
+
 ## Version 3.0.7
 
 09-09-2016
 
 * Fixed an issue with GCM and FCM conflicting with other registration services.
 * Prevent real-time connections in background processes.
+
+## Version 3.0.6
 
 06-09-2016
 

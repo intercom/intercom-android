@@ -238,6 +238,8 @@ intercom-sdk-base
 +--- com.google.code.gson:gson:2.7
 ```
 
+If you use some of the repackaged libraries in your app, you may want to use a build that depends on them transitively. A guide to using this build can be found [here](https://docs.intercom.com/configure-intercom-for-your-product-or-site/configure-intercom-for-mobile/using-transitive-dependencies-with-intercom-for-android). Using this build involves more work as you need to make sure your app uses the correct version of each library.
+
 intercom-sdk-gcm
 ```
 +--- com.google.android.gms:play-services-base:9.4.0
