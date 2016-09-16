@@ -1,5 +1,13 @@
 # Changelog
 
+## Version 3.0.9
+
+16-09-2016
+* Added a new method to the API, displayMessageComposer now accepts an optional String to pre-populate the composer.`Intercom.client().displayMessageComposer(message);`
+* Update Android Support Library to 24.2.1
+* Update translations
+* Reduced method count
+
 ## Version 3.0.8
 
 14-09-2016

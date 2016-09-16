@@ -154,7 +154,7 @@ Intercom.initialize(this, "your api key", "your app id");
 
 ## How does the in-app messenger work?
 
-Intercom allows you to send messages to your users while also enabling your users send messages to you. If you want to have a dedicated UI element in your app which opens the messenger, you can display it by calling `Intercom.client().displayMessenger()`. 
+Intercom allows you to send messages to your users while also enabling your users send messages to you. If you want to have a dedicated UI element in your app which opens the messenger, you can display it by calling `Intercom.client().displayMessenger()`. You can also pass in a string to pre-populate the message composer for example: `Intercom.client().displayMessageComposer("Write your message here: ");`
 
 More information on messaging with Intercom for Android can be found [here](http://docs.intercom.io/Install-on-your-mobile-product/configuring-intercom-for-android#messaging).
 
