@@ -207,6 +207,9 @@ Detailed guides for:
 
 are available in [our documentation](https://docs.intercom.io/install-on-your-product-or-site/quick-install/install-intercom-on-your-android-app). Please contact us through Intercom with any questions you may have, we're only a message away!
 
+## Cordova/Phonegap Support
+Looking for Cordova/Phonegap support? We have a [Cordova Plugin](https://github.com/intercom/intercom-cordova) for Intercom 🎉
+
 ## Changing from versions older than Android SDK v1.1.0
 
 Before version 1.1.0 of our Android SDK was released we included Google’s GCM library with our base library in a single bundle called *intercom-sdk*. From version 1.1.0 onward we separated the GCM (*intercom-sdk-gcm*) and base (*intercom-sdk-base*) libraries so that anyone who didn’t need GCM wasn't forced to include it as a dependency. The *intercom-sdk* package reference is still valid for anyone who would like to continue using it.
