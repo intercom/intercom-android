@@ -219,6 +219,26 @@ In addition some other methods have been dropped:
 
 ### Miscellaneous
   * We've hidden our resources so you won't see all our layouts, colours etc when you're trying to reference your own resources
+  
+## Version 1.1.21
+
+14-06-2016
+
+Protect against crash if the image resource is not found [issue#198](https://github.com/intercom/intercom-android/issues/198).
+  
+## Version 1.1.20
+
+02-06-2016
+
+* Fixed an issue which can result in inflated session counts for both identified and unidentified users.
+  
+## Version 1.1.19
+
+17-05-2016
+
+* Removed permission VIBRATE. VIBRATE was used for push notifications. If it is included in the host app the push will still cause the default device vibration.
+* Removed permissions READ_EXTERNAL_STORAGE and MANAGE_DOCUMENTS. These permissions are optional for attachments. In most cases they are not required but certain OS and file provider combinations may fail to send the attachment without.
+* Fixed an issue with push only messages not following the URI correctly.
 
 ## Version 1.1.18
 
