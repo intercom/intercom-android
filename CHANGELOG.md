@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 3.0.10
+
+05-10-2016
+* Fixed crash on OPPO devices https://github.com/intercom/intercom-android/issues/263
+* Better logging when we can't find a launch intent for the host application
+* Update translations
+
 ## Version 3.0.9
 
 16-09-2016
