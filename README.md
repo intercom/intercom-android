@@ -2,7 +2,17 @@
 
 ## Install
 
-Add the following dependency to your `build.gradle` file:
+In your app's `build.gradle` file add the following block to your repositories block:
+
+```
+repositories {
+  maven {
+    url 'https://dl.bintray.com/intercom/intercom-maven'
+  }
+}
+```
+
+Then add the following dependency to your `build.gradle` file:
 
 ```gradle
 compile 'io.intercom.android:intercom-sdk:3.+'
