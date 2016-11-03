@@ -119,8 +119,8 @@ If you use some of the repackaged libraries in your app, you may want to use a b
 |         \--- com.google.android.gms:play-services-basement:9.4.0 (*)
 +--- com.google.android.gms:play-services-basement:9.4.0 (*)
 \--- com.google.android.gms:play-services-iid:9.4.0
-+--- com.google.android.gms:play-services-base:9.4.0 (*)
-\--- com.google.android.gms:play-services-basement:9.4.0 (*)
+    +--- com.google.android.gms:play-services-base:9.4.0 (*)
+    \--- com.google.android.gms:play-services-basement:9.4.0 (*)
 ```
 
 ### intercom-sdk-fcm
