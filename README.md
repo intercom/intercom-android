@@ -44,7 +44,7 @@ An example app is provided [here](https://github.com/intercom/intercom-android/t
 Looking for Cordova/Phonegap support? We have a [Cordova Plugin](https://github.com/intercom/intercom-cordova) for Intercom 🎉
 
 ## Upgrading from 1.x.x
-If you are upgrading from an older version of our Messenger you may need to change some of the methods you used to call. You can see any changes you may need to make [here](https://docs.intercom.io/messenger-v3/upgrade-to-the-new-messenger-android).
+If you are upgrading from an older version of our Messenger you may need to change some of the methods you used to call. You can see any changes you may need to make [here](https://docs.intercom.com/a-guide-to-the-new-intercom-messenger/upgrade-to-the-new-messenger-android).
 
 
 ## Permissions
