@@ -1,5 +1,6 @@
 ![Intercom](samples/Intercom_logo-github.png)
 
+Intercom for Android supports API 15 and above.
 ## Installation
 There are 3 options for installing Intercom on your Android app.
 ### Option 1: Install Intercom with Google Cloud Messaging (GCM) 
