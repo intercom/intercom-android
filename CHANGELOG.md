@@ -1,5 +1,13 @@
 # Changelog
 
+## Version 3.0.11
+
+07-11-2016
+* Removed dependency on Rebound
+* Updated Android Support Library to 25.0.0
+* Updated Play Services and Firebase to 9.8.0
+* Performance improvements
+
 ## Version 3.0.10
 
 05-10-2016
@@ -101,7 +109,7 @@ Where is 2.x? We're skipping it. We did this to align the Android SDK with our i
 
 How GCM is set up has been simplified. There is not longer a method `Intercom.client().setupGcm(token)` and  `Intercom.client().registerIdentifiedUser(Registration.create().withGcmRegistrationId(token));`
 
-Instead of the mehtods above, in your res/values/strings.xml add the following line replacing YOUR_SENDER_ID. The sender is is in your google-services.json file as "project_number": "YOUR_SENDER_ID"
+Instead of the methods above, in your res/values/strings.xml add the following line replacing YOUR_SENDER_ID. The sender is is in your google-services.json file as "project_number": "YOUR_SENDER_ID"
 
 `<string name="intercom_gcm_sender_id">YOUR_SENDER_ID</string>`
 
