@@ -1,5 +1,13 @@
 # Changelog
 
+## Version 3.0.12
+
+10-11-2016
+* Fixed https://github.com/intercom/intercom-android/issues/282
+* Fixed https://github.com/intercom/intercom-android/issues/281
+* Fixed https://github.com/intercom/intercom-android/issues/280
+* Fixed https://github.com/intercom/intercom-android/issues/279
+
 ## Version 3.0.11
 
 07-11-2016
