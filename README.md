@@ -35,9 +35,9 @@ An example app is provided [here](https://github.com/intercom/intercom-android/t
 
 ## Setup and Configuration
 
-* Our [installation guide](https://developers.intercom.com/v2.0/docs/android-installation) contains full setup and initialisation instructions.
-* The [configuration guide](https://developers.intercom.com/v2.0/docs/android-configuration) provides info on how to configure Intercom for Android.
-* Read our guide on Push Notifications for [GCM](https://developers.intercom.com/v2.0/docs/android-gcm-push-notifications) and [FCM](https://developers.intercom.com/v2.0/docs/android-fcm-push-notifications).
+* Our [installation guide](https://developers.intercom.com/docs/android-installation) contains full setup and initialisation instructions.
+* The [configuration guide](https://developers.intercom.com/docs/android-configuration) provides info on how to configure Intercom for Android.
+* Read our guide on Push Notifications for [GCM](https://developers.intercom.com/docs/android-gcm-push-notifications) and [FCM](https://developers.intercom.com/docs/android-fcm-push-notifications).
 * Please contact us on [Intercom](https://www.intercom.com/) with any questions you may have, we're only a message away!
 
 ## Cordova/Phonegap Support
