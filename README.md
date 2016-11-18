@@ -88,13 +88,13 @@ Here is our complete dependency graph:
 ### intercom-sdk-base
 ```
 # Transitive (shared with your app)
-+--- com.android.support:design:25.0.0
-+--- com.android.support:appcompat-v7:25.0.0
-+--- com.android.support:animated-vector-drawable:25.0.0
-+--- com.android.support:support-vector-drawable:25.0.0
-+--- com.android.support:support-v4:25.0.0
-+--- com.android.support:support-annotations:25.0.0
-+--- com.android.support:recyclerview-v7:25.0.0
++--- com.android.support:design:25.0.1
++--- com.android.support:appcompat-v7:25.0.1
++--- com.android.support:animated-vector-drawable:25.0.1
++--- com.android.support:support-vector-drawable:25.0.1
++--- com.android.support:support-v4:25.0.1
++--- com.android.support:support-annotations:25.0.1
++--- com.android.support:recyclerview-v7:25.0.1
 
 # Repackaged (not shared with your app)
 +--- com.squareup:otto:1.3.8
@@ -113,7 +113,7 @@ If you use some of the repackaged libraries in your app, you may want to use a b
 ```
 +--- com.google.android.gms:play-services-base:9.8.0
 |    +--- com.google.android.gms:play-services-basement:9.8.0
-|    |    \--- com.android.support:support-v4:23.0.0 -> 25.0.0 (*)
+|    |    \--- com.android.support:support-v4:23.0.0 -> 25.0.1 (*)
 |    \--- com.google.android.gms:play-services-tasks:9.8.0
 |         \--- com.google.android.gms:play-services-basement:9.8.0 (*)
 +--- com.google.android.gms:play-services-basement:9.8.0 (*)
@@ -125,7 +125,7 @@ If you use some of the repackaged libraries in your app, you may want to use a b
 ### intercom-sdk-fcm
 ```
 +--- com.google.android.gms:play-services-basement:9.8.0
-|    \--- com.android.support:support-v4:23.0.0 -> 25.0.0 (*)
+|    \--- com.android.support:support-v4:23.0.0 -> 25.0.1 (*)
 +--- com.google.firebase:firebase-iid:9.8.0
 |    +--- com.google.android.gms:play-services-basement:9.8.0 (*)
 |    \--- com.google.firebase:firebase-common:9.8.0

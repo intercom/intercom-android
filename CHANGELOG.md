@@ -1,5 +1,18 @@
 # Changelog
 
+## Version 3.0.13
+
+18-11-2016
+* Updated Android Support Library to 25.0.1
+* The SDK now throws a more specific exception when it is incorrectly initialised
+* Fixed log message incorrectly appearing (https://github.com/intercom/intercom-android/issues/289)
+* Fixed crash in some initialisation situations (https://github.com/intercom/intercom-android/issues/288)
+* Fixed crash when permissions request is cancelled (https://github.com/intercom/intercom-android/issues/285)
+* Fixed missing translations for the inbox empty state
+* Fixed duplicate push notifications appearing (https://github.com/intercom/intercom-android/issues/261)
+* Fixed crash when opening a photo attachment
+* Fixed Parcelable crash
+
 ## Version 3.0.12
 
 10-11-2016
