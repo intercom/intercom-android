@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 3.0.14
+
+24-11-2016
+* Reduced method count by eliminating synthetic methods
+* Networking optimisations
+
 ## Version 3.0.13
 
 18-11-2016
