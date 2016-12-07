@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 3.0.15
+
+06-12-2016
+* Now supports Intercom Educate. Learn more [here](https://www.intercom.com/customer-support-software/knowledge-base)
+* Networking optimisations
+* Fix https://github.com/intercom/intercom-android/issues/291
+
 ## Version 3.0.14
 
 24-11-2016
