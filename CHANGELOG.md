@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 3.0.16
+
+13-12-2016
+* Networking optimisations
+* UI fixes
+* Fix crash in conversations started from Acquire on web
+
 ## Version 3.0.15
 
 06-12-2016
