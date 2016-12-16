@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 3.0.17
+
+16-12-2016
+* The SDK now targets API 25
+* UI fixes
+* Push notification fixes
+
 ## Version 3.0.16
 
 13-12-2016
