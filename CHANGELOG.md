@@ -1,5 +1,17 @@
 # Changelog
 
+## Version 3.0.18
+
+09-01-2017
+* Fixed a warning when updating the RecyclerView data in a scroll callback https://github.com/intercom/intercom-android/issues/301
+* Fixed a handler that was blocking initialization off the main thread https://github.com/intercom/intercom-android/issues/299
+* Fixed an issue with a handler causing a background failure in the push service.
+* Fixed showing the attachment button if the device requires the manifest permission https://github.com/intercom/intercom-android/issues/296
+* Fixed an issue where not having access to the cache directory produced an NPE
+* Added sample code for company custom attributes https://github.com/intercom/intercom-android/issues/293
+* Added an xml public padding field to allow users to alter the position of the Intercom FAB and in-apps if it is blocking host app FABs https://github.com/intercom/intercom-android/issues/231 To update the position simply add this to your dimens.xml with the value you want to move up by `<dimen name="intercom_bottom_padding">74dp</dimen>`
+* Added functionality to make sure that if the user has scrolled to the bottom of the conversation then opens the compsoer we will not hide that message
+
 ## Version 3.0.17
 
 16-12-2016

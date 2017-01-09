@@ -575,8 +575,12 @@ extends java.lang.Object</pre>
  Map&lt;String, Object&gt; userMap = new HashMap&lt;&gt;();
  Map&lt;String, Object&gt; companyData = new HashMap&lt;&gt;();
  List&lt;Map&lt;String, Object&gt;&gt; companies = new ArrayList&lt;&gt;();
+ Map&lt;String, Object&gt; customCompanyData = new HashMap&lt;&gt;();
  companyData.put("name", "My Company");
  companyData.put("id", "abcd1234");
+ customCompanyData.put("team_mates", 8);
+ customCompanyData.put("monthly_spend", 155.98);
+ companyData.put("custom_attributes", customCompanyData);
  companies.add(companyData);
  userMap.put("companies", companies);
  Intercom.client().updateUser(userMap);
