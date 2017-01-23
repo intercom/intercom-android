@@ -1,5 +1,21 @@
 # Changelog
 
+## Version 3.0.19
+
+23-01-2017
+* Fixed NPE on some devices (https://github.com/intercom/intercom-android/issues/304)
+* Fixed aliasing in some Drawables (https://github.com/intercom/intercom-android/issues/303)
+* Fixed crash caused by permission issues in other apps (https://github.com/intercom/intercom-android/issues/302)
+* Fixed temporary memory leak (https://github.com/intercom/intercom-android/issues/297)
+* Fixed messages showing after a conversation has been read (https://github.com/intercom/intercom-android/issues/243)
+* Fixed sounds playing multiple times for the same notification
+* Fixed attachment upload icon being incorrectly hidden
+* Improved logging for developers
+* Better support for `singleTask` and `singleInstance` Activities
+* Fixed incorrect delays when changing visibility of in-app notifications and launcher
+* Optimised networking code
+* Updated localisation
+
 ## Version 3.0.18
 
 09-01-2017
