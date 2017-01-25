@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 3.0.20
+
+25-01-2017
+* Re-introduces IntercomLogger that were incorrectly removed from the last release. They are now deprecated in favour of the constants in `Intercom.LogLevel`.
+* Fixes the conversation scrolling to the bottom incorrectly.
+
 ## Version 3.0.19
 
 23-01-2017

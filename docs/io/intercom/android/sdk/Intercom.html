@@ -48,7 +48,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../io/intercom/android/sdk/Intercom.Visibility.html" title="enum in io.intercom.android.sdk"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../io/intercom/android/sdk/Intercom.LogLevel.html" title="annotation in io.intercom.android.sdk"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?io/intercom/android/sdk/Intercom.html" target="_top">Frames</a></li>
@@ -131,6 +131,10 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Class and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>static interface&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.LogLevel.html" title="annotation in io.intercom.android.sdk">Intercom.LogLevel</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.Visibility.html" title="enum in io.intercom.android.sdk">Intercom.Visibility</a></span></code>&nbsp;</td>
 </tr>
@@ -469,7 +473,8 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>registerForLaterInitialisation</h4>
-<pre>public static&nbsp;void&nbsp;registerForLaterInitialisation(android.app.Application&nbsp;application)</pre>
+<pre>public static&nbsp;void&nbsp;registerForLaterInitialisation(@NonNull
+                                                  android.app.Application&nbsp;application)</pre>
 <div class="block"><p>Begin tracking Activity lifecycle events so that Intercom can be initialized later.</p>
 
  <p>This must be called in Application.onCreate()</p></div>
@@ -487,7 +492,8 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>unregisterForLateInitialisation</h4>
-<pre>public static&nbsp;void&nbsp;unregisterForLateInitialisation(android.app.Application&nbsp;application)</pre>
+<pre>public static&nbsp;void&nbsp;unregisterForLateInitialisation(@NonNull
+                                                   android.app.Application&nbsp;application)</pre>
 <div class="block"><p>Stop tracking Activity lifecycle events. This will prevent you from initializing Intercom correctly later.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1026,7 +1032,8 @@ public abstract&nbsp;void&nbsp;openGcmMessage(android.app.TaskStackBuilder&nbsp;
 <ul class="blockList">
 <li class="blockList">
 <h4>addUnreadConversationCountListener</h4>
-<pre>public abstract&nbsp;void&nbsp;addUnreadConversationCountListener(UnreadConversationCountListener&nbsp;listener)</pre>
+<pre>public abstract&nbsp;void&nbsp;addUnreadConversationCountListener(@NonNull
+                                                        UnreadConversationCountListener&nbsp;listener)</pre>
 <div class="block"><p>Sets a listener that will be notified when the unread conversation count for the registered user changes.</p>
 
  <p>This listener will immediately receive an update with the latest unread count, and it will be notified of all
@@ -1067,10 +1074,10 @@ public abstract&nbsp;void&nbsp;openGcmMessage(android.app.TaskStackBuilder&nbsp;
 <pre>public static&nbsp;void&nbsp;setLogLevel(int&nbsp;logLevel)</pre>
 <div class="block"><p>Set the level of the logger</p>
 
- <p>Set the level of logs to display in the console.
- Pass in an Intercom log level eg. `setLogLevel(IntercomLogger.ERROR);`
- Passing in IntercomLogger.DISABLED results in no logging being logged.
- Default log level is set to IntercomLogger.WARN</div>
+ <p>Set the level of logs to display in the console by passing in an
+ Intercom.LogLevel eg. `setLogLevel(Intercom.LogLevel.ERROR);`
+ Passing in Intercom.LogLevel.DISABLED results in no logs being displayed.
+ Default log level is set to Intercom.LogLevel.WARN</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>logLevel</code> - the level of logs to display</dd>
@@ -1107,7 +1114,7 @@ public abstract&nbsp;void&nbsp;openGcmMessage(android.app.TaskStackBuilder&nbsp;
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../io/intercom/android/sdk/Intercom.Visibility.html" title="enum in io.intercom.android.sdk"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../io/intercom/android/sdk/Intercom.LogLevel.html" title="annotation in io.intercom.android.sdk"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?io/intercom/android/sdk/Intercom.html" target="_top">Frames</a></li>
