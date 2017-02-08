@@ -649,7 +649,7 @@ public abstract&nbsp;void&nbsp;updateUser(java.util.Map&lt;java.lang.String,?&gt
 
  <p>`id` is a required field for adding or modifying a company.</p>
 
- <p>Attributes may be a `string`, `int`, `double`, `unix timestamp` or `bool`.</p></div>
+ <p>Custom Attributes may be of type: String, Long, Float, Double, Boolean, Character, Byte, Short, Integer.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>attributes</code> - This is a map containing key/value pairs for multiple attributes.</p></dd>
@@ -679,9 +679,9 @@ public abstract&nbsp;void&nbsp;updateUser(java.util.Map&lt;java.lang.String,?&gt
  <code>
 
  User user = new User.Builder()
-                        .withUserId("1234")
-                        .withEmail("test@test.com")
-                        .build();
+             .withUserId("1234")
+             .withEmail("test@test.com")
+             .build();
  Intercom.client().updateUser(user);
  </code>
  </pre>
@@ -693,10 +693,10 @@ public abstract&nbsp;void&nbsp;updateUser(java.util.Map&lt;java.lang.String,?&gt
  <pre>
  <code>
  User user = new User.Builder()
-                       .withUserId("1234")
-                       .withEmail("test@test.com")
-                       .withCustomAttribute("team_mates", 3)
-                       .build();
+             .withUserId("1234")
+             .withEmail("test@test.com")
+             .withCustomAttribute("team_mates", 3)
+             .build();
  Intercom.client().updateUser(user);
  </code>
  </pre>
@@ -704,28 +704,29 @@ public abstract&nbsp;void&nbsp;updateUser(java.util.Map&lt;java.lang.String,?&gt
  <p>For multiple user attributes you can chain withCustomAttribute several times
  or pass a Map to withCustomAttributes</p>
 
+ <p>All of the updatable User attributes are described here: <code>()</code></p>
+
  <p>You can also set company data via this call by submitting an attribute map like</p>
 
  <pre>
  <code>
  Company company = new Company.Builder()
-                                .withCompanyId("1234")
-                                .withName("TestCorp")
-                                .build();
+             .withCompanyId("1234")
+             .withName("TestCorp")
+             .build();
  User user = new User.Builder()
-                       .withCompany(company)
-                       .build();
+             .withCompany(company)
+             .build();
  Intercom.client().updateUser(user);
  </code>
  </pre>
 
- <p>`id` is a required field for adding or modifying a company. A detailed description of the company model
- is available <a href="https://developers.intercom.com/docs#companies-and--users">here</a></p>
+ <p>All of the updatable Company attributes are described here: <code>io.intercom.android.sdk.Company()</code></p>
 
- <p>Attributes may be a `string`, `int`, `double`, `unix timestamp` or `bool`.</p></div>
+ <p>Custom Attributes may be of type: String, Long, Float, Double, Boolean, Character, Byte, Short, Integer.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>user</code> - This is a user object to update this user in Intercom.</p></dd>
+<dd><code>user</code> - The user object with the attributes to be set in Intercom.</p></dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>3.0.19</dd>
 </dl>

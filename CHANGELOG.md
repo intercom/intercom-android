@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 3.0.21
+
+08-02-2017
+* Translation fixes
+* Added `withSignedUpAt(Date date)` method to User
+* Improved unread conversation count updating when using multiple devices at once.
+
 ## Version 3.0.20
 
 25-01-2017
