@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":9,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":9,"i11":6,"i12":6,"i13":38,"i14":38,"i15":9,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":9,"i23":6,"i24":9,"i25":38,"i26":6};
+var methods = {"i0":6,"i1":9,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":9,"i11":6,"i12":6,"i13":38,"i14":38,"i15":9,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":9,"i23":6,"i24":9,"i25":38,"i26":38};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -47,7 +47,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
+<li><a href="../../../../io/intercom/android/sdk/Company.Builder.html" title="class in io.intercom.android.sdk"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../io/intercom/android/sdk/Intercom.LogLevel.html" title="annotation in io.intercom.android.sdk"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -358,13 +358,17 @@ extends java.lang.Object</pre>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#updateUser-java.util.Map-">updateUser</a></span>(java.util.Map&lt;java.lang.String,?&gt;&nbsp;attributes)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <code>#updateUser(UserAttributes)</code> instead.</span></div>
+</div>
 </td>
 </tr>
 <tr id="i26" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#updateUser-User-">updateUser</a></span>(User&nbsp;user)</code>
-<div class="block">Updates a user in Intercom.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <code>#updateUser(UserAttributes)</code> instead.</span></div>
+</div>
 </td>
 </tr>
 </table>
@@ -592,64 +596,8 @@ extends java.lang.Object</pre>
 <h4>updateUser</h4>
 <pre>@Deprecated
 public abstract&nbsp;void&nbsp;updateUser(java.util.Map&lt;java.lang.String,?&gt;&nbsp;attributes)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-<div class="block"><p>Updates a user in Intercom.</p>
-
- <p>You can send any data you like to Intercom. Typically our customers see a lot of value in sending data that
- relates to customer development, such as price plan, value of purchases, etc. Once these have been sent to
- Intercom you can then apply filters based on these attributes.</p>
-
- <p>A detailed list of the fields you can use to update a user is available <a href="https://developers.intercom.com/reference#create-or-update-user">here</a></p>
-
- <p>Attributes such as the user email or name can be updated by calling</p>
-
- <pre>
- <code>
- Map&lt;String, Object&gt; userAttributes = new HashMap&lt;&gt;();
- userAttributes.put("email", "admin@exaple.com");
- userAttributes.put("name", "Admin name");
- Intercom.client().updateUser(userAttributes);
- </code>
- </pre>
-
- <p>Custom user attributes can be created and modified by passing a custom_attributes map.
- You do not have to create attributes in Intercom beforehand. If one hasn't been seen before it will be
- created for you automatically.</p>
-
- <pre>
- <code>
- Map&lt;String, Object&gt; userAttributes = new HashMap&lt;&gt;();
- Map&lt;String, Object&gt; customAttributes = new HashMap&lt;&gt;();
- customAttributes.put("paid_subscriber", true);
- customAttributes.put("monthly_spend", 155.5);
- customAttributes.put("team_mates", 3);
- userAttributes.put("custom_attributes", customAttributes);
- Intercom.client().updateUser(userAttributes);
- </code>
- </pre>
-
- <p>You can also set company data via this call by submitting an attribute map like</p>
-
- <pre>
- <code>
- Map&lt;String, Object&gt; userMap = new HashMap&lt;&gt;();
- Map&lt;String, Object&gt; companyData = new HashMap&lt;&gt;();
- List&lt;Map&lt;String, Object&gt;&gt; companies = new ArrayList&lt;&gt;();
- Map&lt;String, Object&gt; customCompanyData = new HashMap&lt;&gt;();
- companyData.put("name", "My Company");
- companyData.put("id", "abcd1234");
- customCompanyData.put("team_mates", 8);
- customCompanyData.put("monthly_spend", 155.98);
- companyData.put("custom_attributes", customCompanyData);
- companies.add(companyData);
- userMap.put("companies", companies);
- Intercom.client().updateUser(userMap);
- </code>
- </pre>
-
- <p>`id` is a required field for adding or modifying a company.</p>
-
- <p>Custom Attributes may be of type: String, Long, Float, Double, Boolean, Character, Byte, Short, Integer.</p></div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <code>#updateUser(UserAttributes)</code> instead.</span></div>
+<div class="block"><p>Updates a user in Intercom.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>attributes</code> - This is a map containing key/value pairs for multiple attributes.</p></dd>
@@ -664,66 +612,10 @@ public abstract&nbsp;void&nbsp;updateUser(java.util.Map&lt;java.lang.String,?&gt
 <ul class="blockList">
 <li class="blockList">
 <h4>updateUser</h4>
-<pre>public abstract&nbsp;void&nbsp;updateUser(User&nbsp;user)</pre>
-<div class="block"><p>Updates a user in Intercom.</p>
-
- <p>You can send any data you like to Intercom. Typically our customers see a lot of value in sending data that
- relates to customer development, such as price plan, value of purchases, etc. Once these have been sent to
- Intercom you can then apply filters based on these attributes.</p>
-
- <p>A detailed list of the fields you can use to update a user is available <a href="https://developers.intercom.com/reference#create-or-update-user">here</a></p>
-
- <p>Attributes such as the user email or name can be updated by calling</p>
-
- <pre>
- <code>
-
- User user = new User.Builder()
-             .withUserId("1234")
-             .withEmail("test@test.com")
-             .build();
- Intercom.client().updateUser(user);
- </code>
- </pre>
-
- <p>Custom user attributes can be created and modified by passing a custom_attributes map.
- You do not have to create attributes in Intercom beforehand. If one hasn't been seen before it will be
- created for you automatically.</p>
-
- <pre>
- <code>
- User user = new User.Builder()
-             .withUserId("1234")
-             .withEmail("test@test.com")
-             .withCustomAttribute("team_mates", 3)
-             .build();
- Intercom.client().updateUser(user);
- </code>
- </pre>
-
- <p>For multiple user attributes you can chain withCustomAttribute several times
- or pass a Map to withCustomAttributes</p>
-
- <p>All of the updatable User attributes are described here: <code>()</code></p>
-
- <p>You can also set company data via this call by submitting an attribute map like</p>
-
- <pre>
- <code>
- Company company = new Company.Builder()
-             .withCompanyId("1234")
-             .withName("TestCorp")
-             .build();
- User user = new User.Builder()
-             .withCompany(company)
-             .build();
- Intercom.client().updateUser(user);
- </code>
- </pre>
-
- <p>All of the updatable Company attributes are described here: <code>io.intercom.android.sdk.Company()</code></p>
-
- <p>Custom Attributes may be of type: String, Long, Float, Double, Boolean, Character, Byte, Short, Integer.</p></div>
+<pre>@Deprecated
+public abstract&nbsp;void&nbsp;updateUser(User&nbsp;user)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <code>#updateUser(UserAttributes)</code> instead.</span></div>
+<div class="block"><p>Updates a user in Intercom.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>user</code> - The user object with the attributes to be set in Intercom.</p></dd>
@@ -1114,7 +1006,7 @@ public abstract&nbsp;void&nbsp;openGcmMessage(android.app.TaskStackBuilder&nbsp;
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
+<li><a href="../../../../io/intercom/android/sdk/Company.Builder.html" title="class in io.intercom.android.sdk"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../io/intercom/android/sdk/Intercom.LogLevel.html" title="annotation in io.intercom.android.sdk"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

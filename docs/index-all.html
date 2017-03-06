@@ -67,7 +67,7 @@
 <!--   -->
 </a></div>
 <!-- ========= END OF TOP NAVBAR ========= -->
-<div class="contentContainer"><a href="#I:A">A</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<a name="I:A">
+<div class="contentContainer"><a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;<a name="I:A">
 <!--   -->
 </a>
 <h2 class="title">A</h2>
@@ -77,6 +77,24 @@
 <div class="block">Sets a listener that will be notified when the unread conversation count for the registered user changes.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/intercom/android/sdk/Intercom.LogLevel.html#ASSERT">ASSERT</a></span> - Static variable in annotation type io.intercom.android.sdk.<a href="io/intercom/android/sdk/Intercom.LogLevel.html" title="annotation in io.intercom.android.sdk">Intercom.LogLevel</a></dt>
+<dd>&nbsp;</dd>
+</dl>
+<a name="I:B">
+<!--   -->
+</a>
+<h2 class="title">B</h2>
+<dl>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/Company.Builder.html#build--">build()</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/Company.Builder.html" title="class in io.intercom.android.sdk">Company.Builder</a></dt>
+<dd>
+<div class="block">Build the company object to add a company to a user.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/UserAttributes.Builder.html#build--">build()</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk">UserAttributes.Builder</a></dt>
+<dd>
+<div class="block">Build the userAttributes object to update a userAttributes in Intercom.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/Company.Builder.html#Builder--">Builder()</a></span> - Constructor for class io.intercom.android.sdk.<a href="io/intercom/android/sdk/Company.Builder.html" title="class in io.intercom.android.sdk">Company.Builder</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/UserAttributes.Builder.html#Builder--">Builder()</a></span> - Constructor for class io.intercom.android.sdk.<a href="io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk">UserAttributes.Builder</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <a name="I:C">
@@ -90,6 +108,12 @@
 <dd>
 <div class="block">Provides access to the Intercom client.</div>
 </dd>
+<dt><a href="io/intercom/android/sdk/Company.html" title="class in io.intercom.android.sdk"><span class="typeNameLink">Company</span></a> - Class in <a href="io/intercom/android/sdk/package-summary.html">io.intercom.android.sdk</a></dt>
+<dd>
+<div class="block">The Company object is used for adding companies to users in Intercom.</div>
+</dd>
+<dt><a href="io/intercom/android/sdk/Company.Builder.html" title="class in io.intercom.android.sdk"><span class="typeNameLink">Company.Builder</span></a> - Class in <a href="io/intercom/android/sdk/package-summary.html">io.intercom.android.sdk</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/intercom/android/sdk/identity/Registration.html#create--">create()</a></span> - Static method in class io.intercom.android.sdk.identity.<a href="io/intercom/android/sdk/identity/Registration.html" title="class in io.intercom.android.sdk.identity">Registration</a></dt>
 <dd>
 <div class="block">Factory to create a new, empty Registration object.</div>
@@ -328,12 +352,22 @@
 </dd>
 <dt><span class="memberNameLink"><a href="io/intercom/android/sdk/Intercom.html#updateUser-java.util.Map-">updateUser(Map&lt;String, ?&gt;)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/Intercom.html" title="class in io.intercom.android.sdk">Intercom</a></dt>
 <dd>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="block"><span class="deprecationComment">use <code>#updateUser(UserAttributes)</code> instead.</span></div>
+</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/intercom/android/sdk/Intercom.html#updateUser-User-">updateUser(User)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/Intercom.html" title="class in io.intercom.android.sdk">Intercom</a></dt>
 <dd>
-<div class="block">Updates a user in Intercom.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="block"><span class="deprecationComment">use <code>#updateUser(UserAttributes)</code> instead.</span></div>
+</div>
 </dd>
+<dt><a href="io/intercom/android/sdk/UserAttributes.html" title="class in io.intercom.android.sdk"><span class="typeNameLink">UserAttributes</span></a> - Class in <a href="io/intercom/android/sdk/package-summary.html">io.intercom.android.sdk</a></dt>
+<dd>
+<div class="block">The UserAttributes object is used for updating a user in Intercom.</div>
+</dd>
+<dt><a href="io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk"><span class="typeNameLink">UserAttributes.Builder</span></a> - Class in <a href="io/intercom/android/sdk/package-summary.html">io.intercom.android.sdk</a></dt>
+<dd>&nbsp;</dd>
 </dl>
 <a name="I:V">
 <!--   -->
@@ -361,9 +395,73 @@ the order they are declared.</div>
 <dl>
 <dt><span class="memberNameLink"><a href="io/intercom/android/sdk/Intercom.LogLevel.html#WARN">WARN</a></span> - Static variable in annotation type io.intercom.android.sdk.<a href="io/intercom/android/sdk/Intercom.LogLevel.html" title="annotation in io.intercom.android.sdk">Intercom.LogLevel</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/UserAttributes.Builder.html#withCompany-io.intercom.android.sdk.Company-">withCompany(Company)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk">UserAttributes.Builder</a></dt>
+<dd>
+<div class="block">Set a company on the user</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/Company.Builder.html#withCompanyId-java.lang.String-">withCompanyId(String)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/Company.Builder.html" title="class in io.intercom.android.sdk">Company.Builder</a></dt>
+<dd>
+<div class="block">Set the ID on the company</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/Company.Builder.html#withCreatedAt-java.lang.Long-">withCreatedAt(Long)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/Company.Builder.html" title="class in io.intercom.android.sdk">Company.Builder</a></dt>
+<dd>
+<div class="block">Set the date the company was created at</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/Company.Builder.html#withCustomAttribute-java.lang.String-java.lang.Object-">withCustomAttribute(String, Object)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/Company.Builder.html" title="class in io.intercom.android.sdk">Company.Builder</a></dt>
+<dd>
+<div class="block">Set a custom attribute to the company</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/UserAttributes.Builder.html#withCustomAttribute-java.lang.String-java.lang.Object-">withCustomAttribute(String, Object)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk">UserAttributes.Builder</a></dt>
+<dd>
+<div class="block">Set a custom attribute on the user</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/Company.Builder.html#withCustomAttributes-java.util.Map-">withCustomAttributes(Map&lt;String, ?&gt;)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/Company.Builder.html" title="class in io.intercom.android.sdk">Company.Builder</a></dt>
+<dd>
+<div class="block">Set several custom attributes on the company at once</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/UserAttributes.Builder.html#withCustomAttributes-java.util.Map-">withCustomAttributes(Map&lt;String, ?&gt;)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk">UserAttributes.Builder</a></dt>
+<dd>
+<div class="block">Set several custom attitudes on the user at once</div>
+</dd>
 <dt><span class="memberNameLink"><a href="io/intercom/android/sdk/identity/Registration.html#withEmail-java.lang.String-">withEmail(String)</a></span> - Method in class io.intercom.android.sdk.identity.<a href="io/intercom/android/sdk/identity/Registration.html" title="class in io.intercom.android.sdk.identity">Registration</a></dt>
 <dd>
 <div class="block">Add an email address to this registration.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/UserAttributes.Builder.html#withEmail-java.lang.String-">withEmail(String)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk">UserAttributes.Builder</a></dt>
+<dd>
+<div class="block">Set the email address for this user.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/Company.Builder.html#withMonthlySpend-java.lang.Integer-">withMonthlySpend(Integer)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/Company.Builder.html" title="class in io.intercom.android.sdk">Company.Builder</a></dt>
+<dd>
+<div class="block">Set the monthly spend of this company</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/Company.Builder.html#withName-java.lang.String-">withName(String)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/Company.Builder.html" title="class in io.intercom.android.sdk">Company.Builder</a></dt>
+<dd>
+<div class="block">Set the name of the company</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/UserAttributes.Builder.html#withName-java.lang.String-">withName(String)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk">UserAttributes.Builder</a></dt>
+<dd>
+<div class="block">Set the name of this user.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/UserAttributes.Builder.html#withPhone-java.lang.String-">withPhone(String)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk">UserAttributes.Builder</a></dt>
+<dd>
+<div class="block">Set the phone number of this user.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/Company.Builder.html#withPlan-java.lang.String-">withPlan(String)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/Company.Builder.html" title="class in io.intercom.android.sdk">Company.Builder</a></dt>
+<dd>
+<div class="block">Set the companies plan</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/UserAttributes.Builder.html#withSignedUpAt-java.lang.Long-">withSignedUpAt(Long)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk">UserAttributes.Builder</a></dt>
+<dd>
+<div class="block">Set the time when the user signed up</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/UserAttributes.Builder.html#withSignedUpAt-java.util.Date-">withSignedUpAt(Date)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk">UserAttributes.Builder</a></dt>
+<dd>
+<div class="block">Set the time when the user signed up</div>
+</dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/UserAttributes.Builder.html#withUnsubscribedFromEmails-java.lang.Boolean-">withUnsubscribedFromEmails(Boolean)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk">UserAttributes.Builder</a></dt>
+<dd>
+<div class="block">Set if the user has unsubscribed to emails</div>
 </dd>
 <dt><span class="memberNameLink"><a href="io/intercom/android/sdk/identity/Registration.html#withUserAttributes-java.util.Map-">withUserAttributes(Map&lt;String, Object&gt;)</a></span> - Method in class io.intercom.android.sdk.identity.<a href="io/intercom/android/sdk/identity/Registration.html" title="class in io.intercom.android.sdk.identity">Registration</a></dt>
 <dd>
@@ -373,8 +471,12 @@ the order they are declared.</div>
 <dd>
 <div class="block">Add a unique user identifier to this registration.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/UserAttributes.Builder.html#withUserId-java.lang.String-">withUserId(String)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk">UserAttributes.Builder</a></dt>
+<dd>
+<div class="block">Set the user ID on this user.</div>
+</dd>
 </dl>
-<a href="#I:A">A</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;</div>
+<a href="#I:A">A</a>&nbsp;<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:O">O</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:V">V</a>&nbsp;<a href="#I:W">W</a>&nbsp;</div>
 <!-- ======= START OF BOTTOM NAVBAR ====== -->
 <div class="bottomNav"><a name="navbar.bottom">
 <!--   -->

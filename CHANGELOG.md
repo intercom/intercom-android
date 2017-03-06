@@ -1,5 +1,16 @@
 # Changelog
 
+## Version 3.1.0
+
+06-03-2017
+* added new method to the API updateUser(UserAttributes). Docs on how to use this can be found [here](https://developers.intercom.com/docs/android-configuration#section-update-a-user)
+* deprecated updateUser(Map<String, ?>) and updateUser(User) methods in favour of updateUser(UserAttributes)
+* search and send gifs from our new message composer
+* dedicated image loader that allows you to preview and send images on your device
+* fixed a FileNotFoundException in the Intercom SoundPlayer
+* updated the android support library to version 25.1.1
+* update the android GCM and FCM libraries to version 10.2.0
+
 ## Version 3.0.21
 
 08-02-2017
