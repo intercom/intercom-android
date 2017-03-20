@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -181,35 +181,41 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk">UserAttributes.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/UserAttributes.Builder.html#withLanguageOverride-java.lang.String-">withLanguageOverride</a></span>(java.lang.String&nbsp;languageOverride)</code>
+<div class="block">Set the language override code for this user</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../../io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk">UserAttributes.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/UserAttributes.Builder.html#withName-java.lang.String-">withName</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block">Set the name of this user.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk">UserAttributes.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/UserAttributes.Builder.html#withPhone-java.lang.String-">withPhone</a></span>(java.lang.String&nbsp;phone)</code>
 <div class="block">Set the phone number of this user.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk">UserAttributes.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/UserAttributes.Builder.html#withSignedUpAt-java.util.Date-">withSignedUpAt</a></span>(java.util.Date&nbsp;signedUpAt)</code>
 <div class="block">Set the time when the user signed up</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk">UserAttributes.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/UserAttributes.Builder.html#withSignedUpAt-java.lang.Long-">withSignedUpAt</a></span>(java.lang.Long&nbsp;signedUpAt)</code>
 <div class="block">Set the time when the user signed up</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk">UserAttributes.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/UserAttributes.Builder.html#withUnsubscribedFromEmails-java.lang.Boolean-">withUnsubscribedFromEmails</a></span>(java.lang.Boolean&nbsp;unsubscribedFromEmails)</code>
 <div class="block">Set if the user has unsubscribed to emails</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk">UserAttributes.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/UserAttributes.Builder.html#withUserId-java.lang.String-">withUserId</a></span>(java.lang.String&nbsp;userId)</code>
 <div class="block">Set the user ID on this user.</div>
@@ -382,6 +388,27 @@ extends java.lang.Object</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>unsubscribedFromEmails</code> - a boolean to modify the unsubscribed from emails status</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the UserAttributes.Builder object</dd>
+</dl>
+</li>
+</ul>
+<a name="withLanguageOverride-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>withLanguageOverride</h4>
+<pre>public&nbsp;<a href="../../../../io/intercom/android/sdk/UserAttributes.Builder.html" title="class in io.intercom.android.sdk">UserAttributes.Builder</a>&nbsp;withLanguageOverride(@Nullable
+                                                   java.lang.String&nbsp;languageOverride)</pre>
+<div class="block">Set the language override code for this user
+
+ <p>languageOverride must be a valid language code.</p>
+ <p>For more information see [here](https://docs.intercom.com/configure-intercom-for-your-product-or-site/
+ customize-the-intercom-messenger/localize-intercom-to-work-with-multiple-languages ).</p></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>languageOverride</code> - a string for the language</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the UserAttributes.Builder object</dd>
 </dl>

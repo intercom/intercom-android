@@ -84,22 +84,21 @@ Here is our complete dependency graph:
 ### intercom-sdk-base
 ```
 # Transitive (shared with your app)
-+--- com.android.support:design:25.0.1
-+--- com.android.support:appcompat-v7:25.0.1
-+--- com.android.support:animated-vector-drawable:25.0.1
-+--- com.android.support:support-vector-drawable:25.0.1
-+--- com.android.support:support-v4:25.0.1
-+--- com.android.support:support-annotations:25.0.1
-+--- com.android.support:recyclerview-v7:25.0.1
++--- com.android.support:design:25.1.1
++--- com.android.support:appcompat-v7:25.1.1
++--- com.android.support:animated-vector-drawable:25.1.1
++--- com.android.support:support-vector-drawable:25.1.1
++--- com.android.support:support-v4:25.1.1
++--- com.android.support:support-annotations:25.1.1
++--- com.android.support:recyclerview-v7:25.1.1
 
 # Repackaged (not shared with your app)
 +--- com.squareup:otto:1.3.8
 +--- com.github.bumptech.glide:glide-intercom:3.7.0 # Modified version of Glide
 +--- com.squareup.okio:okio:1.11.0
-+--- com.squareup.okhttp3:okhttp:3.4.2
-+--- com.squareup.okhttp3:okhttp-ws:3.4.2
-+--- com.squareup.retrofit2:retrofit:2.1.0
-+--- com.squareup.retrofit2:converter-gson:2.1.0
++--- com.squareup.okhttp3:okhttp:3.6.0
++--- com.squareup.retrofit2:retrofit:2.2.0
++--- com.squareup.retrofit2:converter-gson:2.2.0
 +--- com.google.code.gson:gson:2.8.0
 ```
 
@@ -107,26 +106,26 @@ If you use some of the repackaged libraries in your app, you may want to use a b
 
 ### intercom-sdk-gcm
 ```
-+--- com.google.android.gms:play-services-base:9.8.0
-|    +--- com.google.android.gms:play-services-basement:9.8.0
-|    |    \--- com.android.support:support-v4:23.0.0 -> 25.0.1 (*)
-|    \--- com.google.android.gms:play-services-tasks:9.8.0
-|         \--- com.google.android.gms:play-services-basement:9.8.0 (*)
-+--- com.google.android.gms:play-services-basement:9.8.0 (*)
-\--- com.google.android.gms:play-services-iid:9.8.0
-    +--- com.google.android.gms:play-services-base:9.8.0 (*)
-    \--- com.google.android.gms:play-services-basement:9.8.0 (*)
++--- com.google.android.gms:play-services-base:10.2.0
+|    +--- com.google.android.gms:play-services-basement:10.2.0
+|    |    \--- com.android.support:support-v4:23.0.0 -> 25.1.1 (*)
+|    \--- com.google.android.gms:play-services-tasks:10.2.0
+|         \--- com.google.android.gms:play-services-basement:10.2.0 (*)
++--- com.google.android.gms:play-services-basement:10.2.0 (*)
+\--- com.google.android.gms:play-services-iid:10.2.0
+    +--- com.google.android.gms:play-services-base:10.2.0 (*)
+    \--- com.google.android.gms:play-services-basement:10.2.0 (*)
 ```
 
 ### intercom-sdk-fcm
 ```
-+--- com.google.android.gms:play-services-basement:9.8.0
-|    \--- com.android.support:support-v4:23.0.0 -> 25.0.1 (*)
-+--- com.google.firebase:firebase-iid:9.8.0
-|    +--- com.google.android.gms:play-services-basement:9.8.0 (*)
-|    \--- com.google.firebase:firebase-common:9.8.0
-|         +--- com.google.android.gms:play-services-basement:9.8.0 (*)
-|         \--- com.google.android.gms:play-services-tasks:9.8.0
-|              \--- com.google.android.gms:play-services-basement:9.8.0 (*)
-\--- com.google.firebase:firebase-common:9.8.0 (*)
++--- com.google.android.gms:play-services-basement:10.2.0
+|    \--- com.android.support:support-v4:23.0.0 -> 25.1.1 (*)
++--- com.google.firebase:firebase-iid:10.2.0
+|    +--- com.google.android.gms:play-services-basement:10.2.0 (*)
+|    \--- com.google.firebase:firebase-common:10.2.0
+|         +--- com.google.android.gms:play-services-basement:10.2.0 (*)
+|         \--- com.google.android.gms:play-services-tasks:10.2.0
+|              \--- com.google.android.gms:play-services-basement:10.2.0 (*)
+\--- com.google.firebase:firebase-common:10.2.0 (*)
 ```

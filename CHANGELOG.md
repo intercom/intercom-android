@@ -1,15 +1,24 @@
 # Changelog
 
+## Version 3.1.1
+
+20-03-2017
+ * Add `withLanguageOverride()` method to the UserAttributes model
+ * Display error to users before uploading files that are larger than we support
+ * Fixed issue where the Intercom settings color was not applied to the the push icon and push title
+ * Fixed localization issues with the composer
+ * Fixed issue with applying a padding to in-app messages [#311](https://github.com/intercom/intercom-android/issues/311)
+
 ## Version 3.1.0
 
 06-03-2017
-* added new method to the API updateUser(UserAttributes). Docs on how to use this can be found [here](https://developers.intercom.com/docs/android-configuration#section-update-a-user)
-* deprecated updateUser(Map<String, ?>) and updateUser(User) methods in favour of updateUser(UserAttributes)
-* search and send gifs from our new message composer
-* dedicated image loader that allows you to preview and send images on your device
-* fixed a FileNotFoundException in the Intercom SoundPlayer
-* updated the android support library to version 25.1.1
-* update the android GCM and FCM libraries to version 10.2.0
+* Added new method to the API updateUser(UserAttributes). Docs on how to use this can be found [here](https://developers.intercom.com/docs/android-configuration#section-update-a-user)
+* Deprecated `updateUser(Map<String, ?>)` and `updateUser(User)` methods in favour of `updateUser(UserAttributes)`
+* Search and send GIFs from our new message composer
+* Dedicated image loader that allows you to preview and send images on your device
+* Fixed a FileNotFoundException in the Intercom SoundPlayer
+* Updated the Android Support Library to version 25.1.1
+* Update the Android GCM and FCM libraries to version 10.2.0
 
 ## Version 3.0.21
 
