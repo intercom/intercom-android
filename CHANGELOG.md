@@ -1,13 +1,19 @@
 # Changelog
 
+## Version 3.1.2
+
+29-03-2017
+* Fixes [#325](https://github.com/intercom/intercom-android/issues/325)
+* Translation fixes and improved logging
+
 ## Version 3.1.1
 
 20-03-2017
- * Add `withLanguageOverride()` method to the UserAttributes model
- * Display error to users before uploading files that are larger than we support
- * Fixed issue where the Intercom settings color was not applied to the the push icon and push title
- * Fixed localization issues with the composer
- * Fixed issue with applying a padding to in-app messages [#311](https://github.com/intercom/intercom-android/issues/311)
+* Add `withLanguageOverride()` method to the UserAttributes model
+* Display error to users before uploading files that are larger than we support
+* Fixed issue where the Intercom settings color was not applied to the the push icon and push title
+* Fixed localization issues with the composer
+* Fixed issue with applying a padding to in-app messages [#311](https://github.com/intercom/intercom-android/issues/311)
 
 ## Version 3.1.0
 
