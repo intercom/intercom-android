@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 3.1.3
+
+05-04-2017
+* Updates to the active/away UI
+* Fixes https://github.com/intercom/intercom-android/issues/332
+
 ## Version 3.1.2
 
 29-03-2017
