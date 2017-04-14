@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 3.1.4
+
+14-04-2017
+* Updates to the active/away UI
+* Initialisation fixes
+
 ## Version 3.1.3
 
 05-04-2017
