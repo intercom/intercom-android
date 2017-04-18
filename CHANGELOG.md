@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.1.5
+
+18-04-2017
+* Fixed issues when initialising Intercom outside of `Application.onCreate()`
+
 ## Version 3.1.4
 
 14-04-2017
