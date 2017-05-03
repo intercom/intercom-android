@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.2.1
+
+03-05-2017
+* Fixed issue causing session count to double increment [#337](https://github.com/intercom/intercom-android/issues/337)
+
 ## Version 3.2.0
 
 21-04-2017
