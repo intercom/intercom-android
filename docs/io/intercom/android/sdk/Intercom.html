@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":9,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":9,"i11":6,"i12":6,"i13":38,"i14":38,"i15":9,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":9,"i23":38,"i24":6,"i25":9,"i26":38,"i27":38};
+var methods = {"i0":6,"i1":9,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":9,"i11":6,"i12":6,"i13":38,"i14":38,"i15":9,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":9,"i24":38,"i25":6,"i26":9,"i27":38,"i28":38};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -326,23 +326,29 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#setBottomPadding-int-">setBottomPadding</a></span>(int&nbsp;bottomPadding)</code>
+<div class="block">Set the bottom padding of in app messages and the launcher.</div>
+</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#setInAppMessageVisibility-io.intercom.android.sdk.Intercom.Visibility-">setInAppMessageVisibility</a></span>(<a href="../../../../io/intercom/android/sdk/Intercom.Visibility.html" title="enum in io.intercom.android.sdk">Intercom.Visibility</a>&nbsp;visibility)</code>
 <div class="block">Toggles visibility of in-app messages.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#setLauncherVisibility-io.intercom.android.sdk.Intercom.Visibility-">setLauncherVisibility</a></span>(<a href="../../../../io/intercom/android/sdk/Intercom.Visibility.html" title="enum in io.intercom.android.sdk">Intercom.Visibility</a>&nbsp;visibility)</code>
 <div class="block">Toggles visibility of the launcher view.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#setLogLevel-int-">setLogLevel</a></span>(int&nbsp;logLevel)</code>
 <div class="block">Set the level of the logger</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#setSecureMode-java.lang.String-java.lang.String-">setSecureMode</a></span>(java.lang.String&nbsp;secureHash,
              java.lang.String&nbsp;secureData)</code>
@@ -351,19 +357,19 @@ extends java.lang.Object</pre>
 </div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#setUserHash-java.lang.String-">setUserHash</a></span>(java.lang.String&nbsp;userHash)</code>
 <div class="block">Sets the user hash necessary for validation when Identity Verification is enabled.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#unregisterForLateInitialisation-android.app.Application-">unregisterForLateInitialisation</a></span>(android.app.Application&nbsp;application)</code>
 <div class="block">Stop tracking Activity lifecycle events.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#updateUser-java.util.Map-">updateUser</a></span>(java.util.Map&lt;java.lang.String,?&gt;&nbsp;attributes)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -371,7 +377,7 @@ extends java.lang.Object</pre>
 </div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#updateUser-User-">updateUser</a></span>(User&nbsp;user)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -769,6 +775,29 @@ public abstract&nbsp;void&nbsp;updateUser(User&nbsp;user)</pre>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
+</dl>
+</li>
+</ul>
+<a name="setBottomPadding-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setBottomPadding</h4>
+<pre>public abstract&nbsp;void&nbsp;setBottomPadding(int&nbsp;bottomPadding)</pre>
+<div class="block"><p>Set the bottom padding of in app messages and the launcher.</p>
+
+ <p>Setting the bottom padding will increase how far from the bottom of the screen the default launcher
+ and in app messages will appear.</p>
+ <p>Previously you could add `intercom_bottom_padding` to your `dimens.xml` to set the padding at startup.
+ This should be removed and your should call setBottomPadding instead.
+ `intercom_bottom_padding` will still function for the time being.</p>
+ <p>You can call setBottomPadding at any time to animate the position of your in-apps and launcher.</p></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>bottomPadding</code> - The amount of pixels to set the bottom padding</dd>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>3.2.2</dd>
 </dl>
 </li>
 </ul>

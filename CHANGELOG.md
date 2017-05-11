@@ -1,5 +1,13 @@
 # Changelog
 
+## Version 3.2.2
+
+11-05-2017
+* Added a new public API setBottomPadding() which takes a pixel value to add to the default bottom padding of the default launcher and in app messages.
+* Fixed typo in our IntercomFcmInstanceIdService class check [#342](https://github.com/intercom/intercom-android/issues/342)
+* Fixed IllegalArgumentException [#344](https://github.com/intercom/intercom-android/issues/344)
+* Fixed an issue with our real time system not trigger a UI update for a message received when the app is backgrounded and reopened in a short period of time.
+
 ## Version 3.2.1
 
 03-05-2017
