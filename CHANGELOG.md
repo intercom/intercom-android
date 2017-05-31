@@ -1,5 +1,14 @@
 # Changelog
 
+## Version 3.2.4
+
+31-05-2017
+* Support AAPT2 in Android Gradle plugin 3.0-alpha2: https://github.com/intercom/intercom-android/issues/354
+* Fix full in-app messages showing twice: https://github.com/intercom/intercom-android/issues/352
+* Fix NPE: https://github.com/intercom/intercom-android/issues/351
+* Fix IllegalStateException: https://github.com/intercom/intercom-android/issues/347
+* Improved UI performance
+
 ## Version 3.2.3
 
 22-05-2017
@@ -391,19 +400,19 @@ In addition some other methods have been dropped:
 
 ### Miscellaneous
   * We've hidden our resources so you won't see all our layouts, colours etc when you're trying to reference your own resources
-  
+
 ## Version 1.1.21
 
 14-06-2016
 
 Protect against crash if the image resource is not found [issue#198](https://github.com/intercom/intercom-android/issues/198).
-  
+
 ## Version 1.1.20
 
 02-06-2016
 
 * Fixed an issue which can result in inflated session counts for both identified and unidentified users.
-  
+
 ## Version 1.1.19
 
 17-05-2016
