@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.2.5
+
+08-06-2017
+* Fix potential crash when replying while uploading an image
+
 ## Version 3.2.4
 
 31-05-2017
