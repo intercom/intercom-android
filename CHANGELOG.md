@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 3.2.6
+
+21-06-2017
+* Minor translation updates
+
 ## Version 3.2.5
 
 08-06-2017
