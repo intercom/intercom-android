@@ -41,7 +41,7 @@
 
 21-04-2017
 * Updated support library to 25.3.1
-* Added new public API `setUserHash(String userHash)` which replaces the now deprecated `setSecureMode(String hmac, Stirng data)`
+* Added new public API `setUserHash(String userHash)` which replaces the now deprecated `setSecureMode(String hmac, String data)`
 * Updated GCM and FCM to 10.2.1
 
 ## Version 3.1.5
