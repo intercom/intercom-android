@@ -230,7 +230,9 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>sendTokenToIntercom</h4>
-<pre>public&nbsp;void&nbsp;sendTokenToIntercom(android.app.Application&nbsp;application,
+<pre>public&nbsp;void&nbsp;sendTokenToIntercom(@NonNull
+                                android.app.Application&nbsp;application,
+                                @NonNull
                                 java.lang.String&nbsp;token)</pre>
 <div class="block"><p>Handle the Intercom push message</p>
 
@@ -271,7 +273,9 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>handlePush</h4>
-<pre>public&nbsp;void&nbsp;handlePush(android.app.Application&nbsp;application,
+<pre>public&nbsp;void&nbsp;handlePush(@NonNull
+                       android.app.Application&nbsp;application,
+                       @NonNull
                        android.os.Bundle&nbsp;message)</pre>
 <div class="block"><p>Handle the Intercom push message</p>
 
@@ -302,7 +306,9 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>handlePush</h4>
-<pre>public&nbsp;void&nbsp;handlePush(android.app.Application&nbsp;application,
+<pre>public&nbsp;void&nbsp;handlePush(@NonNull
+                       android.app.Application&nbsp;application,
+                       @NonNull
                        java.util.Map&lt;java.lang.String,java.lang.String&gt;&nbsp;message)</pre>
 <div class="block"><p>Handle the Intercom push message</p>
 
@@ -334,7 +340,8 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>isIntercomPush</h4>
-<pre>public&nbsp;boolean&nbsp;isIntercomPush(android.os.Bundle&nbsp;message)</pre>
+<pre>public&nbsp;boolean&nbsp;isIntercomPush(@NonNull
+                              android.os.Bundle&nbsp;message)</pre>
 <div class="block"><p>Check if the cloud message is from Intercom</p>
 
  <p>This will take the cloud message bundle delivered to your GcmListenerService
@@ -355,7 +362,8 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>isIntercomPush</h4>
-<pre>public&nbsp;boolean&nbsp;isIntercomPush(java.util.Map&lt;java.lang.String,java.lang.String&gt;&nbsp;message)</pre>
+<pre>public&nbsp;boolean&nbsp;isIntercomPush(@NonNull
+                              java.util.Map&lt;java.lang.String,java.lang.String&gt;&nbsp;message)</pre>
 <div class="block"><p>Check if the cloud message is from Intercom</p>
 
  <p>This will take the cloud message bundle delivered to your FirebaseMessagingService
