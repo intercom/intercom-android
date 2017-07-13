@@ -1,5 +1,20 @@
 # Changelog
 
+## Version 3.2.8
+
+13-07-2017
+* Miscellaneous crash fixes
+
+## Version 3.2.7
+
+30-06-2017
+* Fixed `IndexOutOfBoundsException`: https://github.com/intercom/intercom-android/issues/366
+* Fixed NPE when invalid data is passed to `IntercomPushClient`
+* Fixed `logEvent()` from affecting user data when called directly after a registration
+* Fixed `JsonSyntaxException` caused by loading persisted data
+* Fixed the profile not loading correctly when opening the Messenger just after the app starts
+* Optimised images
+
 ## Version 3.2.6
 
 21-06-2017
