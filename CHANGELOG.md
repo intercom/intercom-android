@@ -1,5 +1,10 @@
 # Changelog
 
+# Version 3.2.10
+
+04-08-2017
+* Added native support for conversation ratings. You can read more about conversation ratings [here](https://docs.intercom.com/responding-to-users-and-visitors/see-your-team-s-progress/measure-customer-satisfaction-with-conversation-ratings).
+
 ## Version 3.2.9
 
 04-08-2017
