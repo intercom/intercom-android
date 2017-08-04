@@ -1,5 +1,14 @@
 # Changelog
 
+## Version 3.2.9
+
+04-08-2017
+* Fixed NullPointerException: https://github.com/intercom/intercom-android/issues/381
+* Fixed UI issues in teammate profile: https://github.com/intercom/intercom-android/issues/378
+* Fixed scrolling behaviour in conversation
+* Fixed unread count being incorrect after a new conversation was started
+* Fixed duplicate resources: https://github.com/intercom/intercom-android/issues/385
+
 ## Version 3.2.8
 
 13-07-2017
