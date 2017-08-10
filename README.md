@@ -96,7 +96,7 @@ Here is our complete dependency graph:
 +--- com.squareup:otto:1.3.8
 +--- com.github.bumptech.glide:glide-intercom:3.7.0 # Modified version of Glide
 +--- com.squareup.okio:okio:1.13.0
-+--- com.squareup.okhttp3:okhttp:3.6.0
++--- com.squareup.okhttp3:okhttp:3.8.1
 +--- com.squareup.retrofit2:retrofit:2.3.0
 +--- com.squareup.retrofit2:converter-gson:2.3.0
 +--- com.google.code.gson:gson:2.8.0
