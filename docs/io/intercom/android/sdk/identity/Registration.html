@@ -173,7 +173,7 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>java.util.Map&lt;java.lang.String,java.lang.Object&gt;</code></td>
+<td class="colFirst"><code><a href="../../../../../io/intercom/android/sdk/UserAttributes.html" title="class in io.intercom.android.sdk">UserAttributes</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/intercom/android/sdk/identity/Registration.html#getAttributes--">getAttributes</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -192,7 +192,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../io/intercom/android/sdk/identity/Registration.html" title="class in io.intercom.android.sdk.identity">Registration</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/intercom/android/sdk/identity/Registration.html#withUserAttributes-java.util.Map-">withUserAttributes</a></span>(java.util.Map&lt;java.lang.String,java.lang.Object&gt;&nbsp;attributes)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/intercom/android/sdk/identity/Registration.html#withUserAttributes-io.intercom.android.sdk.UserAttributes-">withUserAttributes</a></span>(<a href="../../../../../io/intercom/android/sdk/UserAttributes.html" title="class in io.intercom.android.sdk">UserAttributes</a>&nbsp;userAttributes)</code>
 <div class="block">Add a map of user attributes to this registration.</div>
 </td>
 </tr>
@@ -289,20 +289,20 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a name="withUserAttributes-java.util.Map-">
+<a name="withUserAttributes-io.intercom.android.sdk.UserAttributes-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>withUserAttributes</h4>
 <pre>public&nbsp;<a href="../../../../../io/intercom/android/sdk/identity/Registration.html" title="class in io.intercom.android.sdk.identity">Registration</a>&nbsp;withUserAttributes(@NonNull
-                                       java.util.Map&lt;java.lang.String,java.lang.Object&gt;&nbsp;attributes)</pre>
+                                       <a href="../../../../../io/intercom/android/sdk/UserAttributes.html" title="class in io.intercom.android.sdk">UserAttributes</a>&nbsp;userAttributes)</pre>
 <div class="block"><p>Add a map of user attributes to this registration.</p>
 
- <p>For full documentation see <a href="../../../../../io/intercom/android/sdk/Intercom.html#updateUser-java.util.Map-"><code>Intercom.updateUser(Map)</code></a></p></div>
+ <p>For full documentation see <a href="../../../../../io/intercom/android/sdk/Intercom.html#updateUser-io.intercom.android.sdk.UserAttributes-"><code>Intercom.updateUser(UserAttributes)</code></a></p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>attributes</code> - the map of attributes to update the user with</dd>
+<dd><code>userAttributes</code> - the UserAttributes object</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this registration object</dd>
 </dl>
@@ -332,7 +332,8 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getAttributes</h4>
-<pre>public&nbsp;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&nbsp;getAttributes()</pre>
+<pre>@Nullable
+public&nbsp;<a href="../../../../../io/intercom/android/sdk/UserAttributes.html" title="class in io.intercom.android.sdk">UserAttributes</a>&nbsp;getAttributes()</pre>
 </li>
 </ul>
 </li>

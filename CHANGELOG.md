@@ -1,5 +1,19 @@
 # Changelog
 
+# Version 4.0.0
+
+10-08-2017
+* Android O Support
+* Updated to 26.0.0 of the support library
+* Updated FCM and GCM play-services to 11.0.4
+* Updated third party dependancies, a list of the current library versions is provided in the [github readme](https://github.com/intercom/intercom-android#dependency-graph)
+* Removed deprecated methods
+* Support for O Notification channels. The channels added by Intercom are: 
+  - Chat Replies (when you reply to a customer in Intercom)
+  - New Chats (when you send an in-app message to a customer with send notification checked)
+  - Actions (when you send a push message to a customer)
+* Fixed an OutOfMemoryError in the image gallery[#371](https://github.com/intercom/intercom-android/issues/371)
+
 # Version 3.2.10
 
 04-08-2017

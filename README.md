@@ -8,7 +8,7 @@ There are 3 options for installing Intercom on your Android app.
 Add the following dependency to your app's `build.gradle` file:
 ```groovy
 dependencies {
-    compile 'io.intercom.android:intercom-sdk:3.+'
+    compile 'io.intercom.android:intercom-sdk:4.+'
 }
 ```
 
@@ -16,8 +16,8 @@ dependencies {
 Add the following dependency to your app's `build.gradle` file:
 ```groovy
 dependencies {
-    compile 'io.intercom.android:intercom-sdk-base:3.+'
-    compile 'io.intercom.android:intercom-sdk-fcm:3.+'
+    compile 'io.intercom.android:intercom-sdk-base:4.+'
+    compile 'io.intercom.android:intercom-sdk-fcm:4.+'
 }
 ```
 
@@ -26,7 +26,7 @@ dependencies {
 If you'd rather not have push notifications in your app, you can use this dependency: 
 ```groovy
 dependencies {
-    compile 'io.intercom.android:intercom-sdk-base:3.+'
+    compile 'io.intercom.android:intercom-sdk-base:4.+'
 }
 ```
 
@@ -84,21 +84,21 @@ Here is our complete dependency graph:
 ### intercom-sdk-base
 ```
 # Transitive (shared with your app)
-+--- com.android.support:design:25.3.1
-+--- com.android.support:appcompat-v7:25.3.1
-+--- com.android.support:animated-vector-drawable:25.3.1
-+--- com.android.support:support-vector-drawable:25.3.1
-+--- com.android.support:support-v4:25.3.1
-+--- com.android.support:support-annotations:25.3.1
-+--- com.android.support:recyclerview-v7:25.3.1
++--- com.android.support:design:26.0.0
++--- com.android.support:appcompat-v7:26.0.0
++--- com.android.support:animated-vector-drawable:26.0.0
++--- com.android.support:support-vector-drawable:26.0.0
++--- com.android.support:support-v4:26.0.0
++--- com.android.support:support-annotations:26.0.0
++--- com.android.support:recyclerview-v7:26.0.0
 
 # Repackaged (not shared with your app)
 +--- com.squareup:otto:1.3.8
 +--- com.github.bumptech.glide:glide-intercom:3.7.0 # Modified version of Glide
-+--- com.squareup.okio:okio:1.11.0
++--- com.squareup.okio:okio:1.13.0
 +--- com.squareup.okhttp3:okhttp:3.6.0
-+--- com.squareup.retrofit2:retrofit:2.2.0
-+--- com.squareup.retrofit2:converter-gson:2.2.0
++--- com.squareup.retrofit2:retrofit:2.3.0
++--- com.squareup.retrofit2:converter-gson:2.3.0
 +--- com.google.code.gson:gson:2.8.0
 ```
 
@@ -106,26 +106,26 @@ If you use some of the repackaged libraries in your app, you may want to use a b
 
 ### intercom-sdk-gcm
 ```
-+--- com.google.android.gms:play-services-base:10.2.1
-|    +--- com.google.android.gms:play-services-basement:10.2.1
-|    |    \--- com.android.support:support-v4:24.0.0 -> 25.3.1 (*)
-|    \--- com.google.android.gms:play-services-tasks:10.2.1
-|         \--- com.google.android.gms:play-services-basement:10.2.1 (*)
-+--- com.google.android.gms:play-services-basement:10.2.1 (*)
-\--- com.google.android.gms:play-services-iid:10.2.1
-    +--- com.google.android.gms:play-services-base:10.2.1 (*)
-    \--- com.google.android.gms:play-services-basement:10.2.1 (*)
++--- com.google.android.gms:play-services-base:11.0.4
+|    +--- com.google.android.gms:play-services-basement:11.0.4
+|    |    \--- com.android.support:support-v4:25.2.0 -> 26.0.0 (*)
+|    \--- com.google.android.gms:play-services-tasks:11.0.4
+|         \--- com.google.android.gms:play-services-basement:11.0.4 (*)
++--- com.google.android.gms:play-services-basement:11.0.4 (*)
+\--- com.google.android.gms:play-services-iid:11.0.4
+    +--- com.google.android.gms:play-services-base:11.0.4 (*)
+    \--- com.google.android.gms:play-services-basement:11.0.4 (*)
 ```
 
 ### intercom-sdk-fcm
 ```
-+--- com.google.android.gms:play-services-basement:10.2.1
-|    \--- com.android.support:support-v4:24.0.0 -> 25.3.1 (*)
-+--- com.google.firebase:firebase-iid:10.2.1
-|    +--- com.google.android.gms:play-services-basement:10.2.1 (*)
-|    \--- com.google.firebase:firebase-common:10.2.1
-|         +--- com.google.android.gms:play-services-basement:10.2.1 (*)
-|         \--- com.google.android.gms:play-services-tasks:10.2.1
-|              \--- com.google.android.gms:play-services-basement:10.2.1 (*)
-\--- com.google.firebase:firebase-common:10.2.1 (*)
++--- com.google.android.gms:play-services-basement:11.0.4
+|    \--- com.android.support:support-v4:25.2.0 -> 26.0.0 (*)
++--- com.google.firebase:firebase-iid:11.0.4
+|    +--- com.google.android.gms:play-services-basement:11.0.4 (*)
+|    \--- com.google.firebase:firebase-common:11.0.4
+|         +--- com.google.android.gms:play-services-basement:11.0.4 (*)
+|         \--- com.google.android.gms:play-services-tasks:11.0.4
+|              \--- com.google.android.gms:play-services-basement:11.0.4 (*)
+\--- com.google.firebase:firebase-common:11.0.4 (*)
 ```

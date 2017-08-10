@@ -236,6 +236,8 @@
 <dd>&nbsp;</dd>
 <dt><a href="io/intercom/android/sdk/push/package-summary.html">io.intercom.android.sdk.push</a> - package io.intercom.android.sdk.push</dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/UserAttributes.html#isEmpty--">isEmpty()</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/UserAttributes.html" title="class in io.intercom.android.sdk">UserAttributes</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="io/intercom/android/sdk/push/IntercomPushClient.html#isIntercomPush-android.os.Bundle-">isIntercomPush(Bundle)</a></span> - Method in class io.intercom.android.sdk.push.<a href="io/intercom/android/sdk/push/IntercomPushClient.html" title="class in io.intercom.android.sdk.push">IntercomPushClient</a></dt>
 <dd>
 <div class="block">Check if the cloud message is from Intercom</div>
@@ -266,18 +268,6 @@
 <dl>
 <dt><span class="memberNameLink"><a href="io/intercom/android/sdk/push/IntercomPushBroadcastReceiver.html#onReceive-android.content.Context-android.content.Intent-">onReceive(Context, Intent)</a></span> - Method in class io.intercom.android.sdk.push.<a href="io/intercom/android/sdk/push/IntercomPushBroadcastReceiver.html" title="class in io.intercom.android.sdk.push">IntercomPushBroadcastReceiver</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/Intercom.html#openGcmMessage--">openGcmMessage()</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/Intercom.html" title="class in io.intercom.android.sdk">Intercom</a></dt>
-<dd>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>
-<div class="block"><span class="deprecationComment">replaced with <a href="io/intercom/android/sdk/Intercom.html#handlePushMessage--"><code>Intercom.handlePushMessage()</code></a></span></div>
-</div>
-</dd>
-<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/Intercom.html#openGcmMessage-android.app.TaskStackBuilder-">openGcmMessage(TaskStackBuilder)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/Intercom.html" title="class in io.intercom.android.sdk">Intercom</a></dt>
-<dd>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>
-<div class="block"><span class="deprecationComment">replaced with <a href="io/intercom/android/sdk/Intercom.html#handlePushMessage-android.app.TaskStackBuilder-"><code>Intercom.handlePushMessage(TaskStackBuilder)</code></a></span></div>
-</div>
-</dd>
 </dl>
 <a name="I:R">
 <!--   -->
@@ -336,12 +326,6 @@
 <dd>
 <div class="block">Set the level of the logger</div>
 </dd>
-<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/Intercom.html#setSecureMode-java.lang.String-java.lang.String-">setSecureMode(String, String)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/Intercom.html" title="class in io.intercom.android.sdk">Intercom</a></dt>
-<dd>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>
-<div class="block"><span class="deprecationComment">use <a href="io/intercom/android/sdk/Intercom.html#setUserHash-java.lang.String-"><code>Intercom.setUserHash(String)</code></a> instead.</span></div>
-</div>
-</dd>
 <dt><span class="memberNameLink"><a href="io/intercom/android/sdk/Intercom.html#setUserHash-java.lang.String-">setUserHash(String)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/Intercom.html" title="class in io.intercom.android.sdk">Intercom</a></dt>
 <dd>
 <div class="block">Sets the user hash necessary for validation when Identity Verification is enabled.</div>
@@ -360,17 +344,9 @@
 <dd>
 <div class="block">Stop tracking Activity lifecycle events.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/Intercom.html#updateUser-java.util.Map-">updateUser(Map&lt;String, ?&gt;)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/Intercom.html" title="class in io.intercom.android.sdk">Intercom</a></dt>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/Intercom.html#updateUser-io.intercom.android.sdk.UserAttributes-">updateUser(UserAttributes)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/Intercom.html" title="class in io.intercom.android.sdk">Intercom</a></dt>
 <dd>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>
-<div class="block"><span class="deprecationComment">use <code>#updateUser(UserAttributes)</code> instead.</span></div>
-</div>
-</dd>
-<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/Intercom.html#updateUser-User-">updateUser(User)</a></span> - Method in class io.intercom.android.sdk.<a href="io/intercom/android/sdk/Intercom.html" title="class in io.intercom.android.sdk">Intercom</a></dt>
-<dd>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>
-<div class="block"><span class="deprecationComment">use <code>#updateUser(UserAttributes)</code> instead.</span></div>
-</div>
+<div class="block">Updates a user in Intercom.</div>
 </dd>
 <dt><a href="io/intercom/android/sdk/UserAttributes.html" title="class in io.intercom.android.sdk"><span class="typeNameLink">UserAttributes</span></a> - Class in <a href="io/intercom/android/sdk/package-summary.html">io.intercom.android.sdk</a></dt>
 <dd>
@@ -477,7 +453,7 @@ the order they are declared.</div>
 <dd>
 <div class="block">Set if the user has unsubscribed to emails</div>
 </dd>
-<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/identity/Registration.html#withUserAttributes-java.util.Map-">withUserAttributes(Map&lt;String, Object&gt;)</a></span> - Method in class io.intercom.android.sdk.identity.<a href="io/intercom/android/sdk/identity/Registration.html" title="class in io.intercom.android.sdk.identity">Registration</a></dt>
+<dt><span class="memberNameLink"><a href="io/intercom/android/sdk/identity/Registration.html#withUserAttributes-io.intercom.android.sdk.UserAttributes-">withUserAttributes(UserAttributes)</a></span> - Method in class io.intercom.android.sdk.identity.<a href="io/intercom/android/sdk/identity/Registration.html" title="class in io.intercom.android.sdk.identity">Registration</a></dt>
 <dd>
 <div class="block">Add a map of user attributes to this registration.</div>
 </dd>
