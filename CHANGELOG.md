@@ -1,8 +1,14 @@
 # Changelog
 
+# Version 4.0.1
+
+10-08-2017
+* Fix image loading issues
+
 # Version 4.0.0
 
 10-08-2017
+* **This version has issues with image loading, please use 4.0.1**
 * Android O Support
 * Updated to 26.0.0 of the support library
 * Updated FCM and GCM play-services to 11.0.4
