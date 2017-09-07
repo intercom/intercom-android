@@ -1,5 +1,13 @@
 # Changelog
 
+# Version 4.0.2
+
+07-09-2017
+
+* Update Support Library to 26.0.1
+* Fix GCM issue on Android Oreo: https://github.com/intercom/intercom-android/issues/406
+* Improve logging around `displayMessageComposer()`
+
 # Version 4.0.1
 
 10-08-2017
