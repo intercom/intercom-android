@@ -1,5 +1,15 @@
 # Changelog
 
+# Version 4.0.3
+
+08-09-2017
+
+* Improved image loading stability
+* Fix crashes related to in-app notifications
+* Update Support Library to 26.0.2
+* Update OkHttp to 3.9.0 and Gson to 2.8.1
+* Add support for article suggestions from Operator
+
 # Version 4.0.2
 
 07-09-2017
