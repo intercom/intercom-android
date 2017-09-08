@@ -84,22 +84,22 @@ Here is our complete dependency graph:
 ### intercom-sdk-base
 ```
 # Transitive (shared with your app)
-+--- com.android.support:design:26.0.0
-+--- com.android.support:appcompat-v7:26.0.0
-+--- com.android.support:animated-vector-drawable:26.0.0
-+--- com.android.support:support-vector-drawable:26.0.0
-+--- com.android.support:support-v4:26.0.0
-+--- com.android.support:support-annotations:26.0.0
-+--- com.android.support:recyclerview-v7:26.0.0
++--- com.android.support:design:26.0.2
++--- com.android.support:appcompat-v7:26.0.2
++--- com.android.support:animated-vector-drawable:26.0.2
++--- com.android.support:support-vector-drawable:26.0.2
++--- com.android.support:support-v4:26.0.2
++--- com.android.support:support-annotations:26.0.2
++--- com.android.support:recyclerview-v7:26.0.2
 
 # Repackaged (not shared with your app)
 +--- com.squareup:otto:1.3.8
 +--- com.github.bumptech.glide:glide-intercom:3.7.0 # Modified version of Glide
 +--- com.squareup.okio:okio:1.13.0
-+--- com.squareup.okhttp3:okhttp:3.8.1
++--- com.squareup.okhttp3:okhttp:3.9.0
 +--- com.squareup.retrofit2:retrofit:2.3.0
 +--- com.squareup.retrofit2:converter-gson:2.3.0
-+--- com.google.code.gson:gson:2.8.0
++--- com.google.code.gson:gson:2.8.1
 ```
 
 If you use some of the repackaged libraries in your app, you may want to use a build that depends on them transitively. A guide to using this build can be found [here](https://docs.intercom.com/configure-intercom-for-your-product-or-site/configure-intercom-for-mobile/using-transitive-dependencies-with-intercom-for-android). Using this build involves more work as you need to make sure your app uses the correct version of each library.
@@ -108,7 +108,7 @@ If you use some of the repackaged libraries in your app, you may want to use a b
 ```
 +--- com.google.android.gms:play-services-base:11.0.4
 |    +--- com.google.android.gms:play-services-basement:11.0.4
-|    |    \--- com.android.support:support-v4:25.2.0 -> 26.0.0 (*)
+|    |    \--- com.android.support:support-v4:25.2.0 -> 26.0.2 (*)
 |    \--- com.google.android.gms:play-services-tasks:11.0.4
 |         \--- com.google.android.gms:play-services-basement:11.0.4 (*)
 +--- com.google.android.gms:play-services-basement:11.0.4 (*)
@@ -120,7 +120,7 @@ If you use some of the repackaged libraries in your app, you may want to use a b
 ### intercom-sdk-fcm
 ```
 +--- com.google.android.gms:play-services-basement:11.0.4
-|    \--- com.android.support:support-v4:25.2.0 -> 26.0.0 (*)
+|    \--- com.android.support:support-v4:25.2.0 -> 26.0.2 (*)
 +--- com.google.firebase:firebase-iid:11.0.4
 |    +--- com.google.android.gms:play-services-basement:11.0.4 (*)
 |    \--- com.google.firebase:firebase-common:11.0.4
