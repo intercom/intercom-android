@@ -94,7 +94,7 @@ Here is our complete dependency graph:
 
 # Repackaged (not shared with your app)
 +--- com.squareup:otto:1.3.8
-+--- com.github.bumptech.glide:glide-intercom:3.7.0 # Modified version of Glide
++--- com.github.bumptech.glide:glide:4.1.1
 +--- com.squareup.okio:okio:1.13.0
 +--- com.squareup.okhttp3:okhttp:3.9.0
 +--- com.squareup.retrofit2:retrofit:2.3.0
