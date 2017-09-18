@@ -1,5 +1,13 @@
 # Changelog
 
+# Version 4.0.4
+
+18-09-2017
+
+* Improved image performance and stability
+* Fix UI issues with teammate profile section
+* Updated translations
+
 # Version 4.0.3
 
 08-09-2017
