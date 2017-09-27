@@ -1,5 +1,16 @@
 # Changelog
 
+# Version 4.0.5
+
+27-09-2017
+
+* Fix NullPointerException: https://github.com/intercom/intercom-android/issues/423
+* Update Support Library to 26.1.0
+* Update FCM and GCM libraries to 11.4.0
+* Fix crash when host app has Glide modules in its Manifest: https://github.com/intercom/intercom-android/issues/429
+* Fix Intercom notification channels appearing when not using push notifications
+* Improved image loading stability
+
 # Version 4.0.4
 
 18-09-2017
