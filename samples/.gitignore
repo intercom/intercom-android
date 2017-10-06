@@ -1,0 +1,14 @@
+*.iml
+*.iws
+*.ipr
+.idea/
+.gradle/
+local.properties
+bin/
+gen/
+
+*/build/
+build/
+
+*~
+*.swp

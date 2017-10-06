@@ -1,51 +1,39 @@
-# Android SDK Samples
+#### Responsible Team: Team Messenger
+
+# Intercom Android SDK Samples
 
 ## Intercom Sample
 
 ### Setting Up
-This is a sample application to demonstrate how to integrate Intercom in a simple app.
-You will need to add your API key and app ID to the SampleApplication
-If you have enabled secure mode you will need to provide HMAC and data
+This is set of sample applications which show how to integrate Intercom in a simple app. To try a sample you will need to add your API key and app ID to the `SampleApplication` class in that sample. If you have enabled Identity Verification you will need to provide a HMAC for your user too.
+ 
+#### Push notifications with GCM
 
-If you want to enable GCM in the test app simply provide your sender_id (project number in google-services.json)
-in the strings.xml file inside the tag intercom_gcm_sender_id
+If you want to use GCM notifications in the `gcm_sample` app then put your `sender_id` (project number in google-services.json)
+in the `strings.xml` file inside the tag `intercom_gcm_sender_id`:
 
-### Usage
-1. Open the app
-2. Go to your https://app.intercom.io/a/apps/[YOUR_INTERCOM_APP_ID]/users/segments/active
-3. Find user 123456 and send them a message.
-4. You will see the unread badge update on the custom launcher and the in app arrive
-5. Tap the chat with us button to open the messenger
+```xml
+<string name="intercom_gcm_sender_id">{your sender ID}</string>
+```
 
-### Error checking
-- Check logcat for any errors, make sure you have no filters turned on. It can help to switch 
-  logcat to Verbose.
-- Report any issue on Intercom or on our Github repo
+#### Push notifications with FCM
 
-## Intercom FCM Sample
+If you want to enable GCM in the `fcm_sample` app then:
 
-### Setting Up
-This is a sample application to demonstrate how to integrate Intercom in a simple app.
-You will need to add your API key and app ID to the SampleApplication
-If you have enabled secure mode you will need to provide HMAC and data
-
-This sample is indented to be used to test FCM integrations. To set up FCM in Intercom you need to:
-1. Go to https://firebase.google.com/docs/android/setup#add_firebase_to_your_app follow the steps
-   and download the google-services.json file
-2. Copy the google-services.json file into the directory [PATH_TO_SAMPLES]/android-sdk-samples/intercom-sample-fcm/app
-3  Go to https://console.firebase.google.com/project/[YOUR_GOOGLE_APP]/settings/cloudmessaging
-   and copy the Server key.
-4. Go to https://app.intercom.io/a/apps/[YOUR_INTERCOM_APP_ID]/settings/android and Enable GCM by adding the
+1. Follow the steps [here](https://firebase.google.com/docs/android/setup#add_firebase_to_your_app) to setup Firebase in your app and download your `google-services.json` file
+2. Copy the `google-services.json` file into the `fcm-sample` directory in this repo
+3.  Go to `https://console.firebase.google.com/project/[YOUR_GOOGLE_APP]/settings/cloudmessaging`
+   and copy the server key.
+4. Go to `https://app.intercom.com/a/apps/[YOUR_INTERCOM_APP_ID]/settings/android` and enable GCM by adding the
    server key from the previous step.
 
 ### Usage
-1. Run the FCM sample application.
-2. Background the app.
-3. Go to your https://app.intercom.io/a/apps/[YOUR_INTERCOM_APP_ID]/users/segments/active
-4. Find user 123456 and send them a message.
-5. You should receive a push notification to your device.
+1. Build and run one of the apps
+2. Go to [`https://app.intercom.com/a/apps/[YOUR_INTERCOM_APP_ID]/users/segments/active`](https://app.intercom.com/a/apps/[YOUR_INTERCOM_APP_ID]/users/segments/active)
+3. Find the user named `123456` and send them a message.
+4. The unread badge on the **Chat with us** button will update and the in app notification will arrive
+5. Tap the **Chat with us** button to open the Messenger
 
-### Error checking
-- Check logcat for any errors, make sure you have no filters turned on. It can help to switch 
-  logcat to Verbose.
-- Report any issue on Intercom or on our Github repo
+### Troubleshooting
+- Add `Intercom.setLogLevel(Intercom.LogLevel.VERBOSE);` before the `Intercom.initialize(...);` call in `SampleApplication`. Set your logcat viewer filter to Verbose and check for any errors or warnings.
+- If you have any issues then talk to us through the Messenger on [our site](https://www.intercom.com/).

@@ -30,8 +30,8 @@ dependencies {
 }
 ```
 
-## Example App
-An example app is provided [here](https://github.com/intercom/intercom-android/tree/master/samples) that shows a basic Android app integration with Intercom.
+## Sample Apps
+A project with some basic examlpe integrations is provided [here](https://github.com/intercom/intercom-android/tree/master/samples).
 
 ## Setup and Configuration
 
@@ -84,13 +84,13 @@ Here is our complete dependency graph:
 ### intercom-sdk-base
 ```
 # Transitive (shared with your app)
-+--- com.android.support:design:26.0.2
-+--- com.android.support:appcompat-v7:26.0.2
-+--- com.android.support:animated-vector-drawable:26.0.2
-+--- com.android.support:support-vector-drawable:26.0.2
-+--- com.android.support:support-v4:26.0.2
-+--- com.android.support:support-annotations:26.0.2
-+--- com.android.support:recyclerview-v7:26.0.2
++--- com.android.support:design:26.1.0
++--- com.android.support:appcompat-v7:26.1.0
++--- com.android.support:animated-vector-drawable:26.1.0
++--- com.android.support:support-vector-drawable:26.1.0
++--- com.android.support:support-v4:26.1.0
++--- com.android.support:support-annotations:26.1.0
++--- com.android.support:recyclerview-v7:26.1.0
 
 # Repackaged (not shared with your app)
 +--- com.squareup:otto:1.3.8
@@ -106,26 +106,26 @@ If you use some of the repackaged libraries in your app, you may want to use a b
 
 ### intercom-sdk-gcm
 ```
-+--- com.google.android.gms:play-services-base:11.0.4
-|    +--- com.google.android.gms:play-services-basement:11.0.4
-|    |    \--- com.android.support:support-v4:25.2.0 -> 26.0.2 (*)
-|    \--- com.google.android.gms:play-services-tasks:11.0.4
-|         \--- com.google.android.gms:play-services-basement:11.0.4 (*)
-+--- com.google.android.gms:play-services-basement:11.0.4 (*)
-\--- com.google.android.gms:play-services-iid:11.0.4
-    +--- com.google.android.gms:play-services-base:11.0.4 (*)
-    \--- com.google.android.gms:play-services-basement:11.0.4 (*)
+ +--- com.google.android.gms:play-services-base:11.4.0
+ |    +--- com.google.android.gms:play-services-basement:11.4.0
+ |    |    \--- com.android.support:support-v4:25.2.0 -> 26.1.0 (*)
+ |    \--- com.google.android.gms:play-services-tasks:11.4.0
+ |         \--- com.google.android.gms:play-services-basement:11.4.0 (*)
+ +--- com.google.android.gms:play-services-basement:11.4.0 (*)
+ \--- com.google.android.gms:play-services-iid:11.4.0
+      +--- com.google.android.gms:play-services-base:11.4.0 (*)
+      \--- com.google.android.gms:play-services-basement:11.4.0 (*)
 ```
 
 ### intercom-sdk-fcm
 ```
-+--- com.google.android.gms:play-services-basement:11.0.4
-|    \--- com.android.support:support-v4:25.2.0 -> 26.0.2 (*)
-+--- com.google.firebase:firebase-iid:11.0.4
-|    +--- com.google.android.gms:play-services-basement:11.0.4 (*)
-|    \--- com.google.firebase:firebase-common:11.0.4
-|         +--- com.google.android.gms:play-services-basement:11.0.4 (*)
-|         \--- com.google.android.gms:play-services-tasks:11.0.4
-|              \--- com.google.android.gms:play-services-basement:11.0.4 (*)
-\--- com.google.firebase:firebase-common:11.0.4 (*)
+ +--- com.google.android.gms:play-services-basement:11.4.0
+ |    \--- com.android.support:support-v4:25.2.0 -> 26.1.0 (*)
+ +--- com.google.firebase:firebase-iid:11.4.0
+ |    +--- com.google.android.gms:play-services-basement:11.4.0 (*)
+ |    \--- com.google.firebase:firebase-common:11.4.0
+ |         +--- com.google.android.gms:play-services-basement:11.4.0 (*)
+ |         \--- com.google.android.gms:play-services-tasks:11.4.0
+ |              \--- com.google.android.gms:play-services-basement:11.4.0 (*)
+ \--- com.google.firebase:firebase-common:11.4.0 (*)
 ```
