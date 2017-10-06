@@ -18,7 +18,7 @@ in the `strings.xml` file inside the tag `intercom_gcm_sender_id`:
 
 #### Push notifications with FCM
 
-If you want to enable GCM in the `fcm_sample` app then:
+If you want to use FCM notifications in the `fcm_sample` app then:
 
 1. Follow the steps [here](https://firebase.google.com/docs/android/setup#add_firebase_to_your_app) to setup Firebase in your app and download your `google-services.json` file
 2. Copy the `google-services.json` file into the `fcm-sample` directory in this repo
