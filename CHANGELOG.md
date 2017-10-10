@@ -1,5 +1,21 @@
 # Changelog
 
+# Version 4.1.0
+
+10-10-2017
+
+* Fix StrictMode warnings in Android Oreo
+* Deprecated `Intercom.client().reset()` in favour of `Intercom.client().logout()`
+* Intercom now runs a `ContentProvider` which automatically calls `registerForLaterInitialisation()`. This means Intercom no longer requires you to make a custom Application class. `Intercom.initialize` can now be called from your Activity if you would prefer.
+
+**Experimental API**
+* Added an experimental API. To use it please import `io.intercom.android.sdk.experimental.Intercom`. The changes to the new API are:
+    * Replaced `Intercom.initialize(Application, String, String)` with `Intercom.boot(Application, IntercomSettings)` Unlike `initialize`, `boot` does not need to be called in a custom Application class. It also results in the creation/ logging in of a user.
+    * The methods `registerUnidentifiedUser()` and `registerIdentifiedUser(Registration)` are removed. Calling `boot` now registers a user. The `IntercomSettings` object has an optional email and userId. If either of those was provided an identified user is registered, otherwise an unidentified user is created.
+  * To migrate from an unidentified to an identified user you can simply call `updateUser(UserAttributes)` where the `UserAttributes` object contains an userId and/or email.
+  * The method `logout()` has been replaced with `shutdown()`.
+
+
 # Version 4.0.5
 
 27-09-2017
