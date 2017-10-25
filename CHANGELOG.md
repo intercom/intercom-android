@@ -1,5 +1,12 @@
 # Changelog
 
+# Version 4.1.1
+
+25-10-2017
+
+* Add `equals()`, `hashCode()` and `toString()` implementations to `UserAttributes`, `Company` and `Registration`
+* Minor fixes
+
 # Version 4.1.0
 
 10-10-2017

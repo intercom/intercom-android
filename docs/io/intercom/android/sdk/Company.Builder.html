@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -155,43 +155,55 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Company.Builder.html#equals-java.lang.Object-">equals</a></span>(java.lang.Object&nbsp;o)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Company.Builder.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Company.Builder.html#toString--">toString</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../io/intercom/android/sdk/Company.Builder.html" title="class in io.intercom.android.sdk">Company.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Company.Builder.html#withCompanyId-java.lang.String-">withCompanyId</a></span>(java.lang.String&nbsp;companyId)</code>
 <div class="block">Set the ID on the company.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../io/intercom/android/sdk/Company.Builder.html" title="class in io.intercom.android.sdk">Company.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Company.Builder.html#withCreatedAt-java.lang.Long-">withCreatedAt</a></span>(java.lang.Long&nbsp;createdAt)</code>
 <div class="block">Set the date the company was created at.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../io/intercom/android/sdk/Company.Builder.html" title="class in io.intercom.android.sdk">Company.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Company.Builder.html#withCustomAttribute-java.lang.String-java.lang.Object-">withCustomAttribute</a></span>(java.lang.String&nbsp;key,
                    java.lang.Object&nbsp;attribute)</code>
 <div class="block">Set a custom attribute to the company.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../io/intercom/android/sdk/Company.Builder.html" title="class in io.intercom.android.sdk">Company.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Company.Builder.html#withCustomAttributes-java.util.Map-">withCustomAttributes</a></span>(java.util.Map&lt;java.lang.String,?&gt;&nbsp;attributes)</code>
 <div class="block">Set several custom attributes on the company at once.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../io/intercom/android/sdk/Company.Builder.html" title="class in io.intercom.android.sdk">Company.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Company.Builder.html#withMonthlySpend-java.lang.Integer-">withMonthlySpend</a></span>(java.lang.Integer&nbsp;monthlySpend)</code>
 <div class="block">Set the monthly spend of this company.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../io/intercom/android/sdk/Company.Builder.html" title="class in io.intercom.android.sdk">Company.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Company.Builder.html#withName-java.lang.String-">withName</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block">Set the name of the company.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../io/intercom/android/sdk/Company.Builder.html" title="class in io.intercom.android.sdk">Company.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Company.Builder.html#withPlan-java.lang.String-">withPlan</a></span>(java.lang.String&nbsp;plan)</code>
 <div class="block">Set the companies plan.</div>
@@ -203,7 +215,7 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+<code>clone, finalize, getClass, notify, notifyAll, wait, wait, wait</code></li>
 </ul>
 </li>
 </ul>
@@ -362,7 +374,7 @@ extends java.lang.Object</pre>
 <a name="withCustomAttributes-java.util.Map-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>withCustomAttributes</h4>
 <pre>public&nbsp;<a href="../../../../io/intercom/android/sdk/Company.Builder.html" title="class in io.intercom.android.sdk">Company.Builder</a>&nbsp;withCustomAttributes(@NonNull
@@ -377,6 +389,45 @@ extends java.lang.Object</pre>
 <dd><code>attributes</code> - the map of attributes to update</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the Company.Builder object</dd>
+</dl>
+</li>
+</ul>
+<a name="equals-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equals</h4>
+<pre>public&nbsp;boolean&nbsp;equals(java.lang.Object&nbsp;o)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>equals</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+</dl>
+</li>
+</ul>
+<a name="hashCode--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hashCode</h4>
+<pre>public&nbsp;int&nbsp;hashCode()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>hashCode</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+</dl>
+</li>
+</ul>
+<a name="toString--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;java.lang.String&nbsp;toString()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
 </dl>
 </li>
 </ul>
