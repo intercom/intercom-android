@@ -1,5 +1,12 @@
 # Changelog
 
+# Version 4.1.2
+
+* Updated Play Services to 11.4.2
+
+**Experimental API**
+* added the method `displayHelpCenter()` to the experimental API. This opens up an Activity which displays your Educate Help Center. Learn more about Educate [here](https://www.intercom.com/customer-support-software/knowledge-base). Details on how to setup the experimental API can be found [here](https://developers.intercom.com/v2.0/docs/experimental-api)
+
 # Version 4.1.1
 
 25-10-2017
