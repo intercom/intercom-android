@@ -1,6 +1,19 @@
 # Changelog
 
+# Version 4.1.3
+
+08-11-2017
+
+* Fixed an issue with the keyboard not closing on toolbar back pressed https://github.com/intercom/intercom-android/issues/435
+* Fixed a RuntimeException with UploadEvent https://github.com/intercom/intercom-android/issues/439
+* Fixed a NullPointerException in the PushPayload https://github.com/intercom/intercom-android/issues/442
+
+**Experimental API**
+* The `boot()` method now takes a user hash in the `IntercomSettings` object. You can still update the user hash by calling `setUserHash` but if you have Identity Verification enabled and you are booting with an email and/or user ID then it is required to provide a user hash at that time.
+
 # Version 4.1.2
+
+31-10-2017
 
 * Updated Play Services to 11.4.2
 
