@@ -1,5 +1,12 @@
 # Changelog
 
+# Version 4.1.4
+
+15-11-2017
+
+* Fix OOM error https://github.com/intercom/intercom-android/issues/422
+* Updated Gson to 2.8.2
+
 # Version 4.1.3
 
 08-11-2017
