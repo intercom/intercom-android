@@ -1,5 +1,13 @@
 # Changelog
 
+# Version 4.1.5
+
+01-12-2017
+
+* Fixed https://github.com/intercom/intercom-android/issues/452
+* Fixed https://github.com/intercom/intercom-android/issues/451
+* Fixed https://github.com/intercom/intercom-android/issues/449
+
 # Version 4.1.4
 
 15-11-2017
