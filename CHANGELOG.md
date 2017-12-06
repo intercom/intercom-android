@@ -1,5 +1,12 @@
 # Changelog
 
+# Version 4.1.6
+06-12-2017
+
+* Add support for API 27
+* Update Support Library to 27.0.2
+* Fix message composition issue on Samsung devices
+
 # Version 4.1.5
 
 01-12-2017
