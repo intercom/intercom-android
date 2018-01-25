@@ -1,5 +1,11 @@
 # Changelog
 
+# Version 4.1.7
+25-01-2018
+
+* Released Help Center on Android. Added the method `displayHelpCenter()` to the main API. This opens up an Activity which displays your Educate Help Center. Learn more about Educate [here](https://www.intercom.com/customer-support-software/knowledge-base). Details on how to setup the experimental API can be found [here](https://developers.intercom.com/docs/android-configuration#section-educate-help-center)
+* Allow office hours banner to expand to two lines for languages where the string was truncating
+
 # Version 4.1.6
 06-12-2017
 

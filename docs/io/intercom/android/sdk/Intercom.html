@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":9,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":9,"i11":6,"i12":6,"i13":6,"i14":9,"i15":6,"i16":6,"i17":6,"i18":38,"i19":6,"i20":6,"i21":6,"i22":9,"i23":6,"i24":9,"i25":6};
+var methods = {"i0":6,"i1":9,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":9,"i12":6,"i13":6,"i14":6,"i15":9,"i16":6,"i17":6,"i18":6,"i19":38,"i20":6,"i21":6,"i22":6,"i23":9,"i24":6,"i25":9,"i26":6};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -217,47 +217,53 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#displayMessageComposer--">displayMessageComposer</a></span>()</code>
-<div class="block">Displays the message composer.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#displayHelpCenter--">displayHelpCenter</a></span>()</code>
+<div class="block">Open up your apps help center.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#displayMessageComposer-java.lang.String-">displayMessageComposer</a></span>(java.lang.String&nbsp;initialMessage)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#displayMessageComposer--">displayMessageComposer</a></span>()</code>
 <div class="block">Displays the message composer.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#displayMessageComposer-java.lang.String-">displayMessageComposer</a></span>(java.lang.String&nbsp;initialMessage)</code>
+<div class="block">Displays the message composer.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#displayMessenger--">displayMessenger</a></span>()</code>
 <div class="block">Displays the Messenger.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>abstract int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#getUnreadConversationCount--">getUnreadConversationCount</a></span>()</code>
 <div class="block">Gets the number of unread conversations for a user.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#handlePushMessage--">handlePushMessage</a></span>()</code>
 <div class="block">Handles the opening of an Intercom push message.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#handlePushMessage-android.app.TaskStackBuilder-">handlePushMessage</a></span>(android.app.TaskStackBuilder&nbsp;customStack)</code>
 <div class="block">Handles the opening of an Intercom push message.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#hideMessenger--">hideMessenger</a></span>()</code>
 <div class="block">Dismisses the Intercom Messenger if it is on screen.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#initialize-android.app.Application-java.lang.String-java.lang.String-">initialize</a></span>(android.app.Application&nbsp;application,
           java.lang.String&nbsp;apiKey,
@@ -265,50 +271,50 @@ extends java.lang.Object</pre>
 <div class="block">Initializes the Intercom singleton.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#logEvent-java.lang.String-">logEvent</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block">Logs an event with a given name.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#logEvent-java.lang.String-java.util.Map-">logEvent</a></span>(java.lang.String&nbsp;name,
         java.util.Map&lt;java.lang.String,?&gt;&nbsp;metaData)</code>
 <div class="block">Logs an event with a given name and some metadata.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#logout--">logout</a></span>()</code>
 <div class="block">Clears all data from the Intercom SDK.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#registerForLaterInitialisation-android.app.Application-">registerForLaterInitialisation</a></span>(android.app.Application&nbsp;application)</code>
 <div class="block">Begin tracking Activity lifecycle events so that Intercom can be initialized later.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#registerIdentifiedUser-io.intercom.android.sdk.identity.Registration-">registerIdentifiedUser</a></span>(<a href="../../../../io/intercom/android/sdk/identity/Registration.html" title="class in io.intercom.android.sdk.identity">Registration</a>&nbsp;userRegistration)</code>
 <div class="block">Registers an identified user with Intercom.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#registerUnidentifiedUser--">registerUnidentifiedUser</a></span>()</code>
 <div class="block">Registers an unidentified user with Intercom.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#removeUnreadConversationCountListener-UnreadConversationCountListener-">removeUnreadConversationCountListener</a></span>(UnreadConversationCountListener&nbsp;listener)</code>
 <div class="block">Removes a listener from the collection that receive updates when the unread conversation count changes.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#reset--">reset</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -316,43 +322,43 @@ extends java.lang.Object</pre>
 </div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#setBottomPadding-int-">setBottomPadding</a></span>(int&nbsp;bottomPadding)</code>
 <div class="block">Set the bottom padding of in app messages and the launcher.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#setInAppMessageVisibility-io.intercom.android.sdk.Intercom.Visibility-">setInAppMessageVisibility</a></span>(<a href="../../../../io/intercom/android/sdk/Intercom.Visibility.html" title="enum in io.intercom.android.sdk">Intercom.Visibility</a>&nbsp;visibility)</code>
 <div class="block">Toggles visibility of in-app messages.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#setLauncherVisibility-io.intercom.android.sdk.Intercom.Visibility-">setLauncherVisibility</a></span>(<a href="../../../../io/intercom/android/sdk/Intercom.Visibility.html" title="enum in io.intercom.android.sdk">Intercom.Visibility</a>&nbsp;visibility)</code>
 <div class="block">Toggles visibility of the launcher view.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#setLogLevel-int-">setLogLevel</a></span>(int&nbsp;logLevel)</code>
 <div class="block">Set the level of the logger</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#setUserHash-java.lang.String-">setUserHash</a></span>(java.lang.String&nbsp;userHash)</code>
 <div class="block">Sets the user hash necessary for validation when Identity Verification is enabled.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#unregisterForLateInitialisation-android.app.Application-">unregisterForLateInitialisation</a></span>(android.app.Application&nbsp;application)</code>
 <div class="block">Stop tracking Activity lifecycle events.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../io/intercom/android/sdk/Intercom.html#updateUser-io.intercom.android.sdk.UserAttributes-">updateUser</a></span>(<a href="../../../../io/intercom/android/sdk/UserAttributes.html" title="class in io.intercom.android.sdk">UserAttributes</a>&nbsp;userAttributes)</code>
 <div class="block">Updates a user in Intercom.</div>
@@ -767,6 +773,20 @@ extends java.lang.Object</pre>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
+</dl>
+</li>
+</ul>
+<a name="displayHelpCenter--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>displayHelpCenter</h4>
+<pre>public abstract&nbsp;void&nbsp;displayHelpCenter()</pre>
+<div class="block"><p>Open up your apps help center.</p></div>
+<dl>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>4.1.7</dd>
 </dl>
 </li>
 </ul>
