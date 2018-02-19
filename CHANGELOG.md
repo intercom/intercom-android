@@ -1,5 +1,15 @@
 # Changelog
 
+# Version 4.1.8
+19-02-2018
+
+* Fix webview crash: https://github.com/intercom/intercom-android/issues/456
+* Fix broken lightbox transitions: https://github.com/intercom/intercom-android/issues/464
+* Fix launcher and in-app notifications showing on Intercom Messenger screens
+* Update Play Services & Firebase libraries to 11.8.0
+* Update Glide to 4.4.0
+* Updated Okio & OkHttp to latest versions
+
 # Version 4.1.7
 25-01-2018
 
