@@ -84,48 +84,38 @@ Here is our complete dependency graph:
 ### intercom-sdk-base
 ```
 # Transitive (shared with your app)
-+--- com.android.support:design:26.1.0
-+--- com.android.support:appcompat-v7:26.1.0
-+--- com.android.support:animated-vector-drawable:26.1.0
-+--- com.android.support:support-vector-drawable:26.1.0
-+--- com.android.support:support-v4:26.1.0
-+--- com.android.support:support-annotations:26.1.0
-+--- com.android.support:recyclerview-v7:26.1.0
+com.android.support:design:27.0.2
+com.android.support:appcompat-v7:27.0.2
+com.android.support:animated-vector-drawable:27.0.2
+com.android.support:support-vector-drawable:27.0.2
+com.android.support:support-compat:27.0.2
+com.android.support:support-core-utils:27.0.2
+com.android.support:support-core-ui:27.0.2
+com.android.support:support-fragment:27.0.2
+com.android.support:support-annotations:27.0.2
+com.android.support:recyclerview-v7:27.0.2
 
 # Repackaged (not shared with your app)
-+--- com.squareup:otto:1.3.8
-+--- com.github.bumptech.glide:glide:4.1.1
-+--- com.squareup.okio:okio:1.13.0
-+--- com.squareup.okhttp3:okhttp:3.9.0
-+--- com.squareup.retrofit2:retrofit:2.3.0
-+--- com.squareup.retrofit2:converter-gson:2.3.0
-+--- com.google.code.gson:gson:2.8.1
+com.squareup:otto:1.3.8
+com.github.bumptech.glide:glide:4.4.0
+com.github.bumptech.glide:gifdecoder:4.4.0
+com.github.bumptech.glide:disklrucache:4.4.0
+com.github.bumptech.glide:annotations:4.4.0
+com.squareup.okio:okio:1.14.0
+com.squareup.okhttp3:okhttp:3.9.1
+com.squareup.retrofit2:retrofit:2.3.0
+com.squareup.retrofit2:converter-gson:2.3.0
+com.google.code.gson:gson:2.8.2
 ```
 
 If you use some of the repackaged libraries in your app, you may want to use a build that depends on them transitively. A guide to using this build can be found [here](https://docs.intercom.com/configure-intercom-for-your-product-or-site/configure-intercom-for-mobile/using-transitive-dependencies-with-intercom-for-android). Using this build involves more work as you need to make sure your app uses the correct version of each library.
 
 ### intercom-sdk-gcm
 ```
- +--- com.google.android.gms:play-services-base:11.4.0
- |    +--- com.google.android.gms:play-services-basement:11.4.0
- |    |    \--- com.android.support:support-v4:25.2.0 -> 26.1.0 (*)
- |    \--- com.google.android.gms:play-services-tasks:11.4.0
- |         \--- com.google.android.gms:play-services-basement:11.4.0 (*)
- +--- com.google.android.gms:play-services-basement:11.4.0 (*)
- \--- com.google.android.gms:play-services-iid:11.4.0
-      +--- com.google.android.gms:play-services-base:11.4.0 (*)
-      \--- com.google.android.gms:play-services-basement:11.4.0 (*)
+com.google.android.gms:play-services-gcm:11.8.0
 ```
 
 ### intercom-sdk-fcm
 ```
- +--- com.google.android.gms:play-services-basement:11.4.0
- |    \--- com.android.support:support-v4:25.2.0 -> 26.1.0 (*)
- +--- com.google.firebase:firebase-iid:11.4.0
- |    +--- com.google.android.gms:play-services-basement:11.4.0 (*)
- |    \--- com.google.firebase:firebase-common:11.4.0
- |         +--- com.google.android.gms:play-services-basement:11.4.0 (*)
- |         \--- com.google.android.gms:play-services-tasks:11.4.0
- |              \--- com.google.android.gms:play-services-basement:11.4.0 (*)
- \--- com.google.firebase:firebase-common:11.4.0 (*)
+com.google.firebase:firebase-messaging:11.8.0
 ```
