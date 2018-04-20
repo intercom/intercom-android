@@ -1,5 +1,13 @@
 # Changelog
 
+# Version 4.1.9
+20-04-2018
+
+* Fixed an issue where sending multiple messages before a conversation is created resulted in multiple conversations
+* Clearer GCM token upload error message
+* Add ProGuard rule for AutoValue
+* Update Support Library to 27.1.1
+
 # Version 4.1.8
 19-02-2018
 
