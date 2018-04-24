@@ -1,5 +1,26 @@
 # Changelog
 
+# Version 5.0.0
+24-04-2018
+
+The Business Messenger reimagined.
+
+**Messenger apps**
+- Complete actions beyond chat in the Messenger seamlessly with a growing library of apps. Messenger apps are being rolled out to all customers over the next 2 weeks.
+
+**Extendable platform**
+- Create your own Messenger apps to suit your unique workflows – and enable entirely new ones.
+
+**Updated Design**
+- Updated visual design with new wallpapers and expanded color settings.
+
+**Messenger settings**
+- New wallpapers to customize your profile.
+- Set a background color for your profile and an action color for cards and chat bubbles.
+- Support light theme colors in your messenger.
+
+![5-0-0-release-screens](https://user-images.githubusercontent.com/2615468/39157445-befb7196-4752-11e8-8a33-57636975ecec.png)
+
 # Version 4.1.9
 20-04-2018
 

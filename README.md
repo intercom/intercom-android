@@ -1,9 +1,11 @@
-![Intercom](samples/Intercom_logo-github.png)
+<img src="https://user-images.githubusercontent.com/3185423/39155454-0c61c11e-474a-11e8-9471-dc4b37bf9d7c.png" width="238" height="65" alt="Intercom">
+
+### Onboard, retain and support mobile users at scale
+Engage customers with email, push, and in‑app messages and support them with an integrated knowledge base and help desk.
+
+<img src="https://user-images.githubusercontent.com/2615468/39139749-931ffb7e-471a-11e8-862e-a70e594892ce.png">
 
 Intercom for Android supports API 15 and above.
-
-## Customer Support
-👋 We are moving all our issues support to our [Intercom Developer Hub available here](https://developers.intercom.com/docs/intercom-mobile-installation?utm_source=github&utm_campaign=android-help). If you bump into any problems or need more support, just start a conversation using Intercom there and it will be immediately routed to our Customer Support Engineers.
 
 ## Installation
 There are 3 options for installing Intercom on your Android app.
@@ -12,7 +14,7 @@ There are 3 options for installing Intercom on your Android app.
 Add the following dependency to your app's `build.gradle` file:
 ```groovy
 dependencies {
-    compile 'io.intercom.android:intercom-sdk:4.+'
+    compile 'io.intercom.android:intercom-sdk:5.+'
 }
 ```
 
@@ -20,8 +22,8 @@ dependencies {
 Add the following dependency to your app's `build.gradle` file:
 ```groovy
 dependencies {
-    compile 'io.intercom.android:intercom-sdk-base:4.+'
-    compile 'io.intercom.android:intercom-sdk-fcm:4.+'
+    compile 'io.intercom.android:intercom-sdk-base:5.+'
+    compile 'io.intercom.android:intercom-sdk-fcm:5.+'
 }
 ```
 
@@ -30,9 +32,12 @@ dependencies {
 If you'd rather not have push notifications in your app, you can use this dependency: 
 ```groovy
 dependencies {
-    compile 'io.intercom.android:intercom-sdk-base:4.+'
+    compile 'io.intercom.android:intercom-sdk-base:5.+'
 }
 ```
+
+## Customer Support
+👋 Contact us with any issues at [Intercom Developer Hub available here](https://developers.intercom.com/docs/intercom-mobile-installation?utm_source=github&utm_campaign=android-help). If you bump into any problems or need more support, just start a conversation using Intercom there and it will be immediately routed to our Customer Support Engineers.
 
 ## Sample Apps
 A project with some basic examlpe integrations is provided [here](https://github.com/intercom/intercom-android/tree/master/samples).
@@ -46,10 +51,6 @@ A project with some basic examlpe integrations is provided [here](https://github
 
 ## Cordova/Phonegap Support
 Looking for Cordova/Phonegap support? We have a [Cordova Plugin](https://github.com/intercom/intercom-cordova) for Intercom 🎉
-
-## Upgrading from 1.x.x
-If you are upgrading from an older version of our Messenger you may need to change some of the methods you used to call. You can see any changes you may need to make [here](https://docs.intercom.com/a-guide-to-the-new-intercom-messenger/upgrade-to-the-new-messenger-android).
-
 
 ## Permissions
 
@@ -88,16 +89,16 @@ Here is our complete dependency graph:
 ### intercom-sdk-base
 ```
 # Transitive (shared with your app)
-com.android.support:design:27.0.2
-com.android.support:appcompat-v7:27.0.2
-com.android.support:animated-vector-drawable:27.0.2
-com.android.support:support-vector-drawable:27.0.2
-com.android.support:support-compat:27.0.2
-com.android.support:support-core-utils:27.0.2
-com.android.support:support-core-ui:27.0.2
-com.android.support:support-fragment:27.0.2
-com.android.support:support-annotations:27.0.2
-com.android.support:recyclerview-v7:27.0.2
+com.android.support:design:27.1.1
+com.android.support:appcompat-v7:27.1.1
+com.android.support:animated-vector-drawable:27.1.1
+com.android.support:support-vector-drawable:27.1.1
+com.android.support:support-compat:27.1.1
+com.android.support:support-core-utils:27.1.1
+com.android.support:support-core-ui:27.1.1
+com.android.support:support-fragment:27.1.1
+com.android.support:support-annotations:27.1.1
+com.android.support:recyclerview-v7:27.1.1
 
 # Repackaged (not shared with your app)
 com.squareup:otto:1.3.8
