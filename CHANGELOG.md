@@ -1,5 +1,10 @@
 # Changelog
 
+# Version 5.0.1
+27-04-2018
+
+- Removed all code that used a persistent device identifier to adhere to [Android Advertising ID policy](https://support.google.com/googleplay/android-developer/answer/6048248?hl=en)
+
 # Version 5.0.0
 24-04-2018
 
