@@ -9,7 +9,7 @@ Intercom for Android supports API 15 and above.
 
 ## Installation
 There are 3 options for installing Intercom on your Android app.
-### Option 1: Install Intercom with Google Cloud Messaging (GCM) 
+### Option 1: Install Intercom with Google Cloud Messaging (GCM)
 
 Add the following dependency to your app's `build.gradle` file:
 ```groovy
@@ -18,7 +18,7 @@ dependencies {
 }
 ```
 
-### Option 2: Install Intercom with Firebase Cloud Messaging (FCM) 
+### Option 2: Install Intercom with Firebase Cloud Messaging (FCM)
 Add the following dependency to your app's `build.gradle` file:
 ```groovy
 dependencies {
@@ -27,9 +27,9 @@ dependencies {
 }
 ```
 
-### Option 3: Install Intercom without Push Messaging  
+### Option 3: Install Intercom without Push Messaging
 
-If you'd rather not have push notifications in your app, you can use this dependency: 
+If you'd rather not have push notifications in your app, you can use this dependency:
 ```groovy
 dependencies {
     compile 'io.intercom.android:intercom-sdk-base:5.+'
@@ -40,7 +40,7 @@ dependencies {
 👋 Contact us with any issues at [Intercom Developer Hub available here](https://developers.intercom.com/docs/intercom-mobile-installation?utm_source=github&utm_campaign=android-help). If you bump into any problems or need more support, just start a conversation using Intercom there and it will be immediately routed to our Customer Support Engineers.
 
 ## Sample Apps
-A project with some basic examlpe integrations is provided [here](https://github.com/intercom/intercom-android/tree/master/samples).
+A project with some basic example integrations is provided [here](https://github.com/intercom/intercom-android/tree/master/samples).
 
 ## Setup and Configuration
 
@@ -58,7 +58,7 @@ We include the [INTERNET](http://developer.android.com/reference/android/Manifes
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET"/>
-```  
+```
 
 Optional permissions:
 
