@@ -1,5 +1,14 @@
 # Changelog
 
+# Version 5.0.2
+27-06-2018
+
+**Send apps in Messages** ⚡📨⚡
+
+Messages have always been a great way to welcome, onboard, and connect with people in your product and on your website. Now with apps in your messages, you can do even more. Embed apps right inside a message to drive actions, engage your audience, and grow your business.
+
+Whether you need to gather customer feedback, schedule a sales call, or share your latest content, apps make it easy for people to take action within the message experience. And with the targeting capabilities of Intercom, you can make sure your message reaches the right person at the right time.
+
 # Version 5.0.1
 27-04-2018
 
