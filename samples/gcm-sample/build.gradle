@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.2"
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         applicationId "com.intercom.sample"
         minSdkVersion 15
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
     }
@@ -20,6 +20,6 @@ android {
 }
 
 dependencies {
-    compile 'io.intercom.android:intercom-sdk-base:4.+'
-    compile 'io.intercom.android:intercom-sdk-gcm:4.+'
+    compile 'io.intercom.android:intercom-sdk-base:5.+'
+    compile 'io.intercom.android:intercom-sdk-gcm:5.+'
 }
