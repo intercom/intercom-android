@@ -1,5 +1,18 @@
 # Changelog
 
+# Version 5.1.0
+19-07-2018
+
+**Enable mobile users to help themselves with the new mobile SDK for iOS and Android 🎉 😃**
+
+The new Intercom mobile SDK brings the Messenger Home to your mobile applications. This means you can add messenger apps that allow your users to self-serve instead of starting a conversation. Users can now quickly access relevant help articles, review pinned content, and view product status in real time – all from the messenger home screen.
+
+![5-1-0-release-screens](https://user-images.githubusercontent.com/2615468/42951497-316de29a-8b6e-11e8-8ed8-a0a3a93f6f4f.png)
+
+**Bug fixes and Changes**
+* Deprecated `Intercom.client().displayConversationsList()`. `Intercom.client().displayMessenger() should be used instead to open our Messenger Home screen.`
+* Fixed issue with the header
+
 # Version 5.0.2
 27-06-2018
 

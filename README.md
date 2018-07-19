@@ -3,7 +3,7 @@
 ### Onboard, retain and support mobile users at scale
 Engage customers with email, push, and in‑app messages and support them with an integrated knowledge base and help desk.
 
-<img src="https://user-images.githubusercontent.com/2615468/39139749-931ffb7e-471a-11e8-862e-a70e594892ce.png">
+<img src="https://user-images.githubusercontent.com/2615468/42951429-0e2d7d54-8b6e-11e8-9d17-ad6460120aac.png">
 
 Intercom for Android supports API 15 and above.
 
