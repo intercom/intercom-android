@@ -49,6 +49,17 @@ A project with some basic example integrations is provided [here](https://github
 * Read our guide on Push Notifications for [GCM](https://developers.intercom.com/docs/android-gcm-push-notifications) and [FCM](https://developers.intercom.com/docs/android-fcm-push-notifications).
 * Please contact us on [Intercom](https://www.intercom.com/) with any questions you may have, we're only a message away!
 
+## ProGuard
+
+If you are using ProGuard, add the following rules:
+
+```
+-keep class io.intercom.android.** { *; }
+-keep class com.intercom.** { *; }
+```
+
+You might also need to add rules for OkHttp, Okio and Retrofit which are dependencies used in this library.
+
 ## Cordova/Phonegap Support
 Looking for Cordova/Phonegap support? We have a [Cordova Plugin](https://github.com/intercom/intercom-cordova) for Intercom 🎉
 
