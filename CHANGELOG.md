@@ -1,5 +1,18 @@
 # Changelog
 
+# Version 5.1.1
+17-08-2018
+
+**Bug Fixes**
+
+- Fixed the crash while loading large images 
+- Fixed the bug where keyboard covers composer on tablets
+- Fixed text overlap in the conversation list on tablets
+- Fixed an issue where teammate avatar flickers during UI updates
+- Bug fix for toolbar title doesn't show up in Messenger App sheets
+- Fixed a bug that was causing Messenger App sheet to open in browser
+- Reorder dependencies for failing PhoneGap build
+
 # Version 5.1.0
 19-07-2018
 
