@@ -1,5 +1,15 @@
 # Changelog
 
+# Version 5.1.2
+17-09-2019
+
+**Bug Fixes**
+
+- Add Android translations key for Help Center
+- Draw Help Center toolbar with dark text if the help center color is light.
+- Fix crash with missing string
+- Fix article cards on old devices
+
 # Version 5.1.1
 17-08-2018
 
