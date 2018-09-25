@@ -1,7 +1,12 @@
 # Changelog
 
+# Version 5.1.3
+25-09-2018
+
+- Added DOM storage support in Sheets web view
+
 # Version 5.1.2
-17-09-2019
+17-09-2018
 
 **Bug Fixes**
 
