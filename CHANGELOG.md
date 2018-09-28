@@ -4,6 +4,7 @@
 25-09-2018
 
 - Added DOM storage support in Sheets web view
+- We now provide support for Loom videos in Intercom
 
 # Version 5.1.2
 17-09-2018
