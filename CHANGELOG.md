@@ -1,5 +1,13 @@
 # Changelog
 
+# Version 5.1.4
+02-10-2018
+
+- Added support for users to change a conversation rating
+- Added support for Vimeo video thumbnails
+- Fixed an issue with launcher positioning when bottom padding is set
+- Fixed a crash on a text input that occurred on Android devices running Android Version 5
+
 # Version 5.1.3
 25-09-2018
 
