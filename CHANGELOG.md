@@ -1,6 +1,12 @@
 # Changelog
 
-# Version 5.1.4
+## Version 5.1.5
+24-10-2018
+
+- Handled empty state in the home screen
+- Fixed a bug in messenger apps that broke input when some special characters were used
+
+## Version 5.1.4
 02-10-2018
 
 - Added support for users to change a conversation rating
@@ -8,13 +14,13 @@
 - Fixed an issue with launcher positioning when bottom padding is set
 - Fixed a crash on a text input that occurred on Android devices running Android Version 5
 
-# Version 5.1.3
+## Version 5.1.3
 25-09-2018
 
 - Added DOM storage support in Sheets web view
 - We now provide support for Loom videos in Intercom
 
-# Version 5.1.2
+## Version 5.1.2
 17-09-2018
 
 **Bug Fixes**
@@ -24,7 +30,7 @@
 - Fix crash with missing string
 - Fix article cards on old devices
 
-# Version 5.1.1
+## Version 5.1.1
 17-08-2018
 
 **Bug Fixes**
@@ -37,7 +43,7 @@
 - Fixed a bug that was causing Messenger App sheet to open in browser
 - Reorder dependencies for failing PhoneGap build
 
-# Version 5.1.0
+## Version 5.1.0
 19-07-2018
 
 **Enable mobile users to help themselves with the new mobile SDK for iOS and Android 🎉 😃**
@@ -50,7 +56,7 @@ The new Intercom mobile SDK brings the Messenger Home to your mobile application
 * Deprecated `Intercom.client().displayConversationsList()`. `Intercom.client().displayMessenger() should be used instead to open our Messenger Home screen.`
 * Fixed issue with the header
 
-# Version 5.0.2
+## Version 5.0.2
 27-06-2018
 
 **Send apps in Messages** ⚡📨⚡
@@ -59,12 +65,12 @@ Messages have always been a great way to welcome, onboard, and connect with peop
 
 Whether you need to gather customer feedback, schedule a sales call, or share your latest content, apps make it easy for people to take action within the message experience. And with the targeting capabilities of Intercom, you can make sure your message reaches the right person at the right time.
 
-# Version 5.0.1
+## Version 5.0.1
 27-04-2018
 
 - Removed all code that used a persistent device identifier to adhere to [Android Advertising ID policy](https://support.google.com/googleplay/android-developer/answer/6048248?hl=en)
 
-# Version 5.0.0
+## Version 5.0.0
 24-04-2018
 
 The Business Messenger reimagined.
@@ -85,7 +91,7 @@ The Business Messenger reimagined.
 
 ![5-0-0-release-screens](https://user-images.githubusercontent.com/2615468/39157445-befb7196-4752-11e8-8a33-57636975ecec.png)
 
-# Version 4.1.9
+## Version 4.1.9
 20-04-2018
 
 * Fixed an issue where sending multiple messages before a conversation is created resulted in multiple conversations
@@ -93,7 +99,7 @@ The Business Messenger reimagined.
 * Add ProGuard rule for AutoValue
 * Update Support Library to 27.1.1
 
-# Version 4.1.8
+## Version 4.1.8
 19-02-2018
 
 * Fix webview crash: https://github.com/intercom/intercom-android/issues/456
@@ -103,20 +109,20 @@ The Business Messenger reimagined.
 * Update Glide to 4.4.0
 * Updated Okio & OkHttp to latest versions
 
-# Version 4.1.7
+## Version 4.1.7
 25-01-2018
 
 * Released Help Center on Android. Added the method `displayHelpCenter()` to the main API. This opens up an Activity which displays your Educate Help Center. Learn more about Educate [here](https://www.intercom.com/customer-support-software/knowledge-base). Details on how to setup the experimental API can be found [here](https://developers.intercom.com/docs/android-configuration#section-educate-help-center)
 * Allow office hours banner to expand to two lines for languages where the string was truncating
 
-# Version 4.1.6
+## Version 4.1.6
 06-12-2017
 
 * Add support for API 27
 * Update Support Library to 27.0.2
 * Fix message composition issue on Samsung devices
 
-# Version 4.1.5
+## Version 4.1.5
 
 01-12-2017
 
@@ -124,14 +130,14 @@ The Business Messenger reimagined.
 * Fixed https://github.com/intercom/intercom-android/issues/451
 * Fixed https://github.com/intercom/intercom-android/issues/449
 
-# Version 4.1.4
+## Version 4.1.4
 
 15-11-2017
 
 * Fix OOM error https://github.com/intercom/intercom-android/issues/422
 * Updated Gson to 2.8.2
 
-# Version 4.1.3
+## Version 4.1.3
 
 08-11-2017
 
@@ -142,7 +148,7 @@ The Business Messenger reimagined.
 **Experimental API**
 * The `boot()` method now takes a user hash in the `IntercomSettings` object. You can still update the user hash by calling `setUserHash` but if you have Identity Verification enabled and you are booting with an email and/or user ID then it is required to provide a user hash at that time.
 
-# Version 4.1.2
+## Version 4.1.2
 
 31-10-2017
 
@@ -151,14 +157,14 @@ The Business Messenger reimagined.
 **Experimental API**
 * added the method `displayHelpCenter()` to the experimental API. This opens up an Activity which displays your Educate Help Center. Learn more about Educate [here](https://www.intercom.com/customer-support-software/knowledge-base). Details on how to setup the experimental API can be found [here](https://developers.intercom.com/v2.0/docs/experimental-api)
 
-# Version 4.1.1
+## Version 4.1.1
 
 25-10-2017
 
 * Add `equals()`, `hashCode()` and `toString()` implementations to `UserAttributes`, `Company` and `Registration`
 * Minor fixes
 
-# Version 4.1.0
+## Version 4.1.0
 
 10-10-2017
 
@@ -174,7 +180,7 @@ The Business Messenger reimagined.
   * The method `logout()` has been replaced with `shutdown()`.
 
 
-# Version 4.0.5
+## Version 4.0.5
 
 27-09-2017
 
@@ -185,7 +191,7 @@ The Business Messenger reimagined.
 * Fix Intercom notification channels appearing when not using push notifications
 * Improved image loading stability
 
-# Version 4.0.4
+## Version 4.0.4
 
 18-09-2017
 
@@ -193,7 +199,7 @@ The Business Messenger reimagined.
 * Fix UI issues with teammate profile section
 * Updated translations
 
-# Version 4.0.3
+## Version 4.0.3
 
 08-09-2017
 
@@ -203,7 +209,7 @@ The Business Messenger reimagined.
 * Update OkHttp to 3.9.0 and Gson to 2.8.1
 * Add support for article suggestions from Operator
 
-# Version 4.0.2
+## Version 4.0.2
 
 07-09-2017
 
@@ -211,12 +217,12 @@ The Business Messenger reimagined.
 * Fix GCM issue on Android Oreo: https://github.com/intercom/intercom-android/issues/406
 * Improve logging around `displayMessageComposer()`
 
-# Version 4.0.1
+## Version 4.0.1
 
 10-08-2017
 * Fix image loading issues
 
-# Version 4.0.0
+## Version 4.0.0
 
 10-08-2017
 * **This version has issues with image loading, please use 4.0.1**
@@ -231,7 +237,7 @@ The Business Messenger reimagined.
   - Actions (when you send a push message to a customer)
 * Fixed an OutOfMemoryError in the image gallery[#371](https://github.com/intercom/intercom-android/issues/371)
 
-# Version 3.2.10
+## Version 3.2.10
 
 04-08-2017
 * Added native support for conversation ratings. You can read more about conversation ratings [here](https://docs.intercom.com/responding-to-users-and-visitors/see-your-team-s-progress/measure-customer-satisfaction-with-conversation-ratings).
