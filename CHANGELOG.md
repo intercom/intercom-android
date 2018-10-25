@@ -23,6 +23,8 @@
 ## Version 5.1.2
 17-09-2018
 
+- [AnswerBot](https://www.intercom.com/bots-for-support) support.
+
 **Bug Fixes**
 
 - Add Android translations key for Help Center
