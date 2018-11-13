@@ -100,16 +100,16 @@ Here is our complete dependency graph:
 ### intercom-sdk-base
 ```
 # Transitive (shared with your app)
-com.android.support:design:27.1.1
-com.android.support:appcompat-v7:27.1.1
-com.android.support:animated-vector-drawable:27.1.1
-com.android.support:support-vector-drawable:27.1.1
-com.android.support:support-compat:27.1.1
-com.android.support:support-core-utils:27.1.1
-com.android.support:support-core-ui:27.1.1
-com.android.support:support-fragment:27.1.1
-com.android.support:support-annotations:27.1.1
-com.android.support:recyclerview-v7:27.1.1
+com.android.support:design:28.0.0
+com.android.support:appcompat-v7:28.0.0
+com.android.support:animated-vector-drawable:28.0.0
+com.android.support:support-vector-drawable:28.0.0
+com.android.support:support-compat:28.0.0
+com.android.support:support-core-utils:28.0.0
+com.android.support:support-core-ui:28.0.0
+com.android.support:support-fragment:28.0.0
+com.android.support:support-annotations:28.0.0
+com.android.support:recyclerview-v7:28.0.0
 
 # Repackaged (not shared with your app)
 com.squareup:otto:1.3.8
@@ -128,10 +128,10 @@ If you use some of the repackaged libraries in your app, you may want to use a b
 
 ### intercom-sdk-gcm
 ```
-com.google.android.gms:play-services-gcm:11.8.0
+com.google.android.gms:play-services-gcm:16.0.0
 ```
 
 ### intercom-sdk-fcm
 ```
-com.google.firebase:firebase-messaging:11.8.0
+com.google.firebase:firebase-messaging:17.3.4
 ```
