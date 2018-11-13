@@ -1,5 +1,13 @@
 # Changelog
 
+## Version 5.1.6
+13-11-2018
+
+- Bug fix for fullscreen GIFs not animating
+- Updated Support Library and Build Target SDK versions 
+- Added error reporting for SDK crashes
+- Updated GCM and FCM versions
+
 ## Version 5.1.5
 24-10-2018
 
