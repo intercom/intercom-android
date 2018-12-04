@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 5.2.0
+04-12-2018
+- Removed GCM support as it is being deprecated.
+
+Google is [deprecating GCM](https://developers.google.com/cloud-messaging/faq) on April 11, 2019. We are no longer updating our GCM library, 5.1.6 will be the last version of our messenger with GCM support. We strongly recommend [migrating your app to FCM](https://developers.google.com/cloud-messaging/android/android-migrate-fcm) and then [migrating from Intercom GCM to Intercom FCM library](https://developers.intercom.com/installing-intercom/docs/android-fcm-push-notifications)
+
 ## Version 5.1.6
 13-11-2018
 

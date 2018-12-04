@@ -110,9 +110,9 @@ var activeTableTab = "activeTableTab";
 <pre>public class <span class="typeNameLabel">IntercomPushClient</span>
 extends java.lang.Object</pre>
 <div class="block"><p>The IntercomPushClient is responsible for communication between the host app push integration and Intercom.
- This class is automatically called unless your app has it's own GCM/FCM integration or
- uses other third party GCM/FCM integrations.</p>
- <p>If you have a class that extends com.google.android.gms.gcm.GcmListenerService,
+ This class is automatically called unless your app has it's own push integration or
+ uses other third party push integrations.</p>
+ <p>If you have a class that extends:
  com.google.firebase.iid.FirebaseInstanceIdService or
  com.google.firebase.messaging.FirebaseMessagingService
  you will need to create an instance of IntercomPushClient:</p>
@@ -237,25 +237,12 @@ extends java.lang.Object</pre>
 <div class="block"><p>Handle the Intercom push message.</p>
 
  <p>This takes a push registration token to send to Intercom to enable this device to receive push.</p>
- <p>In a FCM integration in the class that extends com.google.firebase.iid.FirebaseInstanceIdService</p>
+ <p>In a FCM integration in the class that extends com.google.firebase.messaging.FirebaseMessagingService</p>
  <p>You will need to pass the token to the intercomPushClient</p>
 
  <pre>
- public void onTokenRefresh() {
-     String refreshedToken = FirebaseInstanceId.getInstance().getToken();
+ public void onNewToken(String refreshedToken) {
      pushClient.sendTokenToIntercom(getApplication(), refreshedToken);
- }
- </pre>
-
- <p>In a GCM integration in the class where you generate your token.</p>
- <p>You will need to pass the token to the intercomPushClient. For example in an intent service:</p>
-
- <pre>
- public void onHandleIntent(Intent intent) {
-     InstanceID instanceId = InstanceID.getInstance(this);
-     String senderId = "YOUR_SENDER_ID";
-     String token = instanceId.getToken(senderId, GoogleCloudMessaging.INSTANCE_ID_SCOPE, null);
-     pushClient.sendTokenToIntercom(getApplication(), token);
  }
  </pre></div>
 <dl>
@@ -279,7 +266,7 @@ extends java.lang.Object</pre>
                        android.os.Bundle&nbsp;message)</pre>
 <div class="block"><p>Handle the Intercom push message.</p>
 
- <p>This will take the cloud message bundle delivered to your GcmListenerService and create a notification.</p>
+ <p>This will take the cloud message bundle and create a notification.</p>
  <p>In the method onMessageReceived you will need to pass the message onto our push client:</p>
 
  <pre>
@@ -294,7 +281,7 @@ extends java.lang.Object</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>application</code> - A reference to the Application</dd>
-<dd><code>message</code> - The bundle message which was sent to onMessageReceived in your GcmListenerService</dd>
+<dd><code>message</code> - The bundle message which was sent to your client</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>3.0.5</dd>
 </dl>
@@ -312,8 +299,7 @@ extends java.lang.Object</pre>
                        java.util.Map&lt;java.lang.String,java.lang.String&gt;&nbsp;message)</pre>
 <div class="block"><p>Handle the Intercom push message.</p>
 
- <p>This will take the cloud message bundle delivered to your FirebaseMessagingService
- and create a notification.</p>
+ <p>This will take the cloud message map and create a notification.</p>
 
  <pre>
  public void onMessageReceived(RemoteMessage remoteMessage) {
@@ -344,11 +330,10 @@ extends java.lang.Object</pre>
                               android.os.Bundle&nbsp;message)</pre>
 <div class="block"><p>Check if the cloud message is from Intercom.</p>
 
- <p>This will take the cloud message bundle delivered to your GcmListenerService
- and determine if it is from Intercom.</p></div>
+ <p>This will take the cloud message bundle and determine if it is from Intercom.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>message</code> - The bundle message which was sent to onMessageReceived in your GcmListenerService</dd>
+<dd><code>message</code> - A push message bundle</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a boolean allowing you to check if this is an Intercom cloud message or not.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
@@ -366,8 +351,7 @@ extends java.lang.Object</pre>
                               java.util.Map&lt;java.lang.String,java.lang.String&gt;&nbsp;message)</pre>
 <div class="block"><p>Check if the cloud message is from Intercom.</p>
 
- <p>This will take the cloud message bundle delivered to your FirebaseMessagingService
- and determine if it is from Intercom.</p></div>
+ <p>This will take the cloud message map and determine if it is from Intercom.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>message</code> - Pass in the remoteMessage.getData() from your onMessageReceived method.</dd>
