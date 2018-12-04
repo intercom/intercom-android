@@ -8,17 +8,9 @@ Engage customers with email, push, and in‑app messages and support them with a
 Intercom for Android supports API 15 and above.
 
 ## Installation
-There are 3 options for installing Intercom on your Android app.
-### Option 1: Install Intercom with Google Cloud Messaging (GCM)
+There are 2 options for installing Intercom on your Android app.
 
-Add the following dependency to your app's `build.gradle` file:
-```groovy
-dependencies {
-    compile 'io.intercom.android:intercom-sdk:5.+'
-}
-```
-
-### Option 2: Install Intercom with Firebase Cloud Messaging (FCM)
+### Option 1: Install Intercom with Firebase Cloud Messaging (FCM)
 Add the following dependency to your app's `build.gradle` file:
 ```groovy
 dependencies {
@@ -27,7 +19,7 @@ dependencies {
 }
 ```
 
-### Option 3: Install Intercom without Push Messaging
+### Option 2: Install Intercom without Push Messaging
 
 If you'd rather not have push notifications in your app, you can use this dependency:
 ```groovy
@@ -37,7 +29,7 @@ dependencies {
 ```
 
 ## Customer Support
-👋 Contact us with any issues at [Intercom Developer Hub available here](https://developers.intercom.com/docs/intercom-mobile-installation?utm_source=github&utm_campaign=android-help). If you bump into any problems or need more support, just start a conversation using Intercom there and it will be immediately routed to our Customer Support Engineers.
+👋 Contact us with any issues at [Intercom Developer Hub available here](https://developers.intercom.com/installing-intercom/docs/intercom-for-android). If you bump into any problems or need more support, just start a conversation using Intercom there and it will be immediately routed to our Customer Support Engineers.
 
 ## Sample Apps
 A project with some basic example integrations is provided [here](https://github.com/intercom/intercom-android/tree/master/samples).
@@ -46,7 +38,7 @@ A project with some basic example integrations is provided [here](https://github
 
 * Our [installation guide](https://developers.intercom.com/docs/android-installation) contains full setup and initialisation instructions.
 * The [configuration guide](https://developers.intercom.com/docs/android-configuration) provides info on how to configure Intercom for Android.
-* Read our guide on Push Notifications for [GCM](https://developers.intercom.com/docs/android-gcm-push-notifications) and [FCM](https://developers.intercom.com/docs/android-fcm-push-notifications).
+* Read our guide on Push Notifications for [FCM](https://developers.intercom.com/installing-intercom/docs/android-fcm-push-notifications).
 * Please contact us on [Intercom](https://www.intercom.com/) with any questions you may have, we're only a message away!
 
 ## ProGuard
@@ -79,13 +71,6 @@ Optional permissions:
 ```
 
 [READ\_EXTERNAL\_STORAGE](http://developer.android.com/reference/android/Manifest.permission.html#READ_EXTERNAL_STORAGE) and [MANAGE_DOCUMENTS](http://developer.android.com/reference/android/Manifest.permission.html#MANAGE_DOCUMENTS) are used for attachments.
-
-The necessary GCM permissions ([WAKE_LOCK](http://developer.android.com/reference/android/Manifest.permission.html#WAKE_LOCK) and [RECEIVE](https://developer.android.com/google/gcm/client.html#manifest)) are also included by default in the main package.
-
-```xml
-<uses-permission android:name="android.permission.WAKE_LOCK" />
-<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-```
 
 You can also include [VIBRATE](http://developer.android.com/reference/android/Manifest.permission.html#VIBRATE) to enable vibration in push notifications:
 
@@ -125,11 +110,6 @@ com.google.code.gson:gson:2.8.2
 ```
 
 If you use some of the repackaged libraries in your app, you may want to use a build that depends on them transitively. A guide to using this build can be found [here](https://docs.intercom.com/configure-intercom-for-your-product-or-site/configure-intercom-for-mobile/using-transitive-dependencies-with-intercom-for-android). Using this build involves more work as you need to make sure your app uses the correct version of each library.
-
-### intercom-sdk-gcm
-```
-com.google.android.gms:play-services-gcm:16.0.0
-```
 
 ### intercom-sdk-fcm
 ```
