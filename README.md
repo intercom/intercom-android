@@ -14,8 +14,8 @@ There are 2 options for installing Intercom on your Android app.
 Add the following dependency to your app's `build.gradle` file:
 ```groovy
 dependencies {
-    compile 'io.intercom.android:intercom-sdk-base:5.+'
-    compile 'io.intercom.android:intercom-sdk-fcm:5.+'
+    implementation 'io.intercom.android:intercom-sdk-base:5.+'
+    implementation 'io.intercom.android:intercom-sdk-fcm:5.+'
 }
 ```
 
@@ -24,7 +24,7 @@ dependencies {
 If you'd rather not have push notifications in your app, you can use this dependency:
 ```groovy
 dependencies {
-    compile 'io.intercom.android:intercom-sdk-base:5.+'
+    implementation 'io.intercom.android:intercom-sdk-base:5.+'
 }
 ```
 
