@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 5.2.1
+01-03-2019
+- Fix for Vimeo thumbnails showing the wrong thumbnail preview
+
 ## Version 5.2.0
 04-12-2018
 - Removed GCM support as it is being deprecated.
