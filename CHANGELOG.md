@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 5.3.0
+29-04-2019
+- Fixed issues with conversation scrolling
+
 ## Version 5.2.1
 01-03-2019
 - Fix for Vimeo thumbnails showing the wrong thumbnail preview
