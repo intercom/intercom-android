@@ -110,5 +110,5 @@ If you use some of the repackaged libraries in your app, you may want to use a b
 
 ### intercom-sdk-fcm
 ```
-com.google.firebase:firebase-messaging:17.3.4
+com.google.firebase:firebase-messaging:17.6.0
 ```
