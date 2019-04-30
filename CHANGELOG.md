@@ -2,7 +2,16 @@
 
 ## Version 5.3.0
 29-04-2019
-- Fixed issues with conversation scrolling
+
+### Deliver Custom Bots to your mobile app users to unlock growth across all platforms
+
+Custom Bots can now be targeted specifically to your mobile app users! Whether your users are on the web or mobile, Custom Bots now work cross-platform to automate and accelerate growth.
+
+![android-5-3-0-release](https://user-images.githubusercontent.com/5046761/56959018-f772fd80-6b43-11e9-88e1-1f42e32a0d26.png)
+
+Use our bots to provide better personalization at scale during critical moments of the customer lifecycle like when users first sign up for your app, or when they want to upgrade to a paid plan.
+
+For more details on how to use Custom Bots on mobile, see our [docs here](https://www.intercom.com/help/faqs-and-troubleshooting/custom-bots/do-custom-bots-work-on-mobile).
 
 ## Version 5.2.1
 01-03-2019
