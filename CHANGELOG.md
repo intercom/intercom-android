@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 5.3.1
+15-05-2019
+- Fixed the issue of unable to add images to conversation replies
+- Fixed a crash with InputFragment
+- Updated okhttp to use the latest version
+
 ## Version 5.3.0
 29-04-2019
 
