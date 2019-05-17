@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 5.3.2
+17-05-2019
+- Revert to use okhttp version 3.11.0. There was a compatibility issue with 3.12.3, we'll hold off upgrading until it's fully tested.
+
 ## Version 5.3.1
 15-05-2019
 - Fixed the issue of unable to add images to conversation replies
