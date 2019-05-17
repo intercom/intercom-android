@@ -100,7 +100,7 @@ com.github.bumptech.glide:gifdecoder:4.4.0
 com.github.bumptech.glide:disklrucache:4.4.0
 com.github.bumptech.glide:annotations:4.4.0
 com.squareup.okio:okio:1.14.0
-com.squareup.okhttp3:okhttp:3.12.3
+com.squareup.okhttp3:okhttp:3.11.0
 com.squareup.retrofit2:retrofit:2.3.0
 com.squareup.retrofit2:converter-gson:2.3.0
 com.google.code.gson:gson:2.8.2
