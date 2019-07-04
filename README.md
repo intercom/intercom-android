@@ -14,8 +14,8 @@ There are 2 options for installing Intercom on your Android app.
 Add the following dependency to your app's `build.gradle` file:
 ```groovy
 dependencies {
-    implementation 'io.intercom.android:intercom-sdk-base:5.+'
-    implementation 'io.intercom.android:intercom-sdk-fcm:5.+'
+    implementation 'io.intercom.android:intercom-sdk:5.+'
+    implementation 'com.google.firebase:firebase-messaging:17.+'
 }
 ```
 
