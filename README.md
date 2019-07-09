@@ -99,11 +99,11 @@ com.github.bumptech.glide:glide:4.4.0
 com.github.bumptech.glide:gifdecoder:4.4.0
 com.github.bumptech.glide:disklrucache:4.4.0
 com.github.bumptech.glide:annotations:4.4.0
-com.squareup.okio:okio:1.14.0
-com.squareup.okhttp3:okhttp:3.11.0
-com.squareup.retrofit2:retrofit:2.3.0
-com.squareup.retrofit2:converter-gson:2.3.0
-com.google.code.gson:gson:2.8.2
+com.squareup.okio:okio:1.17.4
+com.squareup.okhttp3:okhttp:3.12.3
+com.squareup.retrofit2:retrofit:2.5.0
+com.squareup.retrofit2:converter-gson:2.5.0
+com.google.code.gson:gson:2.8.5
 ```
 
 If you use some of the repackaged libraries in your app, you may want to use a build that depends on them transitively. A guide to using this build can be found [here](https://docs.intercom.com/configure-intercom-for-your-product-or-site/configure-intercom-for-mobile/using-transitive-dependencies-with-intercom-for-android). Using this build involves more work as you need to make sure your app uses the correct version of each library.
