@@ -7,7 +7,7 @@
 
 When a customer starts a new conversation with you in the Messenger, they’ll be able to choose from suggested replies that you’ve defined. They can clarify why they’re getting in touch, and provide extra info without needing to wait for a response, or take up your team’s time.
 
-![android-5-3-0-release](https://user-images.githubusercontent.com/5109304/60926201-a45faa00-a25a-11e9-9f96-2915541a55b7.png")
+![android-5-4-0-release](https://user-images.githubusercontent.com/5109304/60926201-a45faa00-a25a-11e9-9f96-2915541a55b7.png)
 
 With Custom Bots from new conversations, you can accelerate your support by automating these initial interactions, so your support team can focus on resolving important issues. To get started, bump your Intercom SDK version to `5.4.0` and go to the `Operator` tab in Intercom, then `Custom Bots`, and select `From new conversations`. 
 
