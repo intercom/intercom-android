@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 5.4.1
+08-08-2019
+- Fix for [crash](https://community.intercom.com/t/intercom-android-sdk-crashing-with-android-appcompat-1-1-0-alpha03/1095/28) when integrating Intercom while using `androidx.appcompat:appcompat:1.1.0-rc01`.
+
 ## Version 5.4.0
 09-07-2019
 
