@@ -1,5 +1,3 @@
-#### Responsible Team: Team Messenger
-
 # Intercom Android SDK Samples
 
 ## Intercom Sample
