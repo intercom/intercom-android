@@ -1,5 +1,3 @@
-#### Responsible Team: Team Mobile
-
 # Intercom Android SDK Samples
 
 ## Intercom Sample
