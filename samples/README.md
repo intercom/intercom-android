@@ -1,4 +1,4 @@
-#### Responsible Team: Team Messenger
+#### Responsible Team: Team Mobile
 
 # Intercom Android SDK Samples
 

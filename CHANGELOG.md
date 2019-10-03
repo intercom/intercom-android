@@ -1,5 +1,12 @@
 # Changelog
 
+## Version 5.5.1
+03-10-2019
+* In this release we fixed a number of bugs:
+  * Fixed an issue where some gallery images wouldn't load for apps targeting API level 29.
+  * Fixed an issue where messages wouldn't show if inbound conversations were disabled.
+  * Made improvements to button colours for apps using light themes.
+
 ## Version 5.5.0
 06-09-2019
 - The SDK has been updated to support Android 10
