@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 6.0.0
+24-10-2019
+* Android API level 21 (v5 - Lollipop) is now the minimum version of Android that is supported by the Intercom Android SDK.
+
 ## Version 5.5.1
 03-10-2019
 * In this release we fixed a number of bugs:

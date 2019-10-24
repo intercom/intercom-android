@@ -5,7 +5,7 @@ Engage customers with email, push, and in‑app messages and support them with a
 
 <img src="https://user-images.githubusercontent.com/2615468/42951429-0e2d7d54-8b6e-11e8-9d17-ad6460120aac.png">
 
-Intercom for Android supports API 15 and above.
+Intercom for Android supports API 21 and above.
 
 ## Installation
 There are 2 options for installing Intercom on your Android app.
@@ -14,7 +14,7 @@ There are 2 options for installing Intercom on your Android app.
 Add the following dependency to your app's `build.gradle` file:
 ```groovy
 dependencies {
-    implementation 'io.intercom.android:intercom-sdk:5.+'
+    implementation 'io.intercom.android:intercom-sdk:6.+'
     implementation 'com.google.firebase:firebase-messaging:17.+'
 }
 ```
@@ -24,7 +24,7 @@ dependencies {
 If you'd rather not have push notifications in your app, you can use this dependency:
 ```groovy
 dependencies {
-    implementation 'io.intercom.android:intercom-sdk-base:5.+'
+    implementation 'io.intercom.android:intercom-sdk-base:6.+'
 }
 ```
 
