@@ -92,6 +92,7 @@ com.android.support:support-core-ui:28.0.0
 com.android.support:support-fragment:28.0.0
 com.android.support:support-annotations:28.0.0
 com.android.support:recyclerview-v7:28.0.0
+com.android.support.constraint:constraint-layout:1.1.3
 
 # Repackaged (not shared with your app)
 com.squareup:otto:1.3.8
