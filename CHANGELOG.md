@@ -635,7 +635,7 @@ Instead of the methods above, in your res/values/strings.xml add the following l
 
 ### What's new
 
-* We have added localization to the SDK. This can be set in your app settings https://app.intercom.io/a/apps/<YOUR_APP_ID>/settings/messenger
+* We have added localization to the SDK. This can be set in your app settings https://app.intercom.com/a/apps/<YOUR_APP_ID>/settings/messenger
 * We have updated our default launcher icon.
 
 ### Issues and bug fixes
@@ -1027,7 +1027,6 @@ When updating to this version from a previous version we recommend cleaning the 
 * Fixed [issue#55](https://github.com/intercom/intercom-android/issues/55), deep links work now.
 * Fixed [issue#57](https://github.com/intercom/intercom-android/issues/57) which caused a new message to never be correctly updated from the sending state to sent state.
 * Fixed [issue#60](https://github.com/intercom/intercom-android/issues/60) that let users send a message many times if it got stuck in a 'sending failed' state
-*
 
 ## Version 0.9.3
 
