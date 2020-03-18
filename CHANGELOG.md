@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 6.1.0
+18-03-2020
+
+### Enhancements
+* We've implemented the abilty to disable the composer for [inbound conversations that use Custom Bots](https://www.intercom.com/help/en/articles/3118298-triage-inbound-conversations-with-custom-bots). 
+
 ## Version 6.0.1
 10-01-2020
 * Performance improvements
