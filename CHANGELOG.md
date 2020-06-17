@@ -52,6 +52,7 @@ We made a number of performance improvements and squashed a number of bugs in th
 * **Fixed:** An issue where an outbound message didn’t appear in real-time after changing the device orientation.
 * **Fixed:** An issue where custom bot failed to save custom attributes
 * **Fixed:** A crash with error java.lang.ArithmeticException divide by zero 
+* **Removed:** The experimental API is no longer available.
 
 ## Version 6.1.0
 18-03-2020
