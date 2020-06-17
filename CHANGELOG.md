@@ -1,5 +1,58 @@
 # Changelog
 
+## Version 7.1.0
+**In v7.1.0 of the Intercom mobile SDK, we’re introducing a fantastic new mobile engagement feature called Mobile Carousels. We’ve also added support for closed conversations, as well as a number of fixes and performance improvements.**
+
+### 📱 New Feature: Mobile Carousels 
+ 
+Bring your best features. We'll bring the spotlight. Use Mobile Carousels to connect with app users at every touchpoint—show them around, provide support, and highlight features you know they'll love.
+
+Mobile Carousels are a multi-screen message designed to feel right at home in your mobile app. 
+
+* Rich multi-screen messages.
+* Highly customizable, right inside Intercom.
+* Request device permissions like push notifications, camera, location and more.
+* Deep link into your app, open URLs, or start conversations in the Intercom Messenger.
+* Target the right message to the right audience.
+* A/B testing and control groups.
+* Goal tracking.
+* Schedule your Mobile Carousel with ease.
+
+Upgrade to the latest version of the mobile SDK today to use the feature. No additional integration work required.
+
+### [Learn more about Mobile Carousels](https://www.intercom.com/mobile-carousels)
+
+<a href="https://product-education.wistia.com/medias/4y7for3aya " target="_blank"><img  src="https://user-images.githubusercontent.com/3185423/84791321-5581cf00-afea-11ea-848e-d29fbd657e10.png"></a>
+
+![Carousel - Made for mobile - Red](https://user-images.githubusercontent.com/5046761/84787741-439e2d00-afe6-11ea-9ff8-a1ed7c4850d7.png)
+
+![anrdroid_standard](https://user-images.githubusercontent.com/3185423/84802829-0b541a00-aff9-11ea-9e7f-1613e8d7d369.gif)
+
+![Carousel - Permissions - Android - Yellow](https://user-images.githubusercontent.com/5046761/84787743-439e2d00-afe6-11ea-96fd-9aebd745fa18.png)
+
+
+### 📱 Closed Conversations
+
+The mobile SDK now respects the `prevent replies to closed conversations` setting if you have it enabled. The text composer will be disabled for closed conversations, and your users will be able to start a new conversation if they need to. The UI updates in real time as the conversation takes place.
+
+![closed convo android](https://user-images.githubusercontent.com/5046761/84785550-8579a400-afe3-11ea-978d-49cba15cf54c.gif)
+
+### 📱 Improvements and bug fixes
+We made a number of performance improvements and squashed a number of bugs in this release. This includes:
+
+* **Improved:** The mobile SDK and its features now initialize and open more quickly.
+* **Improved:** More elegant image loading states.
+* **Fixed:** An issue where the composer occasionally failed to respect the ‘disable composer for inbound bots’ setting.
+* **Fixed:** A crash associated with certain colour customization settings.
+* **Fixed:** A java.lang.OutOfMemoryError crash.
+* **Fixed:** A ReactionInputView.highlightSelectedReaction > IndexOutOfBoundsException crash.
+* **Fixed:** An issue where file extensions were sometimes removed when uploading them.
+* **Fixed:** An issue where emoji reactions were sometimes rendered twice.
+* **Fixed:** An issue with overlapping text in the ‘Your conversations’ list in the Messenger home.
+* **Fixed:** An issue where an outbound message didn’t appear in real-time after changing the device orientation.
+* **Fixed:** An issue where custom bot failed to save custom attributes
+* **Fixed:** A crash with error java.lang.ArithmeticException divide by zero 
+
 ## Version 6.1.0
 18-03-2020
 
