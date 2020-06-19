@@ -19,8 +19,8 @@ android {
 }
 
 dependencies {
-    implementation 'io.intercom.android:intercom-sdk-base:6.+'
-    implementation 'io.intercom.android:intercom-sdk-fcm:6.+'
+    implementation 'io.intercom.android:intercom-sdk-base:7+'
+    implementation 'io.intercom.android:intercom-sdk-fcm:7+'
     implementation 'com.google.firebase:firebase-messaging:17.6.0'
 }
 
