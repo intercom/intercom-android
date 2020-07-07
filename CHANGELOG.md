@@ -1,6 +1,12 @@
 # Changelog
 
+## Version 7.1.1
+07-07-2020
+* Fixed an issue where buttons on the Messenger conversation card were not fully visible on small devices.
+* Fixed an issue where the conversation header wasn't updates after a teammate reply.
+
 ## Version 7.1.0
+17-06-2020
 **In v7.1.0 of the Intercom mobile SDK, we’re introducing a fantastic new mobile engagement feature called Mobile Carousels. We’ve also added support for closed conversations, as well as a number of fixes and performance improvements.**
 
 ### 📱 New Feature: Mobile Carousels 
