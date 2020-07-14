@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 7.1.2
+13-07-2020
+* Bug fixes and performance improvements.
+
 ## Version 7.1.1
 07-07-2020
 * Fixed an issue where buttons on the Messenger conversation card were not fully visible on small devices.
