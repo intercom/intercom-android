@@ -44,7 +44,7 @@ Add the following dependency to your app's `build.gradle` file:
 ```groovy
 dependencies {
     implementation 'io.intercom.android:intercom-sdk:7.+'
-    implementation 'com.google.firebase:firebase-messaging:17.+'
+    implementation 'com.google.firebase:firebase-messaging:20.+'
 }
 ```
 
@@ -111,18 +111,18 @@ Here is our complete dependency graph:
 ### intercom-sdk-base
 ```
 # Transitive (shared with your app)
-com.android.support:design:28.0.0
-com.android.support:appcompat-v7:28.0.0
-com.android.support:animated-vector-drawable:28.0.0
-com.android.support:support-vector-drawable:28.0.0
-com.android.support:support-compat:28.0.0
-com.android.support:support-core-utils:28.0.0
-com.android.support:support-core-ui:28.0.0
-com.android.support:support-fragment:28.0.0
-com.android.support:support-annotations:28.0.0
-com.android.support:recyclerview-v7:28.0.0
-com.android.support.constraint:constraint-layout:1.1.3
-com.google.android:flexbox:1.0.0
+com.google.android.material:material:1.1.0
+androidx.appcompat:appcompat:1.1.0
+androidx.vectordrawable:vectordrawable-animated:1.1.0
+androidx.vectordrawable:vectordrawable:1.1.0
+androidx.core:core:1.3.0
+androidx.fragment:fragment:1.2.5
+androidx.annotation:annotation:1.1.0
+androidx.recyclerview:recyclerview:1.1.0
+androidx.constraintlayout:constraintlayout:1.1.3
+com.google.android:flexbox:2.0.1
+androidx.legacy:legacy-support-core-utils:1.0.0
+androidx.legacy:legacy-support-core-ui:1.0.0
 
 # Repackaged (not shared with your app)
 com.squareup:otto:1.3.8
@@ -134,12 +134,12 @@ com.squareup.okio:okio:1.17.4
 com.squareup.okhttp3:okhttp:3.12.3
 com.squareup.retrofit2:retrofit:2.6.1
 com.squareup.retrofit2:converter-gson:2.6.1
-com.google.code.gson:gson:2.8.5
+com.google.code.gson:gson:2.8.6
 ```
 
 If you use some of the repackaged libraries in your app, you may want to use a build that depends on them transitively. A guide to using this build can be found [here](https://docs.intercom.com/configure-intercom-for-your-product-or-site/configure-intercom-for-mobile/using-transitive-dependencies-with-intercom-for-android). Using this build involves more work as you need to make sure your app uses the correct version of each library.
 
 ### intercom-sdk-fcm
 ```
-com.google.firebase:firebase-messaging:17.6.0
+com.google.firebase:firebase-messaging:20.2.1
 ```
