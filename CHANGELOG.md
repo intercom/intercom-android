@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 7.2.0
+17-07-2020
+* The Android SDK now uses Android X.
+* We’ve updated the Gson and Firebase Messaging libraries that the SDK uses.
+* We recommend migrating to Android X to use this version of the Android SDK.
+
 ## Version 7.1.2
 13-07-2020
 * Bug fixes and performance improvements.
