@@ -19,9 +19,9 @@ android {
 }
 
 dependencies {
-    implementation 'io.intercom.android:intercom-sdk-base:7+'
-    implementation 'io.intercom.android:intercom-sdk-fcm:7+'
-    implementation 'com.google.firebase:firebase-messaging:20.2.1'
+    implementation 'io.intercom.android:intercom-sdk-base:8+'
+    implementation 'io.intercom.android:intercom-sdk-fcm:8+'
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
 }
 
 apply plugin: 'com.google.gms.google-services'
