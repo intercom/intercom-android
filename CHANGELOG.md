@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 8.0.0
+25-08-2020
+* We've updated the version of third party dependancies such as Firebase Messaging, AndroidX, and internal repackaged libraries
+* We've added Kotlin as part of updating to the newest version of OkHttp
+* We've updated the minimum Java requirement to Java 8+ as part of updating to the newest version of OkHttp
+
 ## Version 7.2.0
 17-07-2020
 * The Android SDK now uses Android X.
