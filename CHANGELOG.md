@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 8.0.1
+01-09-2020
+* Minor bug fixes and compatibility updates for future releases.
+
 ## Version 8.0.0
 25-08-2020
 * We've updated the version of third party dependancies such as Firebase Messaging, AndroidX, and internal repackaged libraries
