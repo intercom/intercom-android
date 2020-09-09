@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 8.1.0
+09-09-2020
+* The SDK has been updated to support Android 11
+
 ## Version 8.0.1
 01-09-2020
 * Minor bug fixes and compatibility updates for future releases.
