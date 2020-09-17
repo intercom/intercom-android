@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 8.2.0
+17-09-2020
+* We have rolled back Okio to version 1.17.4. We had previously upgraded to version 2.7.0 which caused conflicts for customers using okio/okhttp. If you are using version 8.0.0 or 8.1.0 and have encountered this issue you will need to update to a newer Intercom SDK version.
+
 ## Version 8.1.0
 09-09-2020
 * The SDK has been updated to support Android 11
