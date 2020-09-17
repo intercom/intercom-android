@@ -131,10 +131,10 @@ com.github.bumptech.glide:glide:4.4.0
 com.github.bumptech.glide:gifdecoder:4.4.0
 com.github.bumptech.glide:disklrucache:4.4.0
 com.github.bumptech.glide:annotations:4.4.0
-com.squareup.okio:okio:2.7.0
-com.squareup.okhttp3:okhttp:4.8.1
-com.squareup.retrofit2:retrofit:2.9.0
-com.squareup.retrofit2:converter-gson:2.9.0
+com.squareup.okio:okio:1.17.4
+com.squareup.okhttp3:okhttp:3.12.3
+com.squareup.retrofit2:retrofit:2.6.1
+com.squareup.retrofit2:converter-gson:2.6.1
 com.google.code.gson:gson:2.8.6
 ```
 
