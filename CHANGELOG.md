@@ -1,5 +1,14 @@
 # Changelog
 
+## Version 8.3.0
+10-11-2020
+* New feature: You can now open an article or Mobile Carousel programmatically in your app. We have added two new methods to our API to enable this, [displayArticle](https://developers.intercom.com/installing-intercom/docs/android-configuration#section-present-an-article-programmatically) and [displayCarousel](https://developers.intercom.com/installing-intercom/docs/android-configuration#section-present-a-carousel-programmatically).
+* Improvement: Added an optional special notice message, that can be displayed at the top of a conversation. This has been commonly used to set expectations during COVID, find more details [here](https://www.intercom.com/help/en/articles/3822642-tips-for-using-intercom-to-help-with-your-covid-19-response).
+![Special notice message](https://user-images.githubusercontent.com/3718984/98683858-6ea26800-235d-11eb-9bb3-4dc3a89eaf6d.png)
+
+* Fixed: An issue where the links would not open inside conversations on Android 11.
+* Fixed: An issue where we would display the wrong timezone in the conversation header.
+
 ## Version 8.2.0
 17-09-2020
 * We have rolled back Okio to version 1.17.4. We had previously upgraded to version 2.7.0 which caused conflicts for customers using okio/okhttp. If you are using version 8.0.0 or 8.1.0 and have encountered this issue you will need to update to a newer Intercom SDK version.
