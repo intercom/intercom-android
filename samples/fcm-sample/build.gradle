@@ -1,12 +1,13 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
 
     defaultConfig {
         applicationId "com.intercom.sample"
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
     }
@@ -19,9 +20,7 @@ android {
 }
 
 dependencies {
-    implementation 'io.intercom.android:intercom-sdk-base:8+'
-    implementation 'io.intercom.android:intercom-sdk-fcm:8+'
+    implementation 'io.intercom.android:intercom-sdk-base:9+'
+    implementation 'io.intercom.android:intercom-sdk-fcm:9+'
     implementation 'com.google.firebase:firebase-messaging:20.2.4'
 }
-
-apply plugin: 'com.google.gms.google-services'
