@@ -1,4 +1,9 @@
 # Changelog
+## Version 9.0.0
+04-12-2020
+* Support for Android X : Added support for Android X without needing Jetifier
+* Intercom now depends on Glide 4.11.0, Gson 2.8.6, Otto 1.3.8, Okio 2.8.0, Okhttp 4.9.0 and Retrofit 2.9.0
+* Better RTL support : Improved support for RTL layouts
 
 ## Version 8.3.0
 10-11-2020
