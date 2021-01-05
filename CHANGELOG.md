@@ -1,4 +1,9 @@
 # Changelog
+## Version 9.0.1
+05-01-2021
+* Fixed: An issue where the Inbound Bot doesn’t trigger for new conversations
+* Fixed the homescreen formatting issue on Android tablets and removed split view
+
 ## Version 9.0.0
 04-12-2020
 * Support for Android X : Added support for Android X without needing Jetifier
