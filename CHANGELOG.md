@@ -1,4 +1,8 @@
 # Changelog
+## Version 9.0.2
+11-01-2021
+* Fixed a couple of bugs and made some performance improvements
+
 ## Version 9.0.1
 05-01-2021
 * Fixed: An issue where the Inbound Bot doesn’t trigger for new conversations
