@@ -1,4 +1,8 @@
 # Changelog
+## Version 9.0.3
+19-01-2021
+* Added the ability to hide the New Conversation button in a bot-only conversation.
+
 ## Version 9.0.2
 11-01-2021
 * Fixed a couple of bugs and made some performance improvements
