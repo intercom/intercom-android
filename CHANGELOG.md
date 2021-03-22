@@ -1,4 +1,9 @@
 # Changelog
+## Version 9.1.1
+12-03-2021
+* Fixed the issue of unable to search for Gifs on Android 11
+* Fixed an issue with escaped HTML on buttons
+
 ## Version 9.1.0
 27-01-2021
 * Added support for bot intros, which allows Resolution Bot to introduce itself when your customers start a new conversation, making it clearer that they’re interacting with a bot.
