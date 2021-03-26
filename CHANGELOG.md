@@ -52,7 +52,7 @@
 
 ## Version 8.0.0
 25-08-2020
-* We've updated the version of third party dependancies such as Firebase Messaging, AndroidX, and internal repackaged libraries
+* We've updated the version of third party dependencies such as Firebase Messaging, AndroidX, and internal repackaged libraries
 * We've added Kotlin as part of updating to the newest version of OkHttp
 * We've updated the minimum Java requirement to Java 8+ as part of updating to the newest version of OkHttp
 
@@ -439,7 +439,7 @@ The Business Messenger reimagined.
 * Android O Support
 * Updated to 26.0.0 of the support library
 * Updated FCM and GCM play-services to 11.0.4
-* Updated third party dependancies, a list of the current library versions is provided in the [github readme](https://github.com/intercom/intercom-android#dependency-graph)
+* Updated third party dependencies, a list of the current library versions is provided in the [github readme](https://github.com/intercom/intercom-android#dependency-graph)
 * Removed deprecated methods
 * Support for O Notification channels. The channels added by Intercom are: 
   - Chat Replies (when you reply to a customer in Intercom)
