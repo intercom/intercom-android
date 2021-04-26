@@ -1,5 +1,9 @@
 # Changelog
 ## Version 9.1.1
+26-04-2021
+* Bug fixes and performance improvements
+
+## Version 9.1.1
 12-03-2021
 * Fixed the issue of unable to search for Gifs on Android 11
 * Fixed an issue with escaped HTML on buttons
