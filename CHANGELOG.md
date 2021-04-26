@@ -1,5 +1,5 @@
 # Changelog
-## Version 9.1.1
+## Version 9.1.2
 26-04-2021
 * Bug fixes and performance improvements
 
