@@ -57,6 +57,16 @@ dependencies {
 }
 ```
 
+### Maven central
+Add the following to your root build.gradle file
+```groovy
+allprojects {
+    repositories {
+      mavenCentral()
+    }
+}
+```
+
 ## Customer Support
 👋 Contact us with any issues at [Intercom Developer Hub available here](https://developers.intercom.com/installing-intercom/docs/intercom-for-android). If you bump into any problems or need more support, just start a conversation using Intercom there and it will be immediately routed to our Customer Support Engineers.
 
@@ -120,20 +130,16 @@ androidx.fragment:fragment:1.2.5
 androidx.annotation:annotation:1.1.0
 androidx.recyclerview:recyclerview:1.1.0
 androidx.constraintlayout:constraintlayout:2.0.4
-com.google.android:flexbox:2.0.1
-androidx.legacy:legacy-support-core-utils:1.0.0
-androidx.legacy:legacy-support-core-ui:1.0.0
-org.jetbrains.kotlin:kotlin-stdlib:1.3.72
+com.google.android.flexbox:flexbox:3.0.0
+org.jetbrains.kotlin:kotlin-stdlib:1.4.20
 com.squareup:otto:1.3.8
-com.github.bumptech.glide:glide:4.11.0
-com.github.bumptech.glide:gifdecoder:4.11.0
-com.github.bumptech.glide:disklrucache:4.11.0
-com.github.bumptech.glide:annotations:4.11.0
 com.squareup.okio:okio:2.8.0
 com.squareup.okhttp3:okhttp:4.9.0
 com.squareup.retrofit2:retrofit:2.9.0
 com.squareup.retrofit2:converter-gson:2.9.0
 com.google.code.gson:gson:2.8.6
+io.coil-kt:coil-base:1.2.0
+io.coil-kt:coil-gif:1.2.0
 ```
 
 ### intercom-sdk-fcm

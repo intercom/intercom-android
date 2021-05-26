@@ -1,4 +1,11 @@
 # Changelog
+
+## Version 9.2.0
+* Intercom no longer depends on Glide and now uses Coil to load images.
+* Intercom no longer requires the Jcenter repository. 
+https://developers.intercom.com/installing-intercom/docs/android-installation#section-maven-central
+* Bug fixes and performance improvements.
+
 ## Version 9.1.2
 26-04-2021
 * Bug fixes and performance improvements
