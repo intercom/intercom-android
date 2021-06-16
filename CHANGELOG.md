@@ -1,6 +1,23 @@
 # Changelog
 
+## Version 10.0.0
+16-06-2021
+### Enhancements
+* We have redesigned the Help Center for mobile apps. ✨
+* New UI, optimized specifically for mobile apps and small screens
+* Type-ahead search to help users find answers quicker than ever
+* Control whether users open up a specific collection of articles, a group of collections, or specific search results
+* Localization - with right to left language display
+* Accessibility support: screen readers, dynamic font sizes, and keyboard navigation - to support all end users
+* New Help Center Data API that enables you to build your own help center UI, enabling a much deeper and custom integration into your app.
+![Help center](https://user-images.githubusercontent.com/3718984/122231184-2c707480-ceb2-11eb-8178-6d0aaab34713.gif)
+
+### Improvements and bug fixes
+* Fixed an issue where the special notice message would not display.
+* `hideMessenger()` has now been deprecated and removed. Please use `hideIntercom()` instead. This method will hide all Intercom UI in your app.
+  
 ## Version 9.2.0
+26-05-2021
 * Intercom no longer depends on Glide and now uses Coil to load images.
 * Intercom no longer requires the Jcenter repository. 
 https://developers.intercom.com/installing-intercom/docs/android-installation#section-maven-central
