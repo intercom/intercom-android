@@ -140,6 +140,10 @@ com.squareup.retrofit2:converter-gson:2.9.0
 com.google.code.gson:gson:2.8.6
 io.coil-kt:coil-base:1.2.0
 io.coil-kt:coil-gif:1.2.0
+org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.3
+org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.3
+androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1
+androidx.lifecycle:lifecycle-runtime-ktx:2.3.1
 ```
 
 ### intercom-sdk-fcm
