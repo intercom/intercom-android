@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 10.0.1
+23-06-2021
+* Fixed a couple of bugs and made some performance improvements
+
 ## Version 10.0.0
 16-06-2021
 ### Enhancements
