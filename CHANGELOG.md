@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 10.0.2
+16-07-2021
+* Fixed an issue where article viewed stats were not updating correctly. 
+* Updated dependencies to newer versions. 
+
 ## Version 10.0.1
 23-06-2021
 * Fixed a couple of bugs and made some performance improvements
