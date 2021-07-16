@@ -57,10 +57,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.messenger_button:
-                Intercom.client().displayConversationsList();
-                break;
+        if (v.getId() == R.id.messenger_button) {
+            Intercom.client().displayMessenger();
         }
     }
 
@@ -79,14 +77,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onPause() {
         super.onPause();
-
         Intercom.client().removeUnreadConversationCountListener(unreadConversationCountListener);
     }
 
     @Override
     public void onResume() {
         super.onResume();
-
         Intercom.client().addUnreadConversationCountListener(unreadConversationCountListener);
         Intercom.client().handlePushMessage();
     }
