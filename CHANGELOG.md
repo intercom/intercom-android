@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 10.1.0
+20-08-2021
+* If you’re enrolled in our Messenger early access programme, this upgrade will display the newly designed article search card on the Messenger home screen. This change won’t affect you if your workspace doesn’t have early access to these features.
+* Fixed an issue where hyperlinked images in Mobile Carousels did not open the URL when tapped.
+
 ## Version 10.0.2
 16-07-2021
 * Fixed an issue where article viewed stats were not updating correctly. 
