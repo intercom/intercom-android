@@ -23,4 +23,5 @@ dependencies {
     implementation 'io.intercom.android:intercom-sdk-base:10+'
     implementation 'io.intercom.android:intercom-sdk-fcm:10+'
     implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    implementation "androidx.appcompat:appcompat:1.3.0"
 }
