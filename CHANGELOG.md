@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 10.1.1
+26-08-2021
+* Removed the deprecated package intercom-sdk-base-transitive from v10.1.1 onwards. If you are still using intercom-sdk-base-transitive, please update to use intercom-sdk-base instead.
+
 ## Version 10.1.0
 20-08-2021
 * If you’re enrolled in our Messenger early access programme, this upgrade will display the newly designed article search card on the Messenger home screen. This change won’t affect you if your workspace doesn’t have early access to these features.
