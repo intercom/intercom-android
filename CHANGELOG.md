@@ -1,5 +1,19 @@
 # Changelog
 
+## Version 10.2.0
+22-09-2021
+
+Reduce customer inquiries for your team and provide faster resolutions for your customers – without sacrificing a great experience. We’ve redesigned our Messenger with an integrated help center experience that increases customer engagement by up to 3x to help you deliver the best self-serve support.
+
+New features in this update:
+* A new article search card on your Messenger’s home screen.
+* There are now two conversation cards, just as with our web Messenger; one for existing and one for new conversations. This gives more emphasis to existing conversations, reducing the chance of duplicates being created.
+* Optionally require specific customers to attempt to self-serve to answer their question before they can reach out to a teammate.
+* Place the article search card at the top of the Messenger home screen to give your self-serve content more prominence.
+* Uncover insights and opportunities to optimize your self-serve support by using our updated Articles reporting.
+* If you’ve set a custom icon for the Intercom launcher, that icon will now be used in your app as well.
+<img src="https://user-images.githubusercontent.com/5046761/134326966-f1b08bbc-da9d-46ee-b1c8-2e1afd00c836.png" width="350px"/>
+
 ## Version 10.1.1
 26-08-2021
 * Removed the deprecated package intercom-sdk-base-transitive from v10.1.1 onwards. If you are still using intercom-sdk-base-transitive, please update to use intercom-sdk-base instead.
