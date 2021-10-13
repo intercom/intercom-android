@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 10.3.0
+13-10-2021
+* Added Android 12 support.
+
 ## Version 10.2.0
 22-09-2021
 
