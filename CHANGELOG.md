@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 10.4.0
+29-10-2021
+* A number of improvements for accessibility features in the Messenger, with more coming in future updates.
+
 ## Version 10.3.0
 13-10-2021
 * Added Android 12 support.
