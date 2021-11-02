@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 10.4.1
+02-11-2021
+* Fixed an issue where the homescreen was not close-able after accessibility changes
+
 ## Version 10.4.0
 29-10-2021
 * A number of improvements for accessibility features in the Messenger, with more coming in future updates.
