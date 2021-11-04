@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 10.4.2
+04-11-2021
+* Added the ability to upload a video to a conversation
+* Fixed an issue with push notifications on Android 12
+* Improved accuracy of inbound custom bot triggering (particularly ones using time based predicates)
+
 ## Version 10.4.1
 02-11-2021
 * Fixed an issue where the homescreen was not close-able after accessibility changes
