@@ -1,4 +1,10 @@
 # Changelog
+## Version 10.5.0
+24-11-2021
+* Improvements to Articles in search, and ability to start conversations beyond home screen
+* Improvements for RTL (Right to Left languages) on the homescreen
+* Fixed the issue where reactions don’t show up in Posts
+* Added Jetpack Compose dependencies
 
 ## Version 10.4.2
 04-11-2021

@@ -144,6 +144,13 @@ org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1
 org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.1
 androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1
 androidx.lifecycle:lifecycle-runtime-ktx:2.3.1
+androidx.compose.ui:ui:1.0.2
+androidx.compose.ui:ui-tooling:1.0.2
+androidx.compose.foundation:foundation:1.0.2
+androidx.compose.material:material:1.0.2
+androidx.compose.material:material-icons-core:1.0.2
+androidx.compose.material:material-icons-extended:1.0.2
+androidx.activity:activity-compose:1.3.1
 ```
 
 ### intercom-sdk-fcm
