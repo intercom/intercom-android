@@ -1,4 +1,8 @@
 # Changelog
+## Version 10.6.0
+16-12-2021
+* Introduced new messenger settings which will prevent the same user/visitor from having more than 1 open inbound conversation at any given time.
+
 ## Version 10.5.0
 24-11-2021
 * Improvements to Articles in search, and ability to start conversations beyond home screen
