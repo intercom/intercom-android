@@ -1,4 +1,8 @@
 # Changelog
+## Version 10.6.1
+18-01-2022
+* Fixed issue where app freezes when push notification is received.
+
 ## Version 10.6.0
 16-12-2021
 * Introduced new messenger settings which will prevent the same user/visitor from having more than 1 open inbound conversation at any given time.
