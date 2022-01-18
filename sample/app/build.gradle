@@ -42,7 +42,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //Intercom SDK
-    implementation 'io.intercom.android:intercom-sdk:10.6.0'
+    implementation 'io.intercom.android:intercom-sdk:10.6.1'
     //FCM
     implementation 'com.google.firebase:firebase-messaging:20.2.4'
 }
