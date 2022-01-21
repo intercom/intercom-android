@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">sample</string>
+    <string name="register_user">Register User</string>
+    <string name="app_name">Intercom - sample app</string>
+    <string name="register_identified_user">Identified</string>
+    <string name="toggle_launcher_visibility">Toggle launcher visibility</string>
+    <string name="unregister_user">Unregister user</string>
+    <string name="register_unidentified_user">Unidentified</string>
+    <string name="insert_email">Insert Email</string>
 </resources>

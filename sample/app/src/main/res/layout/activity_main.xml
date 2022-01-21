@@ -4,35 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_register"
+    <TextView
+        android:id="@+id/txt_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Register identified user"
+        android:layout_margin="8dp"
+        android:text="@string/register_user"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTxt_email_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/insert_email"
+        app:layout_constraintTop_toBottomOf="@+id/txt_register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+
+    <Button
+        android:id="@+id/btn_register_unidentified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/register_unidentified_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxt_email_input" />
+
+    <Button
+        android:id="@+id/btn_register_identified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/register_identified_user"
+        app:layout_constraintTop_toBottomOf="@+id/editTxt_email_input"
+        app:layout_constraintStart_toEndOf="@+id/btn_register_unidentified" />
 
     <Button
         android:id="@+id/btn_toggle_launcher_visibility"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Toggle launcher visibility"
+        android:layout_margin="8dp"
+        android:text="@string/toggle_launcher_visibility"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_register" />
+        app:layout_constraintTop_toBottomOf="@id/btn_register_identified" />
 
     <Button
         android:id="@+id/btn_unregister_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Unregister user"
+        android:layout_margin="8dp"
+        android:text="@string/unregister_user"
+        android:backgroundTint="#C75450"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_toggle_launcher_visibility" />
 
@@ -40,8 +71,8 @@
         android:id="@+id/group_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="btn_toggle_launcher_visibility, btn_unregister_user"
         android:visibility="gone"
-        tools:visibility="visible"/>
+        app:constraint_referenced_ids="btn_toggle_launcher_visibility, btn_unregister_user"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
