@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
@@ -45,8 +46,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:text="@string/register_identified_user"
-        app:layout_constraintTop_toBottomOf="@+id/editTxt_email_input"
-        app:layout_constraintStart_toEndOf="@+id/btn_register_unidentified" />
+        app:layout_constraintStart_toEndOf="@+id/btn_register_unidentified"
+        app:layout_constraintTop_toBottomOf="@+id/editTxt_email_input" />
 
     <Button
         android:id="@+id/btn_toggle_launcher_visibility"
@@ -55,17 +56,17 @@
         android:layout_margin="8dp"
         android:text="@string/toggle_launcher_visibility"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_register_identified" />
+        app:layout_constraintTop_toBottomOf="@id/btn_unregister_user" />
 
     <Button
         android:id="@+id/btn_unregister_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="@string/unregister_user"
         android:backgroundTint="#C75450"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_toggle_launcher_visibility" />
+        android:text="@string/unregister_user"
+        app:layout_constraintStart_toEndOf="@id/btn_register_identified"
+        app:layout_constraintTop_toBottomOf="@id/editTxt_email_input" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group_user"
@@ -74,5 +75,59 @@
         android:visibility="gone"
         app:constraint_referenced_ids="btn_toggle_launcher_visibility, btn_unregister_user"
         tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txt_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Display"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/barrier_user" />
+
+    <Button
+        android:id="@+id/btn_helpcenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Help Center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_display" />
+
+    <Button
+        android:id="@+id/btn_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Article"
+        app:layout_constraintStart_toEndOf="@+id/btn_helpcenter"
+        app:layout_constraintTop_toBottomOf="@id/txt_display" />
+
+    <Button
+        android:id="@+id/btn_carousel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Carousel"
+        app:layout_constraintStart_toEndOf="@id/btn_article"
+        app:layout_constraintTop_toBottomOf="@id/txt_display" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="btn_register_unidentified, btn_register_identified, btn_toggle_launcher_visibility,btn_unregister_user" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="txt_display, btn_helpcenter, btn_article, btn_carousel"
+        tools:visibility="visible"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,13 +1,15 @@
 package com.intercom.sample
 
 import android.os.Bundle
+import android.text.InputType
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.Group
+import com.google.android.material.snackbar.Snackbar
 import io.intercom.android.sdk.Intercom
 import io.intercom.android.sdk.identity.Registration
 
@@ -16,13 +18,18 @@ class MainActivity : AppCompatActivity() {
     val regIdentifiedBtn by lazy { findViewById<Button>(R.id.btn_register_identified) }
     val regUnidentifiedBtn by lazy { findViewById<Button>(R.id.btn_register_unidentified) }
     val launcherVisibiltyBtn by lazy { findViewById<Button>(R.id.btn_toggle_launcher_visibility) }
-    val unregisterUserBtn by lazy {findViewById<Button>(R.id.btn_unregister_user)}
-    val userGroup by lazy { findViewById<Group>(R.id.group_user)}
-    val editTextEmail by lazy { findViewById<EditText>(R.id.editTxt_email_input)}
+    val unregisterUserBtn by lazy { findViewById<Button>(R.id.btn_unregister_user) }
+    val userGroup by lazy { findViewById<Group>(R.id.group_user) }
+    val displayGroup by lazy { findViewById<Group>(R.id.group_display) }
+    val editTextEmail by lazy { findViewById<EditText>(R.id.editTxt_email_input) }
+    val displayHelpCenter by lazy { findViewById<Button>(R.id.btn_helpcenter) }
+    val displayArticle by lazy { findViewById<Button>(R.id.btn_article) }
+    val displayCarousel by lazy { findViewById<Button>(R.id.btn_carousel) }
+    val mainLayout by lazy { findViewById<ConstraintLayout>(R.id.layout_main) }
 
-    private fun validateAPIKey() : Boolean {
+    private fun validateAPIKey(): Boolean {
         if (API_KEY.isBlank() or APP_ID.isBlank()) {
-            Toast.makeText(this, "Please update your API Key and App ID in SampleApplication!", Toast.LENGTH_SHORT).show()
+            Snackbar.make(mainLayout, "Missing App ID and/or API Key!", Snackbar.LENGTH_LONG).show()
             return false
         }
         return true
@@ -33,23 +40,25 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         regUnidentifiedBtn.setOnClickListener {
-            if(validateAPIKey()) {
+            if (validateAPIKey()) {
                 Intercom.client().registerUnidentifiedUser()
                 Intercom.client().setLauncherVisibility(Intercom.VISIBLE)
                 userGroup.visibility = View.VISIBLE
+                displayGroup.visibility = View.VISIBLE
                 regUnidentifiedBtn.visibility = View.GONE
                 launcherVisibility = true
             }
         }
 
         regIdentifiedBtn.setOnClickListener {
-            if(validateAPIKey()) {
+            if (validateAPIKey()) {
                 val email = editTextEmail.text.toString()
-                if(email.isNotBlank()) {
+                if (email.isNotBlank()) {
                     val registration = Registration.create().withEmail(email)
                     Intercom.client().registerIdentifiedUser(registration)
                     Intercom.client().setLauncherVisibility(Intercom.VISIBLE)
                     userGroup.visibility = View.VISIBLE
+                    displayGroup.visibility = View.VISIBLE
                     regUnidentifiedBtn.visibility = View.GONE
                     regIdentifiedBtn.visibility = View.GONE
                     launcherVisibility = true
@@ -75,10 +84,40 @@ class MainActivity : AppCompatActivity() {
         unregisterUserBtn.setOnClickListener {
             Intercom.client().logout()
             userGroup.visibility = View.GONE
+            displayGroup.visibility = View.GONE
             regUnidentifiedBtn.visibility = View.VISIBLE
             regIdentifiedBtn.visibility = View.VISIBLE
         }
 
+        displayHelpCenter.setOnClickListener {
+            Intercom.client().displayHelpCenter()
+        }
+
+        displayArticle.setOnClickListener {
+            displayInputDialog("Article", "Enter Article ID. (e.g. 1560406)") {
+                Intercom.client().displayArticle(it)
+            }
+        }
+
+        displayCarousel.setOnClickListener {
+            displayInputDialog("Carousel", "Enter Carousel ID. (e.g. 11543787)") {
+                Intercom.client().displayCarousel(it)
+            }
+        }
+    }
+
+    private fun displayInputDialog(title: String, hint: String, positiveAction: (String) -> Unit) {
+        val input = EditText(this)
+        input.hint = hint
+        input.inputType = InputType.TYPE_CLASS_TEXT
+
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle(title)
+        builder.setView(input)
+
+        builder.setNegativeButton("Cancel") { dialog, _ -> dialog.cancel() }
+        builder.setPositiveButton("Open") { dialog, _ -> positiveAction(input.text.toString())}
+        builder.show()
     }
 
 }
