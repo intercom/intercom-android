@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
     val userGroup by lazy { findViewById<Group>(R.id.group_user) }
     val displayGroup by lazy { findViewById<Group>(R.id.group_display) }
     val editTextEmail by lazy { findViewById<EditText>(R.id.editTxt_email_input) }
+    val editUserIdEmail by lazy { findViewById<EditText>(R.id.txtEditUserID) }
     val displayHelpCenter by lazy { findViewById<Button>(R.id.btn_helpcenter) }
     val displayArticle by lazy { findViewById<Button>(R.id.btn_article) }
     val displayCarousel by lazy { findViewById<Button>(R.id.btn_carousel) }
@@ -72,7 +73,14 @@ class MainActivity : AppCompatActivity() {
         regIdentifiedBtn.setOnClickListener {
             if (validateAPIKey()) {
                 val email = editTextEmail.text.toString()
-                if (email.isNotBlank()) {
+                val userId = editUserIdEmail.text.toString()
+
+                if (userId.isNotBlank()) {
+                    val registration = Registration.create().withUserId(userId)
+                    Intercom.client().registerIdentifiedUser(registration)
+                    Intercom.client().setLauncherVisibility(Intercom.VISIBLE)
+                    mainViewModel.btnState.value = ViewState(registrationVisibility = false)
+                } else if (email.isNotBlank()) {
                     val registration = Registration.create().withEmail(email)
                     Intercom.client().registerIdentifiedUser(registration)
                     Intercom.client().setLauncherVisibility(Intercom.VISIBLE)
@@ -87,12 +95,14 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+
         launcherVisibiltyBtn.setOnClickListener {
             if (launcherVisibility)
                 Intercom.client().setLauncherVisibility(Intercom.GONE)
             else
                 Intercom.client().setLauncherVisibility(Intercom.VISIBLE)
             launcherVisibility = launcherVisibility.not()
+
         }
 
         unregisterUserBtn.setOnClickListener {
