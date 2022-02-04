@@ -45,6 +45,9 @@ dependencies {
     implementation 'io.intercom.android:intercom-sdk:10.6.1'
     //FCM
     implementation 'com.google.firebase:firebase-messaging:20.2.4'
+
+    implementation "androidx.activity:activity-ktx:1.4.0"
+
 }
 
 apply plugin: 'com.google.gms.google-services'
