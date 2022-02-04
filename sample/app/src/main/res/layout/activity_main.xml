@@ -130,4 +130,16 @@
         tools:visibility="visible"
         />
 
+    <EditText
+        android:id="@+id/txtEditUserID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:inputType="text"
+        android:hint="@string/insert_user_id"
+        app:layout_constraintTop_toBottomOf="@id/btn_helpcenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

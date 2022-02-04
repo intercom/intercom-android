@@ -5,13 +5,17 @@ import android.text.InputType
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.Group
+import androidx.lifecycle.lifecycleScope
 import com.google.android.material.snackbar.Snackbar
 import io.intercom.android.sdk.Intercom
 import io.intercom.android.sdk.identity.Registration
+import kotlinx.coroutines.flow.collect
+
 
 class MainActivity : AppCompatActivity() {
     var launcherVisibility = false
@@ -22,10 +26,12 @@ class MainActivity : AppCompatActivity() {
     val userGroup by lazy { findViewById<Group>(R.id.group_user) }
     val displayGroup by lazy { findViewById<Group>(R.id.group_display) }
     val editTextEmail by lazy { findViewById<EditText>(R.id.editTxt_email_input) }
+    val editUserIdEmail by lazy { findViewById<EditText>(R.id.txtEditUserID) }
     val displayHelpCenter by lazy { findViewById<Button>(R.id.btn_helpcenter) }
     val displayArticle by lazy { findViewById<Button>(R.id.btn_article) }
     val displayCarousel by lazy { findViewById<Button>(R.id.btn_carousel) }
     val mainLayout by lazy { findViewById<ConstraintLayout>(R.id.layout_main) }
+    val mainViewModel by viewModels<MainViewModel>()
 
     private fun validateAPIKey(): Boolean {
         if (API_KEY.isBlank() or APP_ID.isBlank()) {
@@ -39,30 +45,46 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        lifecycleScope.launchWhenStarted {
+            mainViewModel.btnState.collect {
+                if (it.registrationVisibility) {
+                    regIdentifiedBtn.visibility = View.VISIBLE
+                    regUnidentifiedBtn.visibility = View.VISIBLE
+                    userGroup.visibility = View.GONE
+                    displayGroup.visibility = View.GONE
+                } else {
+                    regIdentifiedBtn.visibility = View.GONE
+                    regUnidentifiedBtn.visibility = View.GONE
+                    userGroup.visibility = View.VISIBLE
+                    displayGroup.visibility = View.VISIBLE
+                }
+            }
+        }
+
+
         regUnidentifiedBtn.setOnClickListener {
             if (validateAPIKey()) {
                 Intercom.client().registerUnidentifiedUser()
                 Intercom.client().setLauncherVisibility(Intercom.VISIBLE)
-                userGroup.visibility = View.VISIBLE
-                displayGroup.visibility = View.VISIBLE
-                regUnidentifiedBtn.visibility = View.GONE
-                launcherVisibility = true
+                mainViewModel.btnState.value = ViewState(registrationVisibility = false)
             }
         }
 
         regIdentifiedBtn.setOnClickListener {
             if (validateAPIKey()) {
                 val email = editTextEmail.text.toString()
-                if (email.isNotBlank()) {
+                val userId = editUserIdEmail.text.toString()
+
+                if (userId.isNotBlank()) {
+                    val registration = Registration.create().withUserId(userId)
+                    Intercom.client().registerIdentifiedUser(registration)
+                    Intercom.client().setLauncherVisibility(Intercom.VISIBLE)
+                    mainViewModel.btnState.value = ViewState(registrationVisibility = false)
+                } else if (email.isNotBlank()) {
                     val registration = Registration.create().withEmail(email)
                     Intercom.client().registerIdentifiedUser(registration)
                     Intercom.client().setLauncherVisibility(Intercom.VISIBLE)
-                    userGroup.visibility = View.VISIBLE
-                    displayGroup.visibility = View.VISIBLE
-                    regUnidentifiedBtn.visibility = View.GONE
-                    regIdentifiedBtn.visibility = View.GONE
-                    launcherVisibility = true
-
+                    mainViewModel.btnState.value = ViewState(registrationVisibility = false)
                 } else {
                     AlertDialog.Builder(this)
                         .setMessage("Email can't be blank!")
@@ -73,20 +95,19 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+
         launcherVisibiltyBtn.setOnClickListener {
             if (launcherVisibility)
                 Intercom.client().setLauncherVisibility(Intercom.GONE)
             else
                 Intercom.client().setLauncherVisibility(Intercom.VISIBLE)
             launcherVisibility = launcherVisibility.not()
+
         }
 
         unregisterUserBtn.setOnClickListener {
             Intercom.client().logout()
-            userGroup.visibility = View.GONE
-            displayGroup.visibility = View.GONE
-            regUnidentifiedBtn.visibility = View.VISIBLE
-            regIdentifiedBtn.visibility = View.VISIBLE
+            mainViewModel.btnState.value = ViewState(registrationVisibility = true)
         }
 
         displayHelpCenter.setOnClickListener {
@@ -116,7 +137,7 @@ class MainActivity : AppCompatActivity() {
         builder.setView(input)
 
         builder.setNegativeButton("Cancel") { dialog, _ -> dialog.cancel() }
-        builder.setPositiveButton("Open") { dialog, _ -> positiveAction(input.text.toString())}
+        builder.setPositiveButton("Open") { dialog, _ -> positiveAction(input.text.toString()) }
         builder.show()
     }
 

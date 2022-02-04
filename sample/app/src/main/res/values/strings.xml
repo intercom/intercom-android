@@ -6,4 +6,5 @@
     <string name="unregister_user">Unregister user</string>
     <string name="register_unidentified_user">Unidentified</string>
     <string name="insert_email">Insert Email</string>
+    <string name="insert_user_id">Insert UserID</string>
 </resources>
