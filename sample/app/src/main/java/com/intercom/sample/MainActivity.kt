@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
         lifecycleScope.launchWhenStarted {
             mainViewModel.btnState.collect {
                 if (it.registrationVisibility) {
-                    regIdentifiedBtn.visibility = View.VISIBLE
+                    regIdentifiedBtn.show()
                     regUnidentifiedBtn.visibility = View.VISIBLE
                     userGroup.visibility = View.GONE
                     displayGroup.visibility = View.GONE
@@ -140,5 +140,12 @@ class MainActivity : AppCompatActivity() {
         builder.setPositiveButton("Open") { dialog, _ -> positiveAction(input.text.toString()) }
         builder.show()
     }
+}
 
+fun View.hide() {
+    visibility = View.GONE
+}
+
+fun View.show() {
+    visibility = View.VISIBLE
 }
