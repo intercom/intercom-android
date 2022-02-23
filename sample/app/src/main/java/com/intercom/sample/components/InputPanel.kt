@@ -19,13 +19,13 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
-@ExperimentalComposeUiApi
+@OptIn(ExperimentalComposeUiApi::class)
 @Preview
 @Composable
 fun InputPanel(
     onRegisterClicked: (String, Boolean) -> Unit = { _, _ -> },
-    onUnregisterClicked: () -> Unit = {},
     onRegisterUnidentifiedClicked: () -> Unit = {},
+    onUnregisterClicked: () -> Unit = {}
 ) {
     val email = rememberSaveable { mutableStateOf("") }
     val userId = rememberSaveable { mutableStateOf("") }
