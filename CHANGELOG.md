@@ -1,5 +1,5 @@
 # Changelog
-## Version 10.6.3
+## Version 10.7.0
 ### 🚀 Enhancements
 * We've added Suggested Articles to your Homescreen! Provide a better self-serve experience to your users by enabling them to answer their question before they reach out to a teammate.
 
