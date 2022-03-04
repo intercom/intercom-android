@@ -8,14 +8,15 @@ import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import com.intercom.sample.components.InputPanel
 import com.intercom.sample.components.SelfServe
+import com.intercom.sample.components.UserUpdate
 import io.intercom.android.sdk.Intercom
 import io.intercom.android.sdk.identity.Registration
 
 
 @Preview(device = Devices.PIXEL_4)
 @Composable
-fun HomeScreen() {
-    val showSelfServe = rememberSaveable { mutableStateOf(false) }
+fun HomeScreen(onUserEditorLaunched: () -> Unit = {}) {
+    val showRegistrationDetails = rememberSaveable { mutableStateOf(false) }
     Column {
         InputPanel(
             onRegisterClicked = { uniqueId: String, hasUserId: Boolean ->
@@ -23,19 +24,24 @@ fun HomeScreen() {
                     Intercom.client().registerIdentifiedUser(Registration().withUserId(uniqueId))
                 else
                     Intercom.client().registerIdentifiedUser(Registration().withEmail(uniqueId))
-                showSelfServe.value = true
+                Intercom.client().setLauncherVisibility(Intercom.VISIBLE)
+                showRegistrationDetails.value = true
             },
             onUnregisterClicked = {
                 Intercom.client().logout()
-                showSelfServe.value = false
+                showRegistrationDetails.value = false
             },
             onRegisterUnidentifiedClicked = {
                 Intercom.client().registerUnidentifiedUser()
                 Intercom.client().setLauncherVisibility(Intercom.VISIBLE)
-                showSelfServe.value = true
-            })
+                showRegistrationDetails.value = true
+            }
+        )
 
-        if (showSelfServe.value) {
+        if (showRegistrationDetails.value) {
+            UserUpdate(
+                onUserUpdateClicked = { onUserEditorLaunched() }
+            )
             SelfServe(
                 onHelpCenterClicked = {
                     Intercom.client().displayHelpCenter()
