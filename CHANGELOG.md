@@ -1,4 +1,8 @@
 # Changelog
+## Version 10.6.3
+### 🚀 Enhancements
+* We've added Suggested Articles to your Homescreen! Provide a better self-serve experience to your users by enabling them to answer their question before they reach out to a teammate.
+
 ## Version 10.6.1
 18-01-2022
 * Fixed issue where app freezes when push notification is received.
