@@ -20,7 +20,6 @@ fun HomeScreen(
     currentRegistrationStatus: Boolean = false,
     toggleRegistrationStatus: (Boolean) -> Unit = {}
 ) {
-
     Column {
         InputPanel(
             onRegisterClicked = { uniqueId: String, hasUserId: Boolean ->
@@ -67,10 +66,6 @@ fun HomeScreen(
                     Intercom.client().displayCarousel(it)
                 }
             )
-            Intercom.client().setLauncherVisibility(Intercom.VISIBLE)
-        }
-        else {
-            Intercom.client().setLauncherVisibility(Intercom.GONE)
         }
     }
 }
