@@ -1,5 +1,43 @@
 # Changelog
+
+## Version 12.0.0
+23-03-2022
+
+**In v12.0.0 of the Intercom mobile SDK, we’re introducing Intercom Surveys — beautiful native in-product surveys to bring all your customer communication to one platform!!**
+
+![Intercom Surveys Introduction](https://user-images.githubusercontent.com/6392766/159682454-25995724-68f7-4201-a6c2-5b1bffe11ed1.png)
+
+**📱 New feature: Intercom Surveys**
+
+👋🏼  Meet Intercom Surveys - Don’t just ask their opinion, act on it. Now, you can seamlessly capture and act on customer feedback and needs, all within Intercom. Intercom Surveys makes it quick and easy to create and send highly targeted, easily customisable in-product native survey - across web and mobile.
+
+* Choose the relevant question type from multitude of question types available like rating scales (NPS, emoji, star), multiple-choice, dropdown and more
+* Customise the colour of your survey’s background and buttons
+* Target the right survey to the right audience at the right time
+* Save survey responses as user attributes to drive follow up actions
+* Add a customisable intro and thank you message
+* Decide whether or not users should be able to dismiss the survey
+* Encourage further user actions by inserting a call-to-action button in the thank you message with a link (external URL or deep link)
+* Leverage email and mobile push as fallback channels if in-product doesn’t get you a response
+* Many more ways to customise your survey — show or hide avatar of survey sender, format survey text and insert user or company attributes in text
+* Use the power of Intercom platform — A/B testing and control groups, goal tracking, orchestrating surveys as a part of series, analysing and exporting results as CSV
+
+| | |
+| ------------- | ------------- |
+| ![surveys gif 1](https://user-images.githubusercontent.com/92860980/159684905-ba031ac0-2bb8-4ec3-bdb0-2232a641b180.gif) | ![surveys gif 2](https://user-images.githubusercontent.com/92860980/159684922-dc4432f3-f245-4a49-a258-e6da612d818a.gif) |
+
+👉  You will need to start a 14 day free trial or purchase the Surveys Add-On starting from $49 per month in order to set a survey live
+👉  Upgrade to the latest version of the mobile SDK today to use the feature on mobile. No additional integration work required.
+
+[Learn more about Intercom Surveys](https://www.intercom.com/surveys)
+
+https://user-images.githubusercontent.com/3718984/159649798-a255ab7a-df79-4015-875c-399872e6186c.mp4
+
+https://user-images.githubusercontent.com/6392766/159682983-e13d3080-8025-4f90-9a75-14f41b81a5bc.mp4
+
+
 ## Version 10.7.0
+04-03-2022
 ### 🚀 Enhancements
 * We've added Suggested Articles to your Homescreen! Provide a better self-serve experience to your users by enabling them to answer their question before they reach out to a teammate.
 
