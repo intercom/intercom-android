@@ -1,5 +1,30 @@
 # Changelog
 
+## 12.1.0 
+###### Release Date: 31-3-2022
+
+### 🚀 Enhancements
+* We've renamed some of our API methods. The term `register` has been replaced with `login`. As part of this change, we've also added success and failure callbacks to the updated login methods. 
+
+    This means that the following old `register` methods are now deprecated
+    - `registerUnidentifiedUser()`
+    - `registerIdentifiedUser(registration)`
+    - `updateUser(userAttributes)`
+
+    We've replaced them with 
+    - `loginUnidentifiedUser(statusCallback)`
+    - `loginIdentifiedUser(registration, statusCallback)`
+    - `updateUser(userAttributes, statusCallback)`
+
+* Added support to connect to Intercom workspaces that are hosted on servers in our Australian region
+
+### NOTE
+* The status callbacks are optional when invoking these methods using Kotlin as they already have a default implementation. We recommend calling these APIs using named parameters. 
+* The underlaying functionality behind these new methods remains the same as the deprecated ones, but now you can take optionally action on success or failure.
+* These deprecated methods will still work, but will be removed in a future release. See our [developer docs](https://developers.intercom.com/installing-intercom/docs/intercom-for-android) and our [sample apps](https://github.com/intercom/intercom-android/tree/master/sample) for further details on these API changes.
+
+Check out [release v12.0.0](https://github.com/intercom/intercom-android/releases/tag/12.0.0) for details about Intercom's great new Surveys feature 
+
 ## Version 12.0.0
 23-03-2022
 
