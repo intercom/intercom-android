@@ -1,5 +1,9 @@
 # Changelog
 
+## 12.1.1 
+###### Release Date: 8-4-2022
+* Fixed an issue where push notification was not opening the app when tapped on latest Android OS versions 
+
 ## 12.1.0 
 ###### Release Date: 31-3-2022
 
