@@ -43,7 +43,6 @@ fun HomeScreen(
                         override fun onSuccess() {
                             // Handle success
                             Intercom.client().setLauncherVisibility(Intercom.VISIBLE)
-                            showRegistrationDetails.value = true
                         }
                     }
                 )
