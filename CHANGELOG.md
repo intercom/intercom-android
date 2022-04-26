@@ -1,5 +1,9 @@
 # Changelog
 
+## 12.2.0 
+###### Release Date: 26-4-2022
+* You can now display a Survey programmatically with the new method added to our API `displaySurvey(surveyId)`
+
 ## 12.1.1 
 ###### Release Date: 8-4-2022
 * Fixed an issue where push notification was not opening the app when tapped on latest Android OS versions 
