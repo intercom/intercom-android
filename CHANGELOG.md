@@ -1,5 +1,9 @@
 # Changelog
 
+## 12.2.0
+###### Release Date: 26-4-2022
+* New feature: You can now open a Survey programmatically in your app. We have added a new method to our API to enable this, [displaySurvey](https://developers.intercom.com/installing-intercom/docs/android-configuration#present-a-survey-programmatically).
+
 ## 12.1.1 
 ###### Release Date: 8-4-2022
 * Fixed an issue where push notification was not opening the app when tapped on latest Android OS versions 
