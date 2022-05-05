@@ -1,5 +1,9 @@
 # Changelog
 
+## 12.2.2
+###### Release Date: 5-5-2022
+Minor bug fixes
+
 ## 12.2.1
 ###### Release Date: 26-4-2022
 Minor bug fixes
