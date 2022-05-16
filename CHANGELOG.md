@@ -1,5 +1,13 @@
 # Changelog
 
+## 12.2.3
+###### Release Date: 5-5-2022
+* Fixed issue in help center where it did not obey the setting to have at most one open conversation.
+* Fixed issues with status bar height on Android 12.
+* Fixed issue with truncating expected time on the home screen.
+* Improved performance of push notifications
+* Intercom now uses Coil 2.0
+
 ## 12.2.2
 ###### Release Date: 5-5-2022
 Minor bug fixes
