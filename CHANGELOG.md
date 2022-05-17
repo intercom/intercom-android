@@ -1,7 +1,20 @@
 # Changelog
 
+## 12.3.0
+###### Release Date: 17-5-2022
+📱 New Feature : Rich Push Messages 🖼️  
+A picture speaks a thousand words. You can now add rich media (i.e. images) to your mobile push messages. Grab your user’s attention by adding attractive and contextual images and increase click-through rate of your push message.
+👉  Upgrade to the latest version of the mobile SDK today to use this feature. Additionally, to set rich push messages on iOS, follow the instructions [here](https://developers.intercom.com/installing-intercom/docs/rich-push-notifications).
+
+
+![teammate-rich-push](https://user-images.githubusercontent.com/3718984/168879258-10e42f34-c7b1-4f57-8649-a73da30d3b69.gif)
+
+
+![PHOTO-2022-05-17-12-42-30](https://user-images.githubusercontent.com/3718984/168879759-8d656c5e-a89e-4c3f-a625-d109674158a8.jpg)
+
+
 ## 12.2.3
-###### Release Date: 5-5-2022
+###### Release Date: 17-5-2022
 * Fixed issue in help center where it did not obey the setting to have at most one open conversation.
 * Fixed issues with status bar height on Android 12.
 * Fixed issue with truncating expected time on the home screen.
