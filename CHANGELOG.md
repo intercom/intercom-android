@@ -1,5 +1,9 @@
 # Changelog
 
+## 12.4.0
+###### Release Date: 27-5-2022
+* You can now customize submit button text for surveys sent on your mobile app
+
 ## 12.3.0
 ###### Release Date: 17-5-2022
 📱 New Feature : Rich Push Messages 🖼️  
