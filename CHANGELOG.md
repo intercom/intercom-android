@@ -1,5 +1,9 @@
 # Changelog
 
+## 12.4.1
+###### Release Date: 01-6-2022
+* Fixed an issue where server region did not default to US when no meta-data was provided in the manifest
+
 ## 12.4.0
 ###### Release Date: 27-5-2022
 * You can now customize submit button text for surveys sent on your mobile app
