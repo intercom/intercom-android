@@ -1,5 +1,11 @@
 # Changelog
 
+## 12.4.2
+###### Release Date: 22-6-2022
+* Fixed a bug that showed the wrong labels under Numeric scale questions in Surveys
+* Fixed crash caused due to bad JSON
+* Fixed bug that prevented push notification body from expanding
+
 ## 12.4.1
 ###### Release Date: 01-6-2022
 * Fixed an issue where server region did not default to US when no meta-data was provided in the manifest
