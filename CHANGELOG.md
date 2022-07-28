@@ -1,5 +1,10 @@
 # Changelog
 
+## 12.4.3
+###### Release Date: 28-7-2022
+* Fixed a bug where the background colour was using default theme colour in Surveys
+* Fixed issue where the content overlaps the header in launcher.
+
 ## 12.4.2
 ###### Release Date: 22-6-2022
 * Fixed a bug that showed the wrong labels under Numeric scale questions in Surveys
