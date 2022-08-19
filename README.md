@@ -67,7 +67,7 @@ allprojects {
 }
 ```
 ### Push Notification
-For apps targeting Android 13 (Sdk version 33), should request runtime permission to enable notification.
+Apps targeting Android 13 should request a runtime permission to enable notifications.
 Add the  following code to request permission.
 ```kotlin
 registerForActivityResult(
