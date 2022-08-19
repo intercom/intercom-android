@@ -1,5 +1,9 @@
 # Changelog
 
+## 12.5.0
+###### Release Date: 19-8-2022
+* Added support for Android 13
+
 ## 12.4.3
 ###### Release Date: 28-7-2022
 * Fixed a bug where the background colour was using default theme colour in Surveys
