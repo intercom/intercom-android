@@ -43,7 +43,7 @@ There are 2 options for installing Intercom on your Android app.
 Add the following dependency to your app's `build.gradle` file:
 ```groovy
 dependencies {
-    implementation 'io.intercom.android:intercom-sdk:12.4.2'
+    implementation 'io.intercom.android:intercom-sdk:12.5.0'
     implementation 'com.google.firebase:firebase-messaging:20.+'
 }
 ```
@@ -63,6 +63,25 @@ Add the following to your root build.gradle file
 allprojects {
     repositories {
       mavenCentral()
+    }
+}
+```
+### Push Notification
+Apps targeting Android 13 should request a runtime permission to enable notifications.
+Add the  following code to request permission.
+```kotlin
+registerForActivityResult(
+        ActivityResultContracts.RequestPermission()
+    ) {
+    if (isGranted) {
+        // Permission is granted. Continue the action or workflow in your
+        // app.
+    } else {
+        // Explain to the user that the feature is unavailable because the
+        // features requires a permission that the user has denied. At the
+        // same time, respect the user's decision. Don't link to system
+        // settings in an effort to convince the user to change their
+        // decision.
     }
 }
 ```

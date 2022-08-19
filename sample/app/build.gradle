@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.intercom.sample"
         minSdk 21
-        targetSdk 31
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -55,7 +55,7 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.4.1")
     implementation("androidx.datastore:datastore-preferences:1.0.0")
 
-    implementation("io.intercom.android:intercom-sdk:12.4.3")
+    implementation("io.intercom.android:intercom-sdk:12.5.0")
     implementation("com.google.firebase:firebase-messaging:20.2.+")
 
     testImplementation 'junit:junit:4.13.2'
