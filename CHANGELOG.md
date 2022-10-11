@@ -4,6 +4,14 @@
 ###### Release Date: 12-09-2022
 * Bumped Android Compose version to 1.2.1
 
+## 12.5.2
+###### Release Date: 11-10-2022
+* * Added support for Android 13 gallery permission
+
+## 12.5.1
+###### Release Date: 12-09-2022
+* Bumped Android Compose version to 1.2.1
+
 ## 12.5.0
 ###### Release Date: 19-8-2022
 * Added support for Android 13
