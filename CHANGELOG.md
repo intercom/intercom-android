@@ -1,12 +1,13 @@
 # Changelog
 
-## 12.5.1
-###### Release Date: 12-09-2022
-* Bumped Android Compose version to 1.2.1
+## 12.5.3
+###### Release Date: 10-17-2022
+* Added support for Android 13 gallery permission
+* Fixed a bug when sending metrics
 
 ## 12.5.2
 ###### Release Date: 11-10-2022
-* * Added support for Android 13 gallery permission
+* Added support for Android 13 gallery permission
 
 ## 12.5.1
 ###### Release Date: 12-09-2022
