@@ -8,7 +8,9 @@ import com.intercom.sample.components.InputPanel
 import com.intercom.sample.components.SelfServe
 import com.intercom.sample.components.UserUpdate
 import io.intercom.android.sdk.Intercom
+import io.intercom.android.sdk.IntercomContent
 import io.intercom.android.sdk.IntercomError
+import io.intercom.android.sdk.IntercomSpace
 import io.intercom.android.sdk.IntercomStatusCallback
 import io.intercom.android.sdk.identity.Registration
 
@@ -24,9 +26,11 @@ fun HomeScreen(
         InputPanel(
             onRegisterClicked = { uniqueId: String, hasUserId: Boolean ->
                 if (hasUserId)
-                    Intercom.client().loginIdentifiedUser(userRegistration = Registration().withUserId(uniqueId))
+                    Intercom.client()
+                        .loginIdentifiedUser(userRegistration = Registration().withUserId(uniqueId))
                 else
-                    Intercom.client().loginIdentifiedUser(userRegistration = Registration().withEmail(uniqueId))
+                    Intercom.client()
+                        .loginIdentifiedUser(userRegistration = Registration().withEmail(uniqueId))
                 toggleRegistrationStatus.invoke(true)
             },
             onUnregisterClicked = {
@@ -56,13 +60,13 @@ fun HomeScreen(
             )
             SelfServe(
                 onHelpCenterClicked = {
-                    Intercom.client().displayHelpCenter()
+                    Intercom.client().present(space = IntercomSpace.HelpCenter)
                 },
                 onArticleClicked = {
-                    Intercom.client().displayArticle(it)
+                    Intercom.client().presentContent(content = IntercomContent.Article(id = it))
                 },
                 onCarouselClicked = {
-                    Intercom.client().displayCarousel(it)
+                    Intercom.client().presentContent(content = IntercomContent.Carousel(id = it))
                 }
             )
         }
