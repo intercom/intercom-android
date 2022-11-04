@@ -1,5 +1,63 @@
 # Changelog
 
+## 14.0.0
+###### Release Date: 11-04-2022
+Android Release Notes
+
+###### Release Date: 04-11-2022
+
+### 🚀 Enhancements
+
+**In v14.0.0 of the Intercom mobile SDK!! Say hello to the most customizable Messenger. Ever. 👋**
+
+**📱 New feature: Messenger**
+
+👋🏼  Introducing the fully customizable Messenger that provides customers with in-context engagement throughout their journey.
+
+* **Customization** Now you can update and style your Messenger just the way you want it and enable a consistent brand experience with a fully customizable Messenger. [Learn more and get started here.](https://www.intercom.com/help/en/articles/6612589-set-up-the-fully-customizable-messenger)
+
+
+![Image](https://user-images.githubusercontent.com/101131135/199487389-9100911a-192d-4b02-a1b4-232d22769408.jpeg)
+
+
+
+
+* **Spaces** You’ll have increased product flexibility and versatility with Messenger ‘spaces’ that provide intuitive navigation for your customers. Let’s go through each of the 3 new spaces you can add to your Messenger.
+
+* **Home Space** A redesigned Home screen that’s highly configurable and supports multiple use cases with new capabilities.
+
+
+* **Messages Space** Messages is a dedicated space for conversation management. Both inbound and outbound conversations and conversations which contain [tickets](https://www.intercom.com/help/en/articles/6436600-tickets-explained) will live here.
+
+
+* **Help Space** Enable customers to better self-serve with a more intuitive and personalized support experience. Customers can access a full, in-context help center from anywhere in your product with the dedicated Help Space.
+
+
+**📱 New feature: Tickets**
+
+Go beyond simple live chat – handle complex customer requests asynchronously.
+
+* As you scale, so does your conversation volume and not every customer request can be handled in a live chat. That’s where tickets come in.
+* Let customers submit tickets directly from your app for async resolution
+
+
+
+[Learn more about Intercom Messenger](https://www.intercom.com/messenger)
+
+[Learn more about Intercom Tickets](https://www.intercom.com/help/en/articles/6436600-tickets-explained)
+
+👉  Upgrade to the latest version of the mobile SDK today to use the feature on mobile.
+
+As this is a major update, there are few API changes which are listed below:
+
+| Method | Description |
+| ----------- | ----------- |
+| fun present(space: IntercomSpace)    | Open a specific space in intercom. (Home, Messages, HelpCenter)       |
+| fun present()   | Open Intercom - defaults to the Home space        |
+| fun presentContent(content: IntercomContent) | Present Intercom content. Valid content types are Article, Carousel, HelpCenter Collections |
+
+[You can find more information about migrating to v14.0.0 here](https://developers.intercom.com/installing-intercom/docs/migrating-to-14-0-0-android)
+
 ## 12.5.3
 ###### Release Date: 10-17-2022
 * Added support for Android 13 gallery permission
