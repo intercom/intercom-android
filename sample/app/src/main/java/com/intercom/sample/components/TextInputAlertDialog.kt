@@ -1,6 +1,9 @@
 package com.intercom.sample.components
 
-import androidx.compose.material.*
+import androidx.compose.material.AlertDialog
+import androidx.compose.material.Button
+import androidx.compose.material.OutlinedTextField
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
@@ -10,18 +13,16 @@ import androidx.compose.ui.tooling.preview.Preview
 @Preview
 @Composable
 fun SelfServeAlertDialog(
-    visibility: MutableState<Boolean> = mutableStateOf(true),
-    onSubmit: (String) -> Unit = { _ -> },
-    title: MutableState<String> = mutableStateOf("")
+    controller: TextInputAlertDialogController = TextInputAlertDialogController()
 ) {
 
-    if (visibility.value) {
+    if (controller.visibility.value) {
         val uniqueID = remember { mutableStateOf("") }
         val isConfirmEnabled = remember { mutableStateOf(false) }
 
         AlertDialog(
             title = {
-                Text(text = title.value)
+                Text(text = controller.title.value)
             },
             text = {
                 OutlinedTextField(
@@ -33,13 +34,13 @@ fun SelfServeAlertDialog(
                     label = { Text(text = "Enter ID") })
             },
             onDismissRequest = {
-                visibility.value = false
+                controller.visibility.value = false
                 uniqueID.value = ""
             },
             dismissButton = {
                 Button(
                     onClick = {
-                        visibility.value = false
+                        controller.visibility.value = false
                     }) {
                     Text("Cancel")
                 }
@@ -47,8 +48,8 @@ fun SelfServeAlertDialog(
             confirmButton = {
                 Button(
                     onClick = {
-                        onSubmit(uniqueID.value)
-                        visibility.value = false
+                        controller.onSubmit(uniqueID.value)
+                        controller.visibility.value = false
                     },
                     enabled = isConfirmEnabled.value,
                 ) {
@@ -57,4 +58,21 @@ fun SelfServeAlertDialog(
             }
         )
     }
+}
+
+class TextInputAlertDialogController(
+    val visibility: MutableState<Boolean> = mutableStateOf(false),
+    val title: MutableState<String> = mutableStateOf(""),
+    var onSubmit: (String) -> Unit = { _ -> },
+) {
+    fun show(title: String, onSubmit: (String) -> Unit) {
+        this.title.value = title
+        this.onSubmit = onSubmit
+        visibility.value = true
+    }
+
+    fun hide() {
+        visibility.value = false
+    }
+
 }

@@ -4,6 +4,7 @@ import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.viewModels
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -22,13 +23,13 @@ import com.intercom.sample.screens.UserDetailsScreen
 import com.intercom.sample.ui.theme.SampleTheme
 import io.intercom.android.sdk.Intercom
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 
 private val Context.dataStore by preferencesDataStore("settings")
 
 class MainActivity : ComponentActivity() {
+    private val vm: MainVm by viewModels()
     private val USER_REGISTERED = booleanPreferencesKey("user_registered")
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -63,6 +64,7 @@ class MainActivity : ComponentActivity() {
                                 registrationStatusFlow.collectAsState(initial = false)
 
                             HomeScreen(
+                                vm = vm,
                                 onUserEditorLaunched = {
                                     navController.navigate("user_editor")
                                 },
