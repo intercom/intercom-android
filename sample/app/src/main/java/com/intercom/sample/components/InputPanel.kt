@@ -31,7 +31,7 @@ fun InputPanel(
     val userId = rememberSaveable { mutableStateOf("") }
     val keyboardController = LocalSoftwareKeyboardController.current
 
-    Column(Modifier.padding(all = 4.dp)) {
+    Column {
         OutlinedTextField(
             value = email.value,
             onValueChange = { email.value = it },
@@ -46,14 +46,16 @@ fun InputPanel(
             label = { Text("User ID") }
         )
         Row {
-            Button(modifier = Modifier.padding(end = 4.dp), onClick = {
-                when {
-                    userId.value.isNotBlank() -> onRegisterClicked(userId.value, true)
-                    email.value.isNotBlank() -> onRegisterClicked(email.value, false)
-                    else -> onRegisterUnidentifiedClicked()
-                }
-                keyboardController?.hide()
-            },
+            Button(
+                modifier = Modifier.padding(end = 4.dp),
+                onClick = {
+                    when {
+                        userId.value.isNotBlank() -> onRegisterClicked(userId.value, true)
+                        email.value.isNotBlank() -> onRegisterClicked(email.value, false)
+                        else -> onRegisterUnidentifiedClicked()
+                    }
+                    keyboardController?.hide()
+                },
             ) {
                 Text(text = "Register")
             }

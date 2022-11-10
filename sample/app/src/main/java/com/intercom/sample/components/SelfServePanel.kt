@@ -49,8 +49,10 @@ fun SelfServe(vm: MainVm) {
     }
 }
 
+/*
 @Preview
 @Composable
 fun SelfServePreview() {
     SelfServe(vm = MainVm())
 }
+*/
