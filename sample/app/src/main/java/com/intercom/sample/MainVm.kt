@@ -18,6 +18,8 @@ import io.intercom.android.sdk.IntercomStatusCallback
 import io.intercom.android.sdk.UserAttributes
 import io.intercom.android.sdk.identity.Registration
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 
@@ -31,13 +33,18 @@ class MainVm(private val prefDataStore: DataStore<Preferences>) : ViewModel(), S
         preferences[keyUserRegistered] ?: false
     }
 
+    private val _effects = MutableSharedFlow<MainEffects>()
+    val effects = _effects.asSharedFlow()
+
     private val userRegistrationCallback = object : IntercomStatusCallback {
         override fun onFailure(intercomError: IntercomError) {
             setUserRegistrationStatus(false)
+            showToast(intercomError.errorMessage)
         }
 
         override fun onSuccess() {
             setUserRegistrationStatus(true)
+            showToast("User Registered")
         }
     }
 
@@ -113,6 +120,12 @@ class MainVm(private val prefDataStore: DataStore<Preferences>) : ViewModel(), S
         }
     }
 
+    private fun showToast(message: String) {
+        viewModelScope.launch {
+            _effects.emit(MainEffects.ShowToast(message))
+        }
+    }
+
     companion object {
         fun getVmFactory(dataStore: DataStore<Preferences>): ViewModelProvider.Factory =
             object : ViewModelProvider.Factory {
@@ -134,4 +147,8 @@ interface SelfServeActions {
     fun showCarousel()
     fun showSurvey()
     fun showCollections()
+}
+
+sealed class MainEffects {
+    data class ShowToast(val message: String) : MainEffects()
 }
