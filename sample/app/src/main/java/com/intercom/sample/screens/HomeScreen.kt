@@ -2,15 +2,19 @@ package com.intercom.sample.screens
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.tooling.preview.Devices
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.intercom.sample.MainVm
 import com.intercom.sample.components.InputPanel
 import com.intercom.sample.components.SelfServe
 import com.intercom.sample.components.UserUpdate
-
+import com.intercom.sample.dataStore
 
 @Composable
 fun HomeScreen(
@@ -34,13 +38,21 @@ fun HomeScreen(
             UserUpdate(
                 onUserUpdateClicked = { onUserEditorLaunched() }
             )
-            SelfServe(vm)
+            SelfServe(
+                dialogController = vm.dialogController,
+                selfServeActions = vm
+            )
         }
     }
 }
 
-/*@Preview(device = Devices.PIXEL_4)
+@Preview(device = Devices.PIXEL_4)
 @Composable
 fun HomeScreenPreview() {
-    HomeScreen(vm = MainVm())
-}*/
+    Surface {
+        HomeScreen(
+            vm = MainVm(prefDataStore = LocalContext.current.dataStore),
+            onUserEditorLaunched = {}
+        )
+    }
+}

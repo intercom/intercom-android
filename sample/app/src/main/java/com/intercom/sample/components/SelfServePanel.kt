@@ -8,40 +8,43 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.google.accompanist.flowlayout.FlowRow
-import com.intercom.sample.MainVm
+import com.intercom.sample.SelfServeActions
 
 @Composable
-fun SelfServe(vm: MainVm) {
-    SelfServeAlertDialog(controller = vm.dialogController)
+fun SelfServe(
+    dialogController: SelfServeAlertDialogController,
+    selfServeActions: SelfServeActions
+) {
+    SelfServeAlertDialog(controller = dialogController)
 
     Column {
         Text(text = "Other options", fontWeight = FontWeight.Bold)
         FlowRow(
             mainAxisSpacing = 4.dp
         ) {
-            Button(onClick = { vm.openMessage() }) {
+            Button(onClick = { selfServeActions.openMessage() }) {
                 Text(text = "Open Messages")
             }
-            Button(onClick = { vm.openHelpCenter() }) {
+            Button(onClick = { selfServeActions.openHelpCenter() }) {
                 Text(text = "Open Help Center")
             }
             Button(
-                onClick = { vm.showArticle() },
+                onClick = { selfServeActions.showArticle() },
             ) {
                 Text(text = "Open Article")
             }
             Button(
-                onClick = { vm.showCarousel() }
+                onClick = { selfServeActions.showCarousel() }
             ) {
                 Text(text = "Open Carousel")
             }
             Button(
-                onClick = { vm.showSurvey() }
+                onClick = { selfServeActions.showSurvey() }
             ) {
                 Text(text = "Open Survey")
             }
             Button(
-                onClick = { vm.showCollections() }
+                onClick = { selfServeActions.showCollections() }
             ) {
                 Text(text = "Open Help Center Collections")
             }
@@ -49,10 +52,29 @@ fun SelfServe(vm: MainVm) {
     }
 }
 
-/*
 @Preview
 @Composable
 fun SelfServePreview() {
-    SelfServe(vm = MainVm())
+    SelfServe(
+        dialogController = SelfServeAlertDialogController(),
+        selfServeActions = object : SelfServeActions {
+            override fun openMessage() {
+            }
+
+            override fun openHelpCenter() {
+            }
+
+            override fun showArticle() {
+            }
+
+            override fun showCarousel() {
+            }
+
+            override fun showSurvey() {
+            }
+
+            override fun showCollections() {
+            }
+        }
+    )
 }
-*/

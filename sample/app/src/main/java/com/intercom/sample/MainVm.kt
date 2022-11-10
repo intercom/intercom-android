@@ -1,25 +1,30 @@
 package com.intercom.sample
 
+import android.content.Context
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
+import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
-import com.intercom.sample.components.TextInputAlertDialogController
+import com.intercom.sample.components.SelfServeAlertDialogController
 import io.intercom.android.sdk.Intercom
 import io.intercom.android.sdk.IntercomContent
 import io.intercom.android.sdk.IntercomError
 import io.intercom.android.sdk.IntercomSpace
 import io.intercom.android.sdk.IntercomStatusCallback
+import io.intercom.android.sdk.UserAttributes
 import io.intercom.android.sdk.identity.Registration
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 
-class MainVm(private val prefDataStore: DataStore<Preferences>) : ViewModel() {
-    val dialogController = TextInputAlertDialogController()
+val Context.dataStore by preferencesDataStore("settings")
+
+class MainVm(private val prefDataStore: DataStore<Preferences>) : ViewModel(), SelfServeActions {
+    val dialogController = SelfServeAlertDialogController()
     private val keyUserRegistered = booleanPreferencesKey("user_registered")
 
     val userRegistrationStatus: Flow<Boolean> = prefDataStore.data.map { preferences ->
@@ -71,31 +76,35 @@ class MainVm(private val prefDataStore: DataStore<Preferences>) : ViewModel() {
         setUserRegistrationStatus(false)
     }
 
-    fun openMessage() = Intercom.client().present(IntercomSpace.Messages)
-    fun openHelpCenter() = Intercom.client().present(IntercomSpace.HelpCenter)
-    fun showArticle() {
+    override fun openMessage() = Intercom.client().present(IntercomSpace.Messages)
+    override fun openHelpCenter() = Intercom.client().present(IntercomSpace.HelpCenter)
+    override fun showArticle() {
         dialogController.show("Article id") {
             Intercom.client().presentContent(IntercomContent.Article(id = it))
         }
     }
 
-    fun showCarousel() {
+    override fun showCarousel() {
         dialogController.show("Carousel id") {
             Intercom.client().presentContent(IntercomContent.Carousel(id = it))
         }
     }
 
-    fun showSurvey() {
+    override fun showSurvey() {
         dialogController.show("Survey id") {
             Intercom.client().presentContent(IntercomContent.Survey(id = it))
         }
     }
 
-    fun showCollections() {
+    override fun showCollections() {
         dialogController.show("Collection ids") {
             Intercom.client()
                 .presentContent(IntercomContent.HelpCenterCollections(ids = it.split(",")))
         }
+    }
+
+    fun updateUser(userAttributes: UserAttributes) {
+        Intercom.client().updateUser(userAttributes)
     }
 
     fun setUserRegistrationStatus(status: Boolean) {
@@ -116,4 +125,13 @@ class MainVm(private val prefDataStore: DataStore<Preferences>) : ViewModel() {
             }
     }
 
+}
+
+interface SelfServeActions {
+    fun openMessage()
+    fun openHelpCenter()
+    fun showArticle()
+    fun showCarousel()
+    fun showSurvey()
+    fun showCollections()
 }

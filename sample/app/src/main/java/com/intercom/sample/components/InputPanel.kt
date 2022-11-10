@@ -11,15 +11,13 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalSoftwareKeyboardController
+import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
-@OptIn(ExperimentalComposeUiApi::class)
 @Preview
 @Composable
 fun InputPanel(
@@ -29,7 +27,7 @@ fun InputPanel(
 ) {
     val email = rememberSaveable { mutableStateOf("") }
     val userId = rememberSaveable { mutableStateOf("") }
-    val keyboardController = LocalSoftwareKeyboardController.current
+    val focusManager = LocalFocusManager.current
 
     Column {
         OutlinedTextField(
@@ -54,18 +52,21 @@ fun InputPanel(
                         email.value.isNotBlank() -> onRegisterClicked(email.value, false)
                         else -> onRegisterUnidentifiedClicked()
                     }
-                    keyboardController?.hide()
+                    focusManager.clearFocus()
                 },
             ) {
                 Text(text = "Register")
             }
             Button(
-                colors = ButtonDefaults.buttonColors(backgroundColor = Color.Magenta),
+                colors = ButtonDefaults.buttonColors(
+                    backgroundColor = Color.Magenta,
+                    contentColor = Color.White
+                ),
                 onClick = {
                     onUnregisterClicked()
                     userId.value = ""
                     email.value = ""
-                    keyboardController?.hide()
+                    focusManager.clearFocus()
                 }) {
                 Text(text = "Unregister")
             }

@@ -13,43 +13,34 @@ import androidx.compose.ui.tooling.preview.Preview
 @Preview
 @Composable
 fun SelfServeAlertDialog(
-    controller: TextInputAlertDialogController = TextInputAlertDialogController()
+    controller: SelfServeAlertDialogController = SelfServeAlertDialogController()
 ) {
-
     if (controller.visibility.value) {
-        val uniqueID = remember { mutableStateOf("") }
         val isConfirmEnabled = remember { mutableStateOf(false) }
 
         AlertDialog(
-            title = {
-                Text(text = controller.title.value)
-            },
             text = {
                 OutlinedTextField(
-                    value = uniqueID.value,
+                    value = controller.text.value,
                     onValueChange = {
-                        uniqueID.value = it
+                        controller.text.value = it
                         isConfirmEnabled.value = it.isNotBlank()
                     },
-                    label = { Text(text = "Enter ID") })
+                    label = { Text(text = controller.label.value) }
+                )
             },
-            onDismissRequest = {
-                controller.visibility.value = false
-                uniqueID.value = ""
-            },
+            onDismissRequest = { controller.hide() },
             dismissButton = {
                 Button(
-                    onClick = {
-                        controller.visibility.value = false
-                    }) {
+                    onClick = { controller.hide() }) {
                     Text("Cancel")
                 }
             },
             confirmButton = {
                 Button(
                     onClick = {
-                        controller.onSubmit(uniqueID.value)
-                        controller.visibility.value = false
+                        controller.submit()
+                        controller.hide()
                     },
                     enabled = isConfirmEnabled.value,
                 ) {
@@ -60,19 +51,27 @@ fun SelfServeAlertDialog(
     }
 }
 
-class TextInputAlertDialogController(
+class SelfServeAlertDialogController(
     val visibility: MutableState<Boolean> = mutableStateOf(false),
-    val title: MutableState<String> = mutableStateOf(""),
+    val label: MutableState<String> = mutableStateOf(""),
     var onSubmit: (String) -> Unit = { _ -> },
 ) {
-    fun show(title: String, onSubmit: (String) -> Unit) {
-        this.title.value = title
+    val text = mutableStateOf("")
+
+    fun show(label: String, onSubmit: (String) -> Unit) {
+        this.label.value = label
         this.onSubmit = onSubmit
         visibility.value = true
     }
 
     fun hide() {
+        text.value = ""
+        label.value = ""
+        onSubmit = { _ -> }
         visibility.value = false
     }
 
+    fun submit() {
+        onSubmit(text.value)
+    }
 }
