@@ -1,6 +1,9 @@
 package com.intercom.sample.components
 
-import androidx.compose.material.*
+import androidx.compose.material.AlertDialog
+import androidx.compose.material.Button
+import androidx.compose.material.OutlinedTextField
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
@@ -10,45 +13,34 @@ import androidx.compose.ui.tooling.preview.Preview
 @Preview
 @Composable
 fun SelfServeAlertDialog(
-    visibility: MutableState<Boolean> = mutableStateOf(true),
-    onSubmit: (String) -> Unit = { _ -> },
-    title: MutableState<String> = mutableStateOf("")
+    controller: SelfServeAlertDialogController = SelfServeAlertDialogController()
 ) {
-
-    if (visibility.value) {
-        val uniqueID = remember { mutableStateOf("") }
+    if (controller.visibility.value) {
         val isConfirmEnabled = remember { mutableStateOf(false) }
 
         AlertDialog(
-            title = {
-                Text(text = title.value)
-            },
             text = {
                 OutlinedTextField(
-                    value = uniqueID.value,
+                    value = controller.text.value,
                     onValueChange = {
-                        uniqueID.value = it
+                        controller.text.value = it
                         isConfirmEnabled.value = it.isNotBlank()
                     },
-                    label = { Text(text = "Enter ID") })
+                    label = { Text(text = controller.label.value) }
+                )
             },
-            onDismissRequest = {
-                visibility.value = false
-                uniqueID.value = ""
-            },
+            onDismissRequest = { controller.hide() },
             dismissButton = {
                 Button(
-                    onClick = {
-                        visibility.value = false
-                    }) {
+                    onClick = { controller.hide() }) {
                     Text("Cancel")
                 }
             },
             confirmButton = {
                 Button(
                     onClick = {
-                        onSubmit(uniqueID.value)
-                        visibility.value = false
+                        controller.submit()
+                        controller.hide()
                     },
                     enabled = isConfirmEnabled.value,
                 ) {
@@ -56,5 +48,30 @@ fun SelfServeAlertDialog(
                 }
             }
         )
+    }
+}
+
+class SelfServeAlertDialogController(
+    val visibility: MutableState<Boolean> = mutableStateOf(false),
+    val label: MutableState<String> = mutableStateOf(""),
+    var onSubmit: (String) -> Unit = { _ -> },
+) {
+    val text = mutableStateOf("")
+
+    fun show(label: String, onSubmit: (String) -> Unit) {
+        this.label.value = label
+        this.onSubmit = onSubmit
+        visibility.value = true
+    }
+
+    fun hide() {
+        text.value = ""
+        label.value = ""
+        onSubmit = { _ -> }
+        visibility.value = false
+    }
+
+    fun submit() {
+        onSubmit(text.value)
     }
 }

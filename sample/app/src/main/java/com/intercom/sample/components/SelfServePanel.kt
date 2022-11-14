@@ -1,60 +1,80 @@
 package com.intercom.sample.components
 
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Button
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.google.accompanist.flowlayout.FlowRow
+import com.intercom.sample.SelfServeActions
 
-@Preview
 @Composable
 fun SelfServe(
-    onHelpCenterClicked: () -> Unit = {},
-    onArticleClicked: (String) -> Unit = {},
-    onCarouselClicked: (String) -> Unit = {}
+    dialogController: SelfServeAlertDialogController,
+    selfServeActions: SelfServeActions
 ) {
-    val openDialog = remember { mutableStateOf(false) }
-    val dialogTitle = remember { mutableStateOf("") }
+    SelfServeAlertDialog(controller = dialogController)
 
-    SelfServeAlertDialog(
-        visibility = openDialog,
-        onSubmit = {
-            if (dialogTitle.value == "Open Article")
-                onArticleClicked(it)
-            else
-                onCarouselClicked(it)
-        }, title = dialogTitle
-    )
     Column {
         Text(text = "Other options", fontWeight = FontWeight.Bold)
-        Row {
-            Button(onClick = {
-                onHelpCenterClicked()
-            }) {
-                Text(text = "Help Center")
+        FlowRow(
+            mainAxisSpacing = 4.dp
+        ) {
+            Button(onClick = { selfServeActions.openMessage() }) {
+                Text(text = "Open Messages")
+            }
+            Button(onClick = { selfServeActions.openHelpCenter() }) {
+                Text(text = "Open Help Center")
             }
             Button(
-                onClick = {
-                    dialogTitle.value = "Open Article"
-                    openDialog.value = true
-                },
-                modifier = Modifier.padding(start = 4.dp, end = 4.dp),
+                onClick = { selfServeActions.showArticle() },
             ) {
                 Text(text = "Open Article")
             }
-            Button(onClick = {
-                dialogTitle.value = "Open Carousel"
-                openDialog.value = true
-            }) {
+            Button(
+                onClick = { selfServeActions.showCarousel() }
+            ) {
                 Text(text = "Open Carousel")
+            }
+            Button(
+                onClick = { selfServeActions.showSurvey() }
+            ) {
+                Text(text = "Open Survey")
+            }
+            Button(
+                onClick = { selfServeActions.showCollections() }
+            ) {
+                Text(text = "Open Help Center Collections")
             }
         }
     }
+}
+
+@Preview
+@Composable
+fun SelfServePreview() {
+    SelfServe(
+        dialogController = SelfServeAlertDialogController(),
+        selfServeActions = object : SelfServeActions {
+            override fun openMessage() {
+            }
+
+            override fun openHelpCenter() {
+            }
+
+            override fun showArticle() {
+            }
+
+            override fun showCarousel() {
+            }
+
+            override fun showSurvey() {
+            }
+
+            override fun showCollections() {
+            }
+        }
+    )
 }

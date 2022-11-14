@@ -1,70 +1,58 @@
 package com.intercom.sample.screens
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+import com.intercom.sample.MainVm
 import com.intercom.sample.components.InputPanel
 import com.intercom.sample.components.SelfServe
 import com.intercom.sample.components.UserUpdate
-import io.intercom.android.sdk.Intercom
-import io.intercom.android.sdk.IntercomError
-import io.intercom.android.sdk.IntercomStatusCallback
-import io.intercom.android.sdk.identity.Registration
+import com.intercom.sample.dataStore
 
-
-@Preview(device = Devices.PIXEL_4)
 @Composable
 fun HomeScreen(
-    onUserEditorLaunched: () -> Unit = {},
-    currentRegistrationStatus: Boolean = false,
-    toggleRegistrationStatus: (Boolean) -> Unit = {}
+    vm: MainVm,
+    onUserEditorLaunched: () -> Unit
 ) {
-    Column {
+    Column(modifier = Modifier.padding(16.dp)) {
         InputPanel(
             onRegisterClicked = { uniqueId: String, hasUserId: Boolean ->
-                if (hasUserId)
-                    Intercom.client().loginIdentifiedUser(userRegistration = Registration().withUserId(uniqueId))
-                else
-                    Intercom.client().loginIdentifiedUser(userRegistration = Registration().withEmail(uniqueId))
-                toggleRegistrationStatus.invoke(true)
+                if (hasUserId) {
+                    vm.loginIdentifiedUserWithId(id = uniqueId)
+                } else {
+                    vm.loginIdentifiedUserWithEmail(email = uniqueId)
+                }
             },
-            onUnregisterClicked = {
-                Intercom.client().logout()
-                toggleRegistrationStatus(false)
-            },
-            onRegisterUnidentifiedClicked = {
-                Intercom.client().loginUnidentifiedUser(
-                    intercomStatusCallback = object : IntercomStatusCallback {
-                        override fun onFailure(intercomError: IntercomError) {
-                            // Handle failure
-                        }
-
-                        override fun onSuccess() {
-                            // Handle success
-                            Intercom.client().setLauncherVisibility(Intercom.VISIBLE)
-                        }
-                    }
-                )
-                toggleRegistrationStatus(true)
-            }
+            onUnregisterClicked = { vm.logout() },
+            onRegisterUnidentifiedClicked = { vm.loginUnidentifiedUser() }
         )
-
-        if (currentRegistrationStatus) {
+        val userRegistrationState = vm.userRegistrationStatus.collectAsState(initial = false)
+        if (userRegistrationState.value) {
             UserUpdate(
                 onUserUpdateClicked = { onUserEditorLaunched() }
             )
             SelfServe(
-                onHelpCenterClicked = {
-                    Intercom.client().displayHelpCenter()
-                },
-                onArticleClicked = {
-                    Intercom.client().displayArticle(it)
-                },
-                onCarouselClicked = {
-                    Intercom.client().displayCarousel(it)
-                }
+                dialogController = vm.dialogController,
+                selfServeActions = vm
             )
         }
+    }
+}
+
+@Preview(device = Devices.PIXEL_4)
+@Composable
+fun HomeScreenPreview() {
+    Surface {
+        HomeScreen(
+            vm = MainVm(prefDataStore = LocalContext.current.dataStore),
+            onUserEditorLaunched = {}
+        )
     }
 }
