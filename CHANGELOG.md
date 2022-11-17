@@ -1,5 +1,13 @@
 # Changelog
 
+## 14.0.1
+###### Release Date: 16-11-2022
+### 🐛 Bug Fixes
+* Made some UI improvements.
+* 
+### 🚀 Enhancements
+* Added the ability to automatically show a Survey when it is set live.
+
 ## 14.0.0
 ###### Release Date: 11-04-2022
 Android Release Notes
