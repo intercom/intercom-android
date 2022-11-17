@@ -43,7 +43,7 @@ There are 2 options for installing Intercom on your Android app.
 Add the following dependency to your app's `build.gradle` file:
 ```groovy
 dependencies {
-    implementation 'io.intercom.android:intercom-sdk:12.5.0'
+    implementation 'io.intercom.android:intercom-sdk:14.0.1'
     implementation 'com.google.firebase:firebase-messaging:20.+'
 }
 ```
@@ -53,7 +53,7 @@ dependencies {
 If you'd rather not have push notifications in your app, you can use this dependency:
 ```groovy
 dependencies {
-    implementation 'io.intercom.android:intercom-sdk-base:12.4.3'
+    implementation 'io.intercom.android:intercom-sdk-base:14.0.1'
 }
 ```
 
@@ -131,52 +131,6 @@ You can also include [VIBRATE](http://developer.android.com/reference/android/Ma
 
 ```xml
 <uses-permission android:name="android.permission.VIBRATE"/>
-```
-
-## Dependency graph
-
-Here is our complete dependency graph:
-
-### intercom-sdk-base
-```
-# Transitive (shared with your app)
-com.google.android.material:material:1.4.0
-androidx.appcompat:appcompat:1.3.1
-androidx.vectordrawable:vectordrawable-animated:1.1.0
-androidx.vectordrawable:vectordrawable:1.1.0
-androidx.core:core-ktx:1.6.0
-androidx.fragment:fragment-ktx:1.3.6
-androidx.annotation:annotation:1.2.0
-androidx.recyclerview:recyclerview:1.2.1
-androidx.constraintlayout:constraintlayout:2.1.1
-com.google.android.flexbox:flexbox:3.0.0
-org.jetbrains.kotlin:kotlin-stdlib:1.6.10
-com.squareup:otto:1.3.8
-com.squareup.okhttp3:okhttp:4.9.0
-com.squareup.retrofit2:retrofit:2.9.0
-com.squareup.retrofit2:converter-gson:2.9.0
-com.google.code.gson:gson:2.8.6
-io.coil-kt:coil-base:2.0.0
-io.coil-kt:coil-gif:2.0.0
-io.coil-kt:coil-video:2.0.0
-io.coil-kt:coil-compose:2.0.0
-org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1
-org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.1
-androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1
-androidx.lifecycle:lifecycle-runtime-ktx:2.3.1
-androidx.compose.ui:ui:1.1.1
-androidx.compose.ui:ui-tooling:1.1.1
-androidx.compose.foundation:foundation:1.1.1
-androidx.compose.material:material:1.1.1
-androidx.compose.material:material-icons-core:1.1.1
-androidx.activity:activity-compose:1.3.1
-com.google.accompanist:accompanist-systemuicontroller:0.20.3
-com.google.accompanist:accompanist-placeholder:0.20.3
-```
-
-### intercom-sdk-fcm
-```
-com.google.firebase:firebase-messaging:20.2.4
 ```
 
 ### Transitive Dependencies
