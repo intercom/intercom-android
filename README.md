@@ -53,7 +53,7 @@ dependencies {
 If you'd rather not have push notifications in your app, you can use this dependency:
 ```groovy
 dependencies {
-    implementation 'io.intercom.android:intercom-sdk-base:14.0.1'
+    implementation 'io.intercom.android:intercom-sdk-base:14.0.2'
 }
 ```
 

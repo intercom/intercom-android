@@ -1,10 +1,16 @@
 # Changelog
 
+## 14.0.2
+###### Release Date: 22-11-2022
+### 🐛 Bug Fixes
+* Made some UI improvements.
+* Minor bug fixes
+
 ## 14.0.1
 ###### Release Date: 16-11-2022
 ### 🐛 Bug Fixes
 * Made some UI improvements.
-* 
+
 ### 🚀 Enhancements
 * Added the ability to automatically show a Survey when it is set live.
 
