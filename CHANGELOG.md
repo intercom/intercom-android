@@ -1,5 +1,11 @@
 # Changelog
 
+## 14.0.3
+###### Release Date: 28-11-2022
+### 🐛 Bug Fixes
+* Made some UI improvements.
+* Minor bug fixes
+
 ## 14.0.2
 ###### Release Date: 22-11-2022
 ### 🐛 Bug Fixes
