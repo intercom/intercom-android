@@ -1,5 +1,14 @@
 # Changelog
 
+## 14.0.4
+###### Release Date: 19-12-2022
+* Added support for Bengali, Persian, Malay and Thai
+* Fixed the issue where quick replies re-open closed conversations with composer disabled
+* Fixed the crash with missing drawable resources
+* Fixed the crash when sending an image
+* Fixed the issue with uploading image from Typeform app
+* Fixed the bug where attachments disappearing in conversation view
+
 ## 14.0.3
 ###### Release Date: 28-11-2022
 ### 🐛 Bug Fixes
@@ -21,9 +30,6 @@
 * Added the ability to automatically show a Survey when it is set live.
 
 ## 14.0.0
-###### Release Date: 11-04-2022
-Android Release Notes
-
 ###### Release Date: 04-11-2022
 
 ### 🚀 Enhancements
@@ -79,7 +85,7 @@ As this is a major update, there are few API changes which are listed below:
 [You can find more information about migrating to v14.0.0 here](https://developers.intercom.com/installing-intercom/docs/migrating-to-14-0-0-android)
 
 ## 12.5.3
-###### Release Date: 10-17-2022
+###### Release Date: 17-10-2022
 * Added support for Android 13 gallery permission
 * Fixed a bug when sending metrics
 
