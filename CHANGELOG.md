@@ -1,5 +1,11 @@
 # Changelog
 
+## 14.0.5
+###### Release Date: 10-02-2023
+* Fixed the issue where survey can be triggered twice
+* Fixed the crash while opening in-app notifications
+* Updated dependencies to newer versions
+
 ## 14.0.4
 ###### Release Date: 19-12-2022
 * Added support for Bengali, Persian, Malay and Thai
