@@ -2,9 +2,11 @@
 
 ## 14.0.5
 ###### Release Date: 10-02-2023
-* Fixed the issue where survey can be triggered twice
-* Fixed the crash while opening in-app notifications
-* Updated dependencies to newer versions
+* Fixed an issue that caused a Survey to be triggered twice
+* Fixed an issue that caused a crash when opening in-app notifications
+* Updated dependencies to newer versions:
+  * Updated Compose to 1.3.3
+  * Updated AppCompat to 1.6.1
 
 ## 14.0.4
 ###### Release Date: 19-12-2022
