@@ -1,5 +1,9 @@
 # Changelog
 
+## 14.0.6
+###### Release Date: 02-03-2023
+* Fixed an issue where messenger crashes when a conversation with an attribute collector is loaded.
+
 ## 14.0.5
 ###### Release Date: 10-02-2023
 * Fixed an issue that caused a Survey to be triggered twice
