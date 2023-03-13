@@ -1,5 +1,12 @@
 # Changelog
 
+## 14.1.0
+###### Release Date: 13-03-2023
+### Enhancements: Attach Files to Tickets
+* End users can now upload files when submitting Tickets in the Messenger
+
+👉 Upgrade to the latest version of the mobile SDK today to use the feature on mobile.
+
 ## 14.0.6
 ###### Release Date: 02-03-2023
 * Fixed an issue where messenger crashes when a conversation with an attribute collector is loaded.
