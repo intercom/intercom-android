@@ -1,5 +1,17 @@
 # Changelog
 
+## 14.2.0
+###### Release Date: 03-04-2023
+### Help Center Enhancements to Support Multilevel Collections
+
+* Help Center home screen and collections screen have been redesigned to support navigating through collections and nested collections up to 3 level deep
+* The Intercom.client.fetchCollection API response body now includes a list of `collections` within the collection response body. `sections` will be deprecated in the next major release.
+
+### 🐛 Bug Fixes
+* Fixed an issue that caused a crash when opening the Help Centre
+* Fixed a crash with displaying full chat notifications
+* Fixed the issue where it reloads the app after viewing in-app notifications
+
 ## 14.1.0
 ###### Release Date: 13-03-2023
 ### Enhancements: Attach Files to Tickets
