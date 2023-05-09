@@ -1,5 +1,20 @@
 # Changelog
 
+## 15.0.0
+###### Release Date: 09-05-2023
+**Meet Fin 👋 a breakthrough AI bot powered by GPT-4, OpenAI's most advanced AI model. Fin solves complex problems and provides safer, more accurate answers than any AI bot on the market.**
+| | | |
+|-|-|-|
+|![Home](https://user-images.githubusercontent.com/10852539/237055121-cef234ba-7130-45ec-96cc-7f4b3a5f420b.png)|![Fin-Intro](https://user-images.githubusercontent.com/10852539/237054858-81dd271a-419b-4192-afa2-2b24ccdcec93.png)|![Fin-Answer](https://user-images.githubusercontent.com/94445025/236837489-31cd957d-dd99-49bf-83e0-d7afe4ab8c91.png)|
+
+**Fin...**
+* Holds complete support conversations in plain English, powered by GPT-4 and Intercom’s proprietary ML technology.
+* Requires zero setup. Just point it at your help center and turn it on.
+* Provides trustworthy, accurate answers based on your existing support content.
+* Seamlessly passes more complex questions directly to your human support team.
+
+**Learn more 👉 [www.intercom.com/fin]([www.intercom.com/fin])** 
+
 ## 14.2.0
 ###### Release Date: 03-04-2023
 ### Help Center Enhancements to Support Multilevel Collections
