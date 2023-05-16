@@ -14,6 +14,8 @@
 * Seamlessly passes more complex questions directly to your human support team.
 
 **Learn more 👉 [www.intercom.com/fin]([www.intercom.com/fin])** 
+### Bug Fixes 
+- Intercom SDK now uses Jetpack Compose v1.4.2
 
 ## 14.2.0
 ###### Release Date: 03-04-2023
