@@ -1,5 +1,9 @@
 # Changelog
 
+## 15.1.0
+###### Release Date: 29-05-2023
+* Improvements to the core conversation screen user experience, better RTL support, bug fixes and performance improvements.
+
 ## 15.0.0
 ###### Release Date: 09-05-2023
 **Meet Fin 👋 a breakthrough AI bot powered by GPT-4, OpenAI's most advanced AI model. Fin solves complex problems and provides safer, more accurate answers than any AI bot on the market.**
