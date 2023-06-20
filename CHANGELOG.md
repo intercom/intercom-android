@@ -1,4 +1,7 @@
 # Changelog
+## 15.1.1
+###### Release Date: 19-06-2023
+* Fixed an issue that causes image upload to fail when Identity Verification is turned on.
 
 ## 15.1.0
 ###### Release Date: 29-05-2023
