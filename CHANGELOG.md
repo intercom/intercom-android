@@ -1,4 +1,10 @@
 # Changelog
+
+## 15.1.2
+###### Release Date: 27-06-2023
+* Intercom now supports Hindi and Swahili as languages in the Messenger.
+* Fixed an issue that forced dark theme on devices running MIUI
+
 ## 15.1.1
 ###### Release Date: 19-06-2023
 * Fixed an issue that causes image upload to fail when Identity Verification is turned on.
