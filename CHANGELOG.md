@@ -1,5 +1,9 @@
 # Changelog
 
+## 15.1.3
+###### Release Date: 07-07-2023
+* Replaced “Ask our a bot question” with “Ask a question”
+
 ## 15.1.2
 ###### Release Date: 27-06-2023
 * Intercom now supports Hindi and Swahili as languages in the Messenger.
