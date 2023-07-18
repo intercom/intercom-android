@@ -1,5 +1,11 @@
 # Changelog
 
+## 15.1.4
+###### Release Date: 17-07-2023
+* Chat based notification are treated as “Conversation” from Android 12+
+* Added Inline reply and smart suggestions to chat notification
+* Bug fixes
+
 ## 15.1.3
 ###### Release Date: 07-07-2023
 * Replaced “Ask our a bot question” with “Ask a question”
