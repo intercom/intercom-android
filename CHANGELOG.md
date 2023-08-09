@@ -1,5 +1,13 @@
 # Changelog
 
+## 15.1.5
+###### Release Date: 31-07-2023
+- New API to programmatically open a conversation with ID
+- New ability to interact with conversations through bubbles in devices running Android 11+
+
+Bug fixes
+- Fixes issue with push not sending because of invalid device tokens
+
 ## 15.1.4
 ###### Release Date: 17-07-2023
 * Chat based notification are treated as “Conversation” from Android 12+
