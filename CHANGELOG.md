@@ -1,5 +1,13 @@
 # Changelog
 
+## 15.1.6
+###### Release Date: 11-08-2023
+- Bug fixes
+  - Fix crash when composer is opened with a initial message containing `\n`
+  - Fix bug where home screen did not update when a new conversation is opened or a reply is received
+- Clean up unused dependencies
+- Bump dependency versions
+
 ## 15.1.5
 ###### Release Date: 31-07-2023
 - New API to programmatically open a conversation with ID
