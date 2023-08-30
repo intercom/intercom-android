@@ -2,8 +2,13 @@
 
 ## 15.2.0
 ###### Release Date: 30-08-2023
-📱 New feature: Tickets Space
-👋 Introducing the new Tickets Space. Enabling the Ticket Space in your Messenger, lets end users view and get updates on all their tickets in one location inside the Messenger.
+### 📱 New feature: Tickets Space
+👋 Introducing the new Tickets Space. Enabling the Ticket Space in your Messenger lets end users view and get updates on all their tickets in one location inside the Messenger.
+### 🐛 Bug Fixes
+- Fixes crash due to notification bubbles on older Android versions.
+- Fixes NullPointerException that might have occured when sending a message.
+- Fixes `Manifest merger failed` error when using a FileProvider.
+- Enable editing on Attribute Collectors if the value already exists.
 
 ## 15.1.6
 ###### Release Date: 11-08-2023
