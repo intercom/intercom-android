@@ -85,6 +85,8 @@ class MainVm(private val prefDataStore: DataStore<Preferences>) : ViewModel(), S
 
     override fun openMessage() = Intercom.client().present(IntercomSpace.Messages)
     override fun openHelpCenter() = Intercom.client().present(IntercomSpace.HelpCenter)
+    override fun openTickets() = Intercom.client().present(IntercomSpace.Tickets)
+
     override fun showArticle() {
         dialogController.show("Article id") {
             Intercom.client().presentContent(IntercomContent.Article(id = it))
@@ -143,6 +145,7 @@ class MainVm(private val prefDataStore: DataStore<Preferences>) : ViewModel(), S
 interface SelfServeActions {
     fun openMessage()
     fun openHelpCenter()
+    fun openTickets()
     fun showArticle()
     fun showCarousel()
     fun showSurvey()

@@ -28,6 +28,9 @@ fun SelfServe(
             Button(onClick = { selfServeActions.openHelpCenter() }) {
                 Text(text = "Open Help Center")
             }
+            Button(onClick = { selfServeActions.openTickets() }) {
+                Text(text = "Open Tickets")
+            }
             Button(
                 onClick = { selfServeActions.showArticle() },
             ) {
@@ -62,6 +65,9 @@ fun SelfServePreview() {
             }
 
             override fun openHelpCenter() {
+            }
+
+            override fun openTickets() {
             }
 
             override fun showArticle() {
