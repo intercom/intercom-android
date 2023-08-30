@@ -1,5 +1,10 @@
 # Changelog
 
+## 15.2.0
+###### Release Date: 30-08-2023
+📱 New feature: Tickets Space
+👋 Introducing the new Tickets Space. Enabling the Ticket Space in your Messenger, lets end users view and get updates on all their tickets in one location inside the Messenger.
+
 ## 15.1.6
 ###### Release Date: 11-08-2023
 - Bug fixes
