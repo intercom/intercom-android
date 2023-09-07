@@ -1,5 +1,10 @@
 # Changelog
 
+## 15.2.1
+###### Release Date: 07-09-2023
+- Bumped Jetpack Compose version to 1.5.
+- This version requires `compileSdkVersion` to be at least **34**. If you are not ready to use API level 34, please stay on the previous version of Intercom.
+
 ## 15.2.0
 ###### Release Date: 30-08-2023
 ### 📱 New Feature : Tickets Space in Messenger
