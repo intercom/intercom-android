@@ -1,5 +1,12 @@
 # Changelog
 
+## 15.2.2
+###### Release Date: 22-09-2023
+- Fixed crash due to concurrent modification exception.
+- Fixed issue with device token removal after user identity reset.
+- Fixed crash related to locale settings on older OS versions.
+- This version requires `compileSdkVersion` to be at least **34**. If you are not ready to use API level 34, please stay on the previous version of Intercom.
+
 ## 15.2.1
 ###### Release Date: 07-09-2023
 - Bumped Jetpack Compose version to 1.5.
