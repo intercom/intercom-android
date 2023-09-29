@@ -1,5 +1,10 @@
 # Changelog
 
+## 15.2.3
+###### Release Date: 29-09-2023
+- Fixed date and time picker issue.
+- This version requires `compileSdkVersion` to be at least **34**. If you are not ready to use API level 34, please stay on the Intercom version 15.2.0.
+
 ## 15.2.2
 ###### Release Date: 22-09-2023
 - Fixed crash due to concurrent modification exception.
