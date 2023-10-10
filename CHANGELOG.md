@@ -1,5 +1,18 @@
 # Changelog
 
+## 15.3.0
+###### Release Date: 10-10-2023
+![image](https://github.com/intercom/intercom-android/assets/3718984/7bce28c5-9fa7-415a-a27a-f93cef3f2887)
+**📱 New feature: Set better expectations with your customers by customising the Start Conversation button in your Messenger**
+
+👋 With this release, you can select from a list of options to customize the Start Conversation button in the Messenger. This can be changed in Messenger settings under the "Conversations" section and will affect the Start Conversation button on Messenger Home and in spaces Iike Messages and Help
+
+### 🚀 Enhancements
+- Links to create tickets can now be added as a home screen card
+
+### 🐛 Bug Fixes
+- Disables inserting webp images in conversations
+
 ## 15.2.3
 ###### Release Date: 29-09-2023
 - Fixed date and time picker issue.
