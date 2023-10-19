@@ -9,7 +9,7 @@ android {
     defaultConfig {
         applicationId "com.intercom.sample"
         minSdk 21
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -65,7 +65,7 @@ dependencies {
 
     implementation("androidx.datastore:datastore-preferences:1.0.0")
 
-    implementation("io.intercom.android:intercom-sdk:15.3.0")
+    implementation("io.intercom.android:intercom-sdk:15.4.0")
     implementation("com.google.firebase:firebase-messaging:23.2.0")
 
     testImplementation 'junit:junit:4.13.2'

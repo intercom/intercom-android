@@ -1,5 +1,16 @@
 # Changelog
 
+## 15.4.0
+###### Release Date: 19-10-2023
+
+### 🚀 Enhancements
+- Intercom SDK now targets Android 14 (API level 34).
+
+**📱 New Feature: Fin is now streaming AI answers! This means customers don't have to wait for the whole AI answer to generate before getting the support they need. Instead, Fin starts displaying a response the moment the first word comes in.**
+
+### 🐛 Bug Fixes
+- Fixed issue where anchor links articles didn't scroll to the right sections of the article
+
 ## 15.3.0
 ###### Release Date: 10-10-2023
 ![image](https://github.com/intercom/intercom-android/assets/3718984/7bce28c5-9fa7-415a-a27a-f93cef3f2887)
