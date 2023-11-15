@@ -1,5 +1,15 @@
 # Changelog
 
+## 15.5.0
+###### Release Date: 15-11-2023
+
+### 🚀 Enhancements
+- Ticket details can now be launched programatically 
+- Bot speed improvements
+### 🐛 Bug fixes 
+- Added a missing Hebrew translation
+- Fixed an issue where message content was shown in the composer after it was sent
+
 ## 15.4.0
 ###### Release Date: 19-10-2023
 
