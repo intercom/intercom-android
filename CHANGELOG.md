@@ -1,5 +1,12 @@
 # Changelog
 
+## 15.5.0
+###### Release Date: 15-11-2023
+
+### 🚀 Enhancements
+- Ticket details can now be launched programatically 
+- Bot speed improvements
+
 ## 15.4.0
 ###### Release Date: 19-10-2023
 
