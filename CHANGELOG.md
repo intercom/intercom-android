@@ -1,5 +1,15 @@
 # Changelog
 
+## 15.5.1
+###### Release Date: 1-12-2023
+### 🚀 Enhancements
+- SDK now depends on Media3 instead of Exoplayer
+
+### 🐛 Bug fixes
+- Fixed a missing Hebrew translation in tickets
+- Fixed issue with quick reply
+- Fixed issue where logging in with same user twice triggers the error callback
+
 ## 15.5.0
 ###### Release Date: 15-11-2023
 
