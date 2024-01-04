@@ -8,6 +8,7 @@
 
 ### 🐛 Bug Fixes
 - Fixed a crash where Instant class was not found on pre API level 26 devices
+
 👉 This update also removes Lottie as a dependency to the Intercom SDK
 
 ## 15.5.1
