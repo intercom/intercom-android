@@ -1,5 +1,15 @@
 # Changelog
 
+## 15.6.0
+###### Release Date: 4-01-2024
+### 📱 New Features
+- Added camera input type
+- Added a button to open previous messages in programmatically launched conversations
+
+### 🐛 Bug Fixes
+- Fixed a crash where Instant class was not found on pre API level 26 devices
+👉 This update also removes Lottie as a dependency to the Intercom SDK
+
 ## 15.5.1
 ###### Release Date: 1-12-2023
 ### 🚀 Enhancements
