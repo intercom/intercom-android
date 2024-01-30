@@ -1,5 +1,14 @@
 # Changelog
 
+## 15.6.1
+###### Release Date: 29-01-2024
+### 📱 New Features
+- End users can now take videos from the camera in the Messenger
+- Added the ability to save images from the conversation
+
+### 🐛 Bug Fixes
+- Fixed the crash while taking a photo from the camera
+
 ## 15.6.0
 ###### Release Date: 4-01-2024
 ### 📱 New Features
