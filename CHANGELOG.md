@@ -1,5 +1,13 @@
 # Changelog
 
+## 15.6.2
+###### Release Date: 2-02-2024
+- Bumped Jetpack Compose version to 1.6
+
+### 🐛 Bug Fixes
+- Added missing translations
+- Fixed janky performance on programmatically launched conversation screen
+
 ## 15.6.1
 ###### Release Date: 29-01-2024
 ### 📱 New Features
