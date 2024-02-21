@@ -1,5 +1,14 @@
 # Changelog
 
+## 15.6.3
+###### Release Date: 21-02-2024
+- Added support for custom ticket states external labelling
+- It is now possible to configure whether users are able to start a new conversation when they tap the 😔 reaction on an Article
+
+### 🐛 Bug Fixes
+- Fixed NoSuchMethodError crash caused by Jetpack Compose 1.6 compatibility issue
+- Fixed NoSuchFieldError crash occurring on API < 24
+
 ## 15.6.2
 ###### Release Date: 2-02-2024
 - Bumped Jetpack Compose version to 1.6
