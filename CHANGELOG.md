@@ -1,5 +1,18 @@
 # Changelog
 
+## 15.6.4
+###### Release Date: 06-03-2024
+### 🐛 Bug Fixes
+- RTL improvements on the loading screen
+- Fixed an issue with push notifications with attachment not working correctly on Android 14
+- Fixed issue with message composer when dealing with large messages
+
+### 👉 Dependency updates
+- Kotlin Coroutines: Updated from version 1.6.4 to 1.8.0
+- Compose Accompanist: Updated from 0.30.1 to 0.34.0
+- Compose: Bumped the Compose BOM from 2024.02.00 to 2024.02.01
+- Coil: Updated the image loading library from version 2.3.0 to 2.6.0
+
 ## 15.6.3
 ###### Release Date: 21-02-2024
 - Added support for custom ticket states external labelling
