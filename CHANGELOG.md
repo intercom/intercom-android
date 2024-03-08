@@ -1,5 +1,12 @@
 # Changelog
 
+## 15.7.0
+###### Release Date: 08-03-2024
+### 📱 New Feature
+- Messenger now supports voice to text input
+
+👉 This update also reduces the size Intercom SDK adds to apps by around 1.3 MB
+
 ## 15.6.4
 ###### Release Date: 06-03-2024
 ### 🐛 Bug Fixes
