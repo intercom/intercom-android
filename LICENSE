@@ -1,235 +1,676 @@
-----------------------------------------------------------------
+Notice for packages
 
-This product includes 'Gson' (https://github.com/google/gson), which is released under the following license(s):
-    Apache License, Version 2.0 <https://opensource.org/licenses/Apache-2.0>
 
-----------------------------------------------------------------
+Accompanist Drawable Painter library (0.32.0) - The Apache Software License, Version 2.0
+Utilities for Jetpack Compose
+https://github.com/google/accompanist/
 
-This product includes 'Retrofit' (https://github.com/square/retrofit), which is released under the following license(s):
-    Apache License, Version 2.0 <https://opensource.org/licenses/Apache-2.0>
+Accompanist Permissions (0.34.0) - The Apache Software License, Version 2.0
+Utilities for Jetpack Compose
+https://github.com/google/accompanist/
 
-----------------------------------------------------------------
+Accompanist Placeholder (0.34.0) - The Apache Software License, Version 2.0
+Utilities for Jetpack Compose
+https://github.com/google/accompanist/
 
-This product includes 'OkHttp' (https://github.com/square/okhttp), which is released under the following license(s):
-    Apache License, Version 2.0 <https://opensource.org/licenses/Apache-2.0>
+Accompanist System UI Controller library (0.34.0) - The Apache Software License, Version 2.0
+Utilities for Jetpack Compose
+https://github.com/google/accompanist/
 
-----------------------------------------------------------------
+Activity (1.7.2) - The Apache Software License, Version 2.0
+Provides the base Activity subclass and the relevant hooks to build a composable structure on top.
+https://developer.android.com/jetpack/androidx/releases/activity#1.7.2
 
-This product includes 'Okio' (https://github.com/square/okio), which is released under the following license(s):
-    Apache License, Version 2.0 <https://opensource.org/licenses/Apache-2.0>
+Activity Compose (1.7.2) - The Apache Software License, Version 2.0
+Compose integration with Activity
+https://developer.android.com/jetpack/androidx/releases/activity#1.7.2
 
-----------------------------------------------------------------
+Activity Kotlin Extensions (1.7.2) - The Apache Software License, Version 2.0
+Kotlin extensions for 'activity' artifact
+https://developer.android.com/jetpack/androidx/releases/activity#1.7.2
 
-This product includes 'Glide' (https://github.com/bumptech/glide), which is released under the following license(s):
-    Apache License, Version 2.0 <https://opensource.org/licenses/Apache-2.0>
+Android App Startup Runtime (1.1.1) - The Apache Software License, Version 2.0
+Android App Startup Runtime
+https://developer.android.com/jetpack/androidx/releases/startup#1.1.1
 
-----------------------------------------------------------------
+Android AppCompat Library (1.6.1) - The Apache Software License, Version 2.0
+The Support Library is a static library that you can add to your Android application in order to use APIs that are either not available for older platform versions or utility APIs that aren't a part of the framework APIs. Compatible on devices running API 14 or later.
+https://developer.android.com/jetpack/androidx/releases/appcompat#1.6.1
 
-This product includes 'Otto' (https://github.com/square/otto), which is released under the following license(s):
-    Apache License, Version 2.0 <https://opensource.org/licenses/Apache-2.0>
+Android Arch-Common (2.2.0) - The Apache Software License, Version 2.0
+Android Arch-Common
+https://developer.android.com/jetpack/androidx/releases/arch-core#2.2.0
 
-----------------------------------------------------------------
+Android Arch-Runtime (2.2.0) - The Apache Software License, Version 2.0
+Android Arch-Runtime
+https://developer.android.com/jetpack/androidx/releases/arch-core#2.2.0
 
-All other components of this product are provided under the following license:
+Android ConstraintLayout (2.1.4) - The Apache Software License, Version 2.0
+ConstraintLayout for Android
+http://tools.android.com
 
-                                 Apache License
-                           Version 2.0, January 2004
-                        http://www.apache.org/licenses/
+Android ConstraintLayout Core (1.0.4) - The Apache Software License, Version 2.0
+ConstraintLayout core
+http://tools.android.com
 
-   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+Android DB (2.3.0) - The Apache Software License, Version 2.0
+Android DB
+https://developer.android.com/jetpack/androidx/releases/sqlite#2.3.0
 
-   1. Definitions.
+Android Emoji2 Compat (1.2.0) - The Apache Software License, Version 2.0
+Core library to enable emoji compatibility in Kitkat and newer devices to avoid the empty emoji characters.
+https://developer.android.com/jetpack/androidx/releases/emoji2#1.2.0
 
-      "License" shall mean the terms and conditions for use, reproduction,
-      and distribution as defined by Sections 1 through 9 of this document.
+Android Emoji2 Compat view helpers (1.2.0) - The Apache Software License, Version 2.0
+View helpers for Emoji2
+https://developer.android.com/jetpack/androidx/releases/emoji2#1.2.0
 
-      "Licensor" shall mean the copyright owner or entity authorized by
-      the copyright owner that is granting the License.
+Android Resource Inspection - Annotations (1.0.1) - The Apache Software License, Version 2.0
+Annotation processors for Android resource and layout inspection
+https://developer.android.com/jetpack/androidx/releases/resourceinspection#1.0.1
 
-      "Legal Entity" shall mean the union of the acting entity and all
-      other entities that control, are controlled by, or are under common
-      control with that entity. For the purposes of this definition,
-      "control" means (i) the power, direct or indirect, to cause the
-      direction or management of such entity, whether by contract or
-      otherwise, or (ii) ownership of fifty percent (50%) or more of the
-      outstanding shares, or (iii) beneficial ownership of such entity.
+Android Resources Library (1.6.1) - The Apache Software License, Version 2.0
+The Resources Library is a static library that you can add to your Android application in order to use resource APIs that backport the latest APIs to older versions of the platform. Compatible on devices running API 14 or later.
+https://developer.android.com/jetpack/androidx/releases/appcompat#1.6.1
 
-      "You" (or "Your") shall mean an individual or Legal Entity
-      exercising permissions granted by this License.
+Android Room-Common (2.5.0) - The Apache Software License, Version 2.0
+Android Room-Common
+https://developer.android.com/jetpack/androidx/releases/room#2.5.0
 
-      "Source" form shall mean the preferred form for making modifications,
-      including but not limited to software source code, documentation
-      source, and configuration files.
+Android Room-Runtime (2.5.0) - The Apache Software License, Version 2.0
+Android Room-Runtime
+https://developer.android.com/jetpack/androidx/releases/room#2.5.0
 
-      "Object" form shall mean any form resulting from mechanical
-      transformation or translation of a Source form, including but
-      not limited to compiled object code, generated documentation,
-      and conversions to other media types.
+Android Support AnimatedVectorDrawable (1.1.0) - The Apache Software License, Version 2.0
+Android Support AnimatedVectorDrawable
+https://developer.android.com/jetpack/androidx
 
-      "Work" shall mean the work of authorship, whether in Source or
-      Object form, made available under the License, as indicated by a
-      copyright notice that is included in or attached to the work
-      (an example is provided in the Appendix below).
+Android Support CardView v7 (1.0.0) - The Apache Software License, Version 2.0
+Android Support CardView v7
+http://developer.android.com/tools/extras/support-library.html
 
-      "Derivative Works" shall mean any work, whether in Source or Object
-      form, that is based on (or derived from) the Work and for which the
-      editorial revisions, annotations, elaborations, or other modifications
-      represent, as a whole, an original work of authorship. For the purposes
-      of this License, Derivative Works shall not include works that remain
-      separable from, or merely link (or bind by name) to the interfaces of,
-      the Work and Derivative Works thereof.
+Android Support DynamicAnimation (1.0.0) - The Apache Software License, Version 2.0
+Physics-based animation in support library, where the animations are driven by physics force. You can use this Animation library to create smooth and realistic animations.
+http://developer.android.com/tools/extras/support-library.html
 
-      "Contribution" shall mean any work of authorship, including
-      the original version of the Work and any modifications or additions
-      to that Work or Derivative Works thereof, that is intentionally
-      submitted to Licensor for inclusion in the Work by the copyright owner
-      or by an individual or Legal Entity authorized to submit on behalf of
-      the copyright owner. For the purposes of this definition, "submitted"
-      means any form of electronic, verbal, or written communication sent
-      to the Licensor or its representatives, including but not limited to
-      communication on electronic mailing lists, source code control systems,
-      and issue tracking systems that are managed by, or on behalf of, the
-      Licensor for the purpose of discussing and improving the Work, but
-      excluding communication that is conspicuously marked or otherwise
-      designated in writing by the copyright owner as "Not a Contribution."
+Android Support ExifInterface (1.3.7) - The Apache Software License, Version 2.0
+Android Support ExifInterface
+https://developer.android.com/jetpack/androidx/releases/exifinterface#1.3.7
 
-      "Contributor" shall mean Licensor and any individual or Legal Entity
-      on behalf of whom a Contribution has been received by Licensor and
-      subsequently incorporated within the Work.
+Android Support Library Coordinator Layout (1.1.0) - The Apache Software License, Version 2.0
+The Support Library is a static library that you can add to your Android application in order to use APIs that are either not available for older platform versions or utility APIs that aren't a part of the framework APIs. Compatible on devices running API 14 or later.
+https://developer.android.com/jetpack/androidx
 
-   2. Grant of Copyright License. Subject to the terms and conditions of
-      this License, each Contributor hereby grants to You a perpetual,
-      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
-      copyright license to reproduce, prepare Derivative Works of,
-      publicly display, publicly perform, sublicense, and distribute the
-      Work and such Derivative Works in Source or Object form.
+Android Support Library core utils (1.0.0) - The Apache Software License, Version 2.0
+The Support Library is a static library that you can add to your Android application in order to use APIs that are either not available for older platform versions or utility APIs that aren't a part of the framework APIs. Compatible on devices running API 14 or later.
+http://developer.android.com/tools/extras/support-library.html
 
-   3. Grant of Patent License. Subject to the terms and conditions of
-      this License, each Contributor hereby grants to You a perpetual,
-      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
-      (except as stated in this section) patent license to make, have made,
-      use, offer to sell, sell, import, and otherwise transfer the Work,
-      where such license applies only to those patent claims licensable
-      by such Contributor that are necessarily infringed by their
-      Contribution(s) alone or by combination of their Contribution(s)
-      with the Work to which such Contribution(s) was submitted. If You
-      institute patent litigation against any entity (including a
-      cross-claim or counterclaim in a lawsuit) alleging that the Work
-      or a Contribution incorporated within the Work constitutes direct
-      or contributory patent infringement, then any patent licenses
-      granted to You under this License for that Work shall terminate
-      as of the date such litigation is filed.
+Android Support Library Cursor Adapter (1.0.0) - The Apache Software License, Version 2.0
+The Support Library is a static library that you can add to your Android application in order to use APIs that are either not available for older platform versions or utility APIs that aren't a part of the framework APIs. Compatible on devices running API 14 or later.
+http://developer.android.com/tools/extras/support-library.html
 
-   4. Redistribution. You may reproduce and distribute copies of the
-      Work or Derivative Works thereof in any medium, with or without
-      modifications, and in Source or Object form, provided that You
-      meet the following conditions:
+Android Support Library Custom View (1.1.0) - The Apache Software License, Version 2.0
+The Support Library is a static library that you can add to your Android application in order to use APIs that are either not available for older platform versions or utility APIs that aren't a part of the framework APIs. Compatible on devices running API 14 or later.
+https://developer.android.com/jetpack/androidx
 
-      (a) You must give any other recipients of the Work or
-          Derivative Works a copy of this License; and
+Android Support Library Document File (1.0.0) - The Apache Software License, Version 2.0
+The Support Library is a static library that you can add to your Android application in order to use APIs that are either not available for older platform versions or utility APIs that aren't a part of the framework APIs. Compatible on devices running API 14 or later.
+http://developer.android.com/tools/extras/support-library.html
 
-      (b) You must cause any modified files to carry prominent notices
-          stating that You changed the files; and
+Android Support Library Drawer Layout (1.1.1) - The Apache Software License, Version 2.0
+The Support Library is a static library that you can add to your Android application in order to use APIs that are either not available for older platform versions or utility APIs that aren't a part of the framework APIs. Compatible on devices running API 14 or later.
+https://developer.android.com/jetpack/androidx
 
-      (c) You must retain, in the Source form of any Derivative Works
-          that You distribute, all copyright, patent, trademark, and
-          attribution notices from the Source form of the Work,
-          excluding those notices that do not pertain to any part of
-          the Derivative Works; and
+Android Support Library fragment (1.6.2) - The Apache Software License, Version 2.0
+The Support Library is a static library that you can add to your Android application in order to use APIs that are either not available for older platform versions or utility APIs that aren't a part of the framework APIs. Compatible on devices running API 14 or later.
+https://developer.android.com/jetpack/androidx/releases/fragment#1.6.2
 
-      (d) If the Work includes a "NOTICE" text file as part of its
-          distribution, then any Derivative Works that You distribute must
-          include a readable copy of the attribution notices contained
-          within such NOTICE file, excluding those notices that do not
-          pertain to any part of the Derivative Works, in at least one
-          of the following places: within a NOTICE text file distributed
-          as part of the Derivative Works; within the Source form or
-          documentation, if provided along with the Derivative Works; or,
-          within a display generated by the Derivative Works, if and
-          wherever such third-party notices normally appear. The contents
-          of the NOTICE file are for informational purposes only and
-          do not modify the License. You may add Your own attribution
-          notices within Derivative Works that You distribute, alongside
-          or as an addendum to the NOTICE text from the Work, provided
-          that such additional attribution notices cannot be construed
-          as modifying the License.
+Android Support Library Interpolators (1.0.0) - The Apache Software License, Version 2.0
+The Support Library is a static library that you can add to your Android application in order to use APIs that are either not available for older platform versions or utility APIs that aren't a part of the framework APIs. Compatible on devices running API 14 or later.
+http://developer.android.com/tools/extras/support-library.html
 
-      You may add Your own copyright statement to Your modifications and
-      may provide additional or different license terms and conditions
-      for use, reproduction, or distribution of Your modifications, or
-      for any such Derivative Works as a whole, provided Your use,
-      reproduction, and distribution of the Work otherwise complies with
-      the conditions stated in this License.
+Android Support Library loader (1.0.0) - The Apache Software License, Version 2.0
+The Support Library is a static library that you can add to your Android application in order to use APIs that are either not available for older platform versions or utility APIs that aren't a part of the framework APIs. Compatible on devices running API 14 or later.
+http://developer.android.com/tools/extras/support-library.html
 
-   5. Submission of Contributions. Unless You explicitly state otherwise,
-      any Contribution intentionally submitted for inclusion in the Work
-      by You to the Licensor shall be under the terms and conditions of
-      this License, without any additional terms or conditions.
-      Notwithstanding the above, nothing herein shall supersede or modify
-      the terms of any separate license agreement you may have executed
-      with Licensor regarding such Contributions.
+Android Support Library Local Broadcast Manager (1.0.0) - The Apache Software License, Version 2.0
+The Support Library is a static library that you can add to your Android application in order to use APIs that are either not available for older platform versions or utility APIs that aren't a part of the framework APIs. Compatible on devices running API 14 or later.
+http://developer.android.com/tools/extras/support-library.html
 
-   6. Trademarks. This License does not grant permission to use the trade
-      names, trademarks, service marks, or product names of the Licensor,
-      except as required for reasonable and customary use in describing the
-      origin of the Work and reproducing the content of the NOTICE file.
+Android Support Library Print (1.0.0) - The Apache Software License, Version 2.0
+The Support Library is a static library that you can add to your Android application in order to use APIs that are either not available for older platform versions or utility APIs that aren't a part of the framework APIs. Compatible on devices running API 14 or later.
+http://developer.android.com/tools/extras/support-library.html
 
-   7. Disclaimer of Warranty. Unless required by applicable law or
-      agreed to in writing, Licensor provides the Work (and each
-      Contributor provides its Contributions) on an "AS IS" BASIS,
-      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
-      implied, including, without limitation, any warranties or conditions
-      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
-      PARTICULAR PURPOSE. You are solely responsible for determining the
-      appropriateness of using or redistributing the Work and assume any
-      risks associated with Your exercise of permissions under this License.
+Android Support Library View Pager (1.0.0) - The Apache Software License, Version 2.0
+The Support Library is a static library that you can add to your Android application in order to use APIs that are either not available for older platform versions or utility APIs that aren't a part of the framework APIs. Compatible on devices running API 14 or later.
+http://developer.android.com/tools/extras/support-library.html
 
-   8. Limitation of Liability. In no event and under no legal theory,
-      whether in tort (including negligence), contract, or otherwise,
-      unless required by applicable law (such as deliberate and grossly
-      negligent acts) or agreed to in writing, shall any Contributor be
-      liable to You for damages, including any direct, indirect, special,
-      incidental, or consequential damages of any character arising as a
-      result of this License or out of the use or inability to use the
-      Work (including but not limited to damages for loss of goodwill,
-      work stoppage, computer failure or malfunction, or any and all
-      other commercial damages or losses), even if such Contributor
-      has been advised of the possibility of such damages.
+Android Support RecyclerView (1.3.0) - The Apache Software License, Version 2.0
+Android Support RecyclerView
+https://developer.android.com/jetpack/androidx/releases/recyclerview#1.3.0
 
-   9. Accepting Warranty or Additional Liability. While redistributing
-      the Work or Derivative Works thereof, You may choose to offer,
-      and charge a fee for, acceptance of support, warranty, indemnity,
-      or other liability obligations and/or rights consistent with this
-      License. However, in accepting such obligations, You may act only
-      on Your own behalf and on Your sole responsibility, not on behalf
-      of any other Contributor, and only if You agree to indemnify,
-      defend, and hold each Contributor harmless for any liability
-      incurred by, or claims asserted against, such Contributor by reason
-      of your accepting any such warranty or additional liability.
+Android Support SQLite - Framework Implementation (2.3.0) - The Apache Software License, Version 2.0
+The implementation of Support SQLite library using the framework code.
+https://developer.android.com/jetpack/androidx/releases/sqlite#2.3.0
 
-   END OF TERMS AND CONDITIONS
+Android Support VectorDrawable (1.1.0) - The Apache Software License, Version 2.0
+Android Support VectorDrawable
+https://developer.android.com/jetpack/androidx
 
-   APPENDIX: How to apply the Apache License to your work.
+Android Tracing (1.0.0) - The Apache Software License, Version 2.0
+Android Tracing
+https://developer.android.com/jetpack/androidx/releases/tracing#1.0.0
 
-      To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets "[]"
-      replaced with your own identifying information. (Don't include
-      the brackets!)  The text should be enclosed in the appropriate
-      comment syntax for the file format. We also recommend that a
-      file or class name and description of purpose be included on the
-      same "printed page" as the copyright notice for easier
-      identification within third-party archives.
+Android Transition Support Library (1.2.0) - The Apache Software License, Version 2.0
+Android Transition Support Library
+https://developer.android.com/jetpack/androidx
 
-   Copyright 2017 Intercom, Inc.
+Android WorkManager Kotlin Extensions (2.8.1) - The Apache Software License, Version 2.0
+Android WorkManager Kotlin Extensions
+https://developer.android.com/jetpack/androidx/releases/work#2.8.1
 
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+Android WorkManager Runtime (2.8.1) - The Apache Software License, Version 2.0
+Android WorkManager runtime library
+https://developer.android.com/jetpack/androidx/releases/work#2.8.1
 
-       http://www.apache.org/licenses/LICENSE-2.0
+AndroidX Futures (1.1.0) - The Apache Software License, Version 2.0
+Androidx implementation of Guava's ListenableFuture
+https://developer.android.com/topic/libraries/architecture/index.html
 
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
+AndroidX Widget ViewPager2 (1.0.0) - The Apache Software License, Version 2.0
+AndroidX Widget ViewPager2
+https://developer.android.com/jetpack/androidx
+
+androidx.customview:poolingcontainer (1.0.0) - The Apache Software License, Version 2.0
+Utilities for listening to the lifecycle of containers that manage their child Views' lifecycle, such as RecyclerView
+https://developer.android.com/jetpack/androidx/releases/customview#1.0.0
+
+androidx.profileinstaller:profileinstaller (1.3.1) - The Apache Software License, Version 2.0
+Allows libraries to prepopulate ahead of time compilation traces to be read by ART
+https://developer.android.com/jetpack/androidx/releases/profileinstaller#1.3.1
+
+Annotation (1.7.1) - The Apache Software License, Version 2.0
+Provides source annotations for tooling and readability.
+https://developer.android.com/jetpack/androidx/releases/annotation#1.7.1
+
+coil (2.6.0) - The Apache License, Version 2.0
+An image loading library for Android backed by Kotlin Coroutines.
+https://github.com/coil-kt/coil
+
+coil-base (2.6.0) - The Apache License, Version 2.0
+An image loading library for Android backed by Kotlin Coroutines.
+https://github.com/coil-kt/coil
+
+coil-compose (2.6.0) - The Apache License, Version 2.0
+An image loading library for Android backed by Kotlin Coroutines.
+https://github.com/coil-kt/coil
+
+coil-compose-base (2.6.0) - The Apache License, Version 2.0
+An image loading library for Android backed by Kotlin Coroutines.
+https://github.com/coil-kt/coil
+
+coil-gif (2.6.0) - The Apache License, Version 2.0
+An image loading library for Android backed by Kotlin Coroutines.
+https://github.com/coil-kt/coil
+
+coil-video (2.6.0) - The Apache License, Version 2.0
+An image loading library for Android backed by Kotlin Coroutines.
+https://github.com/coil-kt/coil
+
+collections (1.4.0) - The Apache Software License, Version 2.0
+Standalone efficient collections.
+https://developer.android.com/jetpack/androidx/releases/collection#1.4.0
+
+Collections Kotlin Extensions (1.4.0) - The Apache Software License, Version 2.0
+Kotlin extensions for 'collection' artifact
+https://developer.android.com/jetpack/androidx/releases/collection#1.4.0
+
+Compose Animation (1.6.2) - The Apache Software License, Version 2.0
+Compose animation library
+https://developer.android.com/jetpack/androidx/releases/compose-animation#1.6.2
+
+Compose Animation Core (1.6.2) - The Apache Software License, Version 2.0
+Animation engine and animation primitives that are the building blocks of the Compose animation library
+https://developer.android.com/jetpack/androidx/releases/compose-animation#1.6.2
+
+Compose Foundation (1.6.2) - The Apache Software License, Version 2.0
+Higher level abstractions of the Compose UI primitives. This library is design system agnostic, providing the high-level building blocks for both application and design-system developers
+https://developer.android.com/jetpack/androidx/releases/compose-foundation#1.6.2
+
+Compose Geometry (1.6.2) - The Apache Software License, Version 2.0
+Compose classes related to dimensions without units
+https://developer.android.com/jetpack/androidx/releases/compose-ui#1.6.2
+
+Compose Graphics (1.6.2) - The Apache Software License, Version 2.0
+Compose graphics
+https://developer.android.com/jetpack/androidx/releases/compose-ui#1.6.2
+
+Compose Layouts (1.6.2) - The Apache Software License, Version 2.0
+Compose layout implementations
+https://developer.android.com/jetpack/androidx/releases/compose-foundation#1.6.2
+
+Compose Material Components (1.6.2) - The Apache Software License, Version 2.0
+Compose Material Design Components library
+https://developer.android.com/jetpack/androidx/releases/compose-material#1.6.2
+
+Compose Material Icons Core (1.6.2) - The Apache Software License, Version 2.0
+Compose Material Design core icons. This module contains the most commonly used set of Material icons.
+https://developer.android.com/jetpack/androidx/releases/compose-material#1.6.2
+
+Compose Material Ripple (1.6.2) - The Apache Software License, Version 2.0
+Material ripple used to build interactive components
+https://developer.android.com/jetpack/androidx/releases/compose-material#1.6.2
+
+Compose Material3 Components (1.2.0) - The Apache Software License, Version 2.0
+Compose Material You Design Components library
+https://developer.android.com/jetpack/androidx/releases/compose-material3#1.2.0
+
+Compose Navigation (2.7.7) - The Apache Software License, Version 2.0
+Compose integration with Navigation
+https://developer.android.com/jetpack/androidx/releases/navigation#2.7.7
+
+Compose Runtime (1.6.2) - The Apache Software License, Version 2.0
+Tree composition support for code generated by the Compose compiler plugin and corresponding public API
+https://developer.android.com/jetpack/androidx/releases/compose-runtime#1.6.2
+
+Compose Saveable (1.6.2) - The Apache Software License, Version 2.0
+Compose components that allow saving and restoring the local ui state
+https://developer.android.com/jetpack/androidx/releases/compose-runtime#1.6.2
+
+Compose Testing manifest dependency (1.6.2) - The Apache Software License, Version 2.0
+Compose testing library that should be added as a debugImplementation dependency to add properties to the debug manifest necessary for testing an application
+https://developer.android.com/jetpack/androidx/releases/compose-ui#1.6.2
+
+Compose Tooling (1.6.2) - The Apache Software License, Version 2.0
+Compose tooling library. This library exposes information to our tools for better IDE support.
+https://developer.android.com/jetpack/androidx/releases/compose-ui#1.6.2
+
+Compose Tooling Data (1.6.2) - The Apache Software License, Version 2.0
+Compose tooling library data. This library provides data about compose for different tooling purposes.
+https://developer.android.com/jetpack/androidx/releases/compose-ui#1.6.2
+
+Compose UI (1.6.2) - The Apache Software License, Version 2.0
+Compose UI primitives. This library contains the primitives that form the Compose UI Toolkit, such as drawing, measurement and layout.
+https://developer.android.com/jetpack/androidx/releases/compose-ui#1.6.2
+
+Compose UI Preview Tooling (1.6.2) - The Apache Software License, Version 2.0
+Compose tooling library API. This library provides the API required to declare @Preview composables in user apps.
+https://developer.android.com/jetpack/androidx/releases/compose-ui#1.6.2
+
+Compose UI Text (1.6.2) - The Apache Software License, Version 2.0
+Compose Text primitives and utilities
+https://developer.android.com/jetpack/androidx/releases/compose-ui#1.6.2
+
+Compose Unit (1.6.2) - The Apache Software License, Version 2.0
+Compose classes for simple units
+https://developer.android.com/jetpack/androidx/releases/compose-ui#1.6.2
+
+Compose Util (1.6.2) - The Apache Software License, Version 2.0
+Internal Compose utilities used by other modules
+https://developer.android.com/jetpack/androidx/releases/compose-ui#1.6.2
+
+Converter: Gson (2.9.0) - The Apache Software License, Version 2.0
+A Retrofit Converter which uses Gson for serialization.
+https://github.com/square/retrofit
+
+Core (1.12.0) - The Apache Software License, Version 2.0
+Provides backward-compatible implementations of Android platform APIs and features.
+https://developer.android.com/jetpack/androidx/releases/core#1.12.0
+
+Core Kotlin Extensions (1.12.0) - The Apache Software License, Version 2.0
+Kotlin extensions for 'core' artifact
+https://developer.android.com/jetpack/androidx/releases/core#1.12.0
+
+Curtains (1.2.5) - The Apache Software License, Version 2.0
+Spy on your Android windows
+https://github.com/square/curtains/
+
+error-prone annotations (2.15.0) - Apache 2.0
+
+Experimental annotation (1.3.1) - The Apache Software License, Version 2.0
+Java annotation for use on unstable Android API surfaces. When used in conjunction with the Experimental annotation lint checks, this annotation provides functional parity with Kotlin's Experimental annotation.
+https://developer.android.com/jetpack/androidx/releases/annotation#1.3.1
+
+fbjni (0.3.0) - APACHE-2
+Facebook JNI helpers library
+https://github.com/facebookincubator/fbjni
+
+FindBugs-jsr305 (3.0.2) - The Apache Software License, Version 2.0
+JSR305 Annotations for Findbugs
+http://findbugs.sourceforge.net/
+
+firebase-annotations (16.2.0) - The Apache Software License, Version 2.0
+
+firebase-common (20.4.2) - The Apache Software License, Version 2.0
+
+firebase-common-ktx (20.4.2) - The Apache Software License, Version 2.0
+
+firebase-components (17.1.5) - The Apache Software License, Version 2.0
+
+firebase-datatransport (18.1.7) - The Apache Software License, Version 2.0
+
+firebase-encoders (17.0.0) - The Apache Software License, Version 2.0
+
+firebase-encoders-json (18.0.0) - The Apache Software License, Version 2.0
+
+firebase-encoders-proto (16.0.0) - The Apache Software License, Version 2.0
+
+firebase-iid-interop (17.1.0) - Android Software Development Kit License
+
+firebase-installations (17.2.0) - The Apache Software License, Version 2.0
+
+firebase-installations-interop (17.1.1) - The Apache Software License, Version 2.0
+
+firebase-measurement-connector (19.0.0) - Android Software Development Kit License
+
+firebase-messaging (23.4.1) - The Apache Software License, Version 2.0
+
+Flipper (0.247.0) - MIT
+Flipper SDK for Android
+https://github.com/facebook/flipper
+
+Flipper Network Plugin (0.247.0) - MIT
+Network/OkHttp plugin for Flipper
+https://github.com/facebook/flipper
+
+Fragment Kotlin Extensions (1.6.2) - The Apache Software License, Version 2.0
+Kotlin extensions for 'fragment' artifact
+https://developer.android.com/jetpack/androidx/releases/fragment#1.6.2
+
+Gson (2.10.1) - Apache-2.0
+
+      Guava InternalFutureFailureAccess and InternalFutures (1.0.1) - The Apache Software License, Version 2.0
+      Contains
+com.google.common.util.concurrent.internal.InternalFutureFailureAccess and
+InternalFutures. Most users will never need to use this artifact. Its
+classes is conceptually a part of Guava, but they're in this separate
+artifact so that Android libraries can use them without pulling in all of
+Guava (just as they can use ListenableFuture by depending on the
+listenablefuture artifact).
+
+      Guava ListenableFuture only (9999.0-empty-to-avoid-conflict-with-guava) - The Apache Software License, Version 2.0
+      An empty artifact that Guava depends on to signal that it is providing
+ListenableFuture -- but is also available in a second "version" that
+contains com.google.common.util.concurrent.ListenableFuture class, without
+any other Guava classes. The idea is:
+
+- If users want only ListenableFuture, they depend on listenablefuture-1.0.
+
+- If users want all of Guava, they depend on guava, which, as of Guava
+27.0, depends on
+listenablefuture-9999.0-empty-to-avoid-conflict-with-guava. The 9999.0-...
+version number is enough for some build systems (notably, Gradle) to select
+that empty artifact over the "real" listenablefuture-1.0 -- avoiding a
+conflict with the copy of ListenableFuture in guava itself. If users are
+using an older version of Guava or a build system other than Gradle, they
+may see class conflicts. If so, they can solve them by manually excluding
+the listenablefuture artifact or manually forcing their build systems to
+use 9999.0-....
+
+      Guava: Google Core Libraries for Java (32.1.3-android) - Apache License, Version 2.0
+      Guava is a suite of core and expanded libraries that include
+utility classes, Google's collections, I/O classes, and
+much more.
+      https://github.com/google/guava
+
+Java-WebSocket (1.5.4) - MIT License
+A barebones WebSocket client and server implementation written 100% in Java
+https://github.com/TooTallNate/Java-WebSocket
+
+javax.inject (1) - The Apache Software License, Version 2.0
+The javax.inject API
+http://code.google.com/p/atinject/
+
+JetBrains Java Annotations (23.0.0) - The Apache Software License, Version 2.0
+A set of annotations used for code inspection support and code documentation.
+https://github.com/JetBrains/java-annotations
+
+Kotlin Android Extensions Runtime (1.8.22) - The Apache License, Version 2.0
+Kotlin Android Extensions Runtime
+https://kotlinlang.org/
+
+Kotlin Stdlib (1.9.22) - The Apache License, Version 2.0
+Kotlin Standard Library
+https://kotlinlang.org/
+
+Kotlin Stdlib Jdk7 (1.9.0) - The Apache License, Version 2.0
+Kotlin Standard Library JDK 7 extension
+https://kotlinlang.org/
+
+Kotlin Stdlib Jdk8 (1.9.0) - The Apache License, Version 2.0
+Kotlin Standard Library JDK 8 extension
+https://kotlinlang.org/
+
+kotlinx-coroutines-android (1.8.0) - The Apache Software License, Version 2.0
+Coroutines support libraries for Kotlin
+https://github.com/Kotlin/kotlinx.coroutines
+
+kotlinx-coroutines-core (1.8.0) - The Apache Software License, Version 2.0
+Coroutines support libraries for Kotlin
+https://github.com/Kotlin/kotlinx.coroutines
+
+kotlinx-coroutines-play-services (1.8.0) - The Apache Software License, Version 2.0
+Coroutines support libraries for Kotlin
+https://github.com/Kotlin/kotlinx.coroutines
+
+kotlinx-coroutines-swing (1.8.0) - The Apache Software License, Version 2.0
+Coroutines support libraries for Kotlin
+https://github.com/Kotlin/kotlinx.coroutines
+
+kotlinx-serialization-core (1.6.3) - The Apache Software License, Version 2.0
+Kotlin multiplatform serialization runtime library
+https://github.com/Kotlin/kotlinx.serialization
+
+kotlinx-serialization-json (1.6.3) - The Apache Software License, Version 2.0
+Kotlin multiplatform serialization runtime library
+https://github.com/Kotlin/kotlinx.serialization
+
+Lifecycle Kotlin Extensions (2.7.0) - The Apache Software License, Version 2.0
+Kotlin extensions for 'lifecycle' artifact
+https://developer.android.com/jetpack/androidx/releases/lifecycle#2.7.0
+
+Lifecycle LiveData (2.7.0) - The Apache Software License, Version 2.0
+Android Lifecycle LiveData
+https://developer.android.com/jetpack/androidx/releases/lifecycle#2.7.0
+
+Lifecycle LiveData Core (2.7.0) - The Apache Software License, Version 2.0
+Android Lifecycle LiveData Core
+https://developer.android.com/jetpack/androidx/releases/lifecycle#2.7.0
+
+Lifecycle Process (2.7.0) - The Apache Software License, Version 2.0
+Android Lifecycle Process
+https://developer.android.com/jetpack/androidx/releases/lifecycle#2.7.0
+
+Lifecycle Runtime (2.7.0) - The Apache Software License, Version 2.0
+Android Lifecycle Runtime
+https://developer.android.com/jetpack/androidx/releases/lifecycle#2.7.0
+
+Lifecycle Service (2.7.0) - The Apache Software License, Version 2.0
+Android Lifecycle Service
+https://developer.android.com/jetpack/androidx/releases/lifecycle#2.7.0
+
+Lifecycle ViewModel (2.7.0) - The Apache Software License, Version 2.0
+Android Lifecycle ViewModel
+https://developer.android.com/jetpack/androidx/releases/lifecycle#2.7.0
+
+Lifecycle ViewModel Compose (2.7.0) - The Apache Software License, Version 2.0
+Compose integration with Lifecycle ViewModel
+https://developer.android.com/jetpack/androidx/releases/lifecycle#2.7.0
+
+Lifecycle ViewModel Kotlin Extensions (2.7.0) - The Apache Software License, Version 2.0
+Kotlin extensions for 'viewmodel' artifact
+https://developer.android.com/jetpack/androidx/releases/lifecycle#2.7.0
+
+Lifecycle ViewModel with SavedState (2.7.0) - The Apache Software License, Version 2.0
+Android Lifecycle ViewModel
+https://developer.android.com/jetpack/androidx/releases/lifecycle#2.7.0
+
+Lifecycle-Common (2.7.0) - The Apache Software License, Version 2.0
+Android Lifecycle-Common
+https://developer.android.com/jetpack/androidx/releases/lifecycle#2.7.0
+
+Lifecycle-Common for Java 8 (2.7.0) - The Apache Software License, Version 2.0
+Android Lifecycle-Common for Java 8 Language
+https://developer.android.com/jetpack/androidx/releases/lifecycle#2.7.0
+
+LiveData Core Kotlin Extensions (2.7.0) - The Apache Software License, Version 2.0
+Kotlin extensions for 'livedata-core' artifact
+https://developer.android.com/jetpack/androidx/releases/lifecycle#2.7.0
+
+LiveData Kotlin Extensions (2.7.0) - The Apache Software License, Version 2.0
+Kotlin extensions for 'livedata' artifact
+https://developer.android.com/jetpack/androidx/releases/lifecycle#2.7.0
+
+Material Components for Android (1.9.0) - The Apache Software License, Version 2.0
+Material Components for Android is a static library that you can add to your Android application in order to use APIs that provide implementations of the Material Design specification. Compatible on devices running API 14 or later.
+https://github.com/material-components/material-components-android
+
+Media (1.7.0) - The Apache Software License, Version 2.0
+The Support Library is a static library that you can add to your Android application in order to use APIs that are either not available for older platform versions or utility APIs that aren't a part of the framework APIs. Compatible on devices running API 14 or later.
+https://developer.android.com/jetpack/androidx/releases/media#1.7.0
+
+Media3 common module (1.3.0) - The Apache Software License, Version 2.0
+Media3 common module
+
+Media3 Container module (1.3.0) - The Apache Software License, Version 2.0
+Media3 Container module
+
+Media3 database module (1.3.0) - The Apache Software License, Version 2.0
+Media3 database module
+
+Media3 DataSource module (1.3.0) - The Apache Software License, Version 2.0
+Media3 DataSource module
+
+Media3 decoder module (1.3.0) - The Apache Software License, Version 2.0
+Media3 decoder module
+
+Media3 ExoPlayer module (1.3.0) - The Apache Software License, Version 2.0
+Media3 ExoPlayer module
+
+Media3 Extractor module (1.3.0) - The Apache Software License, Version 2.0
+Media3 Extractor module
+
+Media3 UI module (1.3.0) - The Apache Software License, Version 2.0
+Media3 UI module
+
+Navigation Common (2.7.7) - The Apache Software License, Version 2.0
+Android Navigation-Common
+https://developer.android.com/jetpack/androidx/releases/navigation#2.7.7
+
+Navigation Common Kotlin Extensions (2.7.7) - The Apache Software License, Version 2.0
+Android Navigation-Common-Ktx
+https://developer.android.com/jetpack/androidx/releases/navigation#2.7.7
+
+Navigation Runtime (2.7.7) - The Apache Software License, Version 2.0
+Android Navigation-Runtime
+https://developer.android.com/jetpack/androidx/releases/navigation#2.7.7
+
+Navigation Runtime Kotlin Extensions (2.7.7) - The Apache Software License, Version 2.0
+Android Navigation-Runtime-Ktx
+https://developer.android.com/jetpack/androidx/releases/navigation#2.7.7
+
+nexus-client-android (6.3.4) - The Apache Software License, Version 2.0
+Nexus Android Client
+https://github.com/intercom/intercom-android
+
+okhttp (4.12.0) - The Apache Software License, Version 2.0
+Square’s meticulous HTTP client for Java and Kotlin.
+https://square.github.io/okhttp/
+
+okio (3.8.0) - The Apache Software License, Version 2.0
+A modern I/O library for Android, Java, and Kotlin Multiplatform.
+https://github.com/square/okio/
+
+OpenSSL (1.1.1l-beta-1) - Dual OpenSSL and SSLeay License
+The ndkports AAR for OpenSSL.
+https://android.googlesource.com/platform/tools/ndkports
+
+Paging-Common (3.2.1) - The Apache Software License, Version 2.0
+Android Paging-Common
+https://developer.android.com/jetpack/androidx/releases/paging#3.2.1
+
+Paging-Common Kotlin Extensions (3.2.1) - The Apache Software License, Version 2.0
+Kotlin extensions for 'paging-common' artifact
+https://developer.android.com/jetpack/androidx/releases/paging#3.2.1
+
+Paging-Compose (3.2.1) - The Apache Software License, Version 2.0
+Compose integration with Paging
+https://developer.android.com/jetpack/androidx/releases/paging#3.2.1
+
+Paging-Runtime (3.2.1) - The Apache Software License, Version 2.0
+Android Paging-Runtime
+https://developer.android.com/jetpack/androidx/releases/paging#3.2.1
+
+Paging-Runtime Kotlin Extensions (3.2.1) - The Apache Software License, Version 2.0
+Kotlin extensions for 'paging-runtime' artifact
+https://developer.android.com/jetpack/androidx/releases/paging#3.2.1
+
+Parcelize Runtime (1.8.22) - The Apache License, Version 2.0
+Runtime library for the Parcelize compiler plugin
+https://kotlinlang.org/
+
+play-services-base (18.0.1) - Android Software Development Kit License
+
+play-services-basement (18.1.0) - Android Software Development Kit License
+
+play-services-cloud-messaging (17.1.0) - Android Software Development Kit License
+
+play-services-stats (17.0.2) - Android Software Development Kit License
+
+play-services-tasks (18.0.2) - Android Software Development Kit License
+
+Retrofit (2.9.0) - The Apache Software License, Version 2.0
+A type-safe HTTP client for Android and Java.
+https://github.com/square/retrofit
+
+Retrofit 2 Kotlin Serialization Converter (1.0.0) - The Apache Software License, Version 2.0
+A Converter.Factory for Kotlin's serialization support.
+https://github.com/JakeWharton/retrofit2-kotlinx-serialization-converter/
+
+Saved State (1.2.1) - The Apache Software License, Version 2.0
+Android Lifecycle Saved State
+https://developer.android.com/jetpack/androidx/releases/savedstate#1.2.1
+
+SavedState Kotlin Extensions (1.2.1) - The Apache Software License, Version 2.0
+Kotlin extensions for 'savedstate' artifact
+https://developer.android.com/jetpack/androidx/releases/savedstate#1.2.1
+
+Shimmer (0.5.0) - BSD 2-Clause License
+Shimmer effect for Android Views.
+http://facebook.github.io/shimmer-android
+
+Skiko Awt (0.7.7) - The Apache License, Version 2.0
+Kotlin Skia bindings
+https://www.github.com/JetBrains/skiko
+
+SLF4J API Module (2.0.6) - MIT License
+The slf4j API
+http://www.slf4j.org
+
+SoLoader (0.11.0) - Apache-2
+Reliable native code loader for Android
+https://github.com/facebook/soloader
+
+SoLoader (0.11.0) - Apache-2
+DoNotOptimize class
+https://github.com/facebook/soloader
+
+SoLoader (0.11.0) - Apache-2
+Native code loading interface for Android
+https://github.com/facebook/soloader
+
+transport-api (3.1.0) - The Apache Software License, Version 2.0
+
+transport-backend-cct (3.1.8) - The Apache Software License, Version 2.0
+
+transport-runtime (3.1.8) - The Apache Software License, Version 2.0
+
+twig (1.3.0) - The Apache Software License, Version 2.0
+Logging library for Android
+https://github.com/intercom/intercom-android
+
+VersionedParcelable (1.1.1) - The Apache Software License, Version 2.0
+Provides a stable but relatively compact binary serialization format that can be passed across processes or persisted safely.
+http://developer.android.com/tools/extras/support-library.html
+
+viewbinding (8.2.2) - The Apache Software License, Version 2.0
