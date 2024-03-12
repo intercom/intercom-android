@@ -5,6 +5,9 @@
 ### 📱 New Feature
 - Messenger now supports voice to text input
 
+⚡️ We’ve now added support for the new FCM HTTP v1 API migration for push notifications. You can follow the migration guide [here](https://developers.intercom.com/installing-intercom/android/fcm-migration-guide/).
+
+
 👉 This update also reduces the size Intercom SDK adds to apps by around 1.3 MB
 
 ## 15.6.4
