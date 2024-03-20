@@ -1,5 +1,9 @@
 # Changelog
 
+## 15.7.1
+###### Release Date: 20-03-2024
+- Added video and image compression
+
 ## 15.7.0
 ###### Release Date: 08-03-2024
 ### 📱 New Feature
