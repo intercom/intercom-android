@@ -1,0 +1,41 @@
+{
+  "test" : "THIS IS A TEST FILE WITH DUMMY VALUES, REPLACE THIS WITH YOUR OWN google-services.json FILE",
+  "project_info": {
+    "project_number": "123456789012",
+    "firebase_url": "https://delta-clarity-785.firebaseio.com",
+    "project_id": "delta-clarity-785",
+    "storage_bucket": "delta-clarity-785.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123456784384:android:55b4555d700c476c",
+        "android_client_info": {
+          "package_name": "com.intercom.sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123456789984-klihr5dlgde227m1d8kgq1kad8n7qj0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFt4ZsaIhUJKPe7ewLxycbxzgWdewdPJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123456784384-klihr5dlgde227m1d8kgq1kad8n7qj0c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
