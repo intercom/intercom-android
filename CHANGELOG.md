@@ -1,5 +1,12 @@
 # Changelog
 
+## 15.8.0
+###### Release Date: 08-04-2024
+- UI improvements in the Messenger 
+### 🐛 Bug Fixes
+- Smoothened the animations and fixed jankiness in the Messenger
+- Fixed upload size limit error when uploading images
+
 ## 15.7.1
 ###### Release Date: 20-03-2024
 - Added video and image compression
