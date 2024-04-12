@@ -1,5 +1,11 @@
 # Changelog
 
+## 15.8.1
+###### Release Date: 11-04-2024
+- Fixed the issue with overlapped headings in the Messenger
+- Fixed the issue where the Android SDK doesn't track unengaged bot workflow correctly
+- Bumped the Compose BOM to 2024.04.00
+
 ## 15.8.0
 ###### Release Date: 08-04-2024
 - UI improvements in the Messenger 
@@ -17,7 +23,6 @@
 - Messenger now supports voice to text input
 
 ⚡️ We’ve now added support for the new FCM HTTP v1 API migration for push notifications. You can follow the migration guide [here](https://developers.intercom.com/installing-intercom/android/fcm-migration-guide/).
-
 
 👉 This update also reduces the size Intercom SDK adds to apps by around 1.3 MB
 
