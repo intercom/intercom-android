@@ -1,5 +1,11 @@
 # Changelog
 
+## 15.8.2
+###### Release Date: 18-04-2024
+### 🐛 Bug Fixes
+- Added better error messages for login failures.
+- Fixed bugs around Push Notifications.
+
 ## 15.8.1
 ###### Release Date: 11-04-2024
 - Fixed the issue with overlapped headings in the Messenger
