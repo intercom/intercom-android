@@ -1,5 +1,11 @@
 # Changelog
 
+## 15.8.3
+###### Release Date: 25-04-2024
+### 🐛 Bug Fixes
+- Fixed issue where end users are able to click the same reply button multiple times in a workflow.
+- Handled caching of Push Notification FF.
+
 ## 15.8.2
 ###### Release Date: 18-04-2024
 ### 🐛 Bug Fixes
