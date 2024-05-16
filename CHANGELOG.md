@@ -1,5 +1,13 @@
 # Changelog
 
+## 15.9.0
+###### Release Date: 16-05-2024
+### 🐛 Bug Fixes
+- Fixed attaching photos from camera.
+
+### Note
+- This release contains some beta features.
+
 ## 15.8.3
 ###### Release Date: 25-04-2024
 ### 🐛 Bug Fixes
