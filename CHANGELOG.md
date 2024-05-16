@@ -5,7 +5,7 @@
 ### 🐛 Bug Fixes
 - Fixed attaching photos from camera.
 
-### Note
+### 👉 Note
 - This release contains some beta features.
 
 ## 15.8.3
