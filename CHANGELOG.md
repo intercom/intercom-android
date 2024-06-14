@@ -1,5 +1,18 @@
 # Changelog
 
+## 15.9.1
+###### Release Date: 14-06-2024
+### 🐛 Bug Fixes
+- Fixed the issue where push open stats weren’t tracked correctly.
+- Fixed the issue where deep links in push message doesn’t work for React Native.
+- Attribute collectors are now disabled now if the conversation is closed.
+
+### 👉 Dependency updates
+* Kotlin Coroutines: Updated from version 1.8.0 to 1.8.1
+* AndroidX Paging: Updated from version 3.2.1 to 3.3.0
+* Lifecycle: Updated from version 2.6.2 to 2.8.1
+* Gson: Updated from 2.10.1 to 2.11.0
+
 ## 15.9.0
 ###### Release Date: 16-05-2024
 ### 🐛 Bug Fixes
