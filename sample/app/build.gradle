@@ -64,7 +64,7 @@ dependencies {
 
     implementation("androidx.datastore:datastore-preferences:1.0.0")
 
-    implementation("io.intercom.android:intercom-sdk:15.9.1")
+    implementation("io.intercom.android:intercom-sdk:15.10.0")
     implementation("com.google.firebase:firebase-messaging:23.1.0")
 }
 
