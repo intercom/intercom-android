@@ -15,8 +15,6 @@ When you trigger the Intercom Messenger, your customer is presented with a home 
 
 From there, your customer can search for help articles or start a conversation. A conversation goes to your inbox inside Intercom, and replies in both directions happen in real time. You can also send push notifications to your customers to let them know they have a reply after they’ve left your app.
 
-![Android-2](https://user-images.githubusercontent.com/5046761/84916427-fdb09a00-b0b5-11ea-90f6-01a3f5cd395e.jpg)
-
 ### [Outbound messaging features](https://www.intercom.com/mobile-carousels)
 You can send messages to your customers from Intercom, and the mobile SDK will present them in your app. Messages can be targeted at specific users or groups of users, and can be scheduled to be sent during specific time windows.
 
@@ -31,8 +29,6 @@ The mobile SDK supports many different message formats, all of which can be crea
 * **Large posts** - a full screen announcement.
 
 We check for new messages when your app opens and whenever your customer or your app interacts with Intercom.
-
-![Android - Content types](https://user-images.githubusercontent.com/5046761/84916422-fbe6d680-b0b5-11ea-90c2-b72dab16ff7e.jpg)
 
 ## Installation
 Intercom for Android supports API 21 and above.
