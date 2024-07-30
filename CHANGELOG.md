@@ -1,5 +1,16 @@
 # Changelog
 
+## 15.10.1
+###### Release Date: 30-07-2024
+### 🐛 Bug Fixes
+* Fixed attaching photos and videos from gallery
+* Fixed `IndexOutOfBoundsException` crash
+* Fixed `IllegalArgumentException` crash caused by non-negative bottom padding
+
+### 👉 Dependency updates
+* Coil: Updated from 2.6.0 to 2.7.0
+* MP4 Parser: Migrated from `com.googlecode.mp4parser:isoparser` to `org.mp4parser:isoparser`
+
 ## 15.10.0
 ###### Release Date: 18-07-2024
 ### 🚀 Enhancements
