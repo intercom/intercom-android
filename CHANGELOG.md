@@ -1,5 +1,11 @@
 # Changelog
 
+## 15.10.2
+###### Release Date: 23-08-2024
+### 🐛 Bug Fixes
+* Fixed an issue where image and gif preview's send and close button were missing in Android 15
+* Updated androidx.media3:media3-exoplayer from 1.3.1 to 1.4.0.
+
 ## 15.10.1
 ###### Release Date: 30-07-2024
 ### 🐛 Bug Fixes
