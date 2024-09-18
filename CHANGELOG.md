@@ -1,5 +1,10 @@
 # Changelog
 
+## 15.10.3
+###### Release Date: 18-09-2024
+* Bug fixes and performance improvements
+* Bumped the Compose BOM to 2024.09.00
+
 ## 15.10.2
 ###### Release Date: 23-08-2024
 ### 🐛 Bug Fixes
