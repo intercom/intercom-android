@@ -1,5 +1,26 @@
 # Changelog
 
+## 15.11.0
+###### Release Date: 31-10-2024
+
+### 📱 New Features
+* Added the ability to upload files to a conversation
+
+### 🚀 Enhancements
+* Added new API `isUserLoggedIn`. This enables developers to determine if a user is currently logged in to Intercom.
+* Added new API `fetchLoggedInUserAttributes`. This enables developers to retrieve the details of the currently logged in user. 
+
+### 🐛 Bug Fixes
+- Fixed some small UI bugs
+- Fixed a crash with the following stacktrace:
+```
+at dalvik.system.VMStack.getThreadStackTrace(VMStack.java)
+at java.lang.Thread.getStackTrace(Thread.java:1736)
+at d00.d.e0
+at d00.d.v
+at io.intercom.android.sdk.m5.errorReporter.SentryErrorReporter.trackActiveUser
+```
+
 ## 15.10.3
 ###### Release Date: 18-09-2024
 * Bug fixes and performance improvements
