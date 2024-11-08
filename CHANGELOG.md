@@ -1,6 +1,7 @@
 # Changelog
 
 ## 15.11.1
+###### Release Date: 08-11-2024
 
 ### 🐛 Bug Fixes
 * Fixed an issue causing conflicts when the host application integrates with Sentry
