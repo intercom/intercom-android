@@ -1,5 +1,13 @@
 # Changelog
 
+## 15.11.1
+
+### 🐛 Bug Fixes
+* Fixed an issue causing conflicts when the host application integrates with Sentry
+* Addressed a MalformedURLException that occurred during file downloads
+* Fixed crash IllegalArgumentException: Cannot have an empty start destination route
+* Fixed a bug where the device's language settings would override Messenger default language settings
+
 ## 15.11.0
 ###### Release Date: 31-10-2024
 
