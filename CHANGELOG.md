@@ -1,5 +1,14 @@
 # Changelog
 
+## 15.11.2
+###### Release Date: 22-11-2024
+
+### 🐛 Bug Fixes
+* Prevented ProGuard from removing critical classes during build time
+* Resolved issues with downloading images in the app
+* Bumped androidx.compose:compose-bom from 2024.10.00 to 2024.10.01. 
+* Bumped androidx.compose.animation:animation-graphics-android from 1.6.8 to 1.7.5.
+
 ## 15.11.1
 ###### Release Date: 08-11-2024
 
