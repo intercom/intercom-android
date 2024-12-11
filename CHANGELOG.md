@@ -1,5 +1,19 @@
 # Changelog
 
+## 15.11.3
+###### Release Date: 11-12-2024
+
+### 🐛 Bug Fixes
+* Fixed the bug where users were unable to add a phone number in the attribute collector
+* Fixed a crash caused by `IllegalArgumentException: y must be < bitmap.height()`
+
+### 👉 Dependency updates
+* Compose BOM: Updated to 2024.11.00
+* AndroidX ConstraintLayout: Updated to 2.2.0
+
+**Note**
+This release contains some beta features.
+
 ## 15.11.2
 ###### Release Date: 22-11-2024
 
