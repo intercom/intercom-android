@@ -1,5 +1,18 @@
 # Changelog
 
+## 15.11.4
+###### Release Date: 17-12-2024
+
+### 🐛 Bug Fixes
+* Resolves an issue with Fin streaming replies.
+
+### 👉 Dependency updates
+* Compose BOM: Updated to 2024.12.01
+* AndroidX Paging: Updated to 3.3.5
+
+**Note**
+This release contains some beta features.
+
 ## 15.11.3
 ###### Release Date: 11-12-2024
 
