@@ -1,5 +1,18 @@
 # Changelog
 
+## 15.11.4
+###### Release Date: 17-12-2024
+
+### 🐛 Bug Fixes
+* Resolves an issue with Fin streaming replies.
+
+### 👉 Dependency updates
+* Compose BOM: Updated to 2024.12.01
+* AndroidX Paging: Updated to 3.3.5
+
+### 👉 Note
+* This release contains some beta features.
+
 ## 15.11.3
 ###### Release Date: 11-12-2024
 
@@ -11,8 +24,8 @@
 * Compose BOM: Updated to 2024.11.00
 * AndroidX ConstraintLayout: Updated to 2.2.0
 
-**Note**
-This release contains some beta features.
+### 👉 Note
+* This release contains some beta features.
 
 ## 15.11.2
 ###### Release Date: 22-11-2024
@@ -85,8 +98,8 @@ at io.intercom.android.sdk.m5.errorReporter.SentryErrorReporter.trackActiveUser
 * Fixed issue allowing customers to start a conversation after reacting to an article.
 * Fixes an issue to handle empty message parts for bot introductions.
 
-**Note**
-This release contains some beta features.
+### 👉 Note
+* This release contains some beta features.
 
 ## 15.9.1
 ###### Release Date: 14-06-2024
