@@ -1,5 +1,19 @@
 # Changelog
 
+## 15.11.5
+###### Release Date: 10-01-2025
+
+### 🚀 Enhancements
+* Revamped the “More” menu when launching directly into a conversation.
+* Updates to the Powered By Intercom badge in conversations.
+
+### 🐛 Bug Fixes
+* Fixed a crash occurring when sending attachments.
+* Fixed an issue where tapping push notifications wouldn’t open the conversation
+
+### 👉 Dependency updates
+* Firebase Messaging: Updated to 24.1.0
+
 ## 15.11.4
 ###### Release Date: 17-12-2024
 
