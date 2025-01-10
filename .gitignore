@@ -1,1 +1,6 @@
 .DS_Store
+
+# Android Studio
+.idea
+.gradle
+build
