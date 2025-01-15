@@ -1,5 +1,15 @@
 # Changelog
 
+## 15.12.0
+###### Release Date: 15-01-2025
+
+### 🚀 Enhancements
+* Added support for Fin for Platforms.
+* Special notice view now supports links.
+
+### 👉 Note
+* This release contains some beta features.
+
 ## 15.11.5
 ###### Release Date: 10-01-2025
 
@@ -13,6 +23,9 @@
 
 ### 👉 Dependency updates
 * Firebase Messaging: Updated to 24.1.0
+
+### 👉 Note
+* This release contains some beta features.
 
 ## 15.11.4
 ###### Release Date: 17-12-2024
