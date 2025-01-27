@@ -1,5 +1,19 @@
 # Changelog
 
+## 15.13.0
+###### Release Date: 27-01-2025
+
+### 🚀 Enhancements
+* Improved delineation between AI Agents and bots.
+* New handover experience from AI Agents to teammates.
+* Added Privacy Policy in the conversation screen
+* Special notice now supports multiple languages.
+* Intercom SDK now targets Android 15 (API level 35).
+* Added edge-to-edge support
+
+### 🐛 Bug Fixes
+* Fixed the issue with new conversation workflow doesn’t trigger
+
 ## 15.12.0
 ###### Release Date: 15-01-2025
 
