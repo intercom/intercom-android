@@ -1,5 +1,19 @@
 # Changelog
 
+## 15.14.0
+###### Release Date: 13-02-2025
+
+### 📱 New Features
+* This release supports conditionally displaying attributes when filling out ticket forms.
+
+### 🚀 Enhancements
+* Improved scrolling performance on the conversation screen
+* Added dynamic Fin thinking states
+
+### 🐛 Bug Fixes
+* Clicking a chat push notification now opens the Intercom conversation directly instead of first launching the launcher activity of your app.
+* Fixed infinite loading in the conversation screen if a workflow contains an article
+
 ## 15.13.0
 ###### Release Date: 27-01-2025
 
