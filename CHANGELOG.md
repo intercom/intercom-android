@@ -1,5 +1,23 @@
 # Changelog
 
+## 15.15.0
+###### Release Date: 11-03-2025
+### 🚀 Enhancements
+* This release now supports opening directly to the conversation screen/recent conversation
+
+### 🐛 Bug Fixes
+* Fixed issues with attribute collectors
+
+### Dependency updates
+* androidx.compose.animation:animation-graphics-android to 1.7.8
+* androidx.navigation:navigation-compose to 2.8.7
+* androidx.compose:compose-bom to 2025.02.00
+* androidx.activity:activity-compose to 1.10.1
+* androidx.fragment:fragment-ktx to 1.8.6
+* paging_version to 3.3.6
+* androidx.constraintlayout:constraintlayout to 2.2.1
+* androidx.exifinterface:exifinterface to 1.4.0
+
 ## 15.14.0
 ###### Release Date: 13-02-2025
 
