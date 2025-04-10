@@ -1,4 +1,17 @@
 # Changelog
+## 15.15.2
+###### Release Date: 04-04-2025
+
+### 🐛 Bug Fixes
+* Various bug fixes and performance improvements
+* This release does not enforce apps to target API level 35
+* The minimum Kotlin version needed to use this version of Intercom SDK is now 1.8.22
+
+### Dependency updates
+* `androidx.navigation:navigation-compose` to `2.8.9`
+* `androidx.compose:compose-bom` to `2025.03.01`
+* `io.sentry:sentry-bom` to `8.5.0`
+* `com.google.firebase:firebase-messaging` to `24.1.1`
 
 ## 15.15.0
 ###### Release Date: 11-03-2025
