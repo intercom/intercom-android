@@ -1,4 +1,12 @@
 # Changelog
+
+## 15.16.0
+###### Release Date: 11-04-2025
+
+### 🚀 Enhancements
+* We've added a new API to enable setting JWTs in the Messenger. This should be called before any user login. To learn more go [here](https://www.intercom.com/help/en/articles/10589769-authenticating-users-in-the-messenger-with-json-web-tokens-jwts).
+* Resolved some differences between the registration of unidentified and identified users of iOS and Android. Both platforms now have matching implementations.
+
 ## 15.15.2
 ###### Release Date: 04-04-2025
 
