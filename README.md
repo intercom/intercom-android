@@ -39,7 +39,7 @@ There are 2 options for installing Intercom on your Android app.
 Add the following dependency to your app's `build.gradle` file:
 ```groovy
 dependencies {
-    implementation 'io.intercom.android:intercom-sdk:15.16.0'
+    implementation 'io.intercom.android:intercom-sdk:15.16.1'
     implementation 'com.google.firebase:firebase-messaging:24.1.+'
 }
 ```
@@ -49,7 +49,7 @@ dependencies {
 If you'd rather not have push notifications in your app, you can use this dependency:
 ```groovy
 dependencies {
-    implementation 'io.intercom.android:intercom-sdk-base:15.16.0'
+    implementation 'io.intercom.android:intercom-sdk-base:15.16.1'
 }
 ```
 
@@ -132,5 +132,5 @@ You can also include [VIBRATE](http://developer.android.com/reference/android/Ma
 ### Transitive Dependencies
 
 Intercom Android SDK transitively depends on the above libraries. If your app is using any one of these libraries, they should at least be on the same major version that Intercom SDK is using.
-When there are two versions of a library at build time, Gradle automatically picks the newer version. 
+When there are two versions of a library at build time, Gradle automatically picks the newer version.
 This means if you are currently using say Glide 3.x, your app would automatically get Glide 4.x after including Intercom.
