@@ -1,5 +1,23 @@
 # Changelog
 
+## 15.16.1
+###### Release Date: 02-05-2025
+
+### 🚀 Enhancements
+* Added support for conversations merged across channels and users 
+* Added support for setting a custom backstack item — You can now call `Intercom.pushBackStackActivity()` and set an activity you'd like as a backstack for Intercom push notifications
+
+### 🐛 Bug Fixes
+* Fixed an issue where Notes and Posts weren't showing in full
+* Fixed IllegalArgumentException: Max number of dynamic shortcuts exceeded
+* Fixed crashes on push notifications
+
+### 👉 Dependency updates
+* Compose BOM: Updated to 1.8.0 (via BOM 2025.04.00)
+* Sentry: Updated to 8.11.1
+* Gson: Updated to 2.13.0
+* AndroidX ExifInterface: Updated to 1.4.1
+
 ## 15.16.0
 ###### Release Date: 11-04-2025
 
