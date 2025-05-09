@@ -1,5 +1,17 @@
 # Changelog
 
+## 16.0.0
+###### Release Date: 09-05-2025
+
+* Bug fixes and performance improvements
+
+### 👉 Dependency updates
+* Compose BOM: Updated to 1.8.1 (via BOM 2025.05.00)
+* Gson: Updated to 2.13.1
+
+### 👉 Note
+* This version requires `compileSdk` version to be at least **35**. If you are not ready to use API level 35, please stay on the Intercom version 15.16.1
+
 ## 15.16.1
 ###### Release Date: 02-05-2025
 
