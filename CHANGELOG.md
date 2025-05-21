@@ -1,5 +1,19 @@
 # Changelog
 
+## 16.1.0
+###### Release Date: 20-05-2025
+
+### 🚀 Enhancements
+* Added new API `changeWorkspace`. Use this to change the workspace that the SDK is connected to.
+
+### 👉 Dependency updates
+* Sentry: Updated to 8.12.0
+* Lifecycle Components: Updated to 2.9.0
+* Compose Navigation: Updated to 2.9.0
+
+### 👉 Note
+* `registerForLaterInitialisation` and `unregisterForLateInitialisation` are now deprecated. Use `initialize()` instead. SDK will not communicate with Intercom until a user registration is made.
+
 ## 16.0.0
 ###### Release Date: 09-05-2025
 
