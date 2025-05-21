@@ -11,6 +11,9 @@
 * Lifecycle Components: Updated to 2.9.0
 * Compose Navigation: Updated to 2.9.0
 
+### 👉 Note
+* `registerForLaterInitialisation` and `unregisterForLateInitialisation` are now deprecated. Use `initialize()` instead. SDK will not communicate with Intercom until a user registration is made.
+
 ## 16.0.0
 ###### Release Date: 09-05-2025
 
