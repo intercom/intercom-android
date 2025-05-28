@@ -1,5 +1,33 @@
 # Changelog
 
+## 16.2.0
+###### Release Date: 28-05-2025
+
+### 🚀 Enhancements
+* Added new API `handlePushWithCustomStack` in `IntercomPushClient`. Use this to handle Intercom push messages with a custom backstack. Implement your custom push integration by extending `FirebaseMessagingService` and call `handlePushWithCustomStack` in the `onMessageReceived` method as shown in the example below.
+
+```
+public void onMessageReceived(RemoteMessage remoteMessage) {
+    String message = remoteMessage.getData();
+    if (intercomPushClient.isIntercomPush(message)) {
+        TaskStackBuilder customStack = TaskStackBuilder.create(this);
+        customStack.addNextIntent(new Intent(this, CustomActivity.class));
+        intercomPushClient.handlePushWithCustomStack(getApplication(), message, customStack);
+    } else {
+        //DO HOST LOGIC HERE
+    }
+}
+```
+
+### 🐛 Bug Fixes
+* Fixed `IllegalArgumentException: Missing keys: [timestamp]` crash
+* Fixed `NullPointerException: Parameter specified as non-null is null` crash happening in in-app notifications
+
+### 👉 Dependency updates
+* Sentry: Updated to 8.13.1
+* Fragment Kotlin Extensions: Updated to 1.8.7
+* Compose BOM: Updated to 1.8.2 (via BOM 2025.05.01)
+
 ## 16.1.0
 ###### Release Date: 20-05-2025
 
@@ -30,8 +58,7 @@
 ###### Release Date: 02-05-2025
 
 ### 🚀 Enhancements
-* Added support for conversations merged across channels and users 
-* Added support for setting a custom backstack item — You can now call `Intercom.pushBackStackActivity()` and set an activity you'd like as a backstack for Intercom push notifications
+* Added support for conversations merged across channels and users
 
 ### 🐛 Bug Fixes
 * Fixed an issue where Notes and Posts weren't showing in full
