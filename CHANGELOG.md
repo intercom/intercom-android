@@ -1,5 +1,14 @@
 # Changelog
 
+## 16.2.1
+###### Release Date: 30-05-2025
+
+### 🐛 Bug Fixes
+* Fixed a deadlock issue in `changeWorkspace` API that could occur when login API was called right after `changeWorkspace` API, causing the application to hang indefinitely while waiting for authentication.
+
+### 👉 Dependency updates
+* Sentry: Updated to 8.13.2
+
 ## 16.2.0
 ###### Release Date: 28-05-2025
 
