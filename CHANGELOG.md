@@ -1,5 +1,11 @@
 # Changelog
 
+## 17.0.0
+###### Release Date: 26-06-2025
+
+### 🚀 Enhancements
+* Added support for Dark Mode. This feature is currently in beta, and will be enabled for all customers in a future release.
+
 ## 16.3.0
 ###### Release Date: 05-06-2025
 
