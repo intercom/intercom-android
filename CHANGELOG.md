@@ -1,10 +1,24 @@
 # Changelog
 
+## 17.0.1
+###### Release Date: 11-07-2025
+
+### 🐛 Bug Fixes
+* Fixed `NoSuchMethodError: No virtual method getParcelableArrayExtra` crash happening on lower Android versions
+* Fixed `IllegalStateException: The specified child already has a parent` crash
+* Fix in-app notification crash in Unity projects by improving legacy activity detection
+
+### Dependency updates
+* `com.google.firebase:firebase-messaging` to `24.1.2`
+
 ## 17.0.0
 ###### Release Date: 26-06-2025
 
 ### 🚀 Enhancements
 * Added support for Dark Mode. This feature is currently in beta, and will be enabled for all customers in a future release.
+
+### 👉 Dependency updates
+* Removed `io.sentry:sentry-bom` dependency
 
 ## 16.3.0
 ###### Release Date: 05-06-2025
