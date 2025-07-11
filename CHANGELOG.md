@@ -1,5 +1,11 @@
 # Changelog
 
+## 17.0.2
+###### Release Date: 11-07-2025
+
+### 🐛 Bug Fixes
+* Fixed `ClassNotFoundException: androidx.compose.material.icons.Icons` crash
+
 ## 17.0.1
 ###### Release Date: 11-07-2025
 
@@ -8,7 +14,7 @@
 * Fixed `IllegalStateException: The specified child already has a parent` crash
 * Fix in-app notification crash in Unity projects by improving legacy activity detection
 
-### Dependency updates
+### 👉 Dependency updates
 * `com.google.firebase:firebase-messaging` to `24.1.2`
 
 ## 17.0.0
