@@ -1,5 +1,13 @@
 # Changelog
 
+## 17.0.3
+###### Release Date: 23-07-2025
+
+* Improved dark mode support
+
+### 🐛 Bug Fixes
+* Fixed issue where audio was missing in certain videos
+
 ## 17.0.2
 ###### Release Date: 11-07-2025
 
