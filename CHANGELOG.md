@@ -1,5 +1,14 @@
 # Changelog
 
+## 17.0.3
+###### Release Date: 23-07-2025
+
+### 🚀 Enhancements
+* Improved dark mode support
+
+### 🐛 Bug Fixes
+* Fixed issue where audio was missing during certain conversations
+
 ## 17.0.2
 ###### Release Date: 11-07-2025
 
