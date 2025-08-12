@@ -1,5 +1,12 @@
 # Changelog
 
+## 17.0.4
+###### Release Date: 11-08-2025
+
+* Bug fixes and performance improvements
+* Improvements to metadata when images are sent in a conversation
+* Fixed issue where emojis were missing in conversation rating card
+
 ## 17.0.3
 ###### Release Date: 23-07-2025
 
