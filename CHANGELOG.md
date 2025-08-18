@@ -1,5 +1,15 @@
 # Changelog
 
+## 17.1.0
+###### Release Date: 18-08-2025
+
+### 🚀 Enhancements
+* Added a new contextual push notification reminder. An in-conversation banner can appear inside conversations that nudge users to enable push notifications at the most relevant moments.
+* UI Improvements for events in conversations.
+
+### 🐛 Bug Fixes
+* Fixed an issue where unnecessary reconnections occurred when the app is backgrounded on Android 15 and later.
+
 ## 17.0.4
 ###### Release Date: 11-08-2025
 
