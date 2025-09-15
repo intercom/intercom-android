@@ -1,5 +1,11 @@
 # Changelog
 
+## 17.1.1
+###### Release Date: 11-09-2025
+
+### 🐛 Bug Fixes
+* Fixed errors introduced in older version of androidx.navigation:navigation-* by bumping to version 2.9.3
+
 ## 17.1.0
 ###### Release Date: 18-08-2025
 
@@ -268,7 +274,7 @@ public void onMessageReceived(RemoteMessage remoteMessage) {
 ### 🐛 Bug Fixes
 * Prevented ProGuard from removing critical classes during build time
 * Resolved issues with downloading images in the app
-* Bumped androidx.compose:compose-bom from 2024.10.00 to 2024.10.01. 
+* Bumped androidx.compose:compose-bom from 2024.10.00 to 2024.10.01.
 * Bumped androidx.compose.animation:animation-graphics-android from 1.6.8 to 1.7.5.
 
 ## 15.11.1
@@ -288,7 +294,7 @@ public void onMessageReceived(RemoteMessage remoteMessage) {
 
 ### 🚀 Enhancements
 * Added new API `isUserLoggedIn`. This enables developers to determine if a user is currently logged in to Intercom.
-* Added new API `fetchLoggedInUserAttributes`. This enables developers to retrieve the details of the currently logged in user. 
+* Added new API `fetchLoggedInUserAttributes`. This enables developers to retrieve the details of the currently logged in user.
 
 ### 🐛 Bug Fixes
 - Fixed some small UI bugs
@@ -377,7 +383,7 @@ at io.intercom.android.sdk.m5.errorReporter.SentryErrorReporter.trackActiveUser
 
 ## 15.8.0
 ###### Release Date: 08-04-2024
-- UI improvements in the Messenger 
+- UI improvements in the Messenger
 ### 🐛 Bug Fixes
 - Smoothened the animations and fixed jankiness in the Messenger
 - Fixed upload size limit error when uploading images
@@ -459,9 +465,9 @@ at io.intercom.android.sdk.m5.errorReporter.SentryErrorReporter.trackActiveUser
 ###### Release Date: 15-11-2023
 
 ### 🚀 Enhancements
-- Ticket details can now be launched programatically 
+- Ticket details can now be launched programatically
 - Bot speed improvements
-### 🐛 Bug fixes 
+### 🐛 Bug fixes
 - Added a missing Hebrew translation
 - Fixed an issue where message content was shown in the composer after it was sent
 
@@ -569,8 +575,8 @@ Bug fixes
 * Provides trustworthy, accurate answers based on your existing support content.
 * Seamlessly passes more complex questions directly to your human support team.
 
-**Learn more 👉 [www.intercom.com/fin]([www.intercom.com/fin])** 
-### Bug Fixes 
+**Learn more 👉 [www.intercom.com/fin]([www.intercom.com/fin])**
+### Bug Fixes
 - Intercom SDK now uses Jetpack Compose v1.4.2
 
 ## 14.2.0
@@ -726,7 +732,7 @@ As this is a major update, there are few API changes which are listed below:
 
 ## 12.3.0
 ###### Release Date: 17-5-2022
-📱 New Feature : Rich Push Messages 🖼️  
+📱 New Feature : Rich Push Messages 🖼️
 A picture speaks a thousand words. You can now add rich media (i.e. images) to your mobile push messages. Grab your user’s attention by adding attractive and contextual images and increase click-through rate of your push message.
 👉  Upgrade to the latest version of the mobile SDK today to use this feature. Additionally, to set rich push messages on iOS, follow the instructions [here](https://developers.intercom.com/installing-intercom/docs/rich-push-notifications).
 
@@ -757,22 +763,22 @@ Minor bug fixes
 ###### Release Date: 26-4-2022
 * New feature: You can now open a Survey programmatically in your app. We have added a new method to our API to enable this, [displaySurvey](https://developers.intercom.com/installing-intercom/docs/android-configuration#present-a-survey-programmatically).
 
-## 12.1.1 
+## 12.1.1
 ###### Release Date: 8-4-2022
-* Fixed an issue where push notification was not opening the app when tapped on latest Android OS versions 
+* Fixed an issue where push notification was not opening the app when tapped on latest Android OS versions
 
-## 12.1.0 
+## 12.1.0
 ###### Release Date: 31-3-2022
 
 ### 🚀 Enhancements
-* We've renamed some of our API methods. The term `register` has been replaced with `login`. As part of this change, we've also added success and failure callbacks to the updated login methods. 
+* We've renamed some of our API methods. The term `register` has been replaced with `login`. As part of this change, we've also added success and failure callbacks to the updated login methods.
 
     This means that the following old `register` methods are now deprecated
     - `registerUnidentifiedUser()`
     - `registerIdentifiedUser(registration)`
     - `updateUser(userAttributes)`
 
-    We've replaced them with 
+    We've replaced them with
     - `loginUnidentifiedUser(statusCallback)`
     - `loginIdentifiedUser(registration, statusCallback)`
     - `updateUser(userAttributes, statusCallback)`
@@ -780,11 +786,11 @@ Minor bug fixes
 * Added support to connect to Intercom workspaces that are hosted on servers in our Australian region
 
 ### NOTE
-* The status callbacks are optional when invoking these methods using Kotlin as they already have a default implementation. We recommend calling these APIs using named parameters. 
+* The status callbacks are optional when invoking these methods using Kotlin as they already have a default implementation. We recommend calling these APIs using named parameters.
 * The underlaying functionality behind these new methods remains the same as the deprecated ones, but now you can take optionally action on success or failure.
 * These deprecated methods will still work, but will be removed in a future release. See our [developer docs](https://developers.intercom.com/installing-intercom/docs/intercom-for-android) and our [sample apps](https://github.com/intercom/intercom-android/tree/master/sample) for further details on these API changes.
 
-Check out [release v12.0.0](https://github.com/intercom/intercom-android/releases/tag/12.0.0) for details about Intercom's great new Surveys feature 
+Check out [release v12.0.0](https://github.com/intercom/intercom-android/releases/tag/12.0.0) for details about Intercom's great new Surveys feature
 
 ## Version 12.0.0
 23-03-2022
@@ -885,8 +891,8 @@ New features in this update:
 
 ## Version 10.0.2
 16-07-2021
-* Fixed an issue where article viewed stats were not updating correctly. 
-* Updated dependencies to newer versions. 
+* Fixed an issue where article viewed stats were not updating correctly.
+* Updated dependencies to newer versions.
 
 ## Version 10.0.1
 23-06-2021
@@ -907,11 +913,11 @@ New features in this update:
 ### Improvements and bug fixes
 * Fixed an issue where the special notice message would not display.
 * `hideMessenger()` has now been deprecated and removed. Please use `hideIntercom()` instead. This method will hide all Intercom UI in your app.
-  
+
 ## Version 9.2.0
 26-05-2021
 * Intercom no longer depends on Glide and now uses Coil to load images.
-* Intercom no longer requires the Jcenter repository. 
+* Intercom no longer requires the Jcenter repository.
 https://developers.intercom.com/installing-intercom/docs/android-installation#section-maven-central
 * Bug fixes and performance improvements.
 
@@ -995,11 +1001,11 @@ https://developers.intercom.com/installing-intercom/docs/android-installation#se
 17-06-2020
 **In v7.1.0 of the Intercom mobile SDK, we’re introducing a fantastic new mobile engagement feature called Mobile Carousels. We’ve also added support for closed conversations, as well as a number of fixes and performance improvements.**
 
-### 📱 New Feature: Mobile Carousels 
- 
+### 📱 New Feature: Mobile Carousels
+
 Bring your best features. We'll bring the spotlight. Use Mobile Carousels to connect with app users at every touchpoint—show them around, provide support, and highlight features you know they'll love.
 
-Mobile Carousels are a multi-screen message designed to feel right at home in your mobile app. 
+Mobile Carousels are a multi-screen message designed to feel right at home in your mobile app.
 
 * Rich multi-screen messages.
 * Highly customizable, right inside Intercom.
@@ -1043,14 +1049,14 @@ We made a number of performance improvements and squashed a number of bugs in th
 * **Fixed:** An issue with overlapping text in the ‘Your conversations’ list in the Messenger home.
 * **Fixed:** An issue where an outbound message didn’t appear in real-time after changing the device orientation.
 * **Fixed:** An issue where custom bot failed to save custom attributes
-* **Fixed:** A crash with error java.lang.ArithmeticException divide by zero 
+* **Fixed:** A crash with error java.lang.ArithmeticException divide by zero
 * **Removed:** The experimental API is no longer available.
 
 ## Version 6.1.0
 18-03-2020
 
 ### Enhancements
-* We've implemented the abilty to disable the composer for [inbound conversations that use Custom Bots](https://www.intercom.com/help/en/articles/3118298-triage-inbound-conversations-with-custom-bots). 
+* We've implemented the abilty to disable the composer for [inbound conversations that use Custom Bots](https://www.intercom.com/help/en/articles/3118298-triage-inbound-conversations-with-custom-bots).
 
 ## Version 6.0.1
 10-01-2020
@@ -1085,7 +1091,7 @@ When a customer starts a new conversation with you in the Messenger, they’ll b
 
 ![android-5-4-0-release](https://user-images.githubusercontent.com/5109304/60926201-a45faa00-a25a-11e9-9f96-2915541a55b7.png)
 
-With Custom Bots from new conversations, you can accelerate your support by automating these initial interactions, so your support team can focus on resolving important issues. To get started, bump your Intercom SDK version to `5.4.0` and go to the `Operator` tab in Intercom, then `Custom Bots`, and select `From new conversations`. 
+With Custom Bots from new conversations, you can accelerate your support by automating these initial interactions, so your support team can focus on resolving important issues. To get started, bump your Intercom SDK version to `5.4.0` and go to the `Operator` tab in Intercom, then `Custom Bots`, and select `From new conversations`.
 
 ## Version 5.3.2
 17-05-2019
@@ -1124,7 +1130,7 @@ Google is [deprecating GCM](https://developers.google.com/cloud-messaging/faq) o
 13-11-2018
 
 - Bug fix for fullscreen GIFs not animating
-- Updated Support Library and Build Target SDK versions 
+- Updated Support Library and Build Target SDK versions
 - Added error reporting for SDK crashes
 - Updated GCM and FCM versions
 
@@ -1165,7 +1171,7 @@ Google is [deprecating GCM](https://developers.google.com/cloud-messaging/faq) o
 
 **Bug Fixes**
 
-- Fixed the crash while loading large images 
+- Fixed the crash while loading large images
 - Fixed the bug where keyboard covers composer on tablets
 - Fixed text overlap in the conversation list on tablets
 - Fixed an issue where teammate avatar flickers during UI updates
@@ -1361,7 +1367,7 @@ The Business Messenger reimagined.
 * Updated FCM and GCM play-services to 11.0.4
 * Updated third party dependencies, a list of the current library versions is provided in the [github readme](https://github.com/intercom/intercom-android#dependency-graph)
 * Removed deprecated methods
-* Support for O Notification channels. The channels added by Intercom are: 
+* Support for O Notification channels. The channels added by Intercom are:
   - Chat Replies (when you reply to a customer in Intercom)
   - New Chats (when you send an in-app message to a customer with send notification checked)
   - Actions (when you send a push message to a customer)
