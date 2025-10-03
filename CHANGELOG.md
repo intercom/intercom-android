@@ -1,5 +1,21 @@
 # Changelog
 
+## 17.2.0
+###### Release Date: 03-10-2025
+
+### 🚀 Enhancements
+* Added Voice Notes to the conversation composer. Users can now record voice messages that are automatically transcribed to text and can be sent in conversations.
+
+### 🐛 Bug Fixes
+* Fixed an issue where in-app notifications were not showing up in certain cases
+* Fixed an issue where in-app notifications display underneath system navigation buttons
+* Fixed `NullPointerException` crash caused by unsuccessful authorization response
+
+### 👉 Dependency updates
+* Compose BOM: Updated to 1.9.2 (via BOM 2025.09.01)
+* Gson: Updated to 2.13.2
+* Lifecycle Components: Updated to 2.9.4
+
 ## 17.1.1
 ###### Release Date: 11-09-2025
 
