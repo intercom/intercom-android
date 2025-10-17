@@ -1,5 +1,17 @@
 # Changelog
 
+## 17.3.0
+###### Release Date: 17-10-2025
+
+### 🐛 Bug Fixes
+* SDK now uses Ably as a source for websocket events
+* Fixed LazyColumn duplicate key crash in AI answer sources bottom sheet
+* Fixed R8 compilation error caused by missing Lombok classes from Ably library dependency
+
+### 👉 Dependency updates
+* Fragment Kotlin Extensions: Updated to 1.8.9
+* Compose Navigation: Updated to 2.9.5
+
 ## 17.2.0
 ###### Release Date: 03-10-2025
 
