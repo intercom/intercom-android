@@ -1,5 +1,14 @@
 # Changelog
 
+## 17.3.1
+###### Release Date: 11-11-2025
+
+### 🐛 Bug Fixes
+* Fixed ClassNotFoundException crash related to Ably integration
+
+### 👉 Dependency updates
+* Compose BOM: Updated to 2025.10.01
+
 ## 17.3.0
 ###### Release Date: 17-10-2025
 
