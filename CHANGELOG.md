@@ -1,5 +1,26 @@
 # Changelog
 
+## 17.4.0
+###### Release Date: 23-12-2025
+
+### 🚀 Enhancements
+* Added titles to the Messages screen to help users differentiate between their conversations.
+
+### 🐛 Bug Fixes
+* Fixed an issue where in-app notification text was not visible when displaying the latest message in a conversation.
+* Fixed `setBottomPadding` API not working correctly, which caused improper positioning of the launcher and in-app notifications.
+* Fixed a privacy issue where teammate surnames were being displayed in in-app notifications.
+
+### 👉 Dependency updates
+* Compose Navigation: Updated to 2.9.6
+* AndroidX ExifInterface: Updated to 1.4.2
+* Ably: Updated to 1.5.0
+* Kotlin: Updated to 2.0.20
+* Compose BOM: Updated to 2025.11.01
+
+### 👉 Note
+* The next version of the Android SDK will require `minSdk 23` (Android 6.0) due to AndroidX Compose library requirements.
+
 ## 17.3.1
 ###### Release Date: 11-11-2025
 
