@@ -1,5 +1,15 @@
 # Changelog
 
+## 17.4.1
+###### Release Date: 15-01-2026
+
+### 🐛 Bug Fixes
+* Fixed `MalformedURLException` crash when opening preview for an uploading file in conversation
+* Fixed various in-app notification UI issues
+
+### 👉 Note
+* The next major version of the Android SDK will require `minSdk 23` (Android 6.0) due to AndroidX Compose library requirements.
+
 ## 17.4.0
 ###### Release Date: 23-12-2025
 
@@ -19,7 +29,7 @@
 * Compose BOM: Updated to 2025.11.01
 
 ### 👉 Note
-* The next version of the Android SDK will require `minSdk 23` (Android 6.0) due to AndroidX Compose library requirements.
+* The next major version of the Android SDK will require `minSdk 23` (Android 6.0) due to AndroidX Compose library requirements.
 
 ## 17.3.1
 ###### Release Date: 11-11-2025
