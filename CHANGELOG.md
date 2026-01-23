@@ -1,5 +1,15 @@
 # Changelog
 
+## 17.4.2
+###### Release Date: 23-01-2026
+
+### 🐛 Bug Fixes
+* Fixed an issue where two articles were opened instead of one
+* Fixed crash when previewing password-protected PDFs
+
+### 👉 Note
+* The next major version of the Android SDK will require `minSdk 23` (Android 6.0) due to AndroidX Compose library requirements.
+
 ## 17.4.1
 ###### Release Date: 15-01-2026
 
