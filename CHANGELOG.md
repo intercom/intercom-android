@@ -1,5 +1,15 @@
 # Changelog
 
+## 17.4.3
+###### Release Date: 09-02-2026
+
+### 🐛 Bug Fixes
+* Fixed discrepancy between sent and completed metrics for single-screen carousel
+* Fixed carousels orientation restriction causing Google Play Store compliance warning for Android 16
+
+### 👉 Note
+* The next major version of the Android SDK will require `minSdk 23` (Android 6.0) due to AndroidX Compose library requirements.
+
 ## 17.4.2
 ###### Release Date: 23-01-2026
 
