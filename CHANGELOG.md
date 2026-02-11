@@ -1,5 +1,17 @@
 # Changelog
 
+## 17.4.4
+###### Release Date: 11-02-2026
+
+### 🐛 Bug Fixes
+* Fixed carousels not showing up in certain cases
+
+### 👉 Dependency updates
+* Ably: Updated to 1.6.1
+
+### 👉 Note
+* The next major version of the Android SDK will require `minSdk 23` (Android 6.0) due to AndroidX Compose library requirements.
+
 ## 17.4.3
 ###### Release Date: 09-02-2026
 
