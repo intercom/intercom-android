@@ -1,5 +1,15 @@
 # Changelog
 
+## 17.4.5
+###### Release Date: 25-02-2026
+
+### 🐛 Bug Fixes
+* Fixed various in-app notification UI issues
+* Fixed workflows not triggering in certain cases
+
+### 👉 Note
+* The next major version of the Android SDK will require `minSdk 23` (Android 6.0) due to AndroidX Compose library requirements.
+
 ## 17.4.4
 ###### Release Date: 11-02-2026
 
