@@ -1,5 +1,16 @@
 # Changelog
 
+## 17.4.6
+###### Release Date: 03-03-2026
+
+### 🐛 Bug Fixes
+* Fixed a crash that could occur when handling push notifications
+* Fixed push notification images not loading correctly in some cases
+* Fixed AI agent name and avatar not appearing correctly in in-app notifications
+
+### 👉 Note
+* The next major version of the Android SDK will require `minSdk 23` (Android 6.0) due to AndroidX Compose library requirements.
+
 ## 17.4.5
 ###### Release Date: 25-02-2026
 
