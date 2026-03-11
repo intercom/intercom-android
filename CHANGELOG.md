@@ -1,5 +1,17 @@
 # Changelog
 
+## 17.4.7
+###### Release Date: 11-03-2026
+
+### 🐛 Bug Fixes
+* Fixed push notifications not displaying in certain cases
+* Fixed unread badge counter not updating in certain cases
+* Fixed attachment upload issues
+* Fixed various UI issues
+
+### 👉 Note
+* The next major version of the Android SDK will require `minSdk 23` (Android 6.0) due to AndroidX Compose library requirements.
+
 ## 17.4.6
 ###### Release Date: 03-03-2026
 
