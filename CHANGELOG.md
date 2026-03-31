@@ -1,5 +1,29 @@
 # Changelog
 
+## 18.0.0
+###### Release Date: TBD
+
+### ⚡ Important Changes
+
+**Minimum SDK version raised to 23 (Android 6.0)**<br>
+The SDK now requires `minSdk 23`, aligning with AndroidX Compose library requirements and modern Android development practices. Apps targeting API levels 21-22 must remain on version 17.x.
+
+**Target SDK version raised to 36 (Android 16)**<br>
+The SDK now targets Android 16, ensuring compliance with the latest Google Play requirements and enabling support for new platform features including improved edge-to-edge display behavior. Your project must use `compileSdk 36` or higher. If you are not ready to use API level 36, please stay on version 17.x.
+
+**Internal storage migrated from SharedPreferences to AndroidX DataStore**<br>
+All internal SDK data storage has been migrated from SharedPreferences to AndroidX DataStore, bringing significant improvements to reliability, thread safety, and performance. Sensitive data is now protected with AES-256-GCM encryption via Android Keystore. Existing SDK data is automatically migrated on first launch with no action required from developers. This migration is one-way — downgrading to a previous SDK version after upgrading will result in loss of local SDK state.
+
+### 🐛 Bug Fixes
+* Fixed English missing from the supported languages header
+* Fixed in-app notification disappearance in certain cases
+* Fixed overlays rendering behind navigation bar on `AppCompatActivity` with edge-to-edge
+
+### 👉 Dependency updates
+* Compose BOM: Updated to 2026.03.01
+* AndroidX Core KTX: Updated to 1.18.0
+* Ably: Updated to 1.7.1
+
 ## 17.4.7
 ###### Release Date: 11-03-2026
 
