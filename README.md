@@ -31,7 +31,7 @@ The mobile SDK supports many different message formats, all of which can be crea
 We check for new messages when your app opens and whenever your customer or your app interacts with Intercom.
 
 ## Installation
-Intercom for Android supports API 21 and above.
+Intercom for Android supports API 23 and above.
 
 There are 2 options for installing Intercom on your Android app.
 
