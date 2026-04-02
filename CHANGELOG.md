@@ -14,6 +14,9 @@ The SDK now targets Android 16, ensuring compliance with the latest Google Play 
 **Internal storage migrated from SharedPreferences to AndroidX DataStore**<br>
 All internal SDK data storage has been migrated from SharedPreferences to AndroidX DataStore, bringing significant improvements to reliability, thread safety, and performance. Sensitive data is now protected with AES-256-GCM encryption via Android Keystore. Existing SDK data is automatically migrated on first launch with no action required from developers. This migration is one-way — downgrading to a previous SDK version after upgrading will result in loss of local SDK state.
 
+**Removed deprecated `handlePushMessage` APIs**<br>
+The `handlePushMessage()` and `handlePushMessage(TaskStackBuilder)` methods have been removed. These APIs were no longer required — the SDK now directly opens the chat screen when a push notification is tapped. No replacement is needed.
+
 ### 🐛 Bug Fixes
 * Fixed English missing from the supported languages header
 * Fixed in-app notification disappearance in certain cases
