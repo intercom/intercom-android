@@ -1,5 +1,21 @@
 # Changelog
 
+## 18.0.1
+###### Release Date: 10-04-2026
+
+### 🐛 Bug Fixes
+* Fixed GIF search input text being unreadable in dark mode
+* Fixed in-app messages disappearing when a permission dialog is shown
+* Fixed in-app notifications not responding to swipe-to-dismiss gesture
+* Fixed overlays not appearing after returning from a long background period
+* Fixed missing messages and unread count not updating when app returns from extended background
+* Fixed an ANR on low-memory devices when repeatedly accessing the Messenger launcher
+* Fixed a memory leak in WebView cache that prevented Activity garbage collection when using card messages
+* Improved spacing between message blocks in in-app notifications
+
+### 👉 Dependency updates
+* AndroidX Annotation: Updated to 1.10.0
+
 ## 18.0.0
 ###### Release Date: 31-03-2026
 
@@ -933,15 +949,15 @@ Minor bug fixes
 ### 🚀 Enhancements
 * We've renamed some of our API methods. The term `register` has been replaced with `login`. As part of this change, we've also added success and failure callbacks to the updated login methods.
 
-  This means that the following old `register` methods are now deprecated
-  - `registerUnidentifiedUser()`
-  - `registerIdentifiedUser(registration)`
-  - `updateUser(userAttributes)`
+    This means that the following old `register` methods are now deprecated
+    - `registerUnidentifiedUser()`
+    - `registerIdentifiedUser(registration)`
+    - `updateUser(userAttributes)`
 
-  We've replaced them with
-  - `loginUnidentifiedUser(statusCallback)`
-  - `loginIdentifiedUser(registration, statusCallback)`
-  - `updateUser(userAttributes, statusCallback)`
+    We've replaced them with
+    - `loginUnidentifiedUser(statusCallback)`
+    - `loginIdentifiedUser(registration, statusCallback)`
+    - `updateUser(userAttributes, statusCallback)`
 
 * Added support to connect to Intercom workspaces that are hosted on servers in our Australian region
 
@@ -1038,7 +1054,7 @@ New features in this update:
 * Place the article search card at the top of the Messenger home screen to give your self-serve content more prominence.
 * Uncover insights and opportunities to optimize your self-serve support by using our updated Articles reporting.
 * If you’ve set a custom icon for the Intercom launcher, that icon will now be used in your app as well.
-  <img src="https://user-images.githubusercontent.com/5046761/134326966-f1b08bbc-da9d-46ee-b1c8-2e1afd00c836.png" width="350px"/>
+<img src="https://user-images.githubusercontent.com/5046761/134326966-f1b08bbc-da9d-46ee-b1c8-2e1afd00c836.png" width="350px"/>
 
 ## Version 10.1.1
 26-08-2021
@@ -1068,7 +1084,7 @@ New features in this update:
 * Localization - with right to left language display
 * Accessibility support: screen readers, dynamic font sizes, and keyboard navigation - to support all end users
 * New Help Center Data API that enables you to build your own help center UI, enabling a much deeper and custom integration into your app.
-  ![Help center](https://user-images.githubusercontent.com/3718984/122231184-2c707480-ceb2-11eb-8178-6d0aaab34713.gif)
+![Help center](https://user-images.githubusercontent.com/3718984/122231184-2c707480-ceb2-11eb-8178-6d0aaab34713.gif)
 
 ### Improvements and bug fixes
 * Fixed an issue where the special notice message would not display.
@@ -1078,7 +1094,7 @@ New features in this update:
 26-05-2021
 * Intercom no longer depends on Glide and now uses Coil to load images.
 * Intercom no longer requires the Jcenter repository.
-  https://developers.intercom.com/installing-intercom/docs/android-installation#section-maven-central
+https://developers.intercom.com/installing-intercom/docs/android-installation#section-maven-central
 * Bug fixes and performance improvements.
 
 ## Version 9.1.2
@@ -1119,7 +1135,7 @@ New features in this update:
 10-11-2020
 * New feature: You can now open an article or Mobile Carousel programmatically in your app. We have added two new methods to our API to enable this, [displayArticle](https://developers.intercom.com/installing-intercom/docs/android-configuration#section-present-an-article-programmatically) and [displayCarousel](https://developers.intercom.com/installing-intercom/docs/android-configuration#section-present-a-carousel-programmatically).
 * Improvement: Added an optional special notice message, that can be displayed at the top of a conversation. This has been commonly used to set expectations during COVID, find more details [here](https://www.intercom.com/help/en/articles/3822642-tips-for-using-intercom-to-help-with-your-covid-19-response).
-  ![Special notice message](https://user-images.githubusercontent.com/3718984/98683858-6ea26800-235d-11eb-9bb3-4dc3a89eaf6d.png)
+![Special notice message](https://user-images.githubusercontent.com/3718984/98683858-6ea26800-235d-11eb-9bb3-4dc3a89eaf6d.png)
 
 * Fixed: An issue where the links would not open inside conversations on Android 11.
 * Fixed: An issue where we would display the wrong timezone in the conversation header.
@@ -1470,8 +1486,8 @@ The Business Messenger reimagined.
 
 **Experimental API**
 * Added an experimental API. To use it please import `io.intercom.android.sdk.experimental.Intercom`. The changes to the new API are:
-  * Replaced `Intercom.initialize(Application, String, String)` with `Intercom.boot(Application, IntercomSettings)` Unlike `initialize`, `boot` does not need to be called in a custom Application class. It also results in the creation/ logging in of a user.
-  * The methods `registerUnidentifiedUser()` and `registerIdentifiedUser(Registration)` are removed. Calling `boot` now registers a user. The `IntercomSettings` object has an optional email and userId. If either of those was provided an identified user is registered, otherwise an unidentified user is created.
+    * Replaced `Intercom.initialize(Application, String, String)` with `Intercom.boot(Application, IntercomSettings)` Unlike `initialize`, `boot` does not need to be called in a custom Application class. It also results in the creation/ logging in of a user.
+    * The methods `registerUnidentifiedUser()` and `registerIdentifiedUser(Registration)` are removed. Calling `boot` now registers a user. The `IntercomSettings` object has an optional email and userId. If either of those was provided an identified user is registered, otherwise an unidentified user is created.
   * To migrate from an unidentified to an identified user you can simply call `updateUser(UserAttributes)` where the `UserAttributes` object contains an userId and/or email.
   * The method `logout()` has been replaced with `shutdown()`.
 
@@ -1939,39 +1955,39 @@ Part of this involves a new Intercom Launcher that you can show in your app to l
 ### Dependencies
 
 As part of the work to bring a better visual aesthetic to the Messenger we started using some new dependencies. Chief amongst these are the support libraries Google provides. This library now relies on:
-* `com.android.support:appcompat-v7:23.3.0`
-* `com.android.support:recyclerview-v7:23.3.0`
-* `com.android.support:design:23.3.0`
+ * `com.android.support:appcompat-v7:23.3.0`
+ * `com.android.support:recyclerview-v7:23.3.0`
+ * `com.android.support:design:23.3.0`
 
 If you use these libraries in your project be aware that we plan to stay up to date with releases and this will, by default, transitively force your app to use these versions too.
 
 We also added some dependencies that we're namespacing to avoid version conflicts and other conflicts:
-* `com.facebook.rebound:rebound:0.3.8` for nice spring animations
-* `com.github.bumptech.glide:glide:3.7.0` for gif support
+ * `com.facebook.rebound:rebound:0.3.8` for nice spring animations
+ * `com.github.bumptech.glide:glide:3.7.0` for gif support
 
 And on top of that we've updated OkHttp and Retrofit to the 3.x and 2.x versions. These are also namespaced so that won't confict with anything in your code.
 
 ### New methods on the public interface
 
-* `void setLauncherVisibility(Visibility visibility)` will toggle whether the new Intercom launcher appears in your app. Valid parameters are `Intercom.Visibility.VISIBLE` and `Intercom.Visibility.GONE`. The default is `GONE`.
-* `void setInAppMessageVisibility(Visibility visibility)` will toggle whether in-app messages appear in your app when sent to a user. Valid parameters are `Intercom.VISIBLE` and `Intercom.GONE`. The default is `VISIBLE`.
-* `void hideMessenger()` will close the Intercom Messenger if it's onscreen. The typical use case we've seen for something like this is that an important event has happened in the background of your app (eg a user has taken 10,000 steps) and you need to display something immediately. We'd advise normally using an `Intent` to start your activity if that's possible within your app's architecture; we're accounting for the possibility that it isn't always possible with this method.
-* `int getUnreadConversationCount` will return the last known number of unread conversations that a user has.
-* `void addUnreadConversationCountListener(UnreadConversationCountListener listener)` lets you set a listener that will be notified every time the known conversation count for this user changes. For example, you may want to display a badge somewhere in your app that exposes to a user the number of unread conversations they have. Multiple listeners can be registered at a time. A **strong** reference is kept to each listener.
-* `void removeUnreadConversationCountListener(UnreadConversationCountListener listener)` removes this listener from the list that will be notified of unread conversation count updates.
+ * `void setLauncherVisibility(Visibility visibility)` will toggle whether the new Intercom launcher appears in your app. Valid parameters are `Intercom.Visibility.VISIBLE` and `Intercom.Visibility.GONE`. The default is `GONE`.
+ * `void setInAppMessageVisibility(Visibility visibility)` will toggle whether in-app messages appear in your app when sent to a user. Valid parameters are `Intercom.VISIBLE` and `Intercom.GONE`. The default is `VISIBLE`.
+ * `void hideMessenger()` will close the Intercom Messenger if it's onscreen. The typical use case we've seen for something like this is that an important event has happened in the background of your app (eg a user has taken 10,000 steps) and you need to display something immediately. We'd advise normally using an `Intent` to start your activity if that's possible within your app's architecture; we're accounting for the possibility that it isn't always possible with this method.
+ * `int getUnreadConversationCount` will return the last known number of unread conversations that a user has.
+ * `void addUnreadConversationCountListener(UnreadConversationCountListener listener)` lets you set a listener that will be notified every time the known conversation count for this user changes. For example, you may want to display a badge somewhere in your app that exposes to a user the number of unread conversations they have. Multiple listeners can be registered at a time. A **strong** reference is kept to each listener.
+ * `void removeUnreadConversationCountListener(UnreadConversationCountListener listener)` removes this listener from the list that will be notified of unread conversation count updates.
 
 ### Removed methods from public interface
 
 All deprecated methods have been dropped from Intercom, these include
-* `setMessagesHidden(boolean visibility)` in favour of two new visibility methods explained below
-* `openGCMMessage(Uri data)` in favour of `openGCMMessage(Intent intent)`
+  * `setMessagesHidden(boolean visibility)` in favour of two new visibility methods explained below
+  * `openGCMMessage(Uri data)` in favour of `openGCMMessage(Intent intent)`
 
 In addition some other methods have been dropped:
-* `setPreviewPosition` has been removed with no replacement
-* `setVisibility` has been removed in favour of `setLauncherVisibility` and `setInAppMessageVisibility`
+  * `setPreviewPosition` has been removed with no replacement
+  * `setVisibility` has been removed in favour of `setLauncherVisibility` and `setInAppMessageVisibility`
 
 ### Miscellaneous
-* We've hidden our resources so you won't see all our layouts, colours etc when you're trying to reference your own resources
+  * We've hidden our resources so you won't see all our layouts, colours etc when you're trying to reference your own resources
 
 ## Version 1.1.21
 
@@ -2210,14 +2226,14 @@ When updating to this version from a previous version we recommend cleaning the 
 
 04-29-2015
 * Removed GCM permissions so that now developers have the option of adding them only if you *want* to register for push notifications
-  * &lt;!-- GCM REQUIRED PERMISSIONS --&gt;
-  * &lt;uses-permission android:name="android.permission.WAKE_LOCK" /&gt;
-  * &lt;uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /&gt;
-  * &lt;uses-permission android:name="android.permission.VIBRATE"/>
-  *
-  * &lt;!-- GCM Optional PERMISSIONS --&gt;
-  * &lt;uses-permission android:name="android.permission.READ_PHONE_STATE"/&gt;
-  * &lt;uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/&gt;
+    * &lt;!-- GCM REQUIRED PERMISSIONS --&gt;
+    * &lt;uses-permission android:name="android.permission.WAKE_LOCK" /&gt;
+    * &lt;uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /&gt;
+    * &lt;uses-permission android:name="android.permission.VIBRATE"/>
+    *
+    * &lt;!-- GCM Optional PERMISSIONS --&gt;
+    * &lt;uses-permission android:name="android.permission.READ_PHONE_STATE"/&gt;
+    * &lt;uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/&gt;
 * Added audio cues to received and sent messages
 * Fixed [issue#54](https://github.com/intercom/intercom-android/issues/54) Updated action bar visuals
 * Fixed a bug where a conversation replied to by a user would update it's summary in the inbox but not it's position, related to [issue#58](https://github.com/intercom/intercom-android/issues/58)
