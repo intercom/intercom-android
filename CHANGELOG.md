@@ -1,5 +1,12 @@
 # Changelog
 
+## 18.0.2
+###### Release Date: 17-04-2026
+
+### 🐛 Bug Fixes
+* Fixed camera video recording failing when external storage is unavailable
+* Fixed video embeds and other content failing to display in Help Center articles
+
 ## 18.0.1
 ###### Release Date: 10-04-2026
 
