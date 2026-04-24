@@ -1,5 +1,15 @@
 # Changelog
 
+## 18.0.3
+###### Release Date: 24-04-2026
+
+### 🐛 Bug Fixes
+* Improved reliability of Fin streaming sessions
+* Fixed admin messages not appearing until the user sends a reply
+
+### 👉 Dependency updates
+* Compose BOM: Updated to 2026.04.01
+
 ## 18.0.2
 ###### Release Date: 17-04-2026
 
