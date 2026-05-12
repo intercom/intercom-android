@@ -1,5 +1,20 @@
 # Changelog
 
+## 18.1.0
+###### Release Date: 12-05-2026
+
+### ✨ New Features
+* **Multiple attachments** — Users can now send multiple images and files together in a single message, with a preview of selected media in the composer.
+* **Typing indicator** — The inbox now shows a typing indicator when an agent is replying.
+
+### 🐛 Bug Fixes
+* Fixed push notification images not loading on some devices
+* Fixed download button not responding on the image preview screen
+
+### 👉 Dependency updates
+* Compose BOM: Updated to 2026.05.00
+* Ably Android: Updated to 1.7.2
+
 ## 18.0.3
 ###### Release Date: 24-04-2026
 
