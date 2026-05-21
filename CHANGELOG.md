@@ -1,5 +1,18 @@
 # Changelog
 
+## 18.2.0
+###### Release Date: 21-05-2026
+
+### 🚀 Enhancements
+* Crash reporting can now be managed directly from workspace settings.
+
+### 🐛 Bug Fixes
+* Fixed unread badge position offset in the collapsed conversation header menu
+
+### 👉 Dependency updates
+* Compose BOM: Updated to 2026.05.01
+* Firebase Messaging: Updated to 25.0.2
+
 ## 18.1.0
 ###### Release Date: 12-05-2026
 
