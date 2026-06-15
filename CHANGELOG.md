@@ -1,5 +1,16 @@
 # Changelog
 
+## 18.3.0
+###### Release Date: 15-06-2026
+
+### 🚀 Enhancements
+* Added `setMessengerEnvironment` to extend multi-environment messaging support to the Android SDK, tagging every API request with an environment identifier (for Fin for Platforms standalone apps)
+* In-app notifications are now capped and centered on wide screens such as tablets
+
+### 🐛 Bug Fixes
+* Fixed a crash when the host app's push service runs in a separate process
+* Fixed code blocks losing indentation and collapsing multi-line content onto a single line
+
 ## 18.2.0
 ###### Release Date: 21-05-2026
 
