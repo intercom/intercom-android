@@ -116,4 +116,4 @@ You can also include [VIBRATE](http://developer.android.com/reference/android/Ma
 
 Intercom Android SDK transitively depends on a number of common libraries (for example, Coil for image loading). If your app is using any one of these libraries, they should at least be on the same major version that the Intercom SDK is using.
 When there are two versions of a library at build time, Gradle automatically picks the newer version.
-This means if you are currently using say Coil 2.x and Intercom depends on a newer 2.x release, your app would automatically get the newer version after including Intercom.
+This means if you are currently using say Coil 2.4 and Intercom depends on a newer 2.x release, your app would automatically get the newer version after including Intercom.
