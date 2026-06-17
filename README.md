@@ -95,17 +95,6 @@ A project with some basic example integrations is provided [here](https://github
 * Read our guide on Push Notifications for [FCM](https://developers.intercom.com/installing-intercom/docs/android-fcm-push-notifications).
 * Please contact us on [Intercom](https://www.intercom.com/) with any questions you may have, we're only a message away!
 
-## ProGuard
-
-If you are using ProGuard, add the following rules:
-
-```
--keep class io.intercom.android.** { *; }
--keep class com.intercom.** { *; }
-```
-
-You might also need to add rules for OkHttp, Okio and Retrofit which are dependencies used in this library.
-
 ## Cordova/Phonegap Support
 Looking for Cordova/Phonegap support? We have a [Cordova Plugin](https://github.com/intercom/intercom-cordova) for Intercom 🎉
 
@@ -117,12 +106,6 @@ We include the [INTERNET](http://developer.android.com/reference/android/Manifes
 <uses-permission android:name="android.permission.INTERNET"/>
 ```
 
-You will need to include the [READ\_EXTERNAL\_STORAGE](http://developer.android.com/reference/android/Manifest.permission.html#READ_EXTERNAL_STORAGE) permission if you have enabled attachments:
-
-```xml
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-```
-
 You can also include [VIBRATE](http://developer.android.com/reference/android/Manifest.permission.html#VIBRATE) to enable vibration in push notifications:
 
 ```xml
@@ -131,6 +114,6 @@ You can also include [VIBRATE](http://developer.android.com/reference/android/Ma
 
 ### Transitive Dependencies
 
-Intercom Android SDK transitively depends on the above libraries. If your app is using any one of these libraries, they should at least be on the same major version that Intercom SDK is using.
+Intercom Android SDK transitively depends on a number of common libraries (for example, Coil for image loading). If your app is using any one of these libraries, they should at least be on the same major version that the Intercom SDK is using.
 When there are two versions of a library at build time, Gradle automatically picks the newer version.
-This means if you are currently using say Glide 3.x, your app would automatically get Glide 4.x after including Intercom.
+This means if you are currently using say Coil 1.x, your app would automatically get Coil 2.x after including Intercom.
