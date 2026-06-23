@@ -1,5 +1,18 @@
 # Changelog
 
+## 18.3.1
+###### Release Date: 23-06-2026
+
+### 🐛 Bug Fixes
+* Fixed a crash when selecting multiple photos to upload from a Messenger form
+* Fixed attribute collectors not appearing in Android conversations
+* Fixed a crash caused by push-notification image loading running on the main thread
+* Restored the `ThemeMode` enum and `ui` package to the published artifact, so theme customization works as documented
+* Fixed Fin reply links rendering with unreadable, low-contrast text
+
+### 👉 Dependency updates
+* Firebase Messaging: Updated to 25.1.0
+
 ## 18.3.0
 ###### Release Date: 15-06-2026
 
