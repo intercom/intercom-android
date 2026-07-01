@@ -1,5 +1,18 @@
 # Changelog
 
+## 18.3.2
+###### Release Date: 01-07-2026
+
+### 🐛 Bug Fixes
+* Fixed a crash rendering the legacy messenger app card when the WebView provider threw an unexpected error during initialization
+* Fixed the composer opening in a new task (or silently failing to open) when launched from Help Center on some host apps
+* Fixed a crash opening Help Center when no back-press dispatcher was available in the host app
+* Fixed crashes when picking a missing or unreadable media file, and a gap that let a required upload question be bypassed
+* Fixed a crash compressing a video whose source file was missing or unreadable
+
+### 👉 Dependency updates
+* Compose BOM: Updated to 2026.06.00
+
 ## 18.3.1
 ###### Release Date: 23-06-2026
 
