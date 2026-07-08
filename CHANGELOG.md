@@ -1,5 +1,17 @@
 # Changelog
 
+## 18.4.0
+###### Release Date: 08-07-2026
+
+### 🚀 Enhancements
+* Fin's code blocks now render with syntax highlighting and an expand/collapse control, in their own bubble separate from surrounding message text — in both finalized answers and while streaming
+
+### 🐛 Bug Fixes
+* Removed the streaming "typing" cursor from Fin's AI answers, matching web — it could appear misplaced on newer block types and linger visibly after a block finished streaming
+
+### 👉 Dependency updates
+* Compose BOM: Updated to 2026.06.01
+
 ## 18.3.2
 ###### Release Date: 01-07-2026
 
