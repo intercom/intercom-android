@@ -1,5 +1,21 @@
 # Changelog
 
+## 18.5.0
+###### Release Date: 15-07-2026
+
+### ✨ New Features
+* Added `Intercom.suppressProactiveContent` to let host apps suppress carousel and survey content independently of in-app messages
+
+### 🐛 Bug Fixes
+* Fixed a crash when the device's legacy SharedPreferences was unavailable (e.g. an isolated process) during the DataStore migration
+* Fixed voice recordings and in-progress transcription being lost on screen rotation, and removed the recording-time orientation lock (which Android 17 ignores on large-screen displays anyway)
+
+### 👉 Dependency updates
+* Firebase Messaging: Updated to 25.1.1
+
+### 👉 Note
+* The next major version of the Android SDK will be built with Kotlin 2.3 and will require apps to use a minimum Kotlin version of `2.0` due to binary compatibility
+
 ## 18.4.0
 ###### Release Date: 08-07-2026
 
