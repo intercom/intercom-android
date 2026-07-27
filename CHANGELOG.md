@@ -1,5 +1,20 @@
 # Changelog
 
+## 18.6.0
+###### Release Date: 27-07-2026
+
+### ✨ New Features
+* Added pinch-to-zoom, double-tap-to-zoom, and pan on full-screen image attachments
+
+### 🐛 Bug Fixes
+* Fixed an ANR during `Intercom.initialize()` caused by Android Keystore and persisted-identity reads blocking the calling thread
+* Fixed the keyboard covering form fields in Canvas Kit sheets by handling IME insets
+* Fixed a crash from a null `trustedFileExtensions` in persisted attachment settings
+* Fixed empty list items rendering a dangling bullet in message and survey text
+
+### 👉 Note
+* The next major version of the Android SDK will be built with Kotlin 2.3 and will require apps to use a minimum Kotlin version of `2.0` due to binary compatibility
+
 ## 18.5.0
 ###### Release Date: 15-07-2026
 
