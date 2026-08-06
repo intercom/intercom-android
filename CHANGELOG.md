@@ -1,5 +1,18 @@
 # Changelog
 
+## 18.7.0
+###### Release Date: 06-08-2026
+
+### 🚀 Enhancements
+* Inline `<code>` spans in messages now render in a monospace font on the code background
+* R8 can now remove unused Intercom SDK classes from minified host apps — the SDK's consumer ProGuard rules no longer pin every class. Names and members of retained classes are unchanged, so reflection, Gson parsing and WebView bridges behave as before
+
+### 🐛 Bug Fixes
+* Fixed crash reports being attributed to Intercom when an Intercom frame merely appeared in a host-app crash's stack trace — attribution is now by throw site
+
+### 👉 Note
+* The next major version of the Android SDK will be built with Kotlin 2.3 and will require apps to use a minimum Kotlin version of `2.0` due to binary compatibility
+
 ## 18.6.0
 ###### Release Date: 27-07-2026
 
