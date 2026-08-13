@@ -1,5 +1,22 @@
 # Changelog
 
+## 18.8.0
+###### Release Date: 12-08-2026
+
+### 🚀 Enhancements
+* Show the push notification permission banner only when a push can actually be delivered to the device
+* Refreshed the messenger top action bar with larger avatars and updated typography
+* Scoped the SDK's ProGuard keep rules further, so R8 can obfuscate more Intercom classes in minified host apps
+
+### 🐛 Bug Fixes
+* Fixed the conversation avatar being clipped against the screen edge when the top bar has no navigation icon
+
+### 👉 Dependency updates
+* ConstraintLayout: Updated to 2.2.2
+
+### 👉 Note
+* The next major version of the Android SDK will be built with Kotlin 2.3 and will require apps to use a minimum Kotlin version of `2.0` due to binary compatibility
+
 ## 18.7.0
 ###### Release Date: 06-08-2026
 
