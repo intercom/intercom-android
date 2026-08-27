@@ -1,5 +1,14 @@
 # Changelog
 
+## 18.9.1
+###### Release Date: 26-08-2026
+
+### 🐛 Bug Fixes
+* Fixed a crash on `Intercom.initialize` in host apps where the DataStore shared-counter native library cannot be loaded
+
+### 👉 Note
+* The next major version of the Android SDK will be built with Kotlin 2.3 and will require apps to use a minimum Kotlin version of `2.0` due to binary compatibility
+
 ## 18.9.0
 ###### Release Date: 20-08-2026
 
