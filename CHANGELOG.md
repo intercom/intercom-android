@@ -1,5 +1,18 @@
 # Changelog
 
+## 18.9.3
+###### Release Date: 04-09-2026
+
+### 🐛 Bug Fixes
+* Fixed canceled network requests continuing to retry, which could delay subsequent conversation loads on slow connections
+
+### 👉 Dependency updates
+* AppCompat: Updated to 1.8.0
+* Fragment: Updated to 1.9.0
+
+### 👉 Note
+* The next major version of the Android SDK will be built with Kotlin 2.3 and will require apps to use a minimum Kotlin version of `2.0` due to binary compatibility
+
 ## 18.9.1
 ###### Release Date: 26-08-2026
 
