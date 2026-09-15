@@ -1,5 +1,18 @@
 # Changelog
 
+## 18.9.4
+###### Release Date: 15-09-2026
+
+### 🐛 Bug Fixes
+* Fixed failed CSAT ratings and remarks appearing as saved, and show when the rating window is closed
+* Fixed the Recent message card on Home remaining stale after returning from a conversation
+
+### 👉 Dependency updates
+* Paging: Updated to 3.5.1
+
+### 👉 Note
+* The next major version of the Android SDK will be built with Kotlin 2.3 and will require apps to use a minimum Kotlin version of `2.0` due to binary compatibility
+
 ## 18.9.3
 ###### Release Date: 04-09-2026
 
