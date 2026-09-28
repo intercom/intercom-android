@@ -1,5 +1,20 @@
 # Changelog
 
+## 18.9.5
+###### Release Date: 28-09-2026
+
+### 🚀 Enhancements
+* Consecutive messages from the same teammate are now grouped together for the whole day, matching the web Messenger
+
+### 🐛 Bug Fixes
+* Fixed an ANR when the FCM push token listener ran on the main thread
+* Fixed main-thread blocking when the push token was read for the first time
+* Fixed saving an image from the attachment preview using excess memory and changing the file's format and resolution
+* Fixed the create-ticket icon and title being invisible in dark mode
+
+### 👉 Note
+* The next major version of the Android SDK will be built with Kotlin 2.3 and will require apps to use a minimum Kotlin version of `2.0` due to binary compatibility
+
 ## 18.9.4
 ###### Release Date: 15-09-2026
 
