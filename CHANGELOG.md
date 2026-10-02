@@ -1,5 +1,14 @@
 # Changelog
 
+## 18.9.6
+###### Release Date: 02-10-2026
+
+### 🐛 Bug Fixes
+* Fixed Messenger text becoming hard to read on devices that apply the system's "dark mode for apps" to a Messenger set to light mode
+
+### 👉 Note
+* The next major version of the Android SDK will be built with Kotlin 2.3 and will require apps to use a minimum Kotlin version of `2.0` due to binary compatibility
+
 ## 18.9.5
 ###### Release Date: 28-09-2026
 
