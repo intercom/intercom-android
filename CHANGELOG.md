@@ -1,5 +1,21 @@
 # Changelog
 
+## 18.10.0
+###### Release Date: 09-10-2026
+
+### 🚀 Enhancements
+* Added `setUserJwtProvider` so the SDK can request a fresh user JWT when the current one expires, and retry the requests that failed because of it
+* Home, Conversation, Inbox and Tickets now reload when a new user JWT is set after an expired-JWT failure
+
+### 🐛 Bug Fixes
+* Fixed a message that can't start a new conversation re-sending on every tap; tapping it now offers to delete it
+* Fixed session starts being counted before the server accepted them
+* Fixed a crash in the composer when the workspace's attachment settings don't include a trusted file list
+* Fixed the Unity wrapper's version not being reported in apps built with R8 minification
+
+### 👉 Note
+* The next major version of the Android SDK will be built with Kotlin 2.3 and will require apps to use a minimum Kotlin version of `2.0` due to binary compatibility
+
 ## 18.9.6
 ###### Release Date: 02-10-2026
 
