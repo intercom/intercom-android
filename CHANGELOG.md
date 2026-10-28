@@ -1,5 +1,21 @@
 # Changelog
 
+## 18.11.0
+###### Release Date: 28-10-2026
+
+### 🚀 Enhancements
+* Scoped the SDK's consumer ProGuard keep rules to Gson models, so R8 can shrink and obfuscate more Intercom classes in minified host apps
+
+### 🐛 Bug Fixes
+* Fixed Fin's thinking indicator disappearing before Fin replied
+* Fixed a crash when tapping an image or PDF in an in-app notification
+* Fixed ticket image uploads failing from file pickers that don't report a file type, such as Xiaomi File Manager on HyperOS 3
+* Fixed the ticket details screen saying you'd be notified by email when ticket status emails are off or the user has no email
+* Fixed the Messenger composer not capitalizing the start of sentences
+
+### 👉 Note
+* The next major version of the Android SDK will be built with Kotlin 2.3 and will require apps to use a minimum Kotlin version of `2.0` due to binary compatibility
+
 ## 18.10.0
 ###### Release Date: 09-10-2026
 
