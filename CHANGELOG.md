@@ -1,5 +1,18 @@
 # Changelog
 
+## 18.12.0
+###### Release Date: 02-11-2026
+
+### ✨ New Features
+* See every attachment in one place with the new attachments gallery, opened from the conversation header
+
+### 🚀 Enhancements
+* File attachments have a refreshed, colourful look
+
+### 🐛 Bug Fixes
+* Fixed an ANR when an Activity starts soon after app launch, mostly seen on Android 12
+* Fixed a crash in video previews when the host app also bundles ExoPlayer 2
+
 ## 18.11.0
 ###### Release Date: 28-10-2026
 
