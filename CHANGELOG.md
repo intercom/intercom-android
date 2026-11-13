@@ -1,5 +1,16 @@
 # Changelog
 
+## 18.13.0
+###### Release Date: 13-11-2026
+
+### 🐛 Bug Fixes
+* Fixed the SDK starting a session with an expired saved user JWT on a cold launch; the session now starts once a fresh JWT is set or a JWT provider is registered
+* Fixed in-app banners springing back instead of dismissing on a quick sideways swipe
+* Fixed help center article links opening in the user's locale instead of the link's locale
+
+### 👉 Note
+* The next major version of the Android SDK will be built with Kotlin 2.3 and will require apps to use a minimum Kotlin version of `2.0` due to binary compatibility
+
 ## 18.12.0
 ###### Release Date: 02-11-2026
 
