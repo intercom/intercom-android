@@ -1,5 +1,21 @@
 # Changelog
 
+## 18.14.0
+###### Release Date: 20-11-2026
+
+### 🚀 Enhancements
+* An open Messenger now switches to the new language when a workflow changes the user's language, including Home, conversations and the Help Center
+* Ticket updates in the fallback in-app notifications, used by apps that can't show Compose notifications such as Expo apps, now show the ticket icon and title
+
+### 🐛 Bug Fixes
+* Fixed the date field in Messenger ticket forms showing and saving the day before the picked date on devices west of UTC, and late-December dates showing the following year
+* Fixed a crash on launch when Android restores an Intercom screen before Intercom is initialized
+* Fixed an ANR when Intercom is called from a background thread, such as a game's render thread, while secure storage is still loading
+* Fixed the device's push token staying on a logged-out user when Messenger Security is enforced, which could keep their push notifications arriving on that device
+
+### 👉 Note
+* The next major version of the Android SDK will be built with Kotlin 2.3 and will require apps to use a minimum Kotlin version of `2.0` due to binary compatibility
+
 ## 18.13.0
 ###### Release Date: 13-11-2026
 
