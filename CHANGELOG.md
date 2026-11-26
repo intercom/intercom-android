@@ -1,5 +1,37 @@
 # Changelog
 
+## 19.0.0
+###### Release Date: 26-11-2026
+
+### ⚡ Important Changes
+
+**Removed `Intercom.setMessengerEnvironment`**<br>
+The `setMessengerEnvironment(String?)` method has been removed, along with the `messenger_environment` field it added to API requests. Selecting a Messenger environment is app configuration rather than user state, so it is declared as an `AndroidManifest.xml` `<meta-data>` entry instead, as described under New Features below. Apps calling this method must remove the call to compile against this version. Any value stored on device by a previous version is erased the next time user identity is saved.
+
+### ✨ New Features
+
+**Select a Messenger environment from `AndroidManifest.xml`**<br>
+Most apps do not need this entry. Leave it out of your production builds, which then use your workspace's production Messenger environment. Add it only to a build that deliberately selects a different environment, such as a test build, by declaring a `<meta-data>` entry in your app's manifest:
+
+```
+<meta-data
+    android:name="io.intercom.android.sdk.messenger.environment"
+    android:value="YOUR_ENVIRONMENT_IDENTIFIER" />
+```
+
+This replaces the removed `Intercom.setMessengerEnvironment` runtime API. To migrate, delete your `setMessengerEnvironment` calls, and add this entry only on the builds that need a non-production environment. The SDK reads it once at startup and sends it on every Intercom API request, so unlike the removed API it survives `logout` and no longer has to be set before each login.
+
+Check any build that sets this key before you release it. An identifier that does not match an environment in your workspace makes every Intercom request from that build fail, rather than falling back to your production environment, and because the value ships in your APK it can only be corrected in an app update.
+
+### 🐛 Bug Fixes
+* Fixed ticket forms giving no feedback when a ticket couldn't be created; they now show an error with a Try Again option
+* Fixed a crash when the host app wraps the SDK's network calls in a proxy that rethrows ordinary network failures, such as a lost connection or a timeout
+* Fixed a logged-out user's push notifications still reaching the device when their JWT had expired by the time they logged out
+* Fixed a late response restoring a user who had just logged out, which could make the next login fail and re-attach that user's push token
+
+### 👉 Note
+* A future major version of the Android SDK will be built with Kotlin 2.3 and will require apps to use a minimum Kotlin version of `2.0` due to binary compatibility
+
 ## 18.14.0
 ###### Release Date: 20-11-2026
 
